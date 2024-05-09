@@ -1,12 +1,12 @@
-import {useState,useEffect} from 'react'
-import ContainerLayout from '../../layouts/ContainerLayout'
-import Image from 'next/image'
+import { useState, useEffect } from "react";
+import ContainerLayout from "../../layouts/ContainerLayout";
+import Image from "next/image";
 import heroImage from "../../assets/png/hero-image.png";
-import Navbar from './Navbar'
-import { Apple, Google } from '../../assets/svg';
-import Modal from '../modals/Modal';
+import Navbar from "../navbar/new-navbar";
+import { Apple, Google } from "../../assets/svg";
+import Modal from "../modals/Modal";
 import successImg from "../../assets/svg/success.svg";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 import { Cancel } from "../../assets/svg";
 const Hero = ({ active }) => {
   const [open, setOpen] = useState(false);
@@ -16,6 +16,7 @@ const Hero = ({ active }) => {
       setOpen(true);
     }, 20000);
   }, []);
+
   return (
     <div className="flex flex-col w-full hero-bg min-h-[70vh] pb-12">
       <Navbar active={active} />
@@ -101,6 +102,6 @@ const Hero = ({ active }) => {
       </Modal>
     </div>
   );
-}
+};
 
-export default Hero
+export default Hero;
