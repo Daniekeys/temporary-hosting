@@ -34,6 +34,8 @@ const Section = () => {
     },
   ];
 
+  console.log(selectedStepIndex);
+
   // Step component
   const Step = ({ index, phoneImage, title, description }) => (
     <div
@@ -50,7 +52,7 @@ const Section = () => {
             <Image src={grayangle} alt="" className="w-[32px] h-[32px]" />
           )}
           <p
-            className={` text-[32px] font-semibold ml-[15px] ${
+            className={`text-[20px] md:text-[32px] font-semibold ml-[15px] ${
               index === selectedStepIndex ? "text-[#4747D6]" : "text-[#999999]"
             }`}
           >
@@ -58,7 +60,7 @@ const Section = () => {
           </p>
         </div>
         <p
-          className={` text-[18px] font-medium text-[#555555] ${
+          className={`text-[14px] md:text-[18px] font-medium text-[#555555] ${
             index === selectedStepIndex ? "block" : "hidden"
           }`}
         >
@@ -88,10 +90,11 @@ const Section = () => {
           <Image
             src={steps[selectedStepIndex].phoneImage}
             alt=""
-            className="absolute w-full md:w-[691.94px] h-[650px] md:h-[470px] top-[2rem] right-[-15rem]"
-            // className={` text-[18px] font-medium text-[#555555] ${
-            //   index === selectedStepIndex ? "block" : "hidden"
-            // }`}
+            className={`md:absolute md:top-[2rem] md:right-[-15rem] ${
+              selectedStepIndex === 2
+                ? "w-full m-auto md:w-[600.94px] h-[450px] md:h-[470px]"
+                : "w-full m-auto md:w-[371.94px] h-[650px] md:h-[470px]"
+            }`}
           />
         </div>
       </div>
