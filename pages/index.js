@@ -1,20 +1,18 @@
-import { useState, useEffect, useRef } from 'react';
-import Head from 'next/head'
-import Hero from '../components/LandingPage/Hero';
-import Features from '../components/LandingPage/Features';
-import Dashboard from '../components/LandingPage/Dashboard';
-import Paid from '../components/LandingPage/Paid';
-import Footer from '../components/LandingPage/Footer';
-import Featured from '../components/LandingPage/Featured';
-import Become from '../components/LandingPage/Become';
-
+import { useState, useEffect, useRef } from "react";
+import Head from "next/head";
+import Hero from "../components/LandingPage/Hero";
+import Features from "../components/LandingPage/Features";
+import Dashboard from "../components/LandingPage/Dashboard";
+import Paid from "../components/LandingPage/Paid";
+import Footer from "../components/LandingPage/Footer";
+import Featured from "../components/LandingPage/Featured";
+import Become from "../components/LandingPage/Become";
 
 export default function Home() {
-const [active, setActive] = useState(false);
+  const [active, setActive] = useState(false);
 
   useEffect(() => {
     if (typeof window) {
-    
       const handleScroll = () => {
         window.pageYOffset > 600 ? setActive(true) : setActive(false);
       };
@@ -22,8 +20,7 @@ const [active, setActive] = useState(false);
       return () => window.removeEventListener("scroll", handleScroll);
     }
   }, []);
-  
- 
+
   return (
     <>
       <Head>
@@ -36,8 +33,7 @@ const [active, setActive] = useState(false);
       </Head>
       <div className="w-full flex flex-col relative">
         <Hero active={active} />
-        <div >
-
+        <div>
           <Features />
           <Featured />
         </div>

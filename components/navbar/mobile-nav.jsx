@@ -67,8 +67,8 @@ const MobileNav = ({ present }) => {
                   Contact Us
                 </Link>
               </div>
-              <div className="flex flex-col mt-[160px] space-y-5">
-                <button className="w-full flex justify-center items-center h-[52px] rounded-[10px] text-white bg-primary">
+              <div className="flex flex-col mt-[100px] space-y-5">
+                <button className="bg-[#4747D6] w-full flex justify-center items-center h-[52px] rounded-[10px] text-white bg-primary">
                   Create Account
                 </button>
                 <button className="w-full flex justify-center items-center h-[52px] rounded-[10px] text-primary border-[2px] font-bold border-primary ">
