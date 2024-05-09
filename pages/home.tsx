@@ -8,7 +8,9 @@ import HomeFeatures from "../components/LandingPage/HomeFeatures";
 import How from "../components/LandingPage/How";
 import Section from "../components/LandingPage/Section";
 import Carousel from "../components/LandingPage/Carousel";
-import Footer from "../components/LandingPage/Footer";
+import Slider from "../components/blogs/Slider";
+import RequestDemo from "../components/footer/request-demo";
+import Footer from "../components/footer/new-footer";
 import {
   Card1,
   Card2,
@@ -45,6 +47,8 @@ function home() {
       <Section />
       <Carousel Containers={Containers} />
       <Faq />
+      <Slider />
+      <RequestDemo />
       <Footer />
     </div>
   );
