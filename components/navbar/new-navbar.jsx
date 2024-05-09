@@ -9,10 +9,13 @@ import cases from "../../assets/svg/cases.svg";
 import download from "../../assets/svg/download.svg";
 import Link from "next/link";
 import { ArrowDown } from "../../assets/svg";
+import emuration from "../../assets/svg/emuration.svg";
+import reporting from "../../assets/svg/reporting.svg";
 
 const NewNavbar = () => {
   const router = useRouter();
   const [isAboutUsDropdownOpen, setIsAboutUsDropdownOpen] = useState(false);
+  const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
 
   return (
     <div
@@ -37,13 +40,16 @@ const NewNavbar = () => {
                 <ArrowDown />
               </span>
             </div>
-            <Link href="/products" className="flex items-center gap-2 ">
+            <div
+              onClick={() => setIsProductDropdownOpen(!isProductDropdownOpen)}
+              className="flex items-center gap-2 cursor-pointer"
+            >
               <p className="text-ash lg:text-base font-semibold ">Products</p>
               <span>
                 <ArrowDown />
               </span>
-            </Link>
-            <Link href="/contactus" className="flex items-center gap-2 ">
+            </div>
+            <Link href="/contact-us" className="flex items-center gap-2 ">
               <p className="text-ash lg:text-base font-semibold ">Contact Us</p>
             </Link>
             <div className="flex items-center gap-2 ">
@@ -65,7 +71,7 @@ const NewNavbar = () => {
           <div className="w-[50rem] h-[220px] bg-white absolute right-0 rounded-b-xl">
             <div className="w-full h-[100px] bg-white flex justify-between items-center p-4">
               <div
-                onClick={() => router.push("/projects")}
+                onClick={() => router.push("/our-project")}
                 className="w-1/2 h-auto flex items-center cursor-pointer hover:bg-[#F5F4FB] rounded-xl"
               >
                 <Image src={project} alt="project" />
@@ -80,7 +86,7 @@ const NewNavbar = () => {
               </div>
 
               <div
-                onClick={() => router.push("/cases")}
+                onClick={() => router.push("/applicable-cases")}
                 className="w-1/2 h-auto flex items-center cursor-pointer hover:bg-[#F5F4FB] rounded-xl"
               >
                 <Image src={cases} alt="cases" />
@@ -94,12 +100,11 @@ const NewNavbar = () => {
                 </div>
               </div>
             </div>
-
-            <div
-              onClick={() => router.push("/blog")}
-              className="w-full h-[100px] bg-white flex justify-between items-center p-4"
-            >
-              <div className="w-1/2 h-auto flex items-center cursor-pointer hover:bg-[#F5F4FB] rounded-xl">
+            <div className="w-full h-[100px] bg-white flex justify-between items-center p-4">
+              <div
+                onClick={() => router.push("/blog")}
+                className="w-1/2 h-auto flex items-center cursor-pointer hover:bg-[#F5F4FB] rounded-xl"
+              >
                 <Image src={blog} alt="blog" />
                 <div className="ml-[21px]">
                   <p className="text-[#555555] text-[16px] font-semibold">
@@ -112,7 +117,7 @@ const NewNavbar = () => {
               </div>
 
               <div
-                onClick={() => router.push("/downloadapp")}
+                onClick={() => router.push("/download")}
                 className="w-1/2 h-auto flex items-center cursor-pointer hover:bg-[#F5F4FB] rounded-xl"
               >
                 <Image src={download} alt="download" />
@@ -124,6 +129,40 @@ const NewNavbar = () => {
                     Lorem ipsum dolor sit amet consectetur. Bibendum sit sed.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {isProductDropdownOpen && (
+          <div className="w-[35rem] h-[220px] bg-white absolute right-0 p-4 rounded-b-xl">
+            <div
+              // onClick={() => router.push("/download")}
+              className="w-full h-auto flex items-center cursor-pointer hover:bg-[#F5F4FB] rounded-xl"
+            >
+              <Image src={emuration} alt="emuration" />
+              <div className="ml-[21px]">
+                <p className="text-[#555555] text-[16px] font-semibold">
+                  Enumeration app
+                </p>
+                <p className="text-[#555555] text-[14px] font-medium">
+                  Lorem ipsum dolor sit amet consectetur. Bibendum sit sed.
+                </p>
+              </div>
+            </div>
+
+            <div
+              // onClick={() => router.push("/download")}
+              className="w-full h-auto flex items-center cursor-pointer hover:bg-[#F5F4FB] rounded-xl mt-5"
+            >
+              <Image src={reporting} alt="reporting" />
+              <div className="ml-[21px]">
+                <p className="text-[#555555] text-[16px] font-semibold">
+                  Reporting dashboard
+                </p>
+                <p className="text-[#555555] text-[14px] font-medium">
+                  Lorem ipsum dolor sit amet consectetur. Bibendum sit sed.
+                </p>
               </div>
             </div>
           </div>
