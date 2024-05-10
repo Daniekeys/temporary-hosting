@@ -30,7 +30,7 @@ const SingleActivities = ({ item }: any) => {
       >
         <p
           className="text-[14px] font-bold cursor-pointer
-        text-[#555555] mb-3"
+        text-[#555555] mb-3 mt-4"
         >
           {title}
         </p>
