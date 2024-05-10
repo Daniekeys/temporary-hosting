@@ -20,7 +20,7 @@ function HomeFeatures() {
 
       <div className="bg-[#EDE6FF] w-full h-auto rounded-[50px] p-7 mt-20">
         <div className="w-full h-auto flex flex-col md:flex-row justify-between items-center">
-          <div className="bg-[#FFFFFF] w-full md:w-[48%] h-auto rounded-[30px] p-5">
+          <div className="bg-[#FFFFFF] w-full md:w-[48%] h-auto rounded-[30px] p-5 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default">
             <Image src={data} alt="data" className="w-[80px] h-[80px]" />
 
             <p className="text-[#333333] text-[30px] font-semibold mt-5">
@@ -34,7 +34,7 @@ function HomeFeatures() {
             </p>
           </div>
 
-          <div className="bg-[#FFFFFF] w-full md:w-[48%] h-auto rounded-[30px] p-5 mt-10 md:mt-0">
+          <div className="bg-[#FFFFFF] w-full md:w-[48%] h-auto rounded-[30px] p-5 mt-10 md:mt-0 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default">
             <Image
               src={management}
               alt="management"
@@ -54,7 +54,7 @@ function HomeFeatures() {
         </div>
 
         <div className="w-full h-auto flex flex-col md:flex-row justify-between items-center mt-10">
-          <div className="bg-[#FFFFFF] w-full md:w-[31%] h-auto rounded-[30px] p-5">
+          <div className="bg-[#FFFFFF] w-full md:w-[31%] h-auto rounded-[30px] p-5 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default">
             <Image src={gpss} alt="gpss" className="w-[80px] h-[80px]" />
 
             <p className="text-[#333333] text-[30px] font-semibold mt-5">
@@ -67,7 +67,7 @@ function HomeFeatures() {
             </p>
           </div>
 
-          <div className="bg-[#FFFFFF] w-full md:w-[31%] h-auto rounded-[30px] p-5 my-10 md:my-0">
+          <div className="bg-[#FFFFFF] w-full md:w-[31%] h-auto rounded-[30px] p-5 my-10 md:my-0 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default">
             <Image src={wifi} alt="wifi" className="w-[80px] h-[80px]" />
 
             <p className="text-[#333333] text-[30px] font-semibold mt-5">
@@ -80,7 +80,7 @@ function HomeFeatures() {
             </p>
           </div>
 
-          <div className="bg-[#FFFFFF] w-full md:w-[31%] h-auto rounded-[30px] p-5">
+          <div className="bg-[#FFFFFF] w-full md:w-[31%] h-auto rounded-[30px] p-5 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default">
             <Image
               src={securecase}
               alt="securecase"
