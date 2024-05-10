@@ -7,7 +7,7 @@ import Paid from "../components/LandingPage/Paid";
 import Footer from "../components/LandingPage/Footer";
 import Featured from "../components/LandingPage/Featured";
 import Become from "../components/LandingPage/Become";
-
+import { useRouter } from "next/router";
 export default function Home() {
   const [active, setActive] = useState(false);
 
@@ -20,6 +20,11 @@ export default function Home() {
       return () => window.removeEventListener("scroll", handleScroll);
     }
   }, []);
+  const router = useRouter();
+  useEffect(() => {
+    router?.push("/home")
+  }, [])
+  
 
   return (
     <>

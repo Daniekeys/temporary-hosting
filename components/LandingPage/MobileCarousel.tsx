@@ -19,7 +19,7 @@ function MobileCarousel() {
   };
 
   return (
-    <div className="w-full h-auto md:hidden">
+    <div className="w-full h-full md:hidden">
       <ContainerLayout>
         <p className="text-[#333333] text-[20px] md:text-[36px] font-semibold text-center mt-20">
           TESTIMONIALS
@@ -28,7 +28,7 @@ function MobileCarousel() {
         <p className="text-[#333333] text-[14px] md:text-[20px] font-medium text-center mt-[10px] mb-[50px]">
           Our users have the following to say about Us:
         </p>
-        <div className="bg-[#F6F1FF] h-auto p-[10px] rounded-[30px]">
+        <div className="bg-[#F6F1FF] h-full p-[10px] rounded-[30px]">
           <Slider
             {...settings}
             prevArrow={<Image src={leftArrow} alt="Left Arrow" />}

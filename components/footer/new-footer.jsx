@@ -32,7 +32,7 @@ const NewFooter = () => {
               <div className="flex flex-col md:w-8/12 2xl:w-6/12">
                 <div className="flex justify-center md:justify-between items-center mt-[26px] gap-x-4 w-full">
                   <Link
-                    href="https://www.facebook.com/Primallp/"
+                    href="https://web.facebook.com/Wecollectintel"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cursor-pointer"
@@ -45,7 +45,7 @@ const NewFooter = () => {
                     />
                   </Link>
                   <Link
-                    href="https://twitter.com/lawployltd"
+                    href="https://twitter.com/Wecollectdata"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cursor-pointer"
@@ -58,7 +58,7 @@ const NewFooter = () => {
                     />
                   </Link>
                   <Link
-                    href="https://www.linkedin.com/company/primallp/"
+                    href="https://www.linkedin.com/company/wecollect-tech/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cursor-pointer"
@@ -71,7 +71,7 @@ const NewFooter = () => {
                     />
                   </Link>
                   <Link
-                    href="https://www.linkedin.com/company/primallp/"
+                    href="https://www.instagram.com/wecollect_data/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cursor-pointer"
@@ -129,39 +129,31 @@ const NewFooter = () => {
                   WeCollect
                 </h1>
                 <Link
-                  href="/"
-                  target="_blank"
-                  download={true}
+                  href="/innovations"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
                 >
                   Products
                 </Link>
                 <Link
-                  href="#faq"
+                  href="/our-project"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
                 >
                   Projects
                 </Link>
                 <Link
-                  href="/Contact-Lawploy.pdf"
-                  target="_blank"
-                  download={true}
+                  href="/applicable-cases"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
                 >
                   Use cases
                 </Link>
                 <Link
-                  href="/Contact-Lawploy.pdf"
-                  target="_blank"
-                  download={true}
+                  href="/blog"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
                 >
                   Blog
                 </Link>
                 <Link
-                  href="/Contact-Lawploy.pdf"
-                  target="_blank"
-                  download={true}
+                  href="/contact-us"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
                 >
                   Contact Us
@@ -174,19 +166,19 @@ const NewFooter = () => {
                   Legality
                 </h1>
                 <Link
-                  href="#"
+                  href="/privacy-policy"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
                 >
                   Privacy Policy
                 </Link>
                 <Link
-                  href="#"
+                  href="/term-of-use"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
                 >
                   Terms of use
                 </Link>
                 <Link
-                  href="#"
+                  href="/cookie-policy"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
                 >
                   Cookie Policy
@@ -200,16 +192,15 @@ const NewFooter = () => {
                 </h1>
                 <Link
                   href="/"
-                  target="_blank"
-                  download={true}
+                  // target="_blank"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
                 >
                   Delineation app
                 </Link>
                 <Link
-                  href="/Lawploy-Privacy-Policy.pdf"
+                  href="https://staging.wecollect.tech"
                   target="_blank"
-                  download={true}
+                 
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
                 >
                   Reporting dashboard
@@ -231,16 +222,16 @@ const NewFooter = () => {
                 </Link>
                 <Link
                   href="/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  // target="_blank"
+                  // rel="noopener noreferrer"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
                 >
                   Real-time data collection
                 </Link>
                 <Link
-                  href="https://www.facebook.com/Primallp/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/"
+                  // target="_blank"
+                  // rel="noopener noreferrer"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
                 >
                   Secure case management

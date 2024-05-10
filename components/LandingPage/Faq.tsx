@@ -7,7 +7,7 @@ import { faqData } from "../../utils/faqdata";
 
 const Faq = () => {
   return (
-    <div className="w-full bg-[#fff] h-auto md:py-[100px]" id="faq">
+    <div className="w-full bg-[#fff] h-auto py-[100px]" id="faq">
       <ContainerLayout>
         <div className="w-full flex flex-col">
           <p className="text-[#333333] text-[36px] font-semibold text-center">
@@ -17,7 +17,7 @@ const Faq = () => {
             Find quick answers to some frequently asked questions
           </p>
 
-          <div className="w-full bg-[#EDE6FF] h-auto rounded-[30px] flex flex-col mt-[30px] md:mt-[50px] p-[30px]">
+          <div className="w-full bg-[#EDE6FF] h-auto rounded-[30px] flex flex-col mt-[30px] md:mt-[50px] p-5 lg:p-[30px]">
             {faqData.map((item: any, index: number) => {
               return <SingleFaq item={item} key={index} />;
             })}
@@ -44,19 +44,19 @@ const SingleFaq = ({ item }: any) => {
         className="flex space-x-5 items-center justify-between px-2 md:px-5"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <p className="md:text-[22px] text-[#0E0E0E] font-bold sat-bold">
+        <p className="md:text-[22px] text-[#0E0E0E] font-bold sat-bold text-sm">
           {title}
         </p>
-        <Image src={isOpen ? minus : add} alt="add " />
+        <Image src={isOpen ? minus : add} alt="add " className="w-[20px] h-[16px]" />
       </div>
       {isOpen && (
-        <div className="flex flex-col mt-3 pl-[44px]">
+        <div className="flex flex-col mt-3 p-2 lg:pl-[44px]">
           <p className="text-[#0E0E0E] md:text-lg ">{story}</p>
           {list.length !== 0 && (
             <ul className="list-disc ">
               {list.map((item: any, index: number) => {
                 return (
-                  <li className="text-[#0E0E0E] md:text-lg" key={index}>
+                  <li className="text-[#0E0E0E] md:text-lg text-sm" key={index}>
                     {item}
                   </li>
                 );

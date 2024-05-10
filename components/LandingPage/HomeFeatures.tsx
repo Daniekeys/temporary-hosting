@@ -11,7 +11,7 @@ import spiral from "../../assets/png/spiral-curve.png";
 import spiralRight from "../../assets/png/spiral-right.png"
 function HomeFeatures() {
   return (
-    <div className="w-full relative ">
+    <div className="w-full relative overflow-x-hidden overflow-y-hidden ">
       <div className="absolute top-0 left-[-100px] ">
         <Image src={spiral} alt="spiral" className="max-h-[1600px] hidden lg:flex"  />
       </div>
