@@ -11,7 +11,8 @@ import linkedin from "../../assets/svg/linkedin.svg";
 import youtube from "../../assets/svg/youtube.svg";
 import googleIcon from "../../assets/svg/playstore.svg";
 import appleIcon from "../../assets/svg/applestore.svg";
-import copy from "../../assets/svg/copy.svg"
+import copy from "../../assets/svg/copy.svg";
+import FooterFaq from "../LandingPage/FooterFaq";
 const NewFooter = () => {
   return (
     <div className="w-full flex flex-col bg-[#F6F1FF] pt-8">
@@ -26,9 +27,10 @@ const NewFooter = () => {
                 width={logo.width}
                 height={logo.height}
                 alt="image"
+                className="m-auto md:m-0"
               />
               <div className="flex flex-col md:w-8/12 2xl:w-6/12">
-                <div className="flex md:justify-between items-center mt-[26px] gap-x-4 w-full">
+                <div className="flex justify-center md:justify-between items-center mt-[26px] gap-x-4 w-full">
                   <Link
                     href="https://www.facebook.com/Primallp/"
                     target="_blank"
@@ -117,8 +119,10 @@ const NewFooter = () => {
               </div>
             </div>
 
+            <FooterFaq />
+
             {/* other session */}
-            <div className="w-full md:w-8/12 grid grid-cols-2 gap-y-4 md:gap-y-0 pb-12 md:pb-0 lg:grid-cols-4 mt-16 md:mt-0">
+            <div className="w-full md:w-8/12 md:grid grid-cols-2 gap-y-4 md:gap-y-0 pb-12 md:pb-0 lg:grid-cols-4 mt-16 md:mt-0 hidden">
               {/* ################3 start of a park */}
               <div className="flex flex-col space-y-6">
                 <h1 className="text-ash sat-bold  text-base font-bold">
@@ -252,7 +256,7 @@ const NewFooter = () => {
 
       <div className="flex  justify-center items-center gap-2 my-8 ">
         <Image src={copy} width={copy.width} height={copy.height} alt="copy" />
-      
+
         <p className="text-[#1B213E] text-lg sat-regular ">
           All rights reserved, WeCollect, 2024
         </p>
