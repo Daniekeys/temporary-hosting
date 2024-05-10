@@ -7,34 +7,14 @@ import Control from "../components/LandingPage/Control";
 import HomeFeatures from "../components/LandingPage/HomeFeatures";
 import How from "../components/LandingPage/How";
 import Section from "../components/LandingPage/Section";
-import Carousel from "../components/LandingPage/Carousel";
+import DesktopCarousel from "../components/LandingPage/DesktopCarousel";
+import MobileCarousel from "../components/LandingPage/MobileCarousel";
 import Slider from "../components/blogs/Slider";
 import RequestDemo from "../components/footer/request-demo";
 import Footer from "../components/footer/new-footer";
-import {
-  Card1,
-  Card2,
-  Card3,
-  Card4,
-  Card5,
-  Card6,
-  Card7,
-  Card8,
-} from "../components/LandingPage/Card";
 import Faq from "../components/LandingPage/Faq";
 
 function home() {
-  const Containers = [
-    <Card1 />,
-    <Card2 />,
-    <Card3 />,
-    <Card4 />,
-    <Card5 />,
-    <Card6 />,
-    <Card7 />,
-    <Card8 />,
-  ];
-
   return (
     <div className="w-full h-auto">
       <NewNavbar />
@@ -45,7 +25,8 @@ function home() {
       <HomeFeatures />
       <How />
       <Section />
-      <Carousel Containers={Containers} />
+      <DesktopCarousel />
+      <MobileCarousel />
       <Faq />
       <Slider />
       <RequestDemo />
