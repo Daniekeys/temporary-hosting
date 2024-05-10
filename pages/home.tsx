@@ -16,7 +16,7 @@ import Faq from "../components/LandingPage/Faq";
 
 function home() {
   return (
-    <div className="w-full h-auto">
+    <div className="w-full h-auto ">
       <NewNavbar />
       <MobileNav present={1} />
       <HomeHero />
