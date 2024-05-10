@@ -3,8 +3,10 @@ import ContainerLayout from "../../layouts/ContainerLayout";
 import Image from "next/image";
 import heroImage from "../../assets/png/fpmp-pic.png";
 import { useRouter } from "next/router";
+import { blogPosts } from "../../utils/blog-data";
 const BlogLatest = () => {
   const router = useRouter();
+  const item = blogPosts[0];
 
   return (
     <ContainerLayout>
@@ -16,26 +18,24 @@ const BlogLatest = () => {
         <div className="w-full mt-12 flex flex-col md:flex-row justify-between items-center ">
           <div className="w-full md:w-6/12 items-center">
             <Image
-              src={heroImage}
+              src={item?.leadImage}
               alt="hero"
               className="w-full h-auto rounded-[30px]"
             />
           </div>
           <div className="w-full md:w-5/12 flex flex-col justify-center">
             <p className="text-[12px] md:text-base text-[#555] md:mt-6 2xl:mt-0 ">
-              April 12 . 10:52 PM
+              {item?.date}
             </p>
             <h2 className="md:w-11/12 w-full text-[32px] 2xl:text-[40px] font-[500] text-[#333] my-7 md:mt-2 md:mb-2 text-2xl md:leading-[60px]">
-              WeCollect carries out Food Price Monitoring...
+             {item?.title}
             </h2>
             <p className="text-[#555] text-sm md:text-xl">
-              WeCollect carries out the maiden edition of Food Price Monitoring
-              Project in Nigeria. This edition is designed to take place in the
-              6 SouthWestern...
+            {item?.summaryHeading}
             </p>
             <p
               className="hover:bg-mainBlue bg-white   text-base text-mainBlue border border-mainBlue hover:border-none  hover:text-white  font-semibold mt-4  w-fit px-[10px] py-[15px] cursor-pointer h-[50px] rounded-[50px] flex items-center justify-center "
-              onClick={() => router.push(`/blog`)}
+              onClick={() => router.push(`/blog/0`)}
             >
               Read
             </p>

@@ -4,6 +4,7 @@ import ContainerLayout from "../../layouts/ContainerLayout";
 import Image from "next/image";
 import { data } from "./data";
 import { useRouter } from "next/router";
+import { blogPosts } from "../../utils/blog-data";
 
 const AllBlogs = () => {
   const router = useRouter();
@@ -14,15 +15,15 @@ const AllBlogs = () => {
           Older posts
         </h1>
         <div className="w-full grid grid-cols-1 gap-x-8 gap-y-12  sm:grid-cols-2 lg:grid-cols-3 flow-hide">
-          {data.map((item, index) => (
+          {blogPosts?.slice(1,6)?.map((item, index) => (
             <div
               className="w-full flex flex-col"
               key={index}
-              data-aos="fade-up"
-              data-aos-duration="2000"
+              // data-aos="fade-up"
+              // data-aos-duration="2000"
             >
               <Image
-                src={item.image}
+                src={item.leadImage}
                 alt="image"
                 className="w-full object-cover mx-auto md:w-full h-auto rounded-[30px]"
               />
@@ -33,11 +34,11 @@ const AllBlogs = () => {
                 {item.title}
               </p>
               <p className="text-sm md:text-xl text-[#555] mt-4">
-                {item.content}
+                {item.summaryHeading}
               </p>
               <p
                 className="hover:bg-mainBlue bg-white   text-base text-mainBlue border border-mainBlue hover:border-none  hover:text-white  font-semibold mt-4  w-fit px-[10px] py-[15px] cursor-pointer h-[50px] rounded-[50px] flex items-center justify-center "
-                onClick={() => router.push(`/blog/${index}`)}
+                onClick={() => router.push(`/blog/${index + 1}`)}
               >
                 Read
               </p>
