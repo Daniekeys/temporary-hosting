@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import ContainerLayout from "../layouts/ContainerLayout";
 import homehero from "../assets/png/hero-boy.png";
@@ -8,6 +8,11 @@ import secure from "../assets/png/secure-ilus.png";
 import blueright from "../assets/svg/blueright.svg";
 
 function HomeHero() {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  useEffect(() => {
+    setIsExpanded(true);
+  }, []);
   return (
     <div className="w-full bg-white  lg:bg-[#F9F6FF]">
       <ContainerLayout>
@@ -16,9 +21,14 @@ function HomeHero() {
             <p className="text-[45px] md:text-[55px] font-semibold">
               Insight Gathering
             </p>
-            <p className="text-[45px] md:text-[55px] font-semibold">
-              Made Easy
-            </p>
+            <div className="flex flex-col w-[300px] relative">
+              <p className="text-[45px] md:text-[55px] font-semibold z-10">
+                Made Easy
+              </p>
+              <div
+                className={`expanding-div ${isExpanded ? "expanded" : ""} absolute bottom-2 z-0`}
+              ></div>
+            </div>
 
             <p className="text-[#6F6F6F] text-[14px] md:text-[16px] font-medium mt-[30px]">
               Leverage advanced data collecting technology with features like

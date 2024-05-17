@@ -301,3 +301,14 @@ box-shadow: 0px 267px 75px 0px #1797EC00;
     width: 30px;
   }
 }
+
+.expanding-div {
+  width: 0%;
+  height: 30px;
+  background-color: #FFE700;
+  transition: width 2s;
+}
+
+.expanding-div.expanded {
+  width: 100%;
+}
