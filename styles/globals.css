@@ -172,6 +172,18 @@ select {
 .z-low {
   z-index: 1 !important;
 }
+.hero-item-shadow{
+  /* box-shadow: 0px 11px 24px 0px #1797EC1A;
+
+box-shadow: 0px 43px 43px 0px #1797EC17;
+
+box-shadow: 0px 96px 58px 0px #1797EC0D;
+
+box-shadow: 0px 171px 68px 0px #1797EC03; */
+
+box-shadow: 0px 267px 75px 0px #1797EC00;
+
+}
 .container {
   width: 100%;
   height: 70vh;

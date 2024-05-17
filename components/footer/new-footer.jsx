@@ -28,8 +28,15 @@ const NewFooter = () => {
                 height={logo.height}
                 alt="image"
                 className="m-auto md:m-0"
+                data-aos="fade-up"
+                data-aos-duration="1000"
               />
-              <div className="flex flex-col md:w-8/12 2xl:w-6/12">
+              <div
+                className="flex flex-col md:w-8/12 2xl:w-6/12"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="600"
+              >
                 <div className="flex justify-center md:justify-between items-center mt-[26px] gap-x-4 w-full">
                   <Link
                     href="https://web.facebook.com/Wecollectintel"
@@ -125,36 +132,56 @@ const NewFooter = () => {
             <div className="w-full md:w-8/12 md:grid grid-cols-2 gap-y-4 md:gap-y-0 pb-12 md:pb-0 lg:grid-cols-4 mt-16 md:mt-0 hidden">
               {/* ################3 start of a park */}
               <div className="flex flex-col space-y-6">
-                <h1 className="text-ash sat-bold  text-base font-bold">
+                <h1
+                  className="text-ash sat-bold  text-base font-bold"
+                  data-aos="fade-up"
+                  data-aos-duration="600"
+                  data-aos-delay="600"
+                >
                   WeCollect
                 </h1>
                 <Link
                   href="/innovations"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="900"
                 >
                   Products
                 </Link>
                 <Link
                   href="/our-project"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="1300"
                 >
                   Projects
                 </Link>
                 <Link
                   href="/applicable-cases"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="1600"
                 >
                   Use cases
                 </Link>
                 <Link
                   href="/blog"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="2100"
                 >
                   Blog
                 </Link>
                 <Link
                   href="/contact-us"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="2400"
                 >
                   Contact Us
                 </Link>
@@ -162,24 +189,38 @@ const NewFooter = () => {
               {/* end of a pack */}
               {/* ################3 start of a park */}
               <div className="flex flex-col space-y-6">
-                <h1 className="text-ash sat-bold  text-base font-bold">
+                <h1
+                  className="text-ash sat-bold  text-base font-bold"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="2400"
+                >
                   Legality
                 </h1>
                 <Link
                   href="/privacy-policy"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="2600"
                 >
                   Privacy Policy
                 </Link>
                 <Link
                   href="/term-of-use"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="2800"
                 >
                   Terms of use
                 </Link>
                 <Link
                   href="/cookie-policy"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="3000"
                 >
                   Cookie Policy
                 </Link>
@@ -187,21 +228,31 @@ const NewFooter = () => {
               {/* end of a pack */}
               {/* ################3 start of a park */}
               <div className="flex flex-col space-y-6">
-                <h1 className="text-ash sat-bold  text-base font-bold">
+                <h1
+                  className="text-ash sat-bold  text-base font-bold"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="2000"
+                >
                   Products
                 </h1>
                 <Link
                   href="/"
                   // target="_blank"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="2400"
                 >
                   Delineation app
                 </Link>
                 <Link
                   href="https://staging.wecollect.tech"
                   target="_blank"
-                 
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="2700"
                 >
                   Reporting dashboard
                 </Link>
@@ -209,7 +260,12 @@ const NewFooter = () => {
               {/* end of a pack */}
               {/* ################3 start of a park */}
               <div className="flex flex-col space-y-6">
-                <h1 className="text-ash sat-bold  text-base font-bold">
+                <h1
+                  className="text-ash sat-bold  text-base font-bold"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="2100"
+                >
                   Features
                 </h1>
                 <Link
@@ -217,6 +273,9 @@ const NewFooter = () => {
                   //   target="_blank"
                   //   rel="noopener noreferrer"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="2300"
                 >
                   GPS coordinates
                 </Link>
@@ -225,6 +284,9 @@ const NewFooter = () => {
                   // target="_blank"
                   // rel="noopener noreferrer"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="2500"
                 >
                   Real-time data collection
                 </Link>
@@ -233,6 +295,9 @@ const NewFooter = () => {
                   // target="_blank"
                   // rel="noopener noreferrer"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="2700"
                 >
                   Secure case management
                 </Link>

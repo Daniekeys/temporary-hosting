@@ -53,13 +53,13 @@ const NewNavbar = () => {
               <p className="text-ash lg:text-base font-semibold ">Contact Us</p>
             </Link>
             <div className="flex items-center gap-2 ">
-              <p className="text-mainBlue lg:text-base font-semibold ">
+              <p className="text-mainBlue hover:bg-[#E3D5FF] lg:text-base font-semibold px-4 py-2 rounded-[50px] cursor-pointer ">
                 Sign in
               </p>
             </div>
             <Link
               href="/"
-              className="bg-mainBlue h-[50px] flex items-center text-white rounded-[50px] px-5 "
+              className="bg-mainBlue hover:bg-[#E3D5FF] h-[50px] flex items-center text-white hover:text-mainBlue rounded-[50px] px-5 cursor-pointer "
             >
               Create account
             </Link>

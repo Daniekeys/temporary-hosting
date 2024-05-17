@@ -10,10 +10,18 @@ const Faq = () => {
     <div className="w-full bg-[#fff] h-auto py-[100px]" id="faq">
       <ContainerLayout>
         <div className="w-full flex flex-col">
-          <p className="text-[#333333] text-[36px] font-semibold text-center">
+          <p
+            className="text-[#333333] text-[36px] font-semibold text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             FAQ
           </p>
-          <p className="text-[#555555] text-[20px] font-medium text-center mt-[10px]">
+          <p
+            className="text-[#555555] text-[20px] font-medium text-center mt-[10px]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             Find quick answers to some frequently asked questions
           </p>
 
@@ -44,19 +52,31 @@ const SingleFaq = ({ item }: any) => {
         className="flex space-x-5 items-center justify-between px-2 md:px-5"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <p className="md:text-[22px] text-[#0E0E0E] font-bold sat-bold text-sm">
+        <p className="md:text-[22px] text-[#0E0E0E] font-bold sat-bold text-sm cursor-pointer">
           {title}
         </p>
-        <Image src={isOpen ? minus : add} alt="add " className="w-[20px] h-[16px]" />
+        <Image
+          src={isOpen ? add : minus}
+          alt="add "
+          className="w-[20px] h-[16px]"
+        />
       </div>
       {isOpen && (
-        <div className="flex flex-col mt-3 p-2 lg:pl-[44px]">
+        <div
+          className="flex flex-col mt-3 p-2 lg:pl-[44px]"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <p className="text-[#0E0E0E] md:text-lg ">{story}</p>
           {list.length !== 0 && (
             <ul className="list-disc ">
               {list.map((item: any, index: number) => {
                 return (
-                  <li className="text-[#0E0E0E] md:text-lg text-sm" key={index}>
+                  <li
+                    className="text-[#0E0E0E] md:text-lg text-sm"
+                  
+                    key={index}
+                  >
                     {item}
                   </li>
                 );

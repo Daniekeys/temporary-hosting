@@ -21,14 +21,26 @@ function DesktopCarousel() {
   return (
     <div className="w-full h-auto hidden md:block">
       <ContainerLayout>
-        <p className="text-[#333333] text-[36px] font-semibold text-center mt-40">
+        <p
+          className="text-[#333333] text-[36px] font-semibold text-center mt-40"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           TESTIMONIALS
         </p>
 
-        <p className="text-[#333333] text-[20px] font-medium text-center mt-[10px] mb-[50px]">
+        <p
+          className="text-[#333333] text-[20px] font-medium text-center mt-[10px] mb-[50px]"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           Our users have the following to say about Us:
         </p>
-        <div className="bg-[#F6F1FF] h-auto p-[30px] rounded-[30px]">
+        <div
+          className="bg-[#F6F1FF] h-auto p-[30px] rounded-[30px]"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <Slider
             {...settings}
             prevArrow={<Image src={leftArrow} alt="Left Arrow" />}

@@ -13,24 +13,41 @@ function HomeFeatures() {
   return (
     <div className="w-full relative overflow-x-hidden overflow-y-hidden ">
       <div className="absolute top-0 left-[-100px] ">
-        <Image src={spiral} alt="spiral" className="max-h-[1600px] hidden lg:flex"  />
+        <Image
+          src={spiral}
+          alt="spiral"
+          className="max-h-[1600px] hidden lg:flex"
+        />
       </div>
       <div className="absolute top-0 right-[-100px] ">
-        <Image src={spiralRight} alt="spiral" className=" hidden lg:flex"  />
+        <Image src={spiralRight} alt="spiral" className=" hidden lg:flex" />
       </div>
-      
+
       <ContainerLayout>
-        <p className="text-[#555555] text-[20px] md:text-[32px] font-semibold mt-36 text-center">
+        <p
+          className="text-[#555555] text-[20px] md:text-[32px] font-semibold mt-36 text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           FEATURES
         </p>
 
-        <p className="text-[#555555] text-[14px] md:text-[18px] font-medium text-center">
+        <p
+          className="text-[#555555] text-[14px] md:text-[18px] font-medium text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           Explore features that makes Us unique
         </p>
 
         <div className="bg-[#EDE6FF] w-full h-auto rounded-[50px] p-7 mt-20  relative">
           <div className="w-full h-auto flex flex-col md:flex-row justify-between items-center">
-            <div className="bg-[#FFFFFF] w-full md:w-[48%] h-auto rounded-[30px] p-5 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default">
+            <div
+              className="bg-[#FFFFFF] w-full md:w-[48%] h-auto rounded-[30px] p-5 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              
+            >
               <Image src={data} alt="data" className="w-[80px] h-[80px]" />
 
               <p className="text-[#333333] text-[30px] font-semibold mt-5">
@@ -44,7 +61,12 @@ function HomeFeatures() {
               </p>
             </div>
 
-            <div className="bg-[#FFFFFF] w-full md:w-[48%] h-auto rounded-[30px] p-5 mt-10 md:mt-0 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default">
+            <div
+              className="bg-[#FFFFFF] w-full md:w-[48%] h-auto rounded-[30px] p-5 mt-10 md:mt-0 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
               <Image
                 src={management}
                 alt="management"
@@ -64,7 +86,12 @@ function HomeFeatures() {
           </div>
 
           <div className="w-full h-auto grid grid-cols-1 lg:grid-cols-3 gap-8 justify-between items-center mt-10">
-            <div className="bg-[#FFFFFF] w-full h-full  rounded-[30px] p-5 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default">
+            <div
+              className="bg-[#FFFFFF] w-full h-full  rounded-[30px] p-5 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+            >
               <Image src={gpss} alt="gpss" className="w-[80px] h-[80px]" />
 
               <p className="text-[#333333] text-[30px] font-semibold mt-5">
@@ -77,7 +104,12 @@ function HomeFeatures() {
               </p>
             </div>
 
-            <div className="bg-[#FFFFFF] w-full  h-auto rounded-[30px] p-5 my-10 md:my-0 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default">
+            <div
+              className="bg-[#FFFFFF] w-full  h-auto rounded-[30px] p-5 my-10 md:my-0 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+            >
               <Image src={wifi} alt="wifi" className="w-[80px] h-[80px]" />
 
               <p className="text-[#333333] text-[30px] font-semibold mt-5">
@@ -90,7 +122,12 @@ function HomeFeatures() {
               </p>
             </div>
 
-            <div className="bg-[#FFFFFF] w-full  h-auto rounded-[30px] p-5 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default">
+            <div
+              className="bg-[#FFFFFF] w-full  h-auto rounded-[30px] p-5 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="600"
+            >
               <Image
                 src={securecase}
                 alt="securecase"

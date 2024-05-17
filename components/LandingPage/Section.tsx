@@ -1,14 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import smartimage from "../../assets/png/smartimage.png";
-import realtime from "../../assets/png/realtime.png";
-import reporting from "../../assets/png/reporting.png";
 import blueangle from "../../assets/svg/blueangle.svg";
 import grayangle from "../../assets/svg/grayangle.svg";
-import sectionbg from "../../assets/png/sectionbg.png";
-import featA from "../../assets/png/feat-one.png"
-import featB from "../../assets/png/feat-two.png"
-import featC from "../../assets/png/feat-three.png"
+import featA from "../../assets/png/smartee.png"
+import featB from "../../assets/png/real.png"
+import featC from "../../assets/png/comprehensive.png"
 
 const Section = () => {
   const [selectedStepIndex, setSelectedStepIndex] = useState(0);
@@ -48,13 +44,17 @@ const Section = () => {
       onClick={() => setSelectedStepIndex(index)}
     >
       <div className="">
-        <div className="flex items-center">
+        <div
+          className="flex items-center"
+       
+        >
           {index === selectedStepIndex ? (
             <Image src={blueangle} alt="" className="w-[32px] h-[32px]" />
           ) : (
             <Image src={grayangle} alt="" className="w-[32px] h-[32px]" />
           )}
           <p
+         
             className={`text-[20px] md:text-[32px] font-semibold ml-[15px]  ${
               index === selectedStepIndex ? "text-[#4747D6]" : "text-[#999999]"
             }`}
@@ -63,6 +63,8 @@ const Section = () => {
           </p>
         </div>
         <p
+          data-aos="fade-up"
+          data-aos-duration="1000"
           className={`text-[14px] md:text-[18px] font-medium text-[#555555] mt-4 ${
             index === selectedStepIndex ? "block" : "hidden"
           }`}
@@ -74,8 +76,7 @@ const Section = () => {
   );
 
   return (
-    
-    <div className="w-full h-auto mt-0 lg:pt-[98px] flex flex-col md:flex-row justify-between items-center overflow-x-hidden  ">
+    <div className="w-full h-auto mt-0 lg:pt-[98px] flex flex-col md:flex-row justify-between items-center overflow-x-hidden flow-hide  ">
       <div className="w-full h-auto flex flex-col md:flex-row justify-between items-center relative">
         <div className="w-full h-auto mt-8 md:mt-0 px-4 lg:px-0">
           {steps.map((step, index) => (
@@ -93,11 +94,11 @@ const Section = () => {
         <div className="w-full flex justify-center lg:justify-end md:w-2/5 h-auto">
           <Image
             src={steps[selectedStepIndex].phoneImage}
+            data-aos="fade-up"
+            data-aos-duration="1000"
             alt=""
             className={` ${
-              selectedStepIndex === 2
-                ? "w-full  h-auto"
-                : "w-full  h-auto"
+              selectedStepIndex === 2 ? "w-full  h-auto" : "w-full  h-auto"
             }`}
           />
         </div>
