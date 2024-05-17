@@ -12,10 +12,18 @@ const OtherProject = () => {
       </div>
       <ContainerLayout>
         <div className="w-full py-20 lg:py-28 flex flex-col items-center justify-center px-4 lg:px-0">
-          <h1 className="text-2xl lg:text-[32px] font-semibold text-mainBlue">
+          <h1
+            className="text-2xl lg:text-[32px] font-semibold text-mainBlue"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             Angola local Spatial Analysis
           </h1>
-          <div className="flex flex-col items-center relative mt-12">
+          <div
+            className="flex flex-col items-center relative mt-12"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <span className="z-modal -mb-16">
               <Image
                 src={angola}
@@ -27,13 +35,21 @@ const OtherProject = () => {
               <Image src={oval} alt="ima" className="" />
             </span>
           </div>
-          <p className="text-center mx-auto text-ash text-sm lg:text-lg lg:leading-[36px] max-w-[977px] mt-6">
+          <p
+            className="text-center mx-auto text-ash text-sm lg:text-lg lg:leading-[36px] max-w-[977px] mt-6"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
             ipsum feugiat sed vulputate id amet. Etiam arcu ultricies mauris
             neque porta porta egestas amet. Ut luctus risus dictum urna commodo
             in egestas. Massa lectus ut ornare orci sit.
           </p>
-          <div className="w-full grid grid-cols-2 lg:flex items-center gap-2 justify-center mt-8 px-4">
+          <div
+            className="w-full grid grid-cols-2 lg:flex items-center gap-2 justify-center mt-8 px-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <button className="bg-mainBlue text-white h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px] ">
               Explore
             </button>

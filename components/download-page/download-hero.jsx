@@ -19,14 +19,26 @@ const DownloadHero = () => {
           <div className="w-full lg:flex-row   flex flex-col ">
             <div className="w-full flex flex-col lg:w-1/2 justify-center ">
               <div className="w-full px-4 max-w-[331px] lg:max-w-full lg:w-9/12 2xl:w-7/12 flex flex-col justify-center lg:mx-auto mt-10 lg:mt-0">
-                <h1 className="text-mainBlue font-semibold text-[48px] lg:text-[64px]  ">
+                <h1
+                  className="text-mainBlue font-semibold text-[48px] lg:text-[64px]  "
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
                   Download App
                 </h1>
-                <p className="text-customBlack font-medium text-sm lg:text-base leading-[30px]  lg:max-w-[516px]">
+                <p
+                  className="text-customBlack font-medium text-sm lg:text-base leading-[30px]  lg:max-w-[516px]"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
                   Our enumeration mobile app, specially built for Smart data and
                   useful for Insight gathering in Nigeria ecosystem.
                 </p>
-                <div className="w-full flex mt-6 gap-4 flex-col lg:flex-row">
+                <div
+                  className="w-full flex mt-6 gap-4 flex-col lg:flex-row"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
                   <Image
                     src={appleP}
                     alt="apple-logo"

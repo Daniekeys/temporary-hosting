@@ -10,13 +10,20 @@ const ContactHero = () => {
         <NewNavbar />
         <ContainerLayout>
           <div className="w-full flex flex-col mt-20">
-          
             <div className="w-full lg:flex-row mt-12  flex flex-col ">
               <div className="w-full flex flex-col lg:w-5/12 justify-center ">
-                <h1 className="text-mainBlue font-semibold text-[32px] lg:text-[64px]  ">
+                <h1
+                  className="text-mainBlue font-semibold text-[32px] lg:text-[64px]  "
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
                   CONTACT US
                 </h1>
-                <p className="text-customBlack font-medium lg:text-[32px] text-xl">
+                <p
+                  className="text-customBlack font-medium lg:text-[32px] text-xl"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
                   Connect with WeCollect
                 </p>
               </div>
@@ -27,6 +34,8 @@ const ContactHero = () => {
                   width={heroPic.width}
                   height={heroPic.height}
                   className="w-full h-auto"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
                 />
               </div>
             </div>

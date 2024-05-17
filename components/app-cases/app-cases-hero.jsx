@@ -12,10 +12,18 @@ const AppCaseHero = () => {
           <div className="w-full flex flex-col mt-20">
             <div className="w-full lg:flex-row mt-12  flex flex-col ">
               <div className="w-full flex flex-col lg:w-6/12 justify-center ">
-                <h1 className="text-mainBlue font-semibold text-[32px] lg:text-[64px]  ">
+                <h1
+                  className="text-mainBlue font-semibold text-[32px] lg:text-[64px]  "
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
                   APPLICABLE <br /> CASES
                 </h1>
-                <p className="text-customBlack font-medium lg:text-[32px] text-xl max-w-[497px] leading-[40px] ">
+                <p
+                  className="text-customBlack font-medium lg:text-[32px] text-xl max-w-[497px] leading-[40px] "
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   Explore how WeCollect is used in cases
                 </p>
               </div>
@@ -26,6 +34,9 @@ const AppCaseHero = () => {
                   width={heroPic.width}
                   height={heroPic.height}
                   className="w-auto h-auto"
+                  data-aos="fade-up"
+               
+                  data-aos-duration="1000"
                 />
               </div>
             </div>

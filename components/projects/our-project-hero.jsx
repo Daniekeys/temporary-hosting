@@ -14,10 +14,18 @@ const OurProjectHero = () => {
           <div className="w-full flex flex-col mt-20">
             <div className="w-full lg:flex-row mt-12  flex flex-col  ">
               <div className="w-full flex flex-col lg:w-6/12 justify-center ">
-                <h1 className="text-mainBlue font-semibold text-[48px] lg:text-[64px] max-w-[361px]  ">
+                <h1
+                  className="text-mainBlue font-semibold text-[48px] lg:text-[64px] max-w-[361px]  "
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
                   OUR PROJECTS
                 </h1>
-                <p className="text-customBlack font-medium lg:text-[32px] text-lg">
+                <p
+                  className="text-customBlack font-medium lg:text-[32px] text-lg"
+                  data-aos="fade-down"
+                  data-aos-duration="1000"
+                >
                   Explore our carefully curated products
                 </p>
               </div>

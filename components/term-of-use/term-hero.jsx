@@ -10,13 +10,22 @@ const TermHero = ({current}) => {
       <ContainerLayout>
         <div className="w-full bg-[#F6F1FF] rounded-[30px] h-[153px] lg:h-[234px] mt-28 mb-16 flex items-center">
           <div className="w-10/12 lg:w-10/12 flex items-center justify-between mx-auto">
-            <h1 className="text-mainBlue font-semibold   lg:text-[64px] uppercase text-[48px] ">
+            <h1
+              className="text-mainBlue font-semibold   lg:text-[64px] uppercase text-[48px] "
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               {current === 1 && "PRIVACY POLICY"}
               {current === 2 && "TERMS OF USE"}
               {current === 3 && "COOKIE POLICY"}
             </h1>
 
-            <div className=' hidden md:flex justify-end'>
+            <div
+              className=" hidden md:flex justify-end"
+              data-aos="fade-up"
+            
+              data-aos-duration="1000"
+            >
               {current === 1 && (
                 <Image
                   src={privacy}

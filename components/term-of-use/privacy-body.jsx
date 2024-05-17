@@ -35,18 +35,27 @@ Dui ac dui purus ultrices adipiscing odio. Feugia Qualitative nullam sollicitudi
 const PrivacyBody = () => {
   return (
     <ContainerLayout>
-          <div className="w-full flex flex-col gap-y-10">
+          <div className="w-full flex flex-col gap-y-10 flow-hide">
               {contents?.map((item) => {
                   return (
-                      <div className="w-full flex flex-col gap-4">
-                          <h1 className=" text-2xl  lg:text-[40px] font-medium text-customBlack">
-                              {item.title}
-                          </h1>
-                          <p className=" text-base lg:text-xl font-normal text-ash ">
-                              {item?.story}
-                          </p>
-                      </div>
-                  )
+                    <div className="w-full flex flex-col gap-4">
+                      <h1
+                        className=" text-2xl  lg:text-[40px] font-medium text-customBlack"
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                      >
+                        {item.title}
+                      </h1>
+                      <p
+                        className=" text-base lg:text-xl font-normal text-ash "
+                        data-aos="fade-up"
+                      
+                        data-aos-duration="1000"
+                      >
+                        {item?.story}
+                      </p>
+                    </div>
+                  );
               })}
       </div>
     </ContainerLayout>

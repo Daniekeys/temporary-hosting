@@ -13,7 +13,11 @@ const BlogHero = () => {
         <ContainerLayout>
           <div className="w-full flex flex-col h-full mt-[142px] justify-center">
             <div className="w-full flex justify-center">
-              <div className=" w-full max-w-[725px] mx-auto rounded-[50px] h-[75px] bg-white bg-opacity-60 flex justify-between px-4 items-center mt-8">
+              <div
+                className=" w-full max-w-[725px] mx-auto rounded-[50px] h-[75px] bg-white bg-opacity-60 flex justify-between px-4 items-center mt-8"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <input
                   type="text"
                   className="bg-transparent flex-grow border-none outline-none focus:outline-none focus:border-none placeholder:text-base placeholder:text-ash text-ash text-base "
@@ -26,10 +30,18 @@ const BlogHero = () => {
             </div>
             <div className="w-full lg:flex-row mt-12  flex flex-col ">
               <div className="w-full flex flex-col lg:w-1/2">
-                <h1 className="text-mainBlue font-semibold text-[48px] lg:text-[64px]  ">
+                <h1
+                  className="text-mainBlue font-semibold text-[48px] lg:text-[64px]  "
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   OUR BLOG
                 </h1>
-                <p className="text-customBlack font-medium lg:text-[32px] text-lg mt-5 ">
+                <p
+                  className="text-customBlack font-medium lg:text-[32px] text-lg mt-5 "
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   Stay up to date
                 </p>
               </div>
@@ -40,6 +52,9 @@ const BlogHero = () => {
                   width={heroPic.width}
                   height={heroPic.height}
                   className="w-full h-auto"
+                  data-aos="fade-up"
+              
+                  data-aos-duration="1000"
                 />
               </div>
             </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import ContainerLayout from '../../layouts/ContainerLayout'
 import Image from "next/image";
 import { LocationIcon, PhoneIcon, EmailIcon } from '../../assets/svg'
-import woman from "../../assets/png/contact-demo.png"
+import woman from "../../assets/png/contact-woman.png"
 const GetInTouch = () => {
   return (
     <div className="w-full bg-white rounded-t-[30px] -mt-4 flex flex-col">
@@ -10,7 +10,12 @@ const GetInTouch = () => {
         <div className="w-full mt-8 lg:min-h-[271px] bg-[#EDE6FF] flex items-center lg:px-[100px] lg:py-[50px] rounded-[30px]">
           <div className="w-full grid grid-cols-1 lg:grid-cols-3">
             {/* start */}
-            <div className="w-full flex flex-col justify-center items-center gap-4">
+            <div
+              className="w-full flex flex-col justify-center items-center gap-4"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+            >
               <span>
                 <EmailIcon />
               </span>
@@ -24,7 +29,12 @@ const GetInTouch = () => {
 
             {/* end */}
             {/* start */}
-            <div className="w-full flex flex-col justify-center items-center gap-4 border-t-[10px] border-b-[10px]  border-l-[#E2D6FF] border-t-[#E2D6FF] lg:border-l-[10px] lg:border-r-[10px] border-b-[#E2D6FF] border-r-[#E2D6FF] lg:border-t-0 lg:border-b-0 ">
+            <div
+              className="w-full flex flex-col justify-center items-center gap-4 border-t-[10px] border-b-[10px]  border-l-[#E2D6FF] border-t-[#E2D6FF] lg:border-l-[10px] lg:border-r-[10px] border-b-[#E2D6FF] border-r-[#E2D6FF] lg:border-t-0 lg:border-b-0 "
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-duration="1000"
+            >
               <span>
                 <PhoneIcon />
               </span>
@@ -38,7 +48,12 @@ const GetInTouch = () => {
 
             {/* end */}
             {/* start */}
-            <div className="w-full flex flex-col justify-center items-center gap-4">
+            <div
+              className="w-full flex flex-col justify-center items-center gap-4"
+              data-aos="fade-up"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+            >
               <span>
                 <LocationIcon />
               </span>
@@ -54,10 +69,18 @@ const GetInTouch = () => {
           </div>
         </div>
         <div className="flex mt-20 flex-col items-center ">
-          <h1 className="text-ash lg:text-[32px] text-2xl font-semibold">
+          <h1
+            className="text-ash lg:text-[32px] text-2xl font-semibold"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             GET IN TOUCH
           </h1>
-          <p className="text-base  text-ash font-medium lg:text-lg">
+          <p
+            className="text-base  text-ash font-medium lg:text-lg"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             We’re available
           </p>
         </div>
@@ -66,7 +89,12 @@ const GetInTouch = () => {
         <div className="w-full lg:w-1/2 flex flex-col lg:pl-[100px] ">
           <div className="w-full py-[30px] px-10 rounded-[30px] flex flex-col gap-10 bg-[#F6F1FF] mt-8">
             {/* start */}
-            <div className="flex flex-col">
+            <div
+              className="flex flex-col"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+            >
               <label className="font-semibold text-customBlack text-sm lg:text-base">
                 Full name*
               </label>
@@ -79,7 +107,12 @@ const GetInTouch = () => {
 
             {/* end */}
             {/* start */}
-            <div className="flex flex-col">
+            <div
+              className="flex flex-col"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+            >
               <label className="font-semibold text-customBlack text-sm lg:text-base">
                 Email Address*
               </label>
@@ -92,7 +125,12 @@ const GetInTouch = () => {
 
             {/* end */}
             {/* start */}
-            <div className="flex flex-col">
+            <div
+              className="flex flex-col"
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="1000"
+            >
               <label className="font-semibold text-customBlack text-sm lg:text-base">
                 Phone number*
               </label>
@@ -105,7 +143,12 @@ const GetInTouch = () => {
 
             {/* end */}
             {/* start */}
-            <div className="flex flex-col">
+            <div
+              className="flex flex-col"
+              data-aos="fade-up"
+              data-aos-delay="900"
+              data-aos-duration="1000"
+            >
               <label className="font-semibold text-customBlack text-sm lg:text-base">
                 Message*
               </label>
@@ -118,7 +161,10 @@ const GetInTouch = () => {
 
             {/* end */}
             {/* start */}
-            <div className="w-full flex items-center gap-4">
+            <div
+              className="w-full flex items-center gap-4"
+           
+            >
               <input
                 type="checkbox"
                 name=""
@@ -129,13 +175,15 @@ const GetInTouch = () => {
                 I agree to be contacted
               </span>
             </div>
-                      {/* end */}
-                      <div className="w-full mt-1">
-                          
-                      <button className="w-full rounded-[30px] h-[44px] flex items-center justify-center bg-mainBlue text-[#F2F4F5]  ">
-                          Send message
-            </button>
-                      </div>
+            {/* end */}
+            <div
+              className="w-full mt-1"
+          
+            >
+              <button className="w-full rounded-[30px] h-[44px] flex items-center justify-center bg-mainBlue text-[#F2F4F5]  ">
+                Send message
+              </button>
+            </div>
           </div>
         </div>
         <div className="w-full lg:w-1/2 flex justify-end">
@@ -144,6 +192,10 @@ const GetInTouch = () => {
             alt="woman"
             width={woman.width}
             height={woman.height}
+            className="object-contain  "
+            data-aos="fade-up"
+         
+            data-aos-duration="1000"
           />
         </div>
       </div>

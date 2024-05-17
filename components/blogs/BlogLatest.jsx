@@ -10,9 +10,13 @@ const BlogLatest = () => {
 
   return (
     <ContainerLayout>
-      <div className="w-full flex flex-col pt-2">
+      <div className="w-full flex flex-col pt-2 flow-hide">
         {/* <div className='w-full h-[1px] mt-10 bg-[#999]' /> */}
-        <h1 className="mt-16 text-[#555] text-xl md:text-[40px] font-[500] ">
+        <h1
+          className="mt-16 text-[#555] text-xl md:text-[40px] font-[500] "
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           Latest
         </h1>
         <div className="w-full mt-12 flex flex-col md:flex-row justify-between items-center ">
@@ -21,21 +25,41 @@ const BlogLatest = () => {
               src={item?.leadImage}
               alt="hero"
               className="w-full h-auto rounded-[30px]"
+              data-aos="fade-up"
+              data-aos-duration="1000"
             />
           </div>
           <div className="w-full md:w-5/12 flex flex-col justify-center">
-            <p className="text-[12px] md:text-base text-[#555] md:mt-6 2xl:mt-0 ">
+            <p
+              className="text-[12px] md:text-base text-[#555] md:mt-6 2xl:mt-0 "
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+            >
               {item?.date}
             </p>
-            <h2 className="md:w-11/12 w-full text-[32px] 2xl:text-[40px] font-[500] text-[#333] my-7 md:mt-2 md:mb-2 text-2xl md:leading-[60px]">
-             {item?.title}
+            <h2
+              className="md:w-11/12 w-full text-[32px] 2xl:text-[40px] font-[500] text-[#333] my-7 md:mt-2 md:mb-2 text-2xl md:leading-[60px]"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+            >
+              {item?.title}
             </h2>
-            <p className="text-[#555] text-sm md:text-xl">
-            {item?.summaryHeading}
+            <p
+              className="text-[#555] text-sm md:text-xl"
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="1000"
+            >
+              {item?.summaryHeading}
             </p>
             <p
               className="hover:bg-mainBlue bg-white   text-base text-mainBlue border border-mainBlue hover:border-none  hover:text-white  font-semibold mt-4  w-fit px-[10px] py-[15px] cursor-pointer h-[50px] rounded-[50px] flex items-center justify-center "
               onClick={() => router.push(`/blog/0`)}
+              data-aos="fade-up"
+            
+              data-aos-duration="1000"
             >
               Read
             </p>

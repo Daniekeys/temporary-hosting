@@ -33,9 +33,15 @@ const SingleBlogHeader = () => {
               src={item?.leadImage}
               alt="hero"
               className="w-full h-auto max-h-[557px] object-contain rounded-[30px]"
+              data-aos="fade-up"
+              data-aos-duration="1000"
             />
           </div>
-          <div className="w-full md:w-4/12 flex flex-col  justify-center md:pl-8">
+          <div
+            className="w-full md:w-4/12 flex flex-col  justify-center md:pl-8"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <p className="text-[#333] mb-1">Share post to:</p>
             <div className="flex space-x-8 items-center">
               <AiFillLinkedin className="text-2xl cursor-pointer text-[#333]" />
@@ -45,15 +51,30 @@ const SingleBlogHeader = () => {
             </div>
           </div>
         </div>
-        <p className="text-base text-[#444] md:mt-16">{item?.date}</p>
+        <p
+          className="text-base text-[#444] md:mt-16"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          {item?.date}
+        </p>
         <div className="w-8/12 flex flex-col">
-          <h1 className="text-4xl md:text-[52px] text-[#333] leading-[78px]">
+          <h1
+            className="text-4xl md:text-[52px] text-[#333] leading-[78px]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             {item?.title}
           </h1>
           <div className="flex flex-col gap-8 mt-8">
             {item?.bodyContent?.slice(0, 2)?.map((item, index) => {
               return (
-                <p className="text-[#333] text-xl" key={index}>
+                <p
+                  className="text-[#333] text-xl"
+                  key={index}
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   {item}
                 </p>
               );
@@ -65,13 +86,20 @@ const SingleBlogHeader = () => {
                 src={item?.supportImage}
                 alt="hero"
                 className="w-full h-auto max-h-[557px] object-contain rounded-[30px]"
+                data-aos="fade-up"
+                data-aos-duration="1000"
               />
             </div>
           )}
           <div className="flex flex-col gap-8 mt-8">
             {item?.bodyContent?.slice(2)?.map((item, index) => {
               return (
-                <p className="text-[#333] text-xl" key={index}>
+                <p
+                  className="text-[#333] text-xl"
+                  key={index}
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
                   {item}
                 </p>
               );
@@ -87,8 +115,10 @@ const SingleBlogHeader = () => {
             <div
               className="w-full flex flex-col"
               key={index}
-              // data-aos="fade-up"
-              // data-aos-duration="2000"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay={`${(index + 1) * 300}`}
+             
             >
               <Image
                 src={item.leadImage}

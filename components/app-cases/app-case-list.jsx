@@ -83,7 +83,12 @@ const AppCaseList = () => {
       <div className="absolute top-20 left-0 right-0">
         <ContainerLayout>
           <div className="w-full flex flex-col gap-10">
-            <h1 className="text-mainBlue lg:text-[32px] font-semibold">
+            <h1
+              className="text-mainBlue lg:text-[32px] font-semibold"
+              data-aos="fade-up"
+             
+              data-aos-duration="1000"
+            >
               Applicable in the following cases and more...
             </h1>
             <div className="w-full flex flex-col bg-[#EDE6FF] p-4 lg:p-[30px]  rounded-[30px]  gap-[40px]">
@@ -92,6 +97,9 @@ const AppCaseList = () => {
                   <div
                     className="w-full bg-white flex flex-col p-4 lg:p-8 gap-10 rounded-[30px]  "
                     key={index}
+                    data-aos="fade-up"
+                 
+                    data-aos-duration="1000"
                   >
                     <span>
                       <Image
