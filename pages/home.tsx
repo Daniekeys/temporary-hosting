@@ -16,18 +16,17 @@ import Faq from "../components/LandingPage/Faq";
 import Head from "next/head";
 
 function home() {
- 
   return (
     <div className="w-full h-auto ">
       <Head>
-        <title>We Collect</title>
+        <title>WeCollect</title>
         <meta
           name="description"
           content="Leverage advanced data-collecting technology and numerous field agents to access and track data for various projects."
         />
         <link rel="icon" href="/we-logo.png" />
       </Head>
-      
+
       <NewNavbar />
       <MobileNav present={1} />
       <HomeHero />

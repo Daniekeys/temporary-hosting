@@ -14,19 +14,19 @@ function HomeHero() {
     setIsExpanded(true);
   }, []);
   return (
-    <div className="w-full bg-white  lg:bg-[#F9F6FF]">
+    <div className="w-full bg-white  lg:bg-white">
       <ContainerLayout>
         <div className="w-full h-auto pt-32 flex flex-col md:flex-row justify-between items-center px-8 lg:px-0">
           <div className="w-full md:w-[40%] max-w-[516px] mx-auto h-auto text-[#333333] text-center md:text-start">
             <p className="text-[45px] md:text-[55px] font-semibold">
               Insight Gathering
             </p>
-            <div className="flex flex-col w-[300px] relative">
+            <div className="flex flex-col  relative">
               <p className="text-[45px] md:text-[55px] font-semibold z-10">
                 Made Easy
               </p>
               <div
-                className={`expanding-div ${isExpanded ? "expanded" : ""} absolute bottom-2 z-0`}
+                className={`expanding-div ${isExpanded ? "expanded" : ""} absolute bottom-2 z-0 max-w-[300px]`}
               ></div>
             </div>
 
@@ -38,10 +38,10 @@ function HomeHero() {
             </p>
 
             <div className="w-full h-auto flex flex-col md:flex-row items-center mt-8">
-              <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px] mr-[10px] cursor-pointer">
+              <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px] mr-[10px] cursor-pointer font-semibold">
                 Get started for free
               </div>
-              <div className="bg-[#FFFFFF] hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-mainBlue rounded-[50px] shadow-md cursor-pointer my-5 md:my-0 ">
+              <div className="bg-[#FFFFFF] hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-mainBlue rounded-[50px] shadow-md cursor-pointer my-5 md:my-0 font-semibold ">
                 <Image src={blueright} alt="blueright" className="mr-[10px]" />
                 Book a demo
               </div>

@@ -7,10 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-montserrat)"],
+      },
       colors: {
         mainBlue: "#4747D6",
         customBlack: "#333333",
-        ash:"#555555"
+        ash: "#555555",
       },
     },
   },

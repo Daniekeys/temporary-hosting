@@ -32,7 +32,7 @@ export const blogPosts = [
     supportImage: "",
     date: "Mar 7, 2024",
     bodyContent: [
-      "In this evolving world of data, WeCollect stands as your steadfast guide, navigating you through the intricate terrain of possibilities. As we journey into the future, the convergence of artificial intelligence (AI) and blockchain technology promises to revolutionize how we collect, analyze, and utilize data.",
+      "In this evolving world of data, WeCollect stands as your steadfast guide, navigating you through the intricate terrain of possibilities. As we journey into the future, the convergence of artificial intelligence (AI) and blockchain technology promises to revolutionize how WeCollect, analyze, and utilize data.",
       "At the core of our mission is a commitment to harnessing the power of data to drive meaningful change. With AI, we unlock new dimensions of insight, leveraging advanced algorithms to sift through vast amounts of information and uncover patterns that were once hidden from view. This enables us to make smarter decisions, optimize processes, and unlock new opportunities for growth and innovation.",
       "But the journey doesn’t end there. With blockchain technology, we usher in a new era of trust and transparency. By securely recording and validating every transaction, blockchain ensures the integrity and immutability of data, creating a tamper-proof record that can be accessed and verified by all stakeholders. This not only enhances security and privacy but also fosters greater trust and accountability in the data ecosystem.",
       "Together, AI and blockchain represent the future of data — a future where information is not just collected and stored, but actively analyzed, secured, and shared for the greater good. As your trusted partner in this journey, WeCollect remains committed to pushing the boundaries of what’s possible, empowering you to harness the full potential of data to drive positive change in your organization and beyond.",
@@ -108,7 +108,6 @@ export const blogPosts = [
       "Here’s the twist in our tale: WeCollect extended an invitation, not to a grand event but to become part of the everyday narrative. Early-stage companies, government organizations, research institutions, NGOs, and businesses all received a quiet call to action. Let’s join hands and become data partners. Together, we could amplify the impact of our collective stories and drive change.",
       "As our journey through Naija’s financial landscape concluded, WeCollect emerged as the protagonist. The call to action was simple: Become WeCollect’s Data Partners. Let your story intertwine with the vibrant tapestry of Nigeria’s financial landscape, shaping narratives that lead to impactful change.",
       "Step into the story, be a part of the narrative and let’s create something meaningful together.",
-  
     ],
   },
 ];

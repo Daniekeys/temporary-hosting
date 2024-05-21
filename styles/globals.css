@@ -55,9 +55,7 @@
   width: 100%;
 }
 
-* {
-  font-family: "Montserrat", sans-serif !important;
-}
+
 .flow-hide {
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
@@ -256,6 +254,30 @@ box-shadow: 0px 267px 75px 0px #1797EC00;
     0px 23px 14px 0px rgba(214, 237, 255, 0.05),
     0px 42px 17px 0px rgba(214, 237, 255, 0.01),
     0px 65px 18px 0px rgba(214, 237, 255, 0);
+}
+.shadow-one{
+  
+  box-shadow: 0px 22px 48px 0px #0a90e91a;
+}
+.shadow-two{
+
+  box-shadow: 0px 87px 87px 0px #189DF71A;
+}
+.shadow-three{
+
+  box-shadow: 0px 196px 117px 0px #189DF71A;
+}
+.shadow-four{
+
+  box-shadow: 0px 348px 139px 0px #189DF71A;
+}
+.nav-layer{
+
+
+
+
+box-shadow: 0px 543px 152px 100px #189DF700;
+
 }
 
 .dotscontainer {

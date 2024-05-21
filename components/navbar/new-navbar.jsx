@@ -22,7 +22,7 @@ const NewNavbar = () => {
       className={`bg-[#F5F4FB] fixed top-0 right-0 left-0 z-high w-full h-[68px] lg:flex items-center hidden `}
     >
       <ContainerLayout>
-        <div className="w-full flex items-center justify-between  h-[68px]">
+        <div className="w-full flex items-center justify-between relative  h-[68px]">
           <div>
             <span className="cursor-pointer" onClick={() => router.push("/")}>
               {" "}
@@ -32,7 +32,10 @@ const NewNavbar = () => {
 
           <div className="flex items-center gap-6">
             <div
-              onClick={() => setIsAboutUsDropdownOpen(!isAboutUsDropdownOpen)}
+              onClick={() => {
+                setIsAboutUsDropdownOpen(!isAboutUsDropdownOpen);
+                setIsProductDropdownOpen(false);
+              }}
               className="flex items-center gap-2 cursor-pointer"
             >
               <p className="text-ash lg:text-base font-semibold ">About Us</p>
@@ -41,7 +44,10 @@ const NewNavbar = () => {
               </span>
             </div>
             <div
-              onClick={() => setIsProductDropdownOpen(!isProductDropdownOpen)}
+              onClick={() => {
+                setIsProductDropdownOpen(!isProductDropdownOpen);
+                setIsAboutUsDropdownOpen(false);
+              }}
               className="flex items-center gap-2 cursor-pointer"
             >
               <p className="text-ash lg:text-base font-semibold ">Products</p>
@@ -61,84 +67,103 @@ const NewNavbar = () => {
               href="/"
               className="bg-mainBlue hover:bg-[#E3D5FF] h-[50px] flex items-center text-white hover:text-mainBlue rounded-[50px] px-5 cursor-pointer "
             >
-              Create account
+              Get Started
             </Link>
           </div>
         </div>
 
         {/* AboutUs DropDown */}
         {isAboutUsDropdownOpen && (
-          <div className="w-[50rem] h-[220px] bg-white absolute right-0 rounded-b-xl">
-            <div className="w-full h-[100px] bg-white flex justify-between items-center p-4">
+          <div className="w-[900px] flex flex-col left-[25%] 2xl:left-[35%] absolute right-0 shadow-one rounded-b-[30px] bg-[#F5F4FB] py-2 px-3 transition-all ease-in-out duration-1000 ">
+            <div className="w-full     rounded-b-[30px]  grid grid-cols-2 gap-8">
               <div
                 onClick={() => router.push("/our-project")}
-                className="w-1/2 h-auto flex items-center cursor-pointer hover:bg-[#F5F4FB] rounded-xl"
+                className="w-full h-auto flex items-center cursor-pointer hover:bg-[#fff]  rounded-[20px] px-4 py-2 transition-all duration-1000 ease-in-out "
               >
-                <Image src={project} alt="project" />
+                <Image
+                  src={project}
+                  alt="project"
+                  className="w-20 h-20 rounded-full"
+                />
                 <div className="ml-[21px]">
-                  <p className="text-[#555555] text-[16px] font-semibold">
+                  <p className="text-[#555555] text-base font-semibold">
                     Projects
                   </p>
-                  <p className="text-[#555555] text-[14px] font-medium">
-                    Lorem ipsum dolor sit amet consectetur. Bibendum sit sed.
+                  <p className="text-[#555555] text-sm font-medium">
+                    Lorem ipsum dolor sit amet
                   </p>
                 </div>
               </div>
 
               <div
                 onClick={() => router.push("/applicable-cases")}
-                className="w-1/2 h-auto flex items-center cursor-pointer hover:bg-[#F5F4FB] rounded-xl"
+                className="w-full h-auto flex items-center cursor-pointer hover:bg-[#fff]  rounded-[20px] px-4 py-2 transition-all duration-1000 ease-in-out "
               >
-                <Image src={cases} alt="cases" />
+                <Image
+                  src={cases}
+                  alt="cases"
+                  className="w-20 h-20 rounded-full"
+                />
                 <div className="ml-[21px]">
                   <p className="text-[#555555] text-[16px] font-semibold">
                     Cases
                   </p>
                   <p className="text-[#555555] text-[14px] font-medium">
-                    Lorem ipsum dolor sit amet consectetur. Bibendum sit sed.
+                    Lorem ipsum dolor sit amet
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="w-full h-[100px] bg-white flex justify-between items-center p-4">
+
               <div
                 onClick={() => router.push("/blog")}
-                className="w-1/2 h-auto flex items-center cursor-pointer hover:bg-[#F5F4FB] rounded-xl"
+                className="w-full h-auto flex items-center cursor-pointer hover:bg-[#fff]  rounded-[20px] px-4 py-2 transition-all duration-1000 ease-in-out "
               >
-                <Image src={blog} alt="blog" />
+                <Image
+                  src={blog}
+                  alt="blog"
+                  className="w-20 h-20 rounded-full"
+                />
                 <div className="ml-[21px]">
                   <p className="text-[#555555] text-[16px] font-semibold">
                     Blog
                   </p>
                   <p className="text-[#555555] text-[14px] font-medium">
-                    Lorem ipsum dolor sit amet consectetur. Bibendum sit sed.
+                    Lorem ipsum dolor sit amet
                   </p>
                 </div>
               </div>
 
               <div
                 onClick={() => router.push("/download")}
-                className="w-1/2 h-auto flex items-center cursor-pointer hover:bg-[#F5F4FB] rounded-xl"
+                className="w-full h-auto flex items-center cursor-pointer hover:bg-[#fff]  rounded-[20px] px-4 py-2 transition-all duration-1000 ease-in-out "
               >
-                <Image src={download} alt="download" />
+                <Image
+                  src={download}
+                  alt="download"
+                  className="w-20 h-20 rounded-full"
+                />
                 <div className="ml-[21px]">
                   <p className="text-[#555555] text-[16px] font-semibold">
                     Download app
                   </p>
                   <p className="text-[#555555] text-[14px] font-medium">
-                    Lorem ipsum dolor sit amet consectetur. Bibendum sit sed.
+                    Lorem ipsum dolor sit ame.
                   </p>
                 </div>
               </div>
             </div>
+            {/* <div className="w-full grid grid-cols-2">
+              <div className="shadow-one w-full h-4 bg-transparent"></div>
+              <div className="shadow-one w-full h-4 bg-transparent"></div>
+            </div> */}
           </div>
         )}
 
         {isProductDropdownOpen && (
-          <div className="w-[35rem] h-[220px] bg-white absolute right-0 p-4 rounded-b-xl">
+          <div className="w-[35rem]  bg-[#F5F4FB] absolute right-0 2xl:right-[220px] p-2 rounded-b-[30px]">
             <div
               // onClick={() => router.push("/download")}
-              className="w-full h-auto flex items-center cursor-pointer hover:bg-[#F5F4FB] rounded-xl"
+              className="w-full h-auto flex items-center cursor-pointer hover:bg-[#fff]  rounded-[20px] px-4 py-2 transition-all duration-1000 ease-in-out "
             >
               <Image src={emuration} alt="emuration" />
               <div className="ml-[21px]">
@@ -146,14 +171,14 @@ const NewNavbar = () => {
                   Enumeration app
                 </p>
                 <p className="text-[#555555] text-[14px] font-medium">
-                  Lorem ipsum dolor sit amet consectetur. Bibendum sit sed.
+                  Lorem ipsum dolor sit amet
                 </p>
               </div>
             </div>
 
             <div
               // onClick={() => router.push("/download")}
-              className="w-full h-auto flex items-center cursor-pointer hover:bg-[#F5F4FB] rounded-xl mt-5"
+              className="w-full h-auto flex items-center cursor-pointer hover:bg-[#fff]  rounded-[20px] px-4 py-2 transition-all duration-1000 ease-in-out "
             >
               <Image src={reporting} alt="reporting" />
               <div className="ml-[21px]">
@@ -161,7 +186,7 @@ const NewNavbar = () => {
                   Reporting dashboard
                 </p>
                 <p className="text-[#555555] text-[14px] font-medium">
-                  Lorem ipsum dolor sit amet consectetur. Bibendum sit sed.
+                  Lorem ipsum dolor sit amet consectetur.
                 </p>
               </div>
             </div>
