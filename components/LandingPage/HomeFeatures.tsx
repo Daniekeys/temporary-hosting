@@ -43,10 +43,9 @@ function HomeFeatures() {
         <div className="bg-[#EDE6FF] w-full h-auto rounded-[50px] p-7 mt-20  relative">
           <div className="w-full h-auto flex flex-col md:flex-row justify-between items-center">
             <div
-              className="bg-[#FFFFFF] w-full md:w-[48%] h-auto rounded-[30px] p-5 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default"
+              className=" w-full md:w-[48%] h-full rounded-[30px] p-5   cursor-default boxlee"
               data-aos="fade-up"
               data-aos-duration="1000"
-              
             >
               <Image src={data} alt="data" className="w-[80px] h-[80px]" />
 
@@ -62,7 +61,7 @@ function HomeFeatures() {
             </div>
 
             <div
-              className="bg-[#FFFFFF] w-full md:w-[48%] h-auto rounded-[30px] p-5 mt-10 md:mt-0 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default"
+              className="boxlee w-full md:w-[48%] h-auto rounded-[30px] p-5 mt-10 md:mt-0   cursor-default"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="300"
@@ -79,15 +78,15 @@ function HomeFeatures() {
 
               <p className="text-[#555555] text-[18px] font-medium mt-5">
                 We are taking the stress out of your data collection project.
-                Now you can conveniently track and monitor your project on one
-                platform
+                Now you can conveniently create, track and monitor your project
+                on one platform from anywhere.
               </p>
             </div>
           </div>
 
           <div className="w-full h-auto grid grid-cols-1 lg:grid-cols-3 gap-8 justify-between items-center mt-10">
             <div
-              className="bg-[#FFFFFF] w-full h-full  rounded-[30px] p-5 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default"
+              className="boxlee w-full h-full  rounded-[30px] p-5  cursor-default"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="600"
@@ -95,17 +94,17 @@ function HomeFeatures() {
               <Image src={gpss} alt="gpss" className="w-[80px] h-[80px]" />
 
               <p className="text-[#333333] text-[30px] font-semibold mt-5">
-                GPS COORDINATES
+                GEOSPATIAL INFO SYSTEMS
               </p>
 
               <p className="text-[#555555] text-[18px] font-medium mt-5">
-                With the GPS feature, agents can easily navigate, locate, and
-                track effortlessly, therefore increasing productivity.
+                With the GIS systems embedded, data monitoring and evaluation is
+                seamless, therefore increasing data accuracy.
               </p>
             </div>
 
             <div
-              className="bg-[#FFFFFF] w-full  h-auto rounded-[30px] p-5 my-10 md:my-0 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default"
+              className="boxlee w-full  h-full rounded-[30px] p-5 my-10 md:my-0  cursor-default"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="600"
@@ -123,7 +122,7 @@ function HomeFeatures() {
             </div>
 
             <div
-              className="bg-[#FFFFFF] w-full  h-auto rounded-[30px] p-5 hover:bg-[#EDE6FF] hover:shadow-lg cursor-default"
+              className="boxlee w-full  h-full rounded-[30px] p-5  cursor-default"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="600"
@@ -135,7 +134,7 @@ function HomeFeatures() {
               />
 
               <p className="text-[#333333] text-[30px] font-semibold mt-5">
-                SECURE CASE MANAGEMENT
+                SECURE CLOUD STORAGE
               </p>
 
               <p className="text-[#555555] text-[18px] font-medium mt-5">

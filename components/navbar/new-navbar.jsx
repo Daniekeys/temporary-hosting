@@ -74,7 +74,7 @@ const NewNavbar = () => {
 
         {/* AboutUs DropDown */}
         {isAboutUsDropdownOpen && (
-          <div className="w-[900px] flex flex-col left-[25%] 2xl:left-[35%] absolute right-0 shadow-one rounded-b-[30px] bg-[#F5F4FB] py-2 px-3 transition-all ease-in-out duration-1000 ">
+          <div className="w-[900px] flex flex-col left-[25%] 2xl:left-[35%] absolute right-0 nav-layer rounded-b-[30px] bg-[#F5F4FB] py-2 px-3 transition-all ease-in-out duration-1000 ">
             <div className="w-full     rounded-b-[30px]  grid grid-cols-2 gap-8">
               <div
                 onClick={() => router.push("/our-project")}
@@ -160,7 +160,7 @@ const NewNavbar = () => {
         )}
 
         {isProductDropdownOpen && (
-          <div className="w-[35rem]  bg-[#F5F4FB] absolute right-0 2xl:right-[220px] p-2 rounded-b-[30px]">
+          <div className="w-[35rem] product-shadow  bg-[#F5F4FB] absolute right-0 2xl:right-[220px] p-2 rounded-b-[30px]">
             <div
               // onClick={() => router.push("/download")}
               className="w-full h-auto flex items-center cursor-pointer hover:bg-[#fff]  rounded-[20px] px-4 py-2 transition-all duration-1000 ease-in-out "

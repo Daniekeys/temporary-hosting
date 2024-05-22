@@ -1,6 +1,6 @@
 import React from "react";
 import ContainerLayout from "../../layouts/ContainerLayout";
-import plist from "../../assets/png/partners-list.png";
+import plist from "../../assets/png/p-list.png";
 import Image from "next/image";
 const PartnersCard = () => {
   return (

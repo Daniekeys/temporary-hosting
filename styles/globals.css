@@ -275,8 +275,28 @@ box-shadow: 0px 267px 75px 0px #1797EC00;
 
 
 
+box-shadow: 0px 22px 48px 0px #189DF71A,
 
-box-shadow: 0px 543px 152px 100px #189DF700;
+ 0px 87px 87px 0px #189DF717,
+
+ 0px 196px 117px 0px #189DF70D,
+
+ 0px 348px 139px 0px #189DF703,
+
+ 0px 543px 152px 0px #189DF700;
+
+
+}
+.product-shadow{
+  box-shadow: 0px 22px 48px 0px #189DF71A
+
+, 0px 87px 87px 0px #189DF717
+
+, 0px 196px 117px 0px #189DF70D
+
+, 0px 348px 139px 0px #189DF703
+
+, 0px 543px 152px 0px #189DF700;
 
 }
 
@@ -334,3 +354,24 @@ box-shadow: 0px 543px 152px 100px #189DF700;
 .expanding-div.expanded {
   width: 100%;
 }
+
+.boxlee {
+    background: #FFFFFF; /* Default background is white */
+    transition: 
+        background 0.3s ease,
+        border 0.3s ease,
+        box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+.boxlee:hover {
+    border: 1px solid #FFFFFF; /* Border appears on hover */
+    background: #EDE6FF; /* Background changes on hover */
+    box-shadow: 
+        4px 4px 4px 4px #99999940 inset, /* Inner shadow */
+        0px 16px 34px 0px #009DFF1A,     /* Outer shadow layers */
+        0px 63px 63px 0px #009DFF17,
+        0px 141px 84px 0px #009DFF0D,
+        0px 250px 100px 0px #009DFF03,
+        0px 391px 109px 0px #009DFF00;
+}
+
