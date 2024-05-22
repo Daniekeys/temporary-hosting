@@ -52,7 +52,7 @@ const SingleFaq = ({ item }: any) => {
         className="flex space-x-5 items-center justify-between px-2 md:px-5"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <p className="md:text-[22px] text-[#0E0E0E] font-bold sat-bold text-sm cursor-pointer">
+        <p className={`md:text-lg  ${isOpen ? "text-ash" : "text-customBlack"}  font-bold  text-sm cursor-pointer`}>
           {title}
         </p>
         <Image
@@ -67,13 +67,13 @@ const SingleFaq = ({ item }: any) => {
           data-aos="fade-up"
           data-aos-duration="1500"
         >
-          <p className="text-[#0E0E0E] md:text-lg ">{story}</p>
+          <p className="text-ash md:text-lg ">{story}</p>
           {list.length !== 0 && (
             <ul className="list-disc ">
               {list.map((item: any, index: number) => {
                 return (
                   <li
-                    className="text-[#0E0E0E] md:text-lg text-sm"
+                    className="text-ash md:text-lg text-sm"
                   
                     key={index}
                   >

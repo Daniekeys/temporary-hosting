@@ -26,7 +26,9 @@ function HomeHero() {
                 Made Easy
               </p>
               <div
-                className={`expanding-div ${isExpanded ? "expanded" : ""} absolute bottom-2 z-0 max-w-[300px]`}
+                className={`expanding-div ${
+                  isExpanded ? "expanded" : ""
+                } absolute bottom-2 z-0 max-w-[300px]`}
               ></div>
             </div>
 
@@ -38,10 +40,10 @@ function HomeHero() {
             </p>
 
             <div className="w-full h-auto flex flex-col md:flex-row items-center mt-8">
-              <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px] mr-[10px] cursor-pointer font-semibold">
+              <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px] mr-[10px] cursor-pointer font-semibold button-shadow">
                 Get started for free
               </div>
-              <div className="bg-[#FFFFFF] hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-mainBlue rounded-[50px] shadow-md cursor-pointer my-5 md:my-0 font-semibold ">
+              <div className="bg-[#FFFFFF] hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-mainBlue rounded-[50px] button-shadow cursor-pointer my-5 md:my-0 font-semibold ">
                 <Image src={blueright} alt="blueright" className="mr-[10px]" />
                 Book a demo
               </div>
