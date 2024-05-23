@@ -2,7 +2,7 @@ import React from "react";
 import ContainerLayout from "../../layouts/ContainerLayout";
 const RequestDemo = () => {
     return (
-      <div className="w-full bg-[#F6F1FF] pt-20 pb-12 mt-12 ">
+      <div className="w-full bg-[#F9F6FF] pt-20 pb-12 mt-12 ">
         <ContainerLayout>
           <div className="w-full request-bg min-h-[300px] px-4 lg:min-h-[500px] flex flex-col items-center justify-center">
             <h1

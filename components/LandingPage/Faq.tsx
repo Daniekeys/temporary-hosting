@@ -25,7 +25,7 @@ const Faq = () => {
             Find quick answers to some frequently asked questions
           </p>
 
-          <div className="w-full bg-[#EDE6FF] h-auto rounded-[30px] flex flex-col mt-[30px] md:mt-[50px] p-5 lg:p-[30px]">
+          <div className="w-full bg-[#F9F6FF] h-auto rounded-[30px] flex flex-col mt-[30px] md:mt-[50px] p-5 lg:p-[30px]">
             {faqData.map((item: any, index: number) => {
               return <SingleFaq item={item} key={index} />;
             })}

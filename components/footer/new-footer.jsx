@@ -15,7 +15,7 @@ import copy from "../../assets/svg/copy.svg";
 import FooterFaq from "../LandingPage/FooterFaq";
 const NewFooter = () => {
   return (
-    <div className="w-full flex flex-col bg-[#F6F1FF] pt-8">
+    <div className="w-full flex flex-col bg-[#F9F6FF] pt-8">
       {/* upper session */}
       <div className="w-full  pt-5 md:pt-0 ">
         <ContainerLayout>

@@ -94,7 +94,7 @@ const Section = () => {
             ))}
         </div>
 
-        <div className="w-full flex justify-center lg:justify-end md:w-full h-auto">
+        <div className="w-full flex justify-center lg:justify-end md:w-full h-auto ">
           <Image
             src={steps[selectedStepIndex].phoneImage}
             data-aos="fade-up"
