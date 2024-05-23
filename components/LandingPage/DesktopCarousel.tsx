@@ -19,7 +19,7 @@ function DesktopCarousel() {
   };
 
   return (
-    <div className="w-full h-auto hidden md:block">
+    <div className="w-full h-auto hidden md:block flow-hide">
       <ContainerLayout>
         <p
           className="text-[#333333] text-[36px] font-semibold text-center mt-40"

@@ -7,7 +7,7 @@ import { faqData } from "../../utils/faqdata";
 
 const Faq = () => {
   return (
-    <div className="w-full bg-[#fff] h-auto py-[100px]" id="faq">
+    <div className="w-full bg-[#fff] h-auto py-[100px] flow-hide" id="faq">
       <ContainerLayout>
         <div className="w-full flex flex-col">
           <p

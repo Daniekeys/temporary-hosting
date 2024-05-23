@@ -11,7 +11,7 @@ import spiral from "../../assets/png/spiral-curve.png";
 import spiralRight from "../../assets/png/spiral-right.png"
 function HomeFeatures() {
   return (
-    <div className="w-full relative overflow-x-hidden overflow-y-hidden ">
+    <div className="w-full relative overflow-x-hidden overflow-y-hidden  ">
       <div className="absolute top-0 left-[-100px] ">
         <Image
           src={spiral}
@@ -40,7 +40,7 @@ function HomeFeatures() {
           Explore features that makes Us unique
         </p>
 
-        <div className="bg-[#EDE6FF] container-border w-full h-auto rounded-[50px] p-7 mt-20  relative ">
+        <div className="bg-[#F9F6FF] container-border w-full h-auto rounded-[50px] p-7 mt-20  relative flow-hide ">
           <div className="w-full h-auto flex flex-col md:flex-row justify-between items-center">
             <div
               className=" w-full md:w-[48%] h-full rounded-[30px] p-5   cursor-default boxlee"

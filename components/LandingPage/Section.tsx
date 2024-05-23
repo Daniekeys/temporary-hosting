@@ -5,6 +5,7 @@ import grayangle from "../../assets/svg/grayangle.svg";
 import featA from "../../assets/png/smartee.png"
 import featB from "../../assets/png/real.png"
 import featC from "../../assets/png/comprehensive.png"
+import ContainerLayout from "../../layouts/ContainerLayout";
 
 const Section = () => {
   const [selectedStepIndex, setSelectedStepIndex] = useState(0);
@@ -38,7 +39,7 @@ const Section = () => {
   // Step component
   const Step = ({ index, phoneImage, title, description }) => (
     <div
-      className={`w-full md:w-9/12 py-4 rounded-2xl flex items-center mb-6 cursor-pointer  max-w-[525px] mx-auto ${
+      className={`w-full md:w-9/12 py-4 rounded-2xl flex items-center mb-6 cursor-pointer  max-w-[525px]  ${
         index === selectedStepIndex ? "text-[#4747D6]" : ""
       }`}
       onClick={() => setSelectedStepIndex(index)}
@@ -76,6 +77,8 @@ const Section = () => {
   );
 
   return (
+    <ContainerLayout>
+
     <div className="w-full h-auto mt-0 lg:pt-[98px] flex flex-col md:flex-row justify-between items-center overflow-x-hidden flow-hide  ">
       <div className="w-full h-auto flex flex-col md:flex-row justify-between items-center relative">
         <div className="w-full h-auto mt-8 md:mt-0 px-4 lg:px-0">
@@ -87,11 +90,11 @@ const Section = () => {
               phoneImage={step.phoneImage}
               title={step.title}
               description={step.description}
-            />
-          ))}
+              />
+            ))}
         </div>
 
-        <div className="w-full flex justify-center lg:justify-end md:w-2/5 h-auto">
+        <div className="w-full flex justify-center lg:justify-end md:w-full h-auto">
           <Image
             src={steps[selectedStepIndex].phoneImage}
             data-aos="fade-up"
@@ -100,7 +103,7 @@ const Section = () => {
             className={` ${
               selectedStepIndex === 2 ? "w-full  h-auto" : "w-full  h-auto"
             }`}
-          />
+            />
         </div>
       </div>
 
@@ -110,6 +113,7 @@ const Section = () => {
         className="w-full md:w-[326px] h-[650px] md:h-[702px] hidden md:block"
       /> */}
     </div>
+      </ContainerLayout>
   );
 };
 

@@ -384,7 +384,7 @@ border-image-source: linear-gradient(132.27deg, #E4E4FF -7.78%, #FFFFFF 43.08%, 
 }
 
 .boxlee:hover {
-    border: 1px solid #FFFFFF; /* Border appears on hover */
+    border: 4px solid #FFFFFF; /* Border appears on hover */
     background: #EDE6FF; /* Background changes on hover */
     box-shadow: 
         4px 4px 4px 4px #99999940 inset, /* Inner shadow */

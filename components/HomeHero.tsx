@@ -16,8 +16,8 @@ function HomeHero() {
   return (
     <div className="w-full bg-white  lg:bg-white">
       <ContainerLayout>
-        <div className="w-full h-auto pt-32 flex flex-col md:flex-row justify-between items-center px-8 lg:px-0">
-          <div className="w-full md:w-[40%] max-w-[516px] mx-auto h-auto text-[#333333] text-center md:text-start">
+        <div className="w-full h-auto pt-32 flex flex-col md:flex-row justify-between items-center px-8 lg:px-0 ">
+          <div className="w-full md:w-[40%] max-w-[516px]  h-auto text-[#333333] text-center md:text-start ">
             <p className="text-[45px] md:text-[55px] font-semibold">
               Insight Gathering
             </p>
@@ -50,7 +50,7 @@ function HomeHero() {
             </div>
           </div>
 
-          <div className="w-full md:w-1/2 flex justify-end h-full relative flow-hide">
+          <div className="w-full md:w-1/2 flex justify-end h-full relative flow-hide ">
             <Image
               src={homehero}
               alt=""
