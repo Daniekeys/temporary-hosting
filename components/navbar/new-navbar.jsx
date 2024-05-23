@@ -55,17 +55,20 @@ const NewNavbar = () => {
                 <ArrowDown />
               </span>
             </div>
-            <Link href="/contact-us" className="flex items-center gap-2 ">
+            <Link
+              href="/contact-us"
+              className="rounded-[50px] gap-2 h-[50px] hover:bg-[#E3D5FF] flex items-center px-4"
+            >
               <p className="text-ash lg:text-base font-semibold ">Contact Us</p>
             </Link>
             <div className="flex items-center gap-2 ">
-              <p className="text-mainBlue hover:bg-[#E3D5FF] lg:text-base font-semibold px-4 py-2 rounded-[50px] cursor-pointer ">
+              <p className="text-mainBlue h-[50px] hover:bg-[#E3D5FF] flex items-center lg:text-base font-semibold px-4 py-2 rounded-[50px] cursor-pointer ">
                 Sign in
               </p>
             </div>
             <Link
               href="/"
-              className="bg-mainBlue hover:bg-[#E3D5FF] h-[50px] flex items-center text-white hover:text-mainBlue rounded-[50px] px-5 cursor-pointer "
+              className="bg-mainBlue hover:bg-[#E3D5FF] h-[50px] font-semibold flex items-center text-white hover:text-mainBlue rounded-[50px] px-5 cursor-pointer "
             >
               Get Started
             </Link>

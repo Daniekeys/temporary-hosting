@@ -14,7 +14,6 @@ const AllBlogs = () => {
         <h1
           className="mt-16 text-[#555] text-2xl md:text-[40px] mb-8 font-[500]"
           data-aos="fade-up"
-       
           data-aos-duration="1000"
         >
           Older posts
@@ -42,7 +41,7 @@ const AllBlogs = () => {
                 {item.summaryHeading}
               </p>
               <p
-                className="hover:bg-mainBlue bg-white   text-base text-mainBlue border border-mainBlue hover:border-none  hover:text-white  font-semibold mt-4  w-fit px-[30px] py-[15px] cursor-pointer h-[50px] rounded-[50px] flex items-center justify-center "
+                className="hover:bg-[#E3D5FF] bg-white   text-base text-mainBlue border border-mainBlue hover:border-none  hover:text-white  font-semibold mt-4  w-fit px-[30px] py-[15px] cursor-pointer h-[50px] rounded-[50px] flex items-center justify-center "
                 onClick={() => router.push(`/blog/${index + 1}`)}
               >
                 Read

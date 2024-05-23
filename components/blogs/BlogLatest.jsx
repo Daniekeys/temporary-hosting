@@ -55,10 +55,9 @@ const BlogLatest = () => {
               {item?.summaryHeading}
             </p>
             <p
-              className="hover:bg-mainBlue bg-white   text-base text-mainBlue border border-mainBlue hover:border-none  hover:text-white  font-semibold mt-4  w-fit px-[30px] py-[15px] cursor-pointer h-[50px] rounded-[50px] flex items-center justify-center "
+              className=" bg-white   text-base text-mainBlue border border-mainBlue hover:border-none  hover:text-white  font-semibold mt-4  w-fit px-[30px] py-[15px] cursor-pointer h-[50px] rounded-[50px] flex items-center justify-center hover:bg-[#E3D5FF] "
               onClick={() => router.push(`/blog/0`)}
               data-aos="fade-up"
-            
               data-aos-duration="1000"
             >
               Read
