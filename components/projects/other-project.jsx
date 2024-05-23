@@ -50,10 +50,10 @@ const OtherProject = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <button className="bg-mainBlue text-white h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px] ">
+            <button className="bg-mainBlue hero-btn text-white h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px] ">
               Explore
             </button>
-            <button className="border border-mainBlue text-mainBlue h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px]  border-opacity-30">
+            <button className="bg-white hero-btn text-mainBlue h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px]  border-opacity-30">
               Contact Us
             </button>
           </div>
