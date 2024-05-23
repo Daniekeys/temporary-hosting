@@ -162,7 +162,7 @@ const NewNavbar = () => {
         {isProductDropdownOpen && (
           <div className="w-[35rem] product-shadow  bg-[#F9F6FF] absolute right-0 2xl:right-[220px] p-2 rounded-b-[30px]">
             <div
-              // onClick={() => router.push("/download")}
+              onClick={() => router.push("/innovations#app")}
               className="w-full h-auto flex items-center cursor-pointer hover:bg-[#fff]  rounded-[20px] px-4 py-2 transition-all duration-1000 ease-in-out "
             >
               <Image src={emuration} alt="emuration" />
@@ -177,7 +177,7 @@ const NewNavbar = () => {
             </div>
 
             <div
-              // onClick={() => router.push("/download")}
+              onClick={() => router.push("/innovations#dashboard")}
               className="w-full h-auto flex items-center cursor-pointer hover:bg-[#fff]  rounded-[20px] px-4 py-2 transition-all duration-1000 ease-in-out "
             >
               <Image src={reporting} alt="reporting" />

@@ -15,11 +15,11 @@ import copy from "../../assets/svg/copy.svg";
 import FooterFaq from "../LandingPage/FooterFaq";
 const NewFooter = () => {
   return (
-    <div className="w-full flex flex-col bg-[#F9F6FF] pt-8">
+    <div className="w-full flex flex-col bg-[#F9F6FF] pt-8 flow-hide">
       {/* upper session */}
       <div className="w-full  pt-5 md:pt-0 ">
         <ContainerLayout>
-          <div className="w-full flex lg:mt-[55px] md:flex-row flex-col border-b-[#999] border-b-[2px] border-opacity-30 pb-20">
+          <div className="w-full flex lg:mt-[55px] md:flex-row flex-col border-b-[#999] border-b-[2px] border-opacity-30 pb-20 flow-hide">
             {/* first session */}
             <div className="w-full md:w-4/12 flex flex-col">
               <Image
@@ -237,7 +237,7 @@ const NewFooter = () => {
                   Products
                 </h1>
                 <Link
-                  href="/"
+                  href="/innovations#app"
                   // target="_blank"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
                   data-aos="fade-up"
@@ -247,8 +247,7 @@ const NewFooter = () => {
                   Delineation app
                 </Link>
                 <Link
-                  href="https://staging.wecollect.tech"
-                  target="_blank"
+                  href="/innovations#dashboard"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
                   data-aos="fade-up"
                   data-aos-duration="1000"

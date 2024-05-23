@@ -128,14 +128,14 @@ const SingleBlogHeader = () => {
               <p className="text-[12px] md:text-base text-[#555] mt-4 ">
                 {item.date}
               </p>
-              <p className="text-2xl md:text-[32px] text-[#555] leading-[40px] mt-4">
+              <p className="text-2xl md:text-[32px] text-[#555] leading-[40px] mt-4 truncate">
                 {item.title}
               </p>
               <p className="text-sm md:text-xl text-[#555] mt-4">
                 {item.summaryHeading}
               </p>
               <p
-                className="hover:bg-mainBlue bg-white   text-base text-mainBlue border border-mainBlue hover:border-none  hover:text-white  font-semibold mt-4  w-fit px-[10px] py-[15px] cursor-pointer h-[50px] rounded-[50px] flex items-center justify-center "
+                className="hover:bg-mainBlue bg-white   text-base text-mainBlue border border-mainBlue hover:border-none  hover:text-white  font-semibold mt-4  w-fit px-[30px] py-[15px] cursor-pointer h-[50px] rounded-[50px] flex items-center justify-center "
                 onClick={() => router.push(`/blog/${index}`)}
               >
                 Read

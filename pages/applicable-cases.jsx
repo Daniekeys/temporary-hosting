@@ -17,7 +17,7 @@ const ApplicableCases = () => {
         />
         <link rel="icon" href="/we-logo.png" />
       </Head>
-      ;
+      
       <AppCaseHero />
       <AppCaseList />
       <div className="w-full mt-12">

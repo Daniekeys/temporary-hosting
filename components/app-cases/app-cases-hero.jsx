@@ -20,14 +20,14 @@ const AppCaseHero = () => {
                   APPLICABLE <br /> CASES
                 </h1>
                 <p
-                  className="text-customBlack font-medium lg:text-[32px] text-xl max-w-[497px] leading-[40px] "
+                  className="text-customBlack font-medium lg:text-[32px] text-xl  leading-[40px] "
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
                   Explore how WeCollect is used in cases
                 </p>
               </div>
-              <div className="w-full lg:w-6/12 justify-center flex items-center">
+              <div className="w-full lg:w-6/12 justify-end flex items-center">
                 <Image
                   src={heroPic}
                   alt="hero"

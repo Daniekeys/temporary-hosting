@@ -21,7 +21,7 @@ const BlogHero = () => {
                 <input
                   type="text"
                   className="bg-transparent flex-grow border-none outline-none focus:outline-none focus:border-none placeholder:text-base placeholder:text-ash text-ash text-base "
-                  placeholder="e:g johndoe@email.com"
+                  placeholder="search blog"
                 />
                 <button className="bg-mainBlue rounded-[50px] h-[50px] px-5 flex items-center justify-center text-white text-base font-medium cursor-pointer lg:min-w-[168px] ">
                   Submit

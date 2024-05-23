@@ -40,10 +40,10 @@ function HomeHero() {
             </p>
 
             <div className="w-full h-auto flex flex-col md:flex-row items-center mt-8">
-              <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px] mr-[10px] cursor-pointer font-semibold button-shadow">
+              <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px] mr-[10px] cursor-pointer font-semibold hero-btn">
                 Get started for free
               </div>
-              <div className="bg-[#FFFFFF] hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-mainBlue rounded-[50px] button-shadow cursor-pointer my-5 md:my-0 font-semibold ">
+              <div className="bg-[#FFFFFF] hover:bg-[#E3D5FF] pl-2 pr-3 h-[50px] flex justify-center items-center text-mainBlue rounded-[50px] hero-btn cursor-pointer my-5 md:my-0 font-semibold ">
                 <Image src={blueright} alt="blueright" className="mr-[10px]" />
                 Book a demo
               </div>

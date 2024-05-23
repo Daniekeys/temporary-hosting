@@ -11,7 +11,7 @@ import googleP from "../../assets/svg/google-p.svg";
 
 const OurInnovation = () => {
   return (
-    <div className="w-full flex flex-col bg-white rounded-t-[50px]  ">
+    <div className="w-full flex flex-col bg-white rounded-t-[50px]  " id="app">
       <ContainerLayout>
         <div className="w-full py-20 lg:py-28 flex flex-col justify-center items-center">
           <div className="flex flex-col items-center w-full">

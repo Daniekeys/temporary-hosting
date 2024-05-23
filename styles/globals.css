@@ -3,7 +3,7 @@
 @tailwind utilities;
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
 
 .bg-feat {
   background: url("/bg-start.png");
@@ -395,3 +395,15 @@ border-image-source: linear-gradient(132.27deg, #E4E4FF -7.78%, #FFFFFF 43.08%, 
         0px 391px 109px 0px #009DFF00;
 }
 
+.hero-btn{
+  box-shadow: 0px 6px 14px 0px #8FD2FF1A,
+
+ 0px 25px 25px 0px #8FD2FF17,
+
+ 0px 57px 34px 0px #8FD2FF0D,
+
+ 0px 101px 40px 0px #8FD2FF03,
+
+ 0px 158px 44px 0px #8FD2FF00
+
+}

@@ -77,28 +77,26 @@ const data = [
 
 const AppCaseList = () => {
   return (
-    <div className="w-full flex flex-col relative bg-[#EDE6FF]  ">
+    <div className="w-full flex flex-col relative bg-white flow-hide ">
       <div className="w-full lg:h-[1438px] bg-white rounded-t-[50px] "></div>
-      <div className="w-full lg:min-h-[3200px] h-full mb-20 bg-[#EDE6FF] rounded-t-[50px] "></div>
+      <div className="w-full lg:min-h-[3200px] h-full mb-20 bg-[#F9F6FF] rounded-t-[50px] "></div>
       <div className="absolute top-20 left-0 right-0">
         <ContainerLayout>
-          <div className="w-full flex flex-col gap-10">
+          <div className="w-full flex flex-col gap-10 flow-hide">
             <h1
               className="text-mainBlue lg:text-[32px] font-semibold"
               data-aos="fade-up"
-             
               data-aos-duration="1000"
             >
               Applicable in the following cases and more...
             </h1>
-            <div className="w-full flex flex-col bg-[#EDE6FF] p-4 lg:p-[30px]  rounded-[30px]  gap-[40px]">
+            <div className="w-full flex flex-col bg-[#F9F6FF] p-4 lg:p-[30px]  rounded-[30px]  gap-[40px]">
               {data?.map((item, index) => {
                 return (
                   <div
-                    className="w-full bg-white flex flex-col p-4 lg:p-8 gap-10 rounded-[30px]  "
+                    className="w-full bg-white flex flex-col p-4 lg:p-8 gap-10 rounded-[30px] boxlee  "
                     key={index}
                     data-aos="fade-up"
-                 
                     data-aos-duration="1000"
                   >
                     <span>
