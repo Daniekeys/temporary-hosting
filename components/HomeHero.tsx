@@ -18,11 +18,11 @@ function HomeHero() {
       <ContainerLayout>
         <div className="w-full h-auto pt-32 flex flex-col md:flex-row justify-between items-center px-8 lg:px-0 ">
           <div className="w-full md:w-[40%] max-w-[516px]  h-auto text-[#333333] text-center md:text-start ">
-            <p className="text-[45px] md:text-[55px] font-semibold">
+            <p className="text-[45px] md:text-[55px] font-bold">
               Insight Gathering
             </p>
             <div className="flex flex-col  relative">
-              <p className="text-[45px] md:text-[55px] font-semibold z-10">
+              <p className="text-[45px] md:text-[55px] font-bold z-10">
                 Made Easy
               </p>
               <div

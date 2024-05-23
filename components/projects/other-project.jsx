@@ -6,7 +6,7 @@ import oval from "../../assets/png/oval-b.png"
 import angola from "../../assets/png/angola.png"
 const OtherProject = () => {
   return (
-    <div className="w-full flex flex-col rounded-t-[50px] bg-[#EDE6FF] relative overflow-y-hidden  ">
+    <div className="w-full flex flex-col rounded-t-[50px] bg-[#F9F6FF] relative overflow-y-hidden  ">
       <div className="absolute top-0 left-0 ">
         <Image src={spiral} alt="spiral" />
       </div>
