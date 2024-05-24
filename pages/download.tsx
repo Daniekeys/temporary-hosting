@@ -16,7 +16,7 @@ const Download = () => {
         />
         <link rel="icon" href="/we-logo.png" />
       </Head>
-      ;
+      
       <DownloadHero />
       <PartnersCard />
       <div className="w-full mt-0 lg:mt-12">

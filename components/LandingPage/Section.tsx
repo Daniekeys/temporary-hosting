@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import Image from "next/image";
 import blueangle from "../../assets/svg/blueangle.svg";
 import grayangle from "../../assets/svg/grayangle.svg";
-import featA from "../../assets/png/smartee.png"
-import featB from "../../assets/png/real.png"
-import featC from "../../assets/png/comprehensive.png"
+import featA from "../../assets/png/sm.png"
+import featB from "../../assets/png/re.png"
+import featC from "../../assets/png/co.png"
+import featD from "../../assets/png/mbo-sm.png"
+import featE from "../../assets/png/mob-re.png"
+import featF from "../../assets/png/mob-co.png"
 import ContainerLayout from "../../layouts/ContainerLayout";
 
 const Section = () => {
@@ -14,6 +17,7 @@ const Section = () => {
     {
       id: 1,
       phoneImage: featA,
+      mobile: featD,
       title: "Smart location picker",
       description:
         "Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit ipsum feugiat sed vulputate id amet. Etiam arcu ultricies mauris neque porta porta egestas amet. Ut luctus risus dictum urna commodo in egestas. Massa lectus ut ornare orci sit. Sapien ut cursus non magna bibendum non et nulla nulla. Orci mollis amet magna diam ultrices ultricies non quam. Id nisl cras sapien nisl. Sagittis malesuada suscipit duis lectus dignissim. Eget est sit quam fermentum urna egestas augue tempor.",
@@ -21,6 +25,7 @@ const Section = () => {
     {
       id: 2,
       phoneImage: featB,
+      mobile: featE,
       title: "Real-time data collection",
       description:
         "Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit ipsum feugiat sed vulputate id amet. Etiam arcu ultricies mauris neque porta porta egestas amet. Ut luctus risus dictum urna commodo in egestas. Massa lectus ut ornare orci sit. Sapien ut cursus non magna bibendum non et nulla nulla. Orci mollis amet magna diam ultrices ultricies non quam. Id nisl cras sapien nisl. Sagittis malesuada suscipit duis lectus dignissim. Eget est sit quam fermentum urna egestas augue tempor.",
@@ -28,6 +33,7 @@ const Section = () => {
     {
       id: 3,
       phoneImage: featC,
+      mobile: featF,
       title: "Comprehensive reporting",
       description:
         "Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit ipsum feugiat sed vulputate id amet. Etiam arcu ultricies mauris neque porta porta egestas amet. Ut luctus risus dictum urna commodo in egestas. Massa lectus ut ornare orci sit. Sapien ut cursus non magna bibendum non et nulla nulla. Orci mollis amet magna diam ultrices ultricies non quam. Id nisl cras sapien nisl. Sagittis malesuada suscipit duis lectus dignissim. Eget est sit quam fermentum urna egestas augue tempor.",
@@ -101,7 +107,16 @@ const Section = () => {
             data-aos-duration="1000"
             alt=""
             className={` ${
-              selectedStepIndex === 2 ? "w-full  h-auto" : "w-full  h-auto"
+              selectedStepIndex === 1 ? "w-full hidden md:flex h-auto scale-125" : "w-full hidden md:flex h-auto"
+            }`}
+            />
+          <Image
+            src={steps[selectedStepIndex].mobile}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            alt=""
+            className={` ${
+              selectedStepIndex === 1 ? "w-full  md:hidden h-auto scale-125" : "w-full md:hidden flex h-auto"
             }`}
             />
         </div>
