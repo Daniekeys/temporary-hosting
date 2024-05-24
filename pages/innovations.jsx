@@ -17,7 +17,7 @@ const Innovations = () => {
         />
         <link rel="icon" href="/we-logo.png" />
       </Head>
-      ;
+      
       <InnovationHero />
       <OurInnovation />
       <OtherInnovations />
