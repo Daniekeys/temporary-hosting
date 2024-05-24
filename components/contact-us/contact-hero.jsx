@@ -3,11 +3,13 @@ import NewNavbar from "../navbar/new-navbar";
 import ContainerLayout from "../../layouts/ContainerLayout";
 import heroPic from "../../assets/png/contact-samp.png";
 import Image from "next/image";
+import MobileNav from "../navbar/mobile-nav";
 const ContactHero = () => {
   return (
     <div className="grad-blog-bg w-full h-full">
       <div className="w-full lg:h-screen lg:max-h-[908px] relative blog-hero-bg flex flex-col">
         <NewNavbar />
+        <MobileNav present={1} />
         <ContainerLayout>
           <div className="w-full flex flex-col mt-20">
             <div className="w-full lg:flex-row mt-12  flex flex-col ">

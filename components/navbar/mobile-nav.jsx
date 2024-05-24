@@ -11,6 +11,8 @@ const styles = {
 };
 const MobileNav = ({ present }) => {
   const [show, setShow] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
+  const [showProduct, setShowProduct] = useState(false);
   const router = useRouter();
   return (
     <div>
@@ -40,26 +42,53 @@ const MobileNav = ({ present }) => {
             <div className="flex flex-col w-full px-4 mt-[45px]">
               <div
                 className="w-full py-6 flex items-center gap-2 "
-                onClick={() => setShow(false)}
+                onClick={() => setShowAbout(!showAbout)}
               >
                 <p className=" text-base font-semibold text-ash">About Us</p>
                 <span>
                   <ArrowDown />
                 </span>
               </div>
+              {showAbout && (
+                <div className="flex flex-col gap-4 ">
+                  <Link href="/our-project" className="text-ash text-base ">
+                    Projects
+                  </Link>
+                  <Link
+                    href="/applicable-cases"
+                    className="text-ash text-base "
+                  >
+                    Applicable Cases
+                  </Link>
+                  <Link href="/blog" className="text-ash text-base ">
+                    Blog
+                  </Link>
+                  <Link href="/download" className="text-ash text-base ">
+                    Download
+                  </Link>
+                </div>
+              )}
               <div
                 className="w-full py-6 flex items-center gap-2"
-                onClick={() => setShow(false)}
+                onClick={() => setShowProduct(!showProduct)}
               >
                 <p className=" text-base font-semibold text-ash">Products</p>
                 <span>
                   <ArrowDown />
                 </span>
               </div>
-              <div
-                className="w-full py-6 "
-                onClick={() => setShow(false)}
-              >
+              {showProduct && (
+                <div className="flex flex-col gap-4 ">
+                  <Link href="/innovations#app" className="text-ash text-base ">
+                    Enumeration app
+                  </Link>
+                  <Link href="/innovations#dashboard" className="text-ash text-base ">
+                    Reporting Dashboard
+                  </Link>
+                
+                </div>
+              )}
+              <div className="w-full py-6 " onClick={() => setShow(false)}>
                 <Link
                   href="/contact-us"
                   className="text-ash text-base font-semibold"
