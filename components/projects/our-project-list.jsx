@@ -4,7 +4,7 @@ import { SpecialArrow } from '../../assets/svg'
 import oval from "../../assets/png/oval.png";
 import fpmp from "../../assets/png/fpmp-samp.png"
 import Image from 'next/image';
-
+import Link from 'next/link';
 const OurProjectList = () => {
   return (
     <div className="w-full flex flex-col bg-white rounded-t-[50px]  ">
@@ -52,14 +52,19 @@ const OurProjectList = () => {
               price model in line with the UN SD4
             </p>
             <div
-              className="w-full flex items-center gap-2 justify-center mt-8"
+              className="w-full grid grid-cols-2 lg:flex items-center gap-2 justify-center mt-8 px-4"
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <button className="bg-mainBlue text-white h-[47px] items-center justify-center rounded-[50px] font-semibold flex min-w-[197px] ">
+              <Link
+                href={"https://fpmpn.wecollect.tech/"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-mainBlue hero-btn text-white h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px] "
+              >
                 Explore
-              </button>
-              <button className="border border-mainBlue text-mainBlue h-[47px] items-center justify-center rounded-[50px] font-semibold flex min-w-[197px] border-opacity-30">
+              </Link>
+              <button className="bg-white hero-btn text-mainBlue h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px]  border-opacity-30">
                 Contact Us
               </button>
             </div>

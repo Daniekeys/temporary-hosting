@@ -31,15 +31,13 @@ function DesktopCarousel() {
 
         <p
           className="text-[#333333] text-[20px] font-medium text-center mt-[10px] mb-[50px]"
-          data-aos="fade-up"
-          data-aos-duration="1000"
+       
         >
           Our users have the following to say about Us:
         </p>
         <div
           className="bg-[#F6F1FF] h-auto p-[30px] rounded-[30px]"
-          data-aos="fade-up"
-          data-aos-duration="1000"
+         
         >
           <Slider
             {...settings}
@@ -47,8 +45,8 @@ function DesktopCarousel() {
             nextArrow={<Image src={rightArrow} alt="Right Arrow" />}
           >
             {data.map((d) => (
-              <div key={d.name} className="">
-                <div className="w-[90%] m-auto bg-[#fff] h-[336px] rounded-[30px] pt-[10px] px-[10px] shadow-b shadow-[#4747D6]">
+              <div key={d.name} className="flow-hide">
+                <div className="w-[90%] m-auto bg-[#fff] h-[336px] rounded-[30px] pt-[10px] px-[10px] shadow-b shadow-[#4747D6] ">
                   <Image
                     src={d.img}
                     alt=""
