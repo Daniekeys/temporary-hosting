@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import blueangle from "../../assets/svg/blueangle.svg";
 import grayangle from "../../assets/svg/grayangle.svg";
-import featA from "../../assets/png/sms.png"
+import featA from "../../assets/png/sm.png"
 import featB from "../../assets/png/re.png"
 import featC from "../../assets/png/co.png"
 import featD from "../../assets/png/mbo-sm.png"
@@ -24,7 +24,7 @@ const Section = () => {
     },
     {
       id: 2,
-      phoneImage: featC,
+      phoneImage: featB,
       mobile: featE,
       title: "Real-time data collection",
       description:
@@ -32,7 +32,7 @@ const Section = () => {
     },
     {
       id: 3,
-      phoneImage: featB,
+      phoneImage: featC,
       mobile: featF,
       title: "Comprehensive reporting",
       description:
