@@ -59,14 +59,14 @@ function HomeHero() {
             <Image
               src={location}
               alt="location"
-              className="max-w-[310px] w-[310px] object-contain  h-auto  absolute top-[30%] left-0 hero-item-shadow z-10"
+              className="max-w-[310px] lg:w-[310px] w-[212px] object-contain  h-auto  absolute top-[30%] -left-4 lg:left-0 hero-item-shadow z-10"
               data-aos="fade-down"
               data-aos-delay="0"
             />
             <Image
               src={collection}
               alt="collection"
-              className="max-w-[310px] w-[310px] object-contain  h-auto absolute top-[50%] right-0"
+              className="max-w-[310px] w-[212px] lg:w-[310px] object-contain  h-auto absolute top-[50%] -right-4 lg:right-0"
               data-aos="fade-down"
               data-aos-duration="600"
               data-aos-delay="600"
@@ -74,7 +74,7 @@ function HomeHero() {
             <Image
               src={secure}
               alt="secure"
-              className="max-w-[310px] w-[310px] object-contain  h-auto absolute bottom-[-100px] left-0"
+              className="max-w-[310px] w-[212px] lg:w-[310px] object-contain  h-auto absolute bottom-[-100px] left-0"
               data-aos="fade-down"
               data-aos-delay="1200"
               data-aos-duration="600"

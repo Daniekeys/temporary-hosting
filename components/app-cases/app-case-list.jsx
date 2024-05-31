@@ -78,15 +78,14 @@ const data = [
 const AppCaseList = () => {
   return (
     <div className="w-full flex flex-col relative bg-white flow-hide ">
-      <div className="w-full lg:h-[1438px] bg-white rounded-t-[50px] "></div>
+      <div className="w-full lg:h-[1438px] bg-white rounded-t-[50px] h-screen "></div>
       <div className="w-full lg:min-h-[3200px] h-full mb-20 bg-[#F9F6FF] rounded-t-[50px] "></div>
       <div className="absolute top-20 left-0 right-0">
         <ContainerLayout>
           <div className="w-full flex flex-col gap-10 flow-hide">
             <h1
               className="text-mainBlue lg:text-[32px] font-semibold"
-              data-aos="fade-up"
-              data-aos-duration="1000"
+            
             >
               Applicable in the following cases and more...
             </h1>
@@ -94,22 +93,21 @@ const AppCaseList = () => {
               {data?.map((item, index) => {
                 return (
                   <div
-                    className="w-full bg-white flex flex-col p-4 lg:p-8 gap-10 rounded-[30px] boxlee  "
+                    className="w-full bg-white flex flex-col p-4 lg:p-8 gap-4 lg:gap-10 rounded-[30px] boxlee  "
                     key={index}
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
+                
                   >
                     <span>
                       <Image
                         src={item.pic}
                         alt="pics"
-                        className="w-[120px] h-[120px] rounded-full"
+                        className="md:w-[120px] w-[80px] h-[80px] md:h-[120px] rounded-full"
                       />
                     </span>
-                    <h1 className=" text-customBlack font-semibold leading-[48px] lg:text-[30px] ">
+                    <h1 className=" text-customBlack text-xl font-semibold leading-[48px] lg:text-[30px] ">
                       {item.title}
                     </h1>
-                    <p className="text-lg text-ash font-medium ">
+                    <p className="text-sm lg:text-lg text-ash font-medium ">
                       {item.story}
                     </p>
                   </div>

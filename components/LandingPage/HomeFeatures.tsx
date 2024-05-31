@@ -33,7 +33,7 @@ function HomeFeatures() {
         </p>
 
         <p
-          className="text-[#555555] text-[14px] md:text-[18px] font-medium text-center"
+          className="text-[#555555] text-[14px] md:md:text-[18px] text-sm font-medium text-center"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
@@ -49,11 +49,11 @@ function HomeFeatures() {
             >
               <Image src={data} alt="data" className="w-[80px] h-[80px]" />
 
-              <p className="text-[#333333] text-[30px] font-semibold mt-5">
+              <p className="text-[#333333] md:text-[30px] text-xl font-semibold mt-5">
                 SMART DATA <br /> COLLECTION APP
               </p>
 
-              <p className="text-[#555555] text-[18px] font-medium mt-5">
+              <p className="text-[#555555] md:text-[18px] text-sm font-medium mt-5">
                 We have simplified your data collection efforts. Now you can
                 seamlessly collect and analyze accurate, insightful, and
                 complete data using our smart application
@@ -72,11 +72,11 @@ function HomeFeatures() {
                 className="w-[80px] h-[80px]"
               />
 
-              <p className="text-[#333333] text-[30px] font-semibold mt-5">
+              <p className="text-[#333333] md:text-[30px] text-xl font-semibold mt-5">
                 PROJECT MANAGEMENT DASHBOARD
               </p>
 
-              <p className="text-[#555555] text-[18px] font-medium mt-5">
+              <p className="text-[#555555] md:text-[18px] text-sm font-medium mt-5">
                 We are taking the stress out of your data collection project.
                 Now you can conveniently create, track and monitor your project
                 on one platform from anywhere.
@@ -93,11 +93,11 @@ function HomeFeatures() {
             >
               <Image src={gpss} alt="gpss" className="w-[80px] h-[80px]" />
 
-              <p className="text-[#333333] text-[30px] font-semibold mt-5">
+              <p className="text-[#333333] md:text-[30px] text-xl font-semibold mt-5">
                 GEOSPATIAL INFO SYSTEMS
               </p>
 
-              <p className="text-[#555555] text-[18px] font-medium mt-5">
+              <p className="text-[#555555] md:text-[18px] text-sm font-medium mt-5">
                 With the GIS systems embedded, data monitoring and evaluation is
                 seamless, therefore increasing data accuracy.
               </p>
@@ -111,11 +111,11 @@ function HomeFeatures() {
             >
               <Image src={wifi} alt="wifi" className="w-[80px] h-[80px]" />
 
-              <p className="text-[#333333] text-[30px] font-semibold mt-5">
+              <p className="text-[#333333] md:text-[30px] text-xl font-semibold mt-5">
                 OFFLINE DATA COLLECTION
               </p>
 
-              <p className="text-[#555555] text-[18px] font-medium mt-5">
+              <p className="text-[#555555] md:text-[18px] text-sm font-medium mt-5">
                 Harness the power of seamless offline data collection, anytime,
                 anywhere, even without an internet connection.
               </p>
@@ -133,11 +133,11 @@ function HomeFeatures() {
                 className="w-[80px] h-[80px]"
               />
 
-              <p className="text-[#333333] text-[30px] font-semibold mt-5">
+              <p className="text-[#333333] md:text-[30px] text-xl font-semibold mt-5">
                 SECURE CLOUD STORAGE
               </p>
 
-              <p className="text-[#555555] text-[18px] font-medium mt-5">
+              <p className="text-[#555555] md:text-[18px] text-sm font-medium mt-5">
                 Build, create and save data securely to your cloud without
                 network connectivity. Sync data when network is restored.
               </p>

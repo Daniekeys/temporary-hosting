@@ -8,7 +8,7 @@ import RequestDemo from "../components/footer/request-demo";
 import Head from "next/head";
 const ApplicableCases = () => {
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col relative">
       <Head>
         <title>WeCollect</title>
         <meta
