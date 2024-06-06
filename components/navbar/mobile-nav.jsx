@@ -82,10 +82,12 @@ const MobileNav = ({ present }) => {
                   <Link href="/innovations#app" className="text-ash text-base ">
                     Enumeration app
                   </Link>
-                  <Link href="/innovations#dashboard" className="text-ash text-base ">
-                    Reporting Dashboard
+                  <Link
+                    href="/innovations#dashboard"
+                    className="text-ash text-base "
+                  >
+                    Project Management Dashboard
                   </Link>
-                
                 </div>
               )}
               <div className="w-full py-6 " onClick={() => setShow(false)}>

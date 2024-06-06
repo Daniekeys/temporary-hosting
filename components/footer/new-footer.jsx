@@ -253,7 +253,7 @@ const NewFooter = () => {
                   data-aos-duration="1000"
                   data-aos-delay="2700"
                 >
-                  Reporting dashboard
+                  Project Management dashboard
                 </Link>
               </div>
               {/* end of a pack */}

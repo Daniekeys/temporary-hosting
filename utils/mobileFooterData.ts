@@ -26,6 +26,6 @@ export const mobileFooterData = [
     id: 4,
     title: "Products",
     list1: "Delineation  app",
-    list2: "AReporting dashboard",
+    list2: "Project Management Dashboard",
   },
 ];

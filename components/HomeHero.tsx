@@ -17,7 +17,7 @@ function HomeHero() {
     <div className="w-full bg-white  lg:bg-white">
       <ContainerLayout>
         <div className="w-full h-auto pt-32 flex flex-col md:flex-row justify-between items-center px-8 lg:px-0 ">
-          <div className="w-full md:w-[40%] max-w-[516px]  h-auto text-[#333333] text-center md:text-start ">
+          <div className="w-full 2xl:w-[40%] max-w-[516px]  h-auto text-[#333333] text-center md:text-start ">
             <p className="text-[45px] md:text-[55px] font-bold">
               Insight Gathering
             </p>

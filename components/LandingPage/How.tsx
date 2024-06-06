@@ -14,7 +14,7 @@ function How() {
       <div className="w-full flex flex-col flow-hide">
 
       <p
-        className="text-[#555555] text-[20px] md:text-[32px] font-semibold mt-36 text-center"
+        className="text-[#555555] text-[20px] md:text-[32px] font-semibold mt-44 text-center"
         data-aos="fade-up"
         data-aos-duration="1000"
         >

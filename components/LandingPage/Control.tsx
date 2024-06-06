@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import ContainerLayout from "../../layouts/ContainerLayout";
 import maskwoman from "../../assets/png/farmer-boy.png";
-import playIcon from "../../assets/png/play-icon.png"
+import playIcon from "../../assets/png/play-icon.png";
 
 function Control() {
   return (
@@ -21,8 +21,8 @@ function Control() {
         data-aos-duration="1000"
       >
         WeCollect is a smart data collection mobile app that allows you collect
-        online and offline data, while reporting to a dynamic dashboard that
-        provides real-time updates on data collected. It promotes quick
+        online and offline data, while Project Management to a dynamic dashboard
+        that provides real-time updates on data collected. It promotes quick
         decision-making by allowing users to visualise and analyse data on the
         go. The dashboard is flexible, which is also handy when managing
         multiple projects or forms.
@@ -31,7 +31,7 @@ function Control() {
         <Image
           src={maskwoman}
           alt="maskwoman"
-          className="w-full object-contain h-auto m-auto mt-20"
+          className="w-full object-contain h-auto m-auto mt-20 max-w-[1030px]"
           data-aos="fade-up"
           data-aos-duration="1000"
         />

@@ -33,27 +33,27 @@ function HomeFeatures() {
         </p>
 
         <p
-          className="text-[#555555] text-[14px] md:md:text-[18px] text-sm font-medium text-center"
+          className="text-[#555555] text-[14px] md:md:text-[18px] leading-[35px] text-sm font-medium text-center"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
           Explore features that makes Us unique
         </p>
 
-        <div className="bg-[#F9F6FF] container-border w-full h-auto rounded-[50px] p-7 mt-20  relative flow-hide ">
-          <div className="w-full h-auto flex flex-col md:flex-row justify-between items-center">
+        <div className="bg-[#F9F6FF] container-border w-full h-auto rounded-[50px] p-[30px] mt-20  relative flow-hide ">
+          <div className="w-full h-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
             <div
-              className=" w-full md:w-[48%] h-full rounded-[30px] p-5   cursor-default boxlee"
-              data-aos="fade-up"
-              data-aos-duration="1000"
+              className=" w-full  h-full rounded-[30px] py-10 px-[30px]   cursor-default boxlee"
+              // data-aos="fade-up"
+              // data-aos-duration="1000"
             >
               <Image src={data} alt="data" className="w-[80px] h-[80px]" />
 
-              <p className="text-[#333333] md:text-[30px] text-xl font-semibold mt-5">
+              <p className="text-[#333333] md:text-[30px] text-xl font-semibold mt-7 md:leading-[48px]">
                 SMART DATA <br /> COLLECTION APP
               </p>
 
-              <p className="text-[#555555] md:text-[18px] text-sm font-medium mt-5">
+              <p className="text-[#555555] md:text-[18px] leading-[35px] text-sm font-medium mt-7">
                 We have simplified your data collection efforts. Now you can
                 seamlessly collect and analyze accurate, insightful, and
                 complete data using our smart application
@@ -61,10 +61,10 @@ function HomeFeatures() {
             </div>
 
             <div
-              className="boxlee w-full md:w-[48%] h-auto rounded-[30px] p-5 mt-10 md:mt-0   cursor-default"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="300"
+              className="boxlee w-full  h-full rounded-[30px] p-7 mt-10 md:mt-0   cursor-default"
+              // data-aos="fade-up"
+              // data-aos-duration="1000"
+              // data-aos-delay="300"
             >
               <Image
                 src={management}
@@ -72,11 +72,11 @@ function HomeFeatures() {
                 className="w-[80px] h-[80px]"
               />
 
-              <p className="text-[#333333] md:text-[30px] text-xl font-semibold mt-5">
+              <p className="text-[#333333] md:text-[30px] text-xl font-semibold mt-7 md:leading-[48px]">
                 PROJECT MANAGEMENT DASHBOARD
               </p>
 
-              <p className="text-[#555555] md:text-[18px] text-sm font-medium mt-5">
+              <p className="text-[#555555] md:text-[18px] leading-[35px] text-sm font-medium mt-7">
                 We are taking the stress out of your data collection project.
                 Now you can conveniently create, track and monitor your project
                 on one platform from anywhere.
@@ -84,48 +84,48 @@ function HomeFeatures() {
             </div>
           </div>
 
-          <div className="w-full h-auto grid grid-cols-1 lg:grid-cols-3 gap-8 justify-between items-center mt-10">
+          <div className="w-full h-auto grid grid-cols-1 lg:grid-cols-3 gap-10 justify-between items-center mt-10">
             <div
-              className="boxlee w-full h-full  rounded-[30px] p-5  cursor-default"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="600"
+              className="boxlee w-full h-full  rounded-[30px] p-7  cursor-default"
+              // data-aos="fade-up"
+              // data-aos-duration="1000"
+              // data-aos-delay="600"
             >
               <Image src={gpss} alt="gpss" className="w-[80px] h-[80px]" />
 
-              <p className="text-[#333333] md:text-[30px] text-xl font-semibold mt-5">
+              <p className="text-[#333333] md:text-[30px] text-xl font-semibold mt-7 md:leading-[48px]">
                 GEOSPATIAL INFO SYSTEMS
               </p>
 
-              <p className="text-[#555555] md:text-[18px] text-sm font-medium mt-5">
+              <p className="text-[#555555] md:text-[18px] leading-[35px] text-sm font-medium mt-7">
                 With the GIS systems embedded, data monitoring and evaluation is
                 seamless, therefore increasing data accuracy.
               </p>
             </div>
 
             <div
-              className="boxlee w-full  h-full rounded-[30px] p-5 my-10 md:my-0  cursor-default"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="600"
+              className="boxlee w-full  h-full rounded-[30px] p-7 my-10 md:my-0  cursor-default"
+              // data-aos="fade-up"
+              // data-aos-duration="1000"
+              // data-aos-delay="600"
             >
               <Image src={wifi} alt="wifi" className="w-[80px] h-[80px]" />
 
-              <p className="text-[#333333] md:text-[30px] text-xl font-semibold mt-5">
+              <p className="text-[#333333] md:text-[30px] text-xl font-semibold mt-7 md:leading-[48px]">
                 OFFLINE DATA COLLECTION
               </p>
 
-              <p className="text-[#555555] md:text-[18px] text-sm font-medium mt-5">
+              <p className="text-[#555555] md:text-[18px] leading-[35px] text-sm font-medium mt-7">
                 Harness the power of seamless offline data collection, anytime,
                 anywhere, even without an internet connection.
               </p>
             </div>
 
             <div
-              className="boxlee w-full  h-full rounded-[30px] p-5  cursor-default"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="600"
+              className="boxlee w-full  h-full rounded-[30px] p-7  cursor-default"
+              // data-aos="fade-up"
+              // data-aos-duration="1000"
+              // data-aos-delay="600"
             >
               <Image
                 src={securecase}
@@ -133,11 +133,11 @@ function HomeFeatures() {
                 className="w-[80px] h-[80px]"
               />
 
-              <p className="text-[#333333] md:text-[30px] text-xl font-semibold mt-5">
+              <p className="text-[#333333] md:text-[30px] text-xl font-semibold mt-7 md:leading-[48px]">
                 SECURE CLOUD STORAGE
               </p>
 
-              <p className="text-[#555555] md:text-[18px] text-sm font-medium mt-5">
+              <p className="text-[#555555] md:text-[18px] leading-[35px] text-sm font-medium mt-7">
                 Build, create and save data securely to your cloud without
                 network connectivity. Sync data when network is restored.
               </p>

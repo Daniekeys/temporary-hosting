@@ -1,6 +1,6 @@
-import React from 'react'
-import ContainerLayout from '../../layouts/ContainerLayout'
-import Image from 'next/image';
+import React from "react";
+import ContainerLayout from "../../layouts/ContainerLayout";
+import Image from "next/image";
 import a1 from "../../assets/svg/a1.svg";
 import a2 from "../../assets/svg/a2.svg";
 import a3 from "../../assets/svg/a3.svg";
@@ -19,10 +19,10 @@ const data = [
       "WeCollect enhances brand visibility by leveraging a network of field agents equipped with a dynamic mobile application. These agents conduct on-the-ground assessments, capturing real-time data on brand presence, product displays, and competitor activities. The app's geotagging feature ensures accurate location data, providing businesses with actionable insights to optimize their brand visibility strategies and outshine the competition.",
   },
   {
-    title: "SUPPLY CHAIN MONITORING AND REPORTING",
+    title: "SUPPLY CHAIN MONITORING AND Project Management",
     pic: a2,
     story:
-      "For supply chain monitoring, WeCollect transforms the logistics landscape by enabling real-time tracking of goods and activities throughout the supply chain. Field agents utilize the mobile app to record crucial data points, ensuring visibility from warehouse to delivery. Automated reporting and analytics streamline the monitoring process, allowing businesses to identify bottlenecks, improve efficiency, and make informed decisions for a seamless and optimized supply chain.",
+      "For supply chain monitoring, WeCollect transforms the logistics landscape by enabling real-time tracking of goods and activities throughout the supply chain. Field agents utilize the mobile app to record crucial data points, ensuring visibility from warehouse to delivery. Automated Project Management and analytics streamline the monitoring process, allowing businesses to identify bottlenecks, improve efficiency, and make informed decisions for a seamless and optimized supply chain.",
   },
   {
     title: "INVENTORY MANAGEMENT",
@@ -72,7 +72,6 @@ const data = [
     story:
       "WeCollect facilitates demography analysis by empowering field agents to collect detailed demographic data using customizable forms within the mobile application. This rich dataset enables businesses and policymakers to conduct in-depth demographic analyses, understand population trends, and tailor strategies that align with the unique characteristics of specific regions or communities.",
   },
-
 ];
 
 const AppCaseList = () => {
@@ -83,10 +82,7 @@ const AppCaseList = () => {
       <div className="absolute top-20 left-0 right-0">
         <ContainerLayout>
           <div className="w-full flex flex-col gap-10 flow-hide">
-            <h1
-              className="text-mainBlue lg:text-[32px] font-semibold"
-            
-            >
+            <h1 className="text-mainBlue lg:text-[32px] font-semibold">
               Applicable in the following cases and more...
             </h1>
             <div className="w-full flex flex-col bg-[#F9F6FF] p-4 lg:p-[30px]  rounded-[30px]  gap-[40px]">
@@ -95,7 +91,6 @@ const AppCaseList = () => {
                   <div
                     className="w-full bg-white flex flex-col p-4 lg:p-8 gap-4 lg:gap-10 rounded-[30px] boxlee  "
                     key={index}
-                
                   >
                     <span>
                       <Image
@@ -119,6 +114,6 @@ const AppCaseList = () => {
       </div>
     </div>
   );
-}
+};
 
-export default AppCaseList
+export default AppCaseList;
