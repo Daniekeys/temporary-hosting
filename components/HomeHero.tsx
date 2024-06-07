@@ -43,7 +43,7 @@ function HomeHero() {
             </div>
 
             <p
-              className="text-[#6F6F6F] text-[14px] md:text-[16px] font-medium mt-[30px]"
+              className="text-[#6F6F6F] text-[14px] md:text-[16px] font-medium mt-[30px] leading-[30px]"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="1200"
@@ -65,16 +65,16 @@ function HomeHero() {
             </div>
           </div>
 
-          <div className="w-full md:w-1/2 flex justify-end h-full relative flow-hide ">
+          <div className="w-full md:w-1/2 flex justify-end h-full relative overflow-y-hidden overflow-x-hidden ">
             <Image
               src={homehero}
               alt=""
-              className=" w-full h-auto  mt-8 lg:mt-0 z-0"
+              className=" w-full h-auto  mt-8 lg:mt-0 z-0 mb-16 lg:mb-0"
             />
             <Image
               src={location}
               alt="location"
-              className="max-w-[310px] lg:w-[310px] w-[212px] object-contain  h-auto  absolute top-[30%] -left-4 lg:left-0 hero-item-shadow z-10"
+              className="max-w-[310px] lg:w-[310px] w-[212px] object-contain  h-auto  absolute top-[30%] -left-2 lg:left-0 hero-item-shadow z-10"
               data-aos="fade-down"
               data-aos-delay="300"
             />
@@ -89,7 +89,7 @@ function HomeHero() {
             <Image
               src={secure}
               alt="secure"
-              className="max-w-[310px] w-[212px] lg:w-[310px] object-contain  h-auto absolute bottom-[-100px] left-0"
+              className="max-w-[310px] w-[212px] lg:w-[310px] object-contain  h-auto absolute bottom-[-80px] lg:bottom-[-100px] left-0"
               // data-aos="fade-down"
               // data-aos-delay="900"
               // data-aos-duration="1000"
