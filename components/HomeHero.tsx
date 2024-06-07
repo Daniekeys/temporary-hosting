@@ -18,10 +18,20 @@ function HomeHero() {
       <ContainerLayout>
         <div className="w-full h-auto pt-32 flex flex-col md:flex-row justify-between items-center px-8 lg:px-0 ">
           <div className="w-full 2xl:w-[40%] max-w-[516px]  h-auto text-[#333333] text-center md:text-start ">
-            <p className="text-[45px] md:text-[55px] font-bold">
+            <p
+              className="text-[45px] md:text-[55px] font-bold"
+              data-aos="fade-up"
+              data-aos-duration="600"
+              data-aos-delay="600"
+            >
               Insight Gathering
             </p>
-            <div className="flex flex-col  relative">
+            <div
+              className="flex flex-col  relative"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="1200"
+            >
               <p className="text-[45px] md:text-[55px] font-bold z-10">
                 Made Easy
               </p>
@@ -32,7 +42,12 @@ function HomeHero() {
               ></div>
             </div>
 
-            <p className="text-[#6F6F6F] text-[14px] md:text-[16px] font-medium mt-[30px]">
+            <p
+              className="text-[#6F6F6F] text-[14px] md:text-[16px] font-medium mt-[30px]"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="1200"
+            >
               Leverage advanced data collecting technology with features like
               GIS and offline data collection as well as a vast network of field
               agents to collect, track, and ensure accurate data for various
@@ -61,22 +76,22 @@ function HomeHero() {
               alt="location"
               className="max-w-[310px] lg:w-[310px] w-[212px] object-contain  h-auto  absolute top-[30%] -left-4 lg:left-0 hero-item-shadow z-10"
               data-aos="fade-down"
-              data-aos-delay="0"
+              data-aos-delay="1000"
             />
             <Image
               src={collection}
               alt="collection"
               className="max-w-[310px] w-[212px] lg:w-[310px] object-contain  h-auto absolute top-[50%] -right-4 lg:right-0"
               data-aos="fade-down"
-              data-aos-duration="600"
-              data-aos-delay="600"
+              data-aos-duration="1000"
+              data-aos-delay="2000"
             />
             <Image
               src={secure}
               alt="secure"
               className="max-w-[310px] w-[212px] lg:w-[310px] object-contain  h-auto absolute bottom-[-100px] left-0"
               data-aos="fade-down"
-              data-aos-delay="1200"
+              data-aos-delay="3000"
               data-aos-duration="600"
             />
           </div>

@@ -56,7 +56,7 @@ const Section = () => {
             <Image src={grayangle} alt="" className="w-[32px] h-[32px]" />
           )}
           <p
-            className={`text-[20px] md:text-[32px] font-semibold ml-[15px]  ${
+            className={`text-[20px] md:text-[32px] font-semibold ml-[15px] min-w-max  ${
               index === selectedStepIndex ? "text-[#4747D6]" : "text-[#999999]"
             }`}
           >

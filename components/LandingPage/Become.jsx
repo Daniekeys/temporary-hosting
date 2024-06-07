@@ -5,19 +5,7 @@ import happy from "../../assets/png/happy-girl.png"
 
 
 import { useRouter } from "next/router";
-const initialValues = {
-  name: "", 
-  email: "", 
-  gender: "male", 
-  age: "", 
-  phonenumber: "", 
-  academicLevel: "",
-  school: "",
-  linkedIn: "",
-  twitter: "",
-  pastVolunteeredAt: "",
-  agreeToTerms: false
-};
+
 
 const Become = () => {
   const [open, setOpen] = useState(false);
@@ -25,7 +13,7 @@ const Become = () => {
   return (
     <ContainerLayout>
       <div className="flex flex-col relative   ">
-        <div className="w-full bg-[#4747d626] min-h-[200px] h-full rounded-[30px] hidden lg:grid grid-cols-2 my-12 overflow-x-hidden  ">
+        <div className="w-full bg-[#4747d626] min-h-[200px] lg:min-h-[248px] h-full rounded-[30px] hidden lg:grid grid-cols-2 mt-12 overflow-x-hidden  ">
           <div className="w-full lg:pl-12 xl:pl-[60px] flex flex-col pt-[10px] pb-5">
             <h1 className="max-w-[639px] text-[#333] font-bold text-[40px]">
               Become WeCollect campus ambasador
@@ -43,16 +31,16 @@ const Become = () => {
           </div>
           {/* end of second part */}
         </div>
-        <div className="absolute  right-[70px] top-[-70px] hidden lg:flex">
-          <Image src={happy} alt="happy" className="h-[349px]" />
+        <div className="absolute  right-[70px] -top-[20px] hidden lg:flex">
+          <Image src={happy} alt="happy" className="h-[315px] w-[302px] object-contain" />
         </div>
         {/* mobile session */}
-        <div className="flex flex-col lg:hidden bg-[#4747d626] rounded-[30px] mt-[32px] mb-[74px]">
-          <div className="absolute  right-0 left-0 top-[-110px] flex lg:hidden justify-center">
-            <Image src={happy} alt="happy" className="h-[256px] w-auto" />
+        <div className="flex flex-col lg:hidden bg-[#4747d626] rounded-[30px] mt-[32px] ">
+          <div className="absolute  right-0 left-0 top-[-10px] flex lg:hidden justify-center">
+            <Image src={happy} alt="happy" className="w-[186px] h-[191px] mx-auto" />
           </div>
           <div className="h-[160px] w-full overflow-y-hidden ">
-            <div className="bg-[#333] w-full h-[180px] -mt-16 rounded-[200px]"></div>
+            <div className="bg-[#333] w-full h-[214px] -mt-16 rounded-[200px]"></div>
           </div>
           <div className="flex flex-col pt-4 pb-11 px-4">
             <h1 className=" text-[#333] font-bold text-2xl">

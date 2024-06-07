@@ -368,7 +368,8 @@ border-image-source: linear-gradient(132.27deg, #E4E4FF -7.78%, #FFFFFF 43.08%, 
   width: 0%;
   height: 30px;
   background-color: #FFE700;
-  transition: width 2s;
+  transition: width 3s;
+  transition-delay: 1.5s;
 }
 
 .expanding-div.expanded {

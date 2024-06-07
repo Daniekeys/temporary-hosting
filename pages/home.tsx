@@ -8,6 +8,7 @@ import HomeFeatures from "../components/LandingPage/HomeFeatures";
 import How from "../components/LandingPage/How";
 import Section from "../components/LandingPage/Section";
 import DesktopCarousel from "../components/LandingPage/DesktopCarousel";
+import CustomCarousel from "../components/LandingPage/CustomCarousel";
 import MobileCarousel from "../components/LandingPage/MobileCarousel";
 import Slider from "../components/blogs/Slider";
 import RequestDemo from "../components/footer/request-demo";
@@ -35,7 +36,8 @@ function home() {
       <HomeFeatures />
       <How />
       <Section />
-      <DesktopCarousel />
+      {/* <DesktopCarousel /> */}
+      <CustomCarousel />
       <MobileCarousel />
       <Faq />
       <Slider />

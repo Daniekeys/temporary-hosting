@@ -28,14 +28,14 @@ const NewFooter = () => {
                 height={logo.height}
                 alt="image"
                 className="m-auto md:m-0"
-                data-aos="fade-up"
-                data-aos-duration="1000"
+                // data-aos="fade-up"
+                // data-aos-duration="1000"
               />
               <div
                 className="flex flex-col md:w-8/12 2xl:w-6/12"
-                data-aos="fade-up"
-                data-aos-duration="600"
-                data-aos-delay="600"
+                // data-aos="fade-up"
+                // data-aos-duration="600"
+                // data-aos-delay="600"
               >
                 <div className="flex justify-center md:justify-between items-center mt-[26px] gap-x-4 w-full">
                   <Link
@@ -134,54 +134,54 @@ const NewFooter = () => {
               <div className="flex flex-col space-y-6">
                 <h1
                   className="text-ash sat-bold  text-base font-bold"
-                  data-aos="fade-up"
-                  data-aos-duration="600"
-                  data-aos-delay="600"
+                  // data-aos="fade-up"
+                  // data-aos-duration="600"
+                  // data-aos-delay="600"
                 >
                   WeCollect
                 </h1>
                 <Link
                   href="/innovations"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="900"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                  // data-aos-delay="900"
                 >
                   Products
                 </Link>
                 <Link
                   href="/our-project"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="1300"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                  // data-aos-delay="1300"
                 >
                   Projects
                 </Link>
                 <Link
                   href="/applicable-cases"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="1600"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                  // data-aos-delay="1600"
                 >
                   Use cases
                 </Link>
                 <Link
                   href="/blog"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="2100"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                  // data-aos-delay="2100"
                 >
                   Blog
                 </Link>
                 <Link
                   href="/contact-us"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="2400"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                  // data-aos-delay="2400"
                 >
                   Contact Us
                 </Link>
@@ -191,36 +191,36 @@ const NewFooter = () => {
               <div className="flex flex-col space-y-6">
                 <h1
                   className="text-ash sat-bold  text-base font-bold"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="2400"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                  // data-aos-delay="2400"
                 >
                   Legality
                 </h1>
                 <Link
                   href="/privacy-policy"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="2600"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                  // data-aos-delay="2600"
                 >
                   Privacy Policy
                 </Link>
                 <Link
                   href="/term-of-use"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="2800"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                  // data-aos-delay="2800"
                 >
                   Terms of use
                 </Link>
                 <Link
                   href="/cookie-policy"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="3000"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                  // data-aos-delay="3000"
                 >
                   Cookie Policy
                 </Link>
@@ -230,9 +230,9 @@ const NewFooter = () => {
               <div className="flex flex-col space-y-6">
                 <h1
                   className="text-ash sat-bold  text-base font-bold"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="2000"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                  // data-aos-delay="2000"
                 >
                   Products
                 </h1>
@@ -240,18 +240,18 @@ const NewFooter = () => {
                   href="/innovations#app"
                   // target="_blank"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="2400"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                  // data-aos-delay="2400"
                 >
                   Delineation app
                 </Link>
                 <Link
                   href="/innovations#dashboard"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="2700"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                  // data-aos-delay="2700"
                 >
                   Project Management dashboard
                 </Link>
@@ -261,9 +261,9 @@ const NewFooter = () => {
               <div className="flex flex-col space-y-6">
                 <h1
                   className="text-ash sat-bold  text-base font-bold"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="2100"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                  // data-aos-delay="2100"
                 >
                   Features
                 </h1>
@@ -272,9 +272,9 @@ const NewFooter = () => {
                   //   target="_blank"
                   //   rel="noopener noreferrer"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="2300"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                  // data-aos-delay="2300"
                 >
                   GPS coordinates
                 </Link>
@@ -283,9 +283,9 @@ const NewFooter = () => {
                   // target="_blank"
                   // rel="noopener noreferrer"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="2500"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                  // data-aos-delay="2500"
                 >
                   Real-time data collection
                 </Link>
@@ -294,9 +294,9 @@ const NewFooter = () => {
                   // target="_blank"
                   // rel="noopener noreferrer"
                   className="text-ash sat-regular  text-base font-medium mt-[12px]"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="2700"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                  // data-aos-delay="2700"
                 >
                   Secure case management
                 </Link>
