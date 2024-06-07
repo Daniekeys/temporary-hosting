@@ -4,17 +4,17 @@ import Become from "../LandingPage/Become";
 
 
 const Slider = () => {
-  const [showComponent1, setShowComponent1] = useState(true);
-  const [showComponent2, setShowComponent2] = useState(false);
+  const [showComponent1, setShowComponent1] = useState(false);
+  const [showComponent2, setShowComponent2] = useState(true);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setShowComponent1((prevState) => !prevState);
-      setShowComponent2((prevState) => !prevState);
-    }, 4000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setShowComponent1((prevState) => !prevState);
+  //     setShowComponent2((prevState) => !prevState);
+  //   }, 4000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
   return (
     <div className="w-full flex justify-center mt-0 ">
       <div className="animation-container h-[400px] lg:h-[400px]  relative flex items-end justify-center">

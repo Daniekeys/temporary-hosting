@@ -171,7 +171,7 @@ const NewNavbar = () => {
               <Image src={emuration} alt="emuration" />
               <div className="ml-[21px]">
                 <p className="text-[#555555] text-[16px] font-semibold">
-                  Enumeration App
+                  Smart Data Collection App
                 </p>
                 <p className="text-[#555555] text-[14px] font-medium">
                   Lorem ipsum dolor sit amet

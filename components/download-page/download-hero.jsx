@@ -31,7 +31,7 @@ const DownloadHero = () => {
                     data-aos="fade-down"
                     data-aos-duration="1000"
                   >
-                    Our enumeration mobile app, specially built for Smart data
+                    Our Smart Data Collection Mobile app, specially built for Smart data
                     and useful for Insight gathering in Nigeria ecosystem.
                   </p>
                   <div

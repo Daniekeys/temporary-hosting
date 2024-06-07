@@ -80,7 +80,7 @@ const MobileNav = ({ present }) => {
               {showProduct && (
                 <div className="flex flex-col gap-4 ">
                   <Link href="/innovations#app" className="text-ash text-base ">
-                    Enumeration app
+                    Smart Data Collection App
                   </Link>
                   <Link
                     href="/innovations#dashboard"
