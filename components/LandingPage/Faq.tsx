@@ -44,7 +44,7 @@ const SingleFaq = ({ item }: any) => {
 
   return (
     <div
-      className={`flex flex-col w-full py-5 lg:px-7 ${
+      className={`flex flex-col w-full py-5 lg:px-7 px-4 ${
         isLast ? "border-none" : "bg-[#fff] rounded-[20px] mb-5"
       }`}
     >
