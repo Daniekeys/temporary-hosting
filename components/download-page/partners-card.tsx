@@ -9,7 +9,7 @@ const PartnersCard = () => {
         <ContainerLayout>
           <div className="w-full flex flex-col justify-center items-center h-[172px] z-super ">
             <h1
-              className="text-center lg:text-[32px] font-semibold text-ash mb-8 lg:mb-12 lg:mt-28"
+              className="text-center lg:text-[32px] font-semibold text-ash mb-8 lg:mb-12 lg:mt-40"
               data-aos="fade-up"
               data-aos-duration="1000"
             >

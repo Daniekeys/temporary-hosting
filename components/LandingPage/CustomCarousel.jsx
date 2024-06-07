@@ -95,48 +95,58 @@ const CustomCarousel = () => {
 
     return (
       <ContainerLayout>
-            
-    <div className="relative w-full bg-white border-none outline-none px-10 overflow-x-hidden">
-      <div className="flex items-center justify-between ">
-        <button
-          className="absolute left-0 p-2 b rounded-full  focus:outline-none"
-          onClick={prevSlide}
-          >
-          <Image src={leftArrow} alt="Previous" width={20} height={14} />
-        </button>
-        <div className="grid grid-cols-3 gap-10 overflow-hidden w-full border-none">
-          {data.slice(currentSlide, currentSlide + 3).map((d) => (
-              <div
-              key={d.id}
-              className="w-full m-auto bg-white h-[336px] rounded-[30px] pt-[10px] px-[10px] border-b-[4px] border-b-[#4747D6]"
-              >
-              <Image
-                src={d.img}
-                alt=""
-                width={144}
-                height={24}
-                className="m-auto mt-10 mb-6"
-              />
-              <p className="text-center mb-[35px] text-[#555555] text-[18px] font-medium">
-                {d.review}
-              </p>
-              <p className="text-center mb-[54px] text-[#555555] text-[16px] font-semibold">
-                {d.name}
-              </p>
+        <p
+          className="text-[#333333] text-[36px] font-semibold text-center mt-40"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          TESTIMONIALS
+        </p>
+
+        <p className="text-[#333333] text-[20px] font-medium text-center mt-[10px] mb-[50px]">
+          Our users have the following to say about Us:
+        </p>
+        <div className="relative w-full bg-white border-none outline-none px-10 overflow-x-hidden">
+          <div className="flex items-center justify-between ">
+            <button
+              className="absolute left-0 p-2 b rounded-full  focus:outline-none"
+              onClick={prevSlide}
+            >
+              <Image src={leftArrow} alt="Previous" width={20} height={14} />
+            </button>
+            <div className="grid grid-cols-3 gap-10 overflow-hidden w-full border-none bg-[#F9F6FF] p-[30px] rounded-[30px]">
+              {data.slice(currentSlide, currentSlide + 3).map((d) => (
+                <div
+                  key={d.id}
+                  className="w-full m-auto bg-white h-[336px] rounded-[30px] pt-[10px] px-[10px] border-b-[4px] border-b-[#4747D6]"
+                >
+                  <Image
+                    src={d.img}
+                    alt=""
+                    width={144}
+                    height={24}
+                    className="m-auto mt-10 mb-6"
+                  />
+                  <p className="text-center mb-[35px] text-[#555555] text-[18px] font-medium">
+                    {d.review}
+                  </p>
+                  <p className="text-center mb-[54px] text-[#555555] text-[16px] font-semibold">
+                    {d.name}
+                  </p>
+                </div>
+              ))}
             </div>
-          ))}
+            <button
+              className="absolute right-0 p-2    focus:outline-none"
+              onClick={nextSlide}
+            >
+              <Image src={rightArrow} alt="Next" width={20} height={14} />
+            </button>
+          </div>
+          {renderIndicators()}
         </div>
-        <button
-          className="absolute right-0 p-2    focus:outline-none"
-          onClick={nextSlide}
-          >
-          <Image src={rightArrow} alt="Next" width={20} height={14} />
-        </button>
-      </div>
-      {renderIndicators()}
-    </div>
-            </ContainerLayout>
-  );
+      </ContainerLayout>
+    );
 };
 
 export default CustomCarousel;
