@@ -38,7 +38,7 @@ function home() {
       <Section />
       {/* <DesktopCarousel /> */}
       <CustomCarousel />
-      <MobileCarousel />
+      {/* <MobileCarousel /> */}
       <Faq />
       <Slider />
       <RequestDemo />

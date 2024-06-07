@@ -64,29 +64,50 @@ const data = [
 ];
 
 const CustomCarousel = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlideDesktop, setCurrentSlideDesktop] = useState(0);
+  const [currentSlideMobile, setCurrentSlideMobile] = useState(0);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 3) % data.length);
+    setCurrentSlideDesktop((prev) => (prev + 3) % data.length);
+    setCurrentSlideMobile((prev) => (prev + 1) % data.length);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 3 + data.length) % data.length);
+    setCurrentSlideDesktop((prev) => (prev - 3 + data.length) % data.length);
+    setCurrentSlideMobile((prev) => (prev - 1 + data.length) % data.length);
   };
 
-  const renderIndicators = () => {
+  const renderIndicatorsDesktop = () => {
     const numOfIndicators = Math.ceil(data.length / 3);
     return (
-      <div className="flex justify-center mt-4 w-fit mx-auto ">
+      <div className="lg:flex justify-center mt-4 w-fit mx-auto hidden ">
         {Array.from({ length: numOfIndicators }).map((_, index) => (
           <div
             key={index}
             className={`w-3 h-3 rounded-full mx-1 cursor-pointer  ${
-              index === Math.floor(currentSlide / 3)
+              index === Math.floor(currentSlideDesktop / 3)
                 ? "bg-blue-500"
                 : "bg-gray-300"
             }`}
-            onClick={() => setCurrentSlide(index * 3)}
+            onClick={() => setCurrentSlideDesktop(index * 3)}
+          />
+        ))}
+      </div>
+    );
+  };
+  const renderIndicatorsMobile = () => {
+    const numOfIndicators = Math.ceil(data.length / 1);
+    return (
+      <div className="flex justify-center mt-4 w-fit mx-auto  lg:hidden">
+        {Array.from({ length: numOfIndicators }).map((_, index) => (
+          <div
+            key={index}
+            className={`w-3 h-3 rounded-full mx-1 cursor-pointer  ${
+              index === Math.floor(currentSlideMobile / 1)
+                ? "bg-blue-500"
+                : "bg-gray-300"
+            }`}
+            onClick={() => setCurrentSlideMobile(index * 1)}
           />
         ))}
       </div>
@@ -96,26 +117,48 @@ const CustomCarousel = () => {
     return (
       <ContainerLayout>
         <p
-          className="text-[#333333] text-[36px] font-semibold text-center mt-40"
+          className="text-[#333333] text-xl leading-[30px] lg:text-[36px] font-semibold text-center  lg:mt-40"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
           TESTIMONIALS
         </p>
 
-        <p className="text-[#333333] text-[20px] font-medium text-center mt-[10px] mb-[50px]">
+        <p className="text-[#555555] leading-[25px] text-sm lg:text-[20px] font-medium text-center mt-[10px] mb-[50px]">
           Our users have the following to say about Us:
         </p>
-        <div className="relative w-full bg-white border-none outline-none px-10 overflow-x-hidden">
+        <div className="relative w-full bg-white border-none outline-none px-4 lg:px-10 overflow-x-hidden">
           <div className="flex items-center justify-between ">
             <button
-              className="absolute left-0 p-2 b rounded-full  focus:outline-none"
+              className="absolute -left-2 lg:left-0 p-2 b rounded-full  focus:outline-none"
               onClick={prevSlide}
             >
               <Image src={leftArrow} alt="Previous" width={20} height={14} />
             </button>
-            <div className="grid grid-cols-3 gap-10 overflow-hidden w-full border-none bg-[#F9F6FF] p-[30px] rounded-[30px]">
-              {data.slice(currentSlide, currentSlide + 3).map((d) => (
+            <div className=" grid-cols-1 hidden lg:grid lg:grid-cols-3 gap-10 overflow-hidden w-full border-none bg-[#F9F6FF] p-4 lg:p-[30px] rounded-[30px]">
+              {data.slice(currentSlideDesktop, currentSlideDesktop + 3).map((d) => (
+                <div
+                  key={d.id}
+                  className="w-full m-auto bg-white h-[336px] rounded-[30px] pt-[10px] px-[10px] border-b-[4px] border-b-[#4747D6]"
+                >
+                  <Image
+                    src={d.img}
+                    alt=""
+                    width={144}
+                    height={24}
+                    className="m-auto mt-10 mb-6"
+                  />
+                  <p className="text-center mb-[35px] text-[#555555] text-sm  leading-[25px] lg:leading-[30px] lg:text-[18px] font-medium">
+                    {d.review}
+                  </p>
+                  <p className="text-center mb-[54px] text-[#555555] text-[14px] lg:text-[16px] leading-[25px] font-semibold italic">
+                    {d.name}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <div className=" grid-cols-1 grid lg:hidden lg:grid-cols-3 gap-10 overflow-hidden w-full border-none bg-[#F9F6FF] p-4 lg:p-[30px] rounded-[30px]">
+              {data.slice(currentSlideDesktop, currentSlideDesktop + 1).map((d) => (
                 <div
                   key={d.id}
                   className="w-full m-auto bg-white h-[336px] rounded-[30px] pt-[10px] px-[10px] border-b-[4px] border-b-[#4747D6]"
@@ -137,13 +180,14 @@ const CustomCarousel = () => {
               ))}
             </div>
             <button
-              className="absolute right-0 p-2    focus:outline-none"
+              className="absolute -right-2 lg:right-0 p-2    focus:outline-none"
               onClick={nextSlide}
             >
               <Image src={rightArrow} alt="Next" width={20} height={14} />
             </button>
           </div>
-          {renderIndicators()}
+          {renderIndicatorsDesktop()}
+          {renderIndicatorsMobile()}
         </div>
       </ContainerLayout>
     );

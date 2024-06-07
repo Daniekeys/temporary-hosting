@@ -11,14 +11,14 @@ const Faq = () => {
       <ContainerLayout>
         <div className="w-full flex flex-col">
           <p
-            className="text-[#333333] text-[36px] font-semibold text-center"
+            className="text-[#333333] text-xl leading-[30px] lg:text-[36px] font-semibold text-center"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
             FAQ
           </p>
           <p
-            className="text-[#555555] text-[20px] font-medium text-center mt-[10px] leading-[35px]"
+            className="text-[#555555] text-sm  lg:text-[20px] font-medium text-center mt-[10px] leading-[25px] lg:leading-[35px]"
             data-aos="fade-up"
             data-aos-duration="1000"
           >

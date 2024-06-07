@@ -16,7 +16,7 @@ function Control() {
       </p>
 
       <p
-        className="w-full md:w-8/12 m-auto text-[#555555] text-[14px] md:text-[18px] font-medium text-center mt-[10px]"
+        className="w-full md:w-8/12 m-auto text-[#555555] text-[14px] md:text-[18px] font-medium text-center mt-[10px] leading-[25px] lg:leading-[30px]"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
