@@ -76,7 +76,7 @@ function HomeHero() {
               alt="location"
               className="max-w-[310px] lg:w-[310px] w-[212px] object-contain  h-auto  absolute top-[30%] -left-4 lg:left-0 hero-item-shadow z-10"
               data-aos="fade-down"
-              data-aos-delay="1000"
+              data-aos-delay="300"
             />
             <Image
               src={collection}
@@ -84,15 +84,15 @@ function HomeHero() {
               className="max-w-[310px] w-[212px] lg:w-[310px] object-contain  h-auto absolute top-[50%] -right-4 lg:right-0"
               data-aos="fade-down"
               data-aos-duration="1000"
-              data-aos-delay="2000"
+              data-aos-delay="600"
             />
             <Image
               src={secure}
               alt="secure"
               className="max-w-[310px] w-[212px] lg:w-[310px] object-contain  h-auto absolute bottom-[-100px] left-0"
-              data-aos="fade-down"
-              data-aos-delay="3000"
-              data-aos-duration="600"
+              // data-aos="fade-down"
+              // data-aos-delay="900"
+              // data-aos-duration="1000"
             />
           </div>
         </div>
