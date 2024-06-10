@@ -6,12 +6,12 @@ import Image from "next/image";
 import MobileNav from "../navbar/mobile-nav";
 const BlogHero = () => {
   return (
-    <div className="grad-blog-bg w-full h-full flow-hide">
-      <div className="w-full lg:h-screen lg:max-h-[908px] relative blog-hero-bg flex flex-col flow-hide">
+    <div className=" w-full h-full flow-hide">
+      <div className="w-full   relative blog-hero-bg flex flex-col flow-hide">
         <NewNavbar />
         <MobileNav present={2} />
         <ContainerLayout>
-          <div className="w-full flex flex-col h-full mt-[142px] justify-center flow-hide">
+          <div className="w-full flex flex-col  mt-[142px] justify-center flow-hide ">
             <div className="w-full flex justify-center flow-hide">
               <div
                 className=" w-full max-w-[725px] mx-auto rounded-[50px] h-[75px] bg-white bg-opacity-60 flex justify-between px-4 items-center mt-8"
@@ -23,7 +23,7 @@ const BlogHero = () => {
                   className="bg-transparent flex-grow border-none outline-none focus:outline-none focus:border-none placeholder:text-base placeholder:text-ash text-ash text-base "
                   placeholder="search blog"
                 />
-                <button className="bg-mainBlue rounded-[50px] h-[50px] px-5 flex items-center justify-center text-white text-base font-medium cursor-pointer lg:min-w-[168px] ">
+                <button className="bg-mainBlue rounded-[50px] h-[50px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[168px] hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold  ">
                   Submit
                 </button>
               </div>
@@ -53,7 +53,7 @@ const BlogHero = () => {
                   height={heroPic.height}
                   className="w-full h-auto"
                   // data-aos="fade-up"
-              
+
                   // data-aos-duration="1000"
                 />
               </div>

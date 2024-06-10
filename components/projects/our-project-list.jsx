@@ -7,15 +7,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 const OurProjectList = () => {
   return (
-    <div className="w-full flex flex-col bg-white rounded-t-[50px]  ">
+    <div
+      className="w-full flex flex-col bg-white rounded-t-[50px]  "
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <ContainerLayout>
         <div className="w-full py-20 lg:py-28 flex flex-col justify-center items-center">
           <div className="flex flex-col items-center w-full">
-            <h1
-              className="text-ash font-semibold text-2xl lg:text-[32px] mb-2"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
+            <h1 className="text-ash font-semibold text-2xl lg:text-[32px] mb-2">
               OUR PROJECTS
             </h1>
             <span>
@@ -26,15 +26,15 @@ const OurProjectList = () => {
           <div className="flex flex-col items-center justify-center w-full mt-24 px-4 lg:px-0">
             <h1
               className="text-mainBlue text-center font-semibold text-2xl lg:text-[32px] "
-              data-aos="fade-up"
-              data-aos-duration="1000"
+              // data-aos="fade-up"
+              // data-aos-duration="1000"
             >
               Food Price Monitoring Project In Nigeria
             </h1>
             <div
               className="flex flex-col items-center relative mt-12"
-              data-aos="fade-up"
-              data-aos-duration="1000"
+              // data-aos="fade-up"
+              // data-aos-duration="1000"
             >
               <span className="z-modal -mb-16">
                 <Image src={fpmp} alt="images" className="mx-auto  " />
@@ -45,26 +45,26 @@ const OurProjectList = () => {
             </div>
             <p
               className="text-center mt-12 text-ash lg:text-lg text-sm  "
-              data-aos="fade-up"
-              data-aos-duration="1000"
+              // data-aos="fade-up"
+              // data-aos-duration="1000"
             >
               Tracking the availability of food in Nigeria using a data driven
               price model in line with the UN SD4
             </p>
             <div
               className="w-full grid grid-cols-2 lg:flex items-center gap-2 justify-center mt-8 px-4"
-              data-aos="fade-up"
-              data-aos-duration="1000"
+              // data-aos="fade-up"
+              // data-aos-duration="1000"
             >
               <Link
                 href={"https://fpmpn.wecollect.tech/"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-mainBlue hero-btn text-white h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px] "
+                className="bg-mainBlue hero-btn text-white h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px] hover:bg-[#E3D5FF] hover:text-mainBlue "
               >
                 Explore
               </Link>
-              <button className="bg-white hero-btn text-mainBlue h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px]  border-opacity-30">
+              <button className="bg-white hero-btn text-mainBlue h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px]  border-opacity-30 hover:bg-[#E3D5FF]">
                 Contact Us
               </button>
             </div>

@@ -10,15 +10,19 @@ const AllBlogs = () => {
   const router = useRouter();
   return (
     <ContainerLayout>
-      <div className="w-full flex flex-col mt-20 mb-8 md:mb-0">
+      <div
+        className="w-full flex flex-col mt-20 mb-8 md:mb-0"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <h1
           className="mt-16 text-[#555] text-2xl md:text-[40px] mb-8 font-[500]"
-          data-aos="fade-up"
-          data-aos-duration="1000"
+          // data-aos="fade-up"
+          // data-aos-duration="1000"
         >
           Older posts
         </h1>
-        <div className="w-full grid grid-cols-1 gap-x-8 gap-y-12  sm:grid-cols-2 lg:grid-cols-3 flow-hide">
+        <div className="w-full grid grid-cols-1 gap-x-8 gap-y-12  sm:grid-cols-2 lg:grid-cols-3 overflow-y-hidden">
           {blogPosts?.slice(1, 6)?.map((item, index) => (
             <div
               className="w-full flex flex-col"
@@ -41,7 +45,7 @@ const AllBlogs = () => {
                 {item.summaryHeading}
               </p>
               <p
-                className="hover:bg-[#E3D5FF] bg-white   text-base text-mainBlue border border-mainBlue hover:border-none  hover:text-white  font-semibold mt-4  w-fit px-[30px] py-[15px] cursor-pointer h-[50px] rounded-[50px] flex items-center justify-center "
+                className="hover:bg-[#E3D5FF] bg-white   text-base text-mainBlue border border-mainBlue hover:border-none    font-semibold mt-4  w-fit px-[30px] py-[15px] cursor-pointer h-[50px] rounded-[50px] flex items-center justify-center hover:text-mainBlue "
                 onClick={() => router.push(`/blog/${index + 1}`)}
               >
                 Read

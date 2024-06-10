@@ -16,7 +16,7 @@ function HomeHero() {
   return (
     <div className="w-full bg-white  lg:bg-white">
       <ContainerLayout>
-        <div className="w-full h-auto pt-32 flex flex-col md:flex-row justify-between items-center px-8 lg:px-0 ">
+        <div className="w-full h-auto pt-24 flex flex-col md:flex-row justify-between items-center px-8 lg:px-0 ">
           <div className="w-full 2xl:w-[40%] max-w-[516px]  h-auto text-[#333333] text-center md:text-start ">
             <p
               className="text-[45px] md:text-[55px] font-bold"
@@ -54,7 +54,13 @@ function HomeHero() {
               projects
             </p>
 
-            <div className="w-full h-auto flex flex-col md:flex-row items-center mt-8">
+            <div
+              className="w-full h-auto flex flex-col md:flex-row items-center mt-8"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="1000"
+              data-aos-once="true"
+            >
               <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px] mr-[24px] cursor-pointer font-semibold hero-btn">
                 Get started for free
               </div>

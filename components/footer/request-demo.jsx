@@ -34,7 +34,7 @@ const RequestDemo = () => {
                 className="bg-transparent flex-grow border-none outline-none focus:outline-none focus:border-none placeholder:text-base placeholder:text-ash text-ash text-base "
                 placeholder="e:g johndoe@email.com"
               />
-              <button className="bg-mainBlue rounded-[50px] h-[50px] px-5 flex items-center justify-center text-white text-base font-medium cursor-pointer lg:min-w-[168px] ">
+              <button className="bg-mainBlue rounded-[50px] h-[50px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[168px] hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
                 Submit
               </button>
             </div>
@@ -43,5 +43,6 @@ const RequestDemo = () => {
       </div>
     );
 };
+
 
 export default RequestDemo;

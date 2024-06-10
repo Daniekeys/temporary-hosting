@@ -16,6 +16,8 @@ const NewNavbar = () => {
   const router = useRouter();
   const [isAboutUsDropdownOpen, setIsAboutUsDropdownOpen] = useState(false);
   const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
+  const [rotateAbout, setRotateAbout] = useState(false);
+  const [rotateProduct, setRotateProduct] = useState(false);
 
   return (
     <div
@@ -31,15 +33,26 @@ const NewNavbar = () => {
           </div>
 
           <div className="flex items-center gap-6">
+            <Link
+              href="/home"
+              className="rounded-[50px] gap-2 h-[50px] hover:bg-[#E3D5FF] flex items-center px-4 hover:text-mainBlue text-ash"
+            >
+              <p className=" lg:text-base font-semibold ">Home</p>
+            </Link>
             <div
               onClick={() => {
                 setIsAboutUsDropdownOpen(!isAboutUsDropdownOpen);
                 setIsProductDropdownOpen(false);
+                setRotateAbout(!rotateAbout);
               }}
-              className="flex items-center gap-2 cursor-pointer"
+              className="flex items-center gap-2 cursor-pointer hover:bg-[#E3D5FF] px-4 h-[50px] rounded-[50px] text-ash hover:text-mainBlue"
             >
-              <p className="text-ash lg:text-base font-semibold ">About Us</p>
-              <span>
+              <p className=" lg:text-base font-semibold ">About Us</p>
+              <span
+                className={
+                  rotateAbout ? "rotate-180 duration-500 ease-in-out" : ""
+                }
+              >
                 <ArrowDown />
               </span>
             </div>
@@ -47,19 +60,24 @@ const NewNavbar = () => {
               onClick={() => {
                 setIsProductDropdownOpen(!isProductDropdownOpen);
                 setIsAboutUsDropdownOpen(false);
+                setRotateProduct(!rotateProduct);
               }}
-              className="flex items-center gap-2 cursor-pointer"
+              className="flex items-center gap-2 cursor-pointer hover:bg-[#E3D5FF] px-4 h-[50px] rounded-[50px] hover:text-mainBlue text-ash"
             >
-              <p className="text-ash lg:text-base font-semibold ">Products</p>
-              <span>
+              <p className=" lg:text-base font-semibold ">Products</p>
+              <span
+                className={
+                  rotateProduct ? "rotate-180 duration-500 ease-in-out" : ""
+                }
+              >
                 <ArrowDown />
               </span>
             </div>
             <Link
               href="/contact-us"
-              className="rounded-[50px] gap-2 h-[50px] hover:bg-[#E3D5FF] flex items-center px-4"
+              className="rounded-[50px] gap-2 h-[50px] hover:bg-[#E3D5FF] flex items-center px-4 text-ash hover:text-mainBlue"
             >
-              <p className="text-ash lg:text-base font-semibold ">Contact Us</p>
+              <p className=" lg:text-base font-semibold ">Contact Us</p>
             </Link>
             <div className="flex items-center gap-2 ">
               <p className="text-mainBlue h-[50px] hover:bg-[#E3D5FF] flex items-center lg:text-base font-semibold px-4 py-2 rounded-[50px] cursor-pointer ">
