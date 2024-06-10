@@ -95,10 +95,10 @@ function HomeHero() {
             <Image
               src={secure}
               alt="secure"
-              className="max-w-[310px] w-[212px] lg:w-[310px] object-contain  h-auto absolute bottom-[-80px] lg:bottom-[-100px] left-0"
-              // data-aos="fade-down"
-              // data-aos-delay="900"
-              // data-aos-duration="1000"
+              className="max-w-[310px] w-[212px] lg:w-[310px] object-contain  h-auto absolute bottom-[-80px] lg:bottom-[-60px] left-0"
+              data-aos="fade-down"
+              data-aos-delay="900"
+              data-aos-duration="1000"
             />
           </div>
         </div>
