@@ -16,7 +16,11 @@ const Slider = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="w-full flex justify-center mt-0 ">
+    <div
+      className="w-full flex justify-center mt-0 "
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <div className="animation-container h-[400px] lg:h-[400px]  relative flex items-end justify-center">
         <div
           className={`component1 flex flex-col ${

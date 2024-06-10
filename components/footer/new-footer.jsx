@@ -15,7 +15,11 @@ import copy from "../../assets/svg/copy.svg";
 import FooterFaq from "../LandingPage/FooterFaq";
 const NewFooter = () => {
   return (
-    <div className="w-full flex flex-col bg-[#F9F6FF] pt-8 flow-hide">
+    <div
+      className="w-full flex flex-col bg-[#F9F6FF] pt-8 flow-hide"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       {/* upper session */}
       <div className="w-full  pt-5 md:pt-0 ">
         <ContainerLayout>

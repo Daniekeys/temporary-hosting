@@ -11,12 +11,12 @@ const BlogHero = () => {
         <NewNavbar />
         <MobileNav present={2} />
         <ContainerLayout>
-          <div className="w-full flex flex-col h-full mt-[142px] justify-center">
-            <div className="w-full flex justify-center">
+          <div className="w-full flex flex-col h-full mt-[142px] justify-center flow-hide">
+            <div className="w-full flex justify-center flow-hide">
               <div
                 className=" w-full max-w-[725px] mx-auto rounded-[50px] h-[75px] bg-white bg-opacity-60 flex justify-between px-4 items-center mt-8"
-                data-aos="fade-up"
-                data-aos-duration="1000"
+                // data-aos="fade-up"
+                // data-aos-duration="1000"
               >
                 <input
                   type="text"
@@ -32,15 +32,15 @@ const BlogHero = () => {
               <div className="w-full flex flex-col lg:w-1/2">
                 <h1
                   className="text-mainBlue font-semibold text-[48px] lg:text-[64px]  "
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
                 >
                   OUR BLOG
                 </h1>
                 <p
                   className="text-customBlack font-medium lg:text-[32px] text-lg mt-5 "
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
                 >
                   Stay up to date
                 </p>
@@ -52,9 +52,9 @@ const BlogHero = () => {
                   width={heroPic.width}
                   height={heroPic.height}
                   className="w-full h-auto"
-                  data-aos="fade-up"
+                  // data-aos="fade-up"
               
-                  data-aos-duration="1000"
+                  // data-aos-duration="1000"
                 />
               </div>
             </div>

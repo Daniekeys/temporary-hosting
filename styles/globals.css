@@ -41,20 +41,24 @@
   );
 }
 .blog-hero-bg {
-  background: url("../assets/png/blog-hero-bg.png");
+  background: url("../assets/png/blog-hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
 }
 .project-hero-bg {
-  background: url("../assets/png/project-bg.png");
+  background: url("../assets/png/project-bgs.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
 }
 
+.nav-grad{
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(208, 208, 254, 0.615886) 51.22%, rgba(236, 236, 255, 0.25) 100%);
+
+}
 
 .flow-hide {
   overflow-y: scroll;

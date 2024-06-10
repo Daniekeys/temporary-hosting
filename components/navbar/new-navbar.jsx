@@ -19,7 +19,7 @@ const NewNavbar = () => {
 
   return (
     <div
-      className={`bg-[#F9F6FF] fixed top-0 right-0 left-0 z-high w-full h-[68px] lg:flex items-center hidden rounded-b-[50px] `}
+      className={`bg-[#F5F4FB] fixed top-0 right-0 left-0 z-high w-full h-[68px] lg:flex items-center hidden rounded-b-[50px] `}
     >
       <ContainerLayout>
         <div className="w-full flex items-center justify-between relative  h-[68px]">

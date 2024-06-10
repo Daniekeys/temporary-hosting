@@ -78,7 +78,11 @@ const Section = () => {
 
   return (
     <ContainerLayout>
-      <div className="w-full h-auto mt-0 lg:pt-[98px] flex flex-col md:flex-row justify-between items-center overflow-x-hidden flow-hide  ">
+      <div
+        className="w-full h-auto mt-0 lg:pt-[98px] flex flex-col md:flex-row justify-between items-center overflow-x-hidden flow-hide  "
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="w-full h-auto flex flex-col md:flex-row justify-between items-center relative">
           <div className="w-full h-auto mt-8 md:mt-0 px-4 lg:px-0">
             {steps.map((step, index) => (
@@ -96,8 +100,8 @@ const Section = () => {
           <div className="w-full flex justify-center lg:justify-end md:w-full h-auto ">
             <Image
               src={steps[selectedStepIndex].phoneImage}
-              data-aos="fade-up"
-              data-aos-duration="1000"
+              // data-aos="fade-up"
+              // data-aos-duration="1000"
               alt=""
               className={` ${
                 selectedStepIndex === 1
@@ -107,8 +111,8 @@ const Section = () => {
             />
             <Image
               src={steps[selectedStepIndex].mobile}
-              data-aos="fade-up"
-              data-aos-duration="1000"
+              // data-aos="fade-up"
+              // data-aos-duration="1000"
               alt=""
               className={` ${
                 selectedStepIndex === 1

@@ -11,7 +11,11 @@ import spiral from "../../assets/png/spiral-curve.png";
 import spiralRight from "../../assets/png/spiral-right.png"
 function HomeFeatures() {
   return (
-    <div className="w-full relative overflow-x-hidden overflow-y-hidden  ">
+    <div
+      className="w-full relative overflow-x-hidden overflow-y-hidden  "
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <div className="absolute top-0 left-[-100px] ">
         <Image
           src={spiral}
@@ -26,16 +30,16 @@ function HomeFeatures() {
       <ContainerLayout>
         <p
           className="text-[#555555] text-[20px] md:text-[32px] font-semibold mt-36 text-center"
-          data-aos="fade-up"
-          data-aos-duration="1000"
+          // data-aos="fade-up"
+          // data-aos-duration="1000"
         >
           FEATURES
         </p>
 
         <p
           className="text-[#555555] text-[14px] md:md:text-[18px] leading-[35px] text-sm font-medium text-center"
-          data-aos="fade-up"
-          data-aos-duration="1000"
+          // data-aos="fade-up"
+          // data-aos-duration="1000"
         >
           Explore features that makes Us unique
         </p>

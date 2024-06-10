@@ -86,7 +86,7 @@ const CustomCarousel = () => {
             key={index}
             className={`w-3 h-3 rounded-full mx-1 cursor-pointer  ${
               index === Math.floor(currentSlideDesktop / 3)
-                ? "bg-blue-500"
+                ? "bg-[#4747D6]"
                 : "bg-gray-300"
             }`}
             onClick={() => setCurrentSlideDesktop(index * 3)}
@@ -104,7 +104,7 @@ const CustomCarousel = () => {
             key={index}
             className={`w-3 h-3 rounded-full mx-1 cursor-pointer  ${
               index === Math.floor(currentSlideMobile / 1)
-                ? "bg-blue-500"
+                ? "bg-[#4747D6]"
                 : "bg-gray-300"
             }`}
             onClick={() => setCurrentSlideMobile(index * 1)}
@@ -114,12 +114,13 @@ const CustomCarousel = () => {
     );
   };
 
-    return (
+  return (
+    <div className="w-full" data-aos="fade-up" data-aos-duration="1000">
       <ContainerLayout>
         <p
           className="text-[#333333] text-xl leading-[30px] lg:text-[36px] font-semibold text-center  lg:mt-40"
-          data-aos="fade-up"
-          data-aos-duration="1000"
+          // data-aos="fade-up"
+          // data-aos-duration="1000"
         >
           TESTIMONIALS
         </p>
@@ -136,48 +137,52 @@ const CustomCarousel = () => {
               <Image src={leftArrow} alt="Previous" width={20} height={14} />
             </button>
             <div className=" grid-cols-1 hidden lg:grid lg:grid-cols-3 gap-10 overflow-hidden w-full border-none bg-[#F9F6FF] p-4 lg:p-[30px] rounded-[30px]">
-              {data.slice(currentSlideDesktop, currentSlideDesktop + 3).map((d) => (
-                <div
-                  key={d.id}
-                  className="w-full m-auto bg-white h-[336px] rounded-[30px] pt-[10px] px-[10px] border-b-[4px] border-b-[#4747D6]"
-                >
-                  <Image
-                    src={d.img}
-                    alt=""
-                    width={144}
-                    height={24}
-                    className="m-auto mt-10 mb-6"
-                  />
-                  <p className="text-center mb-[35px] text-[#555555] text-sm  leading-[25px] lg:leading-[30px] lg:text-[18px] font-medium">
-                    {d.review}
-                  </p>
-                  <p className="text-center mb-[54px] text-[#555555] text-[14px] lg:text-[16px] leading-[25px] font-semibold italic">
-                    {d.name}
-                  </p>
-                </div>
-              ))}
+              {data
+                .slice(currentSlideDesktop, currentSlideDesktop + 3)
+                .map((d) => (
+                  <div
+                    key={d.id}
+                    className="w-full m-auto bg-white min-h-[336px] rounded-[30px] pt-[10px] px-[10px] border-b-[4px] border-b-[#4747D6]"
+                  >
+                    <Image
+                      src={d.img}
+                      alt=""
+                      width={144}
+                      height={24}
+                      className="m-auto mt-10 mb-6"
+                    />
+                    <p className="text-center mb-[35px] text-[#555555] text-sm  leading-[25px] lg:leading-[30px] lg:text-[18px] font-medium">
+                      {d.review}
+                    </p>
+                    <p className="text-center mb-[54px] text-[#555555] text-[14px] lg:text-[16px] leading-[25px] font-semibold italic">
+                      {d.name}
+                    </p>
+                  </div>
+                ))}
             </div>
             <div className=" grid-cols-1 grid lg:hidden lg:grid-cols-3 gap-10 overflow-hidden w-full border-none bg-[#F9F6FF] p-4 lg:p-[30px] rounded-[30px]">
-              {data.slice(currentSlideDesktop, currentSlideDesktop + 1).map((d) => (
-                <div
-                  key={d.id}
-                  className="w-full m-auto bg-white h-[336px] rounded-[30px] pt-[10px] px-[10px] border-b-[4px] border-b-[#4747D6]"
-                >
-                  <Image
-                    src={d.img}
-                    alt=""
-                    width={144}
-                    height={24}
-                    className="m-auto mt-10 mb-6"
-                  />
-                  <p className="text-center mb-[35px] text-[#555555] text-[18px] font-medium">
-                    {d.review}
-                  </p>
-                  <p className="text-center mb-[54px] text-[#555555] text-[16px] font-semibold">
-                    {d.name}
-                  </p>
-                </div>
-              ))}
+              {data
+                .slice(currentSlideDesktop, currentSlideDesktop + 1)
+                .map((d) => (
+                  <div
+                    key={d.id}
+                    className="w-full m-auto bg-white h-[336px] rounded-[30px] pt-[10px] px-[10px] border-b-[4px] border-b-[#4747D6]"
+                  >
+                    <Image
+                      src={d.img}
+                      alt=""
+                      width={144}
+                      height={24}
+                      className="m-auto mt-10 mb-6"
+                    />
+                    <p className="text-center mb-[35px] text-[#555555] text-[18px] font-medium">
+                      {d.review}
+                    </p>
+                    <p className="text-center mb-[54px] text-[#555555] text-[16px] font-semibold">
+                      {d.name}
+                    </p>
+                  </div>
+                ))}
             </div>
             <button
               className="absolute -right-2 lg:right-0 p-2    focus:outline-none"
@@ -190,7 +195,8 @@ const CustomCarousel = () => {
           {renderIndicatorsMobile()}
         </div>
       </ContainerLayout>
-    );
+    </div>
+  );
 };
 
 export default CustomCarousel;

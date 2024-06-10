@@ -17,7 +17,7 @@ const OurProject = () => {
         />
         <link rel="icon" href="/we-logo.png" />
       </Head>
-      ;
+      
       <OurProjectHero />
       <OurProjectList />
       <OtherProject />

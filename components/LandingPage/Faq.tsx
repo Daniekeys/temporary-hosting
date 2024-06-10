@@ -7,20 +7,25 @@ import { faqData } from "../../utils/faqdata";
 
 const Faq = () => {
   return (
-    <div className="w-full bg-[#fff] h-auto py-[100px] mt-12 flow-hide" id="faq">
+    <div
+      className="w-full bg-[#fff] h-auto py-[100px] mt-12 flow-hide"
+      id="faq"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <ContainerLayout>
         <div className="w-full flex flex-col">
           <p
             className="text-[#333333] text-xl leading-[30px] lg:text-[36px] font-semibold text-center"
-            data-aos="fade-up"
-            data-aos-duration="1000"
+            // data-aos="fade-up"
+            // data-aos-duration="1000"
           >
             FAQ
           </p>
           <p
             className="text-[#555555] text-sm  lg:text-[20px] font-medium text-center mt-[10px] leading-[25px] lg:leading-[35px]"
-            data-aos="fade-up"
-            data-aos-duration="1000"
+            // data-aos="fade-up"
+            // data-aos-duration="1000"
           >
             Find quick answers to some frequently asked questions
           </p>
