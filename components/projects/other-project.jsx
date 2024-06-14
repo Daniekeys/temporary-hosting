@@ -11,17 +11,17 @@ const OtherProject = () => {
       data-aos="fade-up"
       data-aos-duration="1000"
     >
-      <div className="absolute top-0 left-0 ">
+      <div className="absolute top-0 left-0 lg:flex hidden">
         <Image src={spiral} alt="spiral" />
       </div>
       <ContainerLayout>
         <div className="w-full py-20 lg:py-28 flex flex-col items-center justify-center px-4 lg:px-0">
           <h1
-            className="text-2xl lg:text-[32px] font-semibold text-mainBlue"
+            className="text-base text-center lg:text-start lg:text-[32px] font-semibold text-mainBlue"
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >
-            Angola local Spatial Analysis
+            Angola Local Spatial Analysis
           </h1>
           <div
             className="flex flex-col items-center relative mt-12"
@@ -50,14 +50,15 @@ const OtherProject = () => {
             in egestas. Massa lectus ut ornare orci sit.
           </p>
           <div
-            className="w-full grid grid-cols-2 lg:flex items-center gap-2 justify-center mt-8 px-4"
+            className="w-full grid  grid-cols-1 lg:mx-auto lg:w-fit lg:flex items-center gap-5  lg:gap-2 lg:justify-center mt-8 px-4"
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >
-            <button className="bg-mainBlue hero-btn text-white h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px] hover:bg-[#E3D5FF] hover:text-mainBlue ">
+            <button className="bg-mainBlue hero-btn text-white h-[47px] items-center justify-center rounded-[50px] font-semibold flex min-w-[197px] hover:bg-[#E3D5FF] hover:text-mainBlue max-w-[198px] mx-auto lg:mx-o ">
               Explore
             </button>
-            <button className="bg-white hero-btn text-mainBlue h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px]  border-opacity-30 hover:bg-[#E3D5FF]">
+            <button className="bg-white hero-btn text-mainBlue h-[47px] items-center justify-center rounded-[50px] font-semibold flex min-w-[197px]  border-opacity-30 hover:bg-[#E3D5FF] max-w-[198px] mx-auto lg:mx-0
+          ">
               Contact Us
             </button>
           </div>
