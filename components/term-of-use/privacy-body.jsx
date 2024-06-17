@@ -45,7 +45,7 @@ const PrivacyBody = () => {
                 {item.title}
               </h1>
               <p
-                className=" text-base lg:text-xl font-normal text-ash "
+                className=" text-base lg:text-xl font-normal text-ash leading-[30px] "
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >

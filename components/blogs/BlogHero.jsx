@@ -38,14 +38,14 @@ const BlogHero = () => {
                   OUR BLOG
                 </h1>
                 <p
-                  className="text-customBlack font-medium lg:text-[32px] text-lg mt-5 "
+                  className="text-customBlack font-medium lg:text-[32px] text-lg mt-7 "
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                 >
                   Stay up to date
                 </p>
               </div>
-              <div className="w-full lg:w-1/2">
+              <div className="w-full lg:w-1/2 mt-24 lg:mt-0 mb-12 lg:mb-0">
                 <Image
                   src={heroPic}
                   alt="hero"

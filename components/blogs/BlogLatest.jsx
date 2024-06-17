@@ -35,7 +35,7 @@ const BlogLatest = () => {
           </div>
           <div className="w-full md:w-5/12 flex flex-col justify-center">
             <p
-              className="text-[12px] md:text-base text-[#555] md:mt-6 2xl:mt-0 "
+              className="text-[12px] md:text-base text-[#555] mt-6 2xl:mt-0 "
               // data-aos="fade-up"
               // data-aos-delay="300"
               // data-aos-duration="1000"
@@ -43,7 +43,7 @@ const BlogLatest = () => {
               {item?.date}
             </p>
             <h2
-              className="md:w-11/12 w-full text-[32px] 2xl:text-[40px] font-[500] text-[#333] my-7 md:mt-2 md:mb-2 text-2xl md:leading-[60px]"
+              className="md:w-11/12 w-full text-[32px] 2xl:text-[40px] font-[500] text-[#333] my-7 leading-[36px] md:mt-2 md:mb-2 text-2xl md:leading-[60px]"
               // data-aos="fade-up"
               // data-aos-delay="500"
               // data-aos-duration="1000"
@@ -51,7 +51,7 @@ const BlogLatest = () => {
               {item?.title}
             </h2>
             <p
-              className="text-[#555] text-sm md:text-xl"
+              className="text-[#555] text-sm md:text-xl leading-[30px]"
               // data-aos="fade-up"
               // data-aos-delay="700"
               // data-aos-duration="1000"

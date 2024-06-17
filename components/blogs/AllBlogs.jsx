@@ -11,7 +11,7 @@ const AllBlogs = () => {
   return (
     <ContainerLayout>
       <div
-        className="w-full flex flex-col mt-20 mb-8 md:mb-0"
+        className="w-full flex flex-col mt-16 lg:mt-20 mb-8 md:mb-0"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
@@ -20,7 +20,7 @@ const AllBlogs = () => {
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
-          Older posts
+          OLDER POSTS
         </h1>
         <div className="w-full grid grid-cols-1 gap-x-8 gap-y-12  sm:grid-cols-2 lg:grid-cols-3 overflow-y-hidden">
           {blogPosts?.slice(1, 6)?.map((item, index) => (
@@ -38,10 +38,10 @@ const AllBlogs = () => {
               <p className="text-[12px] md:text-base text-[#555] mt-4 ">
                 {item.date}
               </p>
-              <p className="text-2xl md:text-[32px] text-[#555] leading-[40px] mt-4 truncate">
+              <p className="text-2xl leading-[36px] md:text-[32px] text-[#555] md:leading-[40px] mt-4 truncate">
                 {item.title}
               </p>
-              <p className="text-sm md:text-xl text-[#555] mt-4">
+              <p className=" md:text-xl text-[#555] mt-5 text-base leading-[30px]">
                 {item.summaryHeading}
               </p>
               <p
