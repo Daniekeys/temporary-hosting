@@ -16,7 +16,7 @@ const ContactUs = () => {
         />
         <link rel="icon" href="/we-logo.png" />
       </Head>
-      ;
+      
       <ContactHero />
       <GetInTouch />
       <Slider />

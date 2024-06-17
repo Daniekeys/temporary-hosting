@@ -27,7 +27,7 @@ const DownloadHero = () => {
                     Download App
                   </h1>
                   <p
-                    className="text-customBlack font-medium text-sm lg:text-base leading-[30px]  lg:max-w-[490px]"
+                    className="text-customBlack font-medium text-sm mt-7 lg:text-base leading-[30px]  lg:max-w-[490px]"
                     data-aos="fade-down"
                     data-aos-duration="1000"
                   >

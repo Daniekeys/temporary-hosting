@@ -19,7 +19,7 @@ const Download = () => {
       
       <DownloadHero />
       <PartnersCard />
-      <div className="w-full mt-0 lg:mt-12">
+      <div className="w-full mt-12 lg:mt-12">
         <Slider />
       </div>
       <RequestDemo />

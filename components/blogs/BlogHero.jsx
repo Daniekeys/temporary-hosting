@@ -24,7 +24,7 @@ const BlogHero = () => {
                   placeholder="search blog"
                 />
                 <button className="bg-mainBlue rounded-[50px] h-[50px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[168px] hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold  ">
-                  Submit
+                  Search
                 </button>
               </div>
             </div>

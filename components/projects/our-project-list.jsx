@@ -5,7 +5,9 @@ import oval from "../../assets/png/oval.png";
 import fpmp from "../../assets/png/fpmp-samp.png"
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 const OurProjectList = () => {
+  const router = useRouter();
   return (
     <div
       className="w-full flex flex-col bg-white rounded-t-[50px]  "
@@ -37,14 +39,18 @@ const OurProjectList = () => {
               // data-aos-duration="1000"
             >
               <span className="z-modal -mb-16">
-                <Image src={fpmp} alt="images" className="mx-auto  " />
+                <Image
+                  src={fpmp}
+                  alt="images"
+                  className="mx-auto w-[171px] h-[200px] lg:w-auto lg:h-auto  "
+                />
               </span>
               <span className="z-0">
                 <Image src={oval} alt="ima" className="" />
               </span>
             </div>
             <p
-              className="text-center mt-12 text-ash lg:text-lg text-sm  "
+              className="text-center mt-12 text-ash lg:text-lg text-sm leading-[25px]  "
               // data-aos="fade-up"
               // data-aos-duration="1000"
             >
@@ -52,7 +58,7 @@ const OurProjectList = () => {
               price model in line with the UN SD4
             </p>
             <div
-              className="w-full grid grid-cols-2 lg:flex items-center gap-2 justify-center mt-8 px-4"
+              className="w-full flex flex-col lg:flex-row lg:flex items-center gap-5 lg:gap-2 justify-center mt-8 px-4"
               // data-aos="fade-up"
               // data-aos-duration="1000"
             >
@@ -60,11 +66,14 @@ const OurProjectList = () => {
                 href={"https://fpmpn.wecollect.tech/"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-mainBlue hero-btn text-white h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px] hover:bg-[#E3D5FF] hover:text-mainBlue "
+                className="bg-mainBlue hero-btn text-white h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px] hover:bg-[#E3D5FF] hover:text-mainBlue w-full max-w-[200px] "
               >
                 Explore
               </Link>
-              <button className="bg-white hero-btn text-mainBlue h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px]  border-opacity-30 hover:bg-[#E3D5FF]">
+              <button
+                className="bg-white hero-btn text-mainBlue h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px]  border-opacity-30 hover:bg-[#E3D5FF] w-full max-w-[200px]"
+                onClick={() => router.push("/contact-us")}
+              >
                 Contact Us
               </button>
             </div>

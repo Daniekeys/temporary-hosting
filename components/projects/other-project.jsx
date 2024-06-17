@@ -4,7 +4,9 @@ import ContainerLayout from '../../layouts/ContainerLayout';
 import spiral from "../../assets/png/spiral-curve.png";
 import oval from "../../assets/png/oval-b.png"
 import angola from "../../assets/png/angola.png"
+import { useRouter } from 'next/router';
 const OtherProject = () => {
+  const router = useRouter();
   return (
     <div
       className="w-full flex flex-col rounded-t-[50px] bg-[#F9F6FF] relative overflow-y-hidden  "
@@ -28,26 +30,25 @@ const OtherProject = () => {
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >
-            <span className="z-modal -mb-16">
+            <span className="z-modal -mb-8 lg:-mb-16">
               <Image
                 src={angola}
                 alt="images"
-                className="mx-auto w-[171px] lg:w-full  lg:max-w-[435px] h-auto "
+                className="mx-auto w-[171px] lg:w-full  lg:max-w-[435px] h-auto  "
               />
             </span>
             <span className="z-0">
-              <Image src={oval} alt="ima" className="" />
+              <Image src={oval} alt="ima" className="opacity-30" />
             </span>
           </div>
           <p
-            className="text-center mx-auto text-ash text-sm lg:text-lg lg:leading-[36px] max-w-[977px] mt-6"
+            className="text-center mx-auto text-fade text-sm lg:text-lg lg:leading-[36px] leading-[25px] max-w-[977px] mt-6"
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >
             Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
             ipsum feugiat sed vulputate id amet. Etiam arcu ultricies mauris
-            neque porta porta egestas amet. Ut luctus risus dictum urna commodo
-            in egestas. Massa lectus ut ornare orci sit.
+            neque porta 
           </p>
           <div
             className="w-full grid  grid-cols-1 lg:mx-auto lg:w-fit lg:flex items-center gap-5  lg:gap-2 lg:justify-center mt-8 px-4"
@@ -58,7 +59,9 @@ const OtherProject = () => {
               Explore
             </button>
             <button className="bg-white hero-btn text-mainBlue h-[47px] items-center justify-center rounded-[50px] font-semibold flex min-w-[197px]  border-opacity-30 hover:bg-[#E3D5FF] max-w-[198px] mx-auto lg:mx-0
-          ">
+          "
+            onClick={() => router.push("/contact-us")}
+            >
               Contact Us
             </button>
           </div>

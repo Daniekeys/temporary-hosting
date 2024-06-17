@@ -14,6 +14,7 @@ module.exports = {
         mainBlue: "#4747D6",
         customBlack: "#333333",
         ash: "#555555",
+        fade:"#999999"
       },
     },
   },

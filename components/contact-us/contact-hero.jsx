@@ -22,14 +22,14 @@ const ContactHero = () => {
                   CONTACT US
                 </h1>
                 <p
-                  className="text-customBlack font-medium lg:text-[32px] text-xl"
+                  className="text-customBlack font-medium lg:text-[32px] text-xl mt-[30px]"
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >
                   Connect with WeCollect
                 </p>
               </div>
-              <div className="w-full lg:w-7/12">
+              <div className="w-full lg:w-7/12 mt-16 lg:mt-0">
                 <Image
                   src={heroPic}
                   alt="hero"

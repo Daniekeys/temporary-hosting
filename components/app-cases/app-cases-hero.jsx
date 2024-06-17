@@ -11,33 +11,33 @@ const AppCaseHero = () => {
         <NewNavbar />
         <MobileNav />
         <ContainerLayout>
-          <div className="w-full flex flex-col mt-20">
+          <div className="w-full flex flex-col lg:mt-20 mt-12">
             <div className="w-full lg:flex-row mt-12  flex flex-col ">
               <div className="w-full flex flex-col lg:w-6/12 justify-center ">
                 <h1
-                  className="text-mainBlue font-semibold text-[48px] lg:text-[64px]  "
-                  data-aos="fade-down"
-                  data-aos-duration="1000"
+                  className="text-mainBlue font-semibold text-[48px] lg:text-[64px] max-w-[361px] lg:max-w-none leading-[72px] lg:leading-[96px] "
+                  // data-aos="fade-down"
+                  // data-aos-duration="1000"
                 >
                   DISCOVER HOW WECOLLECT IS USED IN CASES
                 </h1>
                 <p
-                  className="text-customBlack font-medium lg:text-[32px] text-lg  leading-[40px] "
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
+                  className="text-customBlack font-medium lg:text-[32px] text-lg  leading-[40px] mt-[30px] "
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
                 >
-                  Explore how WeCollect is used in cases
+                  Explore our most recent cases
                 </p>
               </div>
-              <div className="w-full lg:w-6/12 justify-end flex items-center mt-6 lg:mt-0">
+              <div className="w-full lg:w-6/12 justify-center mb-4 lg:mb-0 lg:justify-end flex items-center mt-6 lg:mt-0">
                 <Image
                   src={heroPic}
                   alt="hero"
                   width={heroPic.width}
                   height={heroPic.height}
-                  className="w-auto h-auto"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
+                  className="lg:w-auto lg:h-auto max-w-[250px] lg:max-w-full"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
                 />
               </div>
             </div>

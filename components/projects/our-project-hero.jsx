@@ -35,7 +35,7 @@ const OurProjectHero = () => {
                   alt="hero"
                   width={heroPic.width}
                   height={heroPic.height}
-                  className="w-9/12 mx-auto lg:w-auto mt-16 lg:mt-0"
+                  className="w-9/12 max-w-[250px] lg:max-w-full mx-auto lg:w-auto mt-32 lg:mt-0"
                 />
               </div>
             </div>

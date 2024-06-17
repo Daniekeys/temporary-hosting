@@ -76,13 +76,13 @@ const data = [
 
 const AppCaseList = () => {
   return (
-    <div className="w-full flex flex-col relative bg-white flow-hide ">
+    <div className="w-full flex flex-col relative bg-white  ">
       <div className="w-full lg:h-[1438px] bg-white rounded-t-[50px] h-screen "></div>
       <div className="w-full lg:min-h-[3200px] h-full mb-20 bg-[#F9F6FF] rounded-t-[50px] "></div>
-      <div className="absolute top-20 left-0 right-0">
+      <div className="absolute top-20 left-0 right-0 bottom-0">
         <ContainerLayout>
           <div className="w-full flex flex-col gap-10 flow-hide">
-            <h1 className="text-mainBlue lg:text-[32px] font-semibold">
+            <h1 className="text-mainBlue lg:text-[32px] font-semibold max-w-[271px] lg:max-w-full text-center lg:text-start mx-auto lg:mx-0 ">
               Applicable in the following cases and more...
             </h1>
             <div className="w-full flex flex-col bg-[#F9F6FF] p-4 lg:p-[30px]  rounded-[30px]  gap-[40px]">
