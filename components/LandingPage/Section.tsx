@@ -79,6 +79,7 @@ const Section = () => {
   return (
     <ContainerLayout>
       <div
+        id="features"
         className="w-full h-auto mt-0 lg:pt-[98px] flex flex-col md:flex-row justify-between items-center overflow-x-hidden flow-hide  "
         data-aos="fade-up"
         data-aos-duration="1000"

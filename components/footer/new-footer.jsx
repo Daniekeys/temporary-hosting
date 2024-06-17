@@ -108,10 +108,10 @@ const NewFooter = () => {
                     />
                   </Link>
                 </div>
-                <p className="text-ash font-bold text-base mt-5">
+                <p className="text-ash font-bold text-base mt-12 text-center mx-auto lg:mx-0 lg:text-start">
                   Download App
                 </p>
-                <div className="flex items-center gap-4 mt-2 ">
+                <div className="flex items-center gap-4 mt-2 justify-center lg:justify-start ">
                   <Link href="/">
                     <Image
                       src={googleIcon}
