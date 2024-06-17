@@ -9,7 +9,7 @@ import Slider from "../../components/blogs/Slider"
 import Head from "next/head";
 const index = () => {
   return (
-    <div className="w-full flex flex-col flow-hide">
+    <div className="w-full flex flex-col flow-hide relative">
       <Head>
         <title>Blog</title>
         <meta

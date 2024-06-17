@@ -7,7 +7,7 @@ import MobileNav from "../navbar/mobile-nav";
 const BlogHero = () => {
   return (
     <div className=" w-full h-full flow-hide">
-      <div className="w-full   relative blog-hero-bg flex flex-col flow-hide">
+      <div className="w-full   relative blog-hero-bg flex flex-col ">
         <NewNavbar />
         <MobileNav present={2} />
         <ContainerLayout>
@@ -45,16 +45,16 @@ const BlogHero = () => {
                   Stay up to date
                 </p>
               </div>
-              <div className="w-full lg:w-1/2 mt-24 lg:mt-0 mb-12 lg:mb-0">
+              <div className="w-full lg:w-1/2 mt-24 lg:mt-0 mb-12 lg:mb-24">
                 <Image
                   src={heroPic}
                   alt="hero"
                   width={heroPic.width}
                   height={heroPic.height}
-                  className="w-full h-auto"
+                  className="w-full h-auto "
                   // data-aos="fade-up"
 
-                  // data-aos-duration="1000"
+                  // data-aos-duration="1000" 
                 />
               </div>
             </div>
