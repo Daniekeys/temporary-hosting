@@ -45,7 +45,7 @@ function HomeFeatures() {
         </p>
 
         <div className="bg-[#F9F6FF] container-border w-full h-auto rounded-[50px] p-5 lg:p-[30px] mt-5 lg:mt-20  relative flow-hide ">
-          <div className="w-full h-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
+          <div className="w-full h-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-4 lg:gap-10">
             <div
               className=" w-full  h-fit lg:h-full rounded-[30px] py-5 lg:py-10 px-5 lg:px-[30px]   cursor-default boxlee"
               // data-aos="fade-up"
@@ -65,7 +65,7 @@ function HomeFeatures() {
             </div>
 
             <div
-              className="boxlee w-full   h-fit lg:h-full rounded-[30px] p-5 lg:p-7 mt-10 md:mt-0   cursor-default"
+              className="boxlee w-full   h-fit lg:h-full rounded-[30px] p-5 lg:p-7  md:mt-0   cursor-default"
               // data-aos="fade-up"
               // data-aos-duration="1000"
               // data-aos-delay="300"
@@ -88,7 +88,7 @@ function HomeFeatures() {
             </div>
           </div>
 
-          <div className="w-full h-auto grid grid-cols-1 lg:grid-cols-3 gap-10 justify-between items-center mt-10">
+          <div className="w-full h-auto grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-10 justify-between items-center mt-4 lg:mt-10">
             <div
               className="boxlee w-full h-fit lg:h-full  rounded-[30px] p-5 lg:p-7  cursor-default"
               // data-aos="fade-up"
