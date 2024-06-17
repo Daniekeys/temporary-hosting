@@ -43,7 +43,7 @@ const Section = () => {
   // Step component
   const Step = ({ index, phoneImage, title, description }) => (
     <div
-      className={`w-full md:w-9/12 py-4 rounded-2xl flex items-center mb-6 cursor-pointer  max-w-[525px]  ${
+      className={`w-full md:w-9/12 py-4 rounded-2xl flex items-center lg:mb-6 cursor-pointer  max-w-[525px]  ${
         index === selectedStepIndex ? "text-[#4747D6]" : ""
       }`}
       onClick={() => setSelectedStepIndex(index)}
@@ -64,8 +64,8 @@ const Section = () => {
           </p>
         </div>
         <p
-          data-aos="fade-up"
-          data-aos-duration="1000"
+          // data-aos="fade-up"
+          // data-aos-duration="1000"
           className={`text-[14px] md:text-[18px] font-medium text-[#555555] leading-[36px] mt-4 ${
             index === selectedStepIndex ? "block" : "hidden"
           }`}

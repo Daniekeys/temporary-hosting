@@ -27,7 +27,7 @@ function Control() {
           <Image
             src={maskwoman}
             alt="maskwoman"
-            className="w-full object-contain h-auto m-auto mt-20 max-w-[1030px]"
+            className="w-full object-contain h-auto m-auto mt-9 lg:mt-20 max-w-[1030px]"
             // data-aos="fade-up"
             // data-aos-duration="1000"
           />
