@@ -102,7 +102,7 @@ const AppCaseList = () => {
                     <h1 className=" text-customBlack text-xl font-semibold leading-[48px] lg:text-[30px] ">
                       {item.title}
                     </h1>
-                    <p className="text-sm lg:text-lg text-ash font-medium ">
+                    <p className="text-sm lg:text-lg text-ash font-medium leading-[35px] ">
                       {item.story}
                     </p>
                   </div>
