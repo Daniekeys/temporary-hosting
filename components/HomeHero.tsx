@@ -55,13 +55,13 @@ function HomeHero() {
             </p>
 
             <div
-              className="w-full h-auto flex flex-col md:flex-row items-center mt-8"
+              className="w-full h-auto flex flex-col  md:flex-row items-center mt-8  lg:gap-6"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="1000"
               data-aos-once="true"
             >
-              <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px] mr-[24px] cursor-pointer font-semibold hero-btn">
+              <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px]  cursor-pointer font-semibold hero-btn">
                 Get started for free
               </div>
               <div className="bg-[#FFFFFF] hover:bg-[#E3D5FF]  w-[197px]  h-[50px] flex justify-start pl-[10px] items-center text-mainBlue rounded-[50px] hero-btn cursor-pointer my-5 md:my-0 font-semibold  ">

@@ -46,8 +46,8 @@ const OtherInnovations = () => {
             neque porta porta egestas amet. Ut luctus risus dictum urna commodo
             in egestas. Massa lectus ut ornare orci sit.
           </p>
-          <div className="w-full h-auto flex flex-col md:flex-row items-center mt-8 justify-center">
-            <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px] mr-[24px] cursor-pointer font-semibold hero-btn">
+          <div className="w-full h-auto flex flex-col md:flex-row items-center mt-8 justify-center  lg:gap-6">
+            <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px]  cursor-pointer font-semibold hero-btn">
               Get started for free
             </div>
             <div className="bg-[#FFFFFF] hover:bg-[#E3D5FF]  w-[197px]  h-[50px] flex justify-start pl-[10px] items-center text-mainBlue rounded-[50px] hero-btn cursor-pointer my-5 md:my-0 font-semibold  ">
