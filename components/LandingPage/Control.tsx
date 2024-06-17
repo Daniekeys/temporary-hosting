@@ -23,7 +23,7 @@ function Control() {
           analyse data on the go. The dashboard is flexible, which is also handy
           when managing multiple projects or forms.
         </p>
-        <div className="w-full relative flow-hide">
+        <div className="w-full relative ">
           <Image
             src={maskwoman}
             alt="maskwoman"
@@ -37,6 +37,7 @@ function Control() {
               width={playIcon.width}
               height={playIcon.height}
               alt="icon"
+              className="w-16 h-16 rounded-full lg:w-auto lg:h-auto"
               // data-aos="fade-up"
               // data-aos-duration="2000"
             />
