@@ -8,7 +8,7 @@ function Control() {
   return (
     <div className="w-full" data-aos="fade-up" data-aos-duration="1000">
       <ContainerLayout>
-        <p className="text-[#555555] text-[20px] md:text-[32px] font-semibold text-center mt-[119px]">
+        <p className="text-[#555555] text-[20px] md:text-[32px] font-semibold text-center mt-[60px] lg:mt-[119px]">
           POWER OF DATA IN YOUR HANDS
         </p>
 
