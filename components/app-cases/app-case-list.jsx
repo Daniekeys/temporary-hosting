@@ -85,7 +85,7 @@ const AppCaseList = () => {
             <h1 className="text-mainBlue lg:text-[32px] font-semibold max-w-[271px] lg:max-w-full text-center lg:text-start mx-auto lg:mx-0 ">
               Applicable in the following cases and more...
             </h1>
-            <div className="w-full flex flex-col bg-[#F9F6FF] p-4 lg:p-[30px]  rounded-[30px]  gap-[40px]">
+            <div className="w-full flex flex-col bg-[#F9F6FF] py-[30px] px-4 lg:p-[30px]  rounded-[30px] gap-[30px]  lg:gap-[40px]">
               {data?.map((item, index) => {
                 return (
                   <div
