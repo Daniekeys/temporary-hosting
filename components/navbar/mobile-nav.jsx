@@ -40,6 +40,14 @@ const MobileNav = ({ present }) => {
         {show && (
           <div className="bg-white w-full flex flex-col items-center z-100 transition-all duration-1000 delay-1000 h-screen relative ">
             <div className="flex flex-col w-full px-4 mt-[45px]">
+              <div className="w-full py-6 " onClick={() => setShow(false)}>
+                <Link
+                  href="/home"
+                  className="text-ash text-base font-semibold"
+                >
+                  Home
+                </Link>
+              </div>
               <div
                 className="w-full py-6 flex items-center gap-2 "
                 onClick={() => setShowAbout(!showAbout)}
