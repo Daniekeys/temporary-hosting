@@ -27,9 +27,7 @@ const Slider = () => {
             showComponent1 ? "slide-in" : "slide-out"
           }`}
         >
-          <h2>heroeroereore</h2>
-          <h2>heroeroereore</h2>
-          <h2>heroeroereore</h2>
+         
           <Featured />
           <div className="w-full flex justify-center gap-5 mt-11 items-center">
             <div className="w-5 h-5 rounded-full border-[2px] border-mainBlue flex items-center justify-center">

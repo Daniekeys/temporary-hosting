@@ -10,20 +10,20 @@ const Faq = () => {
     <div
       className="w-full bg-[#fff] h-auto py-[100px] mt-12 flow-hide"
       id="faq"
-      data-aos="fade-up"
-      data-aos-duration="1000"
+      // data-aos="fade-up"
+      // data-aos-duration="1000"
     >
       <ContainerLayout>
         <div className="w-full flex flex-col">
           <p
-            className="text-[#333333] text-xl leading-[30px] lg:text-[36px] font-semibold text-center"
+            className="text-[#333333] text-xl leading-[30px] lg:text-2xl 2xl:text-[36px] font-semibold text-center"
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >
             FAQ
           </p>
           <p
-            className="text-[#555555] text-sm  lg:text-[20px] font-medium text-center mt-[10px] leading-[25px] lg:leading-[35px]"
+            className="text-[#555555] text-sm  lg:text-base 2xl:text-[20px] font-medium text-center mt-[10px] leading-[25px] lg:leading-[35px]"
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >
@@ -58,9 +58,9 @@ const SingleFaq = ({ item }: any) => {
         onClick={() => setIsOpen(!isOpen)}
       >
         <p
-          className={`md:text-lg  ${
-            isOpen ? "text-ash" : "text-customBlack"
-          }  font-bold  text-sm cursor-pointer`}
+          className={`lg:text-base 2xl:text-lg  ${
+            isOpen ? "text-customBlack" : "text-customBlack"
+          }  font-semibold  text-sm cursor-pointer`}
         >
           {title}
         </p>
@@ -74,15 +74,15 @@ const SingleFaq = ({ item }: any) => {
         <div
           className="flex flex-col mt-3 "
           data-aos="fade-up"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
         >
-          <p className="text-ash md:text-lg lg:w-11/12 ">{story}</p>
+          <p className="text-ash  2xl:text-lg lg:w-11/12 ">{story}</p>
           {list.length !== 0 && (
             <ul className="list-disc ">
               {list.map((item: any, index: number) => {
                 return (
                   <li
-                    className="text-ash md:text-lg text-sm lg:w-9/12"
+                    className="text-ash lg:text-base 2xl:text-lg text-sm lg:w-9/12"
                     key={index}
                   >
                     {item}
