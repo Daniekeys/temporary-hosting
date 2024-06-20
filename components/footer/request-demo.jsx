@@ -10,14 +10,14 @@ const RequestDemo = () => {
         <ContainerLayout>
           <div className="w-full request-bg min-h-[300px] px-4 lg:min-h-[500px] flex flex-col items-center justify-center">
             <h1
-              className="text-customBlack text-center text-2xl lg:text-[36px] font-semibold "
+              className="text-customBlack text-center text-2xl lg:text-[30px] 2xl:text-[36px] font-semibold "
               // data-aos="fade-up"
               // data-aos-duration="1000"
             >
               REQUEST A DEMO
             </h1>
             <p
-              className="text-ash text-base lg:text-xl text-center max-w-[738px] mx-auto font-medium mt-2"
+              className="text-ash text-base 2xl:text-xl text-center max-w-[738px] mx-auto font-medium mt-2"
               // data-aos="fade-up"
               // data-aos-duration="1000"
             >
