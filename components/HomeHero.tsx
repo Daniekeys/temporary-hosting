@@ -19,20 +19,20 @@ function HomeHero() {
         <div className="w-full h-auto pt-24 flex flex-col md:flex-row justify-between items-center px-8 lg:px-0 ">
           <div className="w-full 2xl:w-[40%] max-w-[516px]  h-auto text-[#333333] text-center md:text-start ">
             <p
-              className="text-[45px] md:text-[55px] font-bold"
+              className="text-[45px] 2xl:text-[55px] font-bold"
               data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="600"
+              data-aos-duration="500"
+              data-aos-delay="200"
             >
               Insight Gathering
             </p>
             <div
               className="flex flex-col  relative"
               data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="1200"
+              data-aos-duration="500"
+              data-aos-delay="300"
             >
-              <p className="text-[45px] md:text-[55px] font-bold z-10">
+              <p className="text-[45px] 2xl:text-[55px] font-bold z-10">
                 Made Easy
               </p>
               <div
@@ -43,7 +43,7 @@ function HomeHero() {
             </div>
 
             <p
-              className="text-[#6F6F6F] text-[14px] md:text-[16px] font-medium mt-[30px] leading-[30px]"
+              className="text-[#6F6F6F] text-[14px]  font-medium mt-[30px] leading-[30px]"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="1200"
@@ -61,10 +61,10 @@ function HomeHero() {
               data-aos-delay="1000"
               data-aos-once="true"
             >
-              <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px]  cursor-pointer font-semibold hero-btn">
+              <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px]  cursor-pointer font-semibold hero-btn text-sm 2xl:text-base">
                 Get started for free
               </div>
-              <div className="bg-[#FFFFFF] hover:bg-[#E3D5FF]  w-[197px]  h-[50px] flex justify-start pl-[10px] items-center text-mainBlue rounded-[50px] hero-btn cursor-pointer my-5 md:my-0 font-semibold  ">
+              <div className="bg-[#FFFFFF] hover:bg-[#E3D5FF]  w-[197px]  h-[50px] flex justify-start pl-[10px] items-center text-mainBlue rounded-[50px] hero-btn cursor-pointer my-5 md:my-0 font-semibold text-sm 2xl:text-base  ">
                 <Image src={blueright} alt="blueright" className="mr-[10px]" />
                 Book a demo
               </div>

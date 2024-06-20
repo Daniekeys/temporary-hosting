@@ -33,24 +33,27 @@ const NewNavbar = () => {
           </div>
 
           <div className="flex items-center gap-6">
-            <Link
+            {/* <Link
               href="/home"
               className="rounded-[50px] gap-2 h-[50px] hover:bg-[#E3D5FF] flex items-center px-4 hover:text-mainBlue text-ash"
             >
               <p className=" lg:text-base font-semibold ">Home</p>
-            </Link>
+            </Link> */}
             <div
               onClick={() => {
                 setIsAboutUsDropdownOpen(!isAboutUsDropdownOpen);
                 setIsProductDropdownOpen(false);
                 setRotateAbout(!rotateAbout);
+                   setRotateProduct(false);
               }}
-              className="flex items-center gap-2 cursor-pointer hover:bg-[#E3D5FF] px-4 h-[50px] rounded-[50px] text-ash hover:text-mainBlue"
+              className="flex items-center gap-2 cursor-pointer hover:bg-[#E3D5FF] px-4 h-[50px] rounded-[50px] text-ash hover:text-mainBlue text-sm 2xl:text-base"
             >
-              <p className=" lg:text-base font-semibold ">About Us</p>
+              <p className=" text-sm 2xl:text-base font-semibold ">About Us</p>
               <span
                 className={
-                  rotateAbout ? "rotate-180 duration-500 ease-in-out" : ""
+                  rotateAbout
+                    ? "rotate-180 duration-500 ease-in-out"
+                    : "rotate-0 duration-500 ease-in-out"
                 }
               >
                 <ArrowDown />
@@ -61,13 +64,16 @@ const NewNavbar = () => {
                 setIsProductDropdownOpen(!isProductDropdownOpen);
                 setIsAboutUsDropdownOpen(false);
                 setRotateProduct(!rotateProduct);
+                   setRotateAbout(false);
               }}
               className="flex items-center gap-2 cursor-pointer hover:bg-[#E3D5FF] px-4 h-[50px] rounded-[50px] hover:text-mainBlue text-ash"
             >
-              <p className=" lg:text-base font-semibold ">Products</p>
+              <p className=" text-sm 2xl:text-base font-semibold ">Products</p>
               <span
                 className={
-                  rotateProduct ? "rotate-180 duration-500 ease-in-out" : ""
+                  rotateProduct
+                    ? "rotate-180 duration-500 ease-in-out"
+                    : "rotate-0 duration-500 ease-in-out"
                 }
               >
                 <ArrowDown />

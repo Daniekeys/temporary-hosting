@@ -8,12 +8,12 @@ function Control() {
   return (
     <div className="w-full" data-aos="fade-up" data-aos-duration="1000">
       <ContainerLayout>
-        <p className="text-[#555555] text-[20px] md:text-[32px] font-semibold text-center mt-[60px] lg:mt-[119px]">
+        <p className="text-customBlack text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold text-center mt-[60px] lg:mt-[119px]">
           POWER OF DATA IN YOUR HANDS
         </p>
 
         <p
-          className="w-full md:w-8/12 m-auto text-[#555555] text-[14px] md:text-[18px] font-medium text-center mt-[10px] leading-[25px] lg:leading-[30px]"
+          className="w-full md:w-8/12 m-auto text-[#555555] text-[14px] 2xl:text-[18px] font-medium text-center mt-[10px] leading-[25px] lg:leading-[30px]"
        
         >
           WeCollect is a smart data collection mobile app that allows you
@@ -27,7 +27,7 @@ function Control() {
           <Image
             src={maskwoman}
             alt="maskwoman"
-            className="w-full object-contain h-auto m-auto mt-9 lg:mt-20 max-w-[1030px]"
+            className="w-full object-contain h-auto m-auto mt-9 lg:mt-20 lg:max-w-[850px] 2xl:max-w-[1030px]"
             // data-aos="fade-up"
             // data-aos-duration="1000"
           />

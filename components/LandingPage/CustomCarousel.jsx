@@ -118,14 +118,14 @@ const CustomCarousel = () => {
     <div className="w-full -mt-56 lg:mt-0 " data-aos="fade-up" data-aos-duration="1000">
       <ContainerLayout>
         <p
-          className="text-[#333333] text-xl leading-[30px] lg:text-[36px] font-semibold text-center   lg:mt-40"
+          className="text-[#333333] text-xl leading-[30px] lg:text-2xl 2xl:text-[36px] font-semibold text-center   lg:mt-40"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
           TESTIMONIALS
         </p>
 
-        <p className="text-[#555555] leading-[25px] text-sm lg:text-[20px] font-medium text-center mt-[10px] mb-[50px]">
+        <p className="text-[#555555] leading-[25px] text-sm lg:text-base 2xl:text-[20px] font-medium text-center mt-[10px] mb-[50px]">
           Our users have the following to say about Us:
         </p>
         <div className="relative w-full bg-white border-none outline-none px-4 lg:px-10 overflow-x-hidden">
@@ -151,10 +151,10 @@ const CustomCarousel = () => {
                       height={24}
                       className="m-auto mt-10 mb-6"
                     />
-                    <p className="text-center mb-[35px] text-[#555555] text-sm  leading-[25px] lg:leading-[30px] lg:text-[18px] font-medium">
+                    <p className="text-center mb-[35px] text-[#555555] text-sm  leading-[25px] lg:leading-[30px] lg:text-sm 2xl:text-[18px] font-medium">
                       {d.review}
                     </p>
-                    <p className="text-center mb-[54px] text-[#555555] text-[14px] lg:text-[16px] leading-[25px] font-semibold italic">
+                    <p className="text-center mb-[54px] text-[#555555] text-[14px] 2xl:text-[16px] leading-[25px] font-semibold italic">
                       {d.name}
                     </p>
                   </div>

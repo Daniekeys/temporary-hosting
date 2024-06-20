@@ -13,7 +13,7 @@ const PartnersCard = () => {
         <ContainerLayout>
           <div className="w-full flex flex-col justify-center items-center h-[172px] z-super ">
             <h1
-              className="text-center lg:text-[32px] font-semibold text-ash mb-8 lg:mb-12 lg:mt-40"
+              className="text-center text-2xl 2xl:text-[32px] font-semibold text-customBlack mb-8 lg:mb-12 lg:mt-40"
             
             >
               TRUSTED PARTNERS

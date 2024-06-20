@@ -56,7 +56,7 @@ const Section = () => {
             <Image src={grayangle} alt="" className="w-[32px] h-[32px]" />
           )}
           <p
-            className={`text-[20px] md:text-[32px] font-semibold ml-[15px] min-w-max  ${
+            className={`text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold ml-[15px] min-w-max  ${
               index === selectedStepIndex ? "text-[#4747D6]" : "text-[#999999]"
             }`}
           >
@@ -66,7 +66,7 @@ const Section = () => {
         <p
           // data-aos="fade-up"
           // data-aos-duration="1000"
-          className={`text-[14px] md:text-[18px] font-medium text-[#555555] leading-[36px] mt-4 ${
+          className={`text-[14px] lg:text-base 2xl:text-[18px] font-medium text-[#555555] leading-[36px] mt-4 ${
             index === selectedStepIndex ? "block" : "hidden"
           }`}
         >
@@ -81,8 +81,8 @@ const Section = () => {
       <div
         id="features"
         className="w-full h-auto mt-0 lg:pt-[98px] flex flex-col md:flex-row justify-between items-center overflow-x-hidden flow-hide  "
-        data-aos="fade-up"
-        data-aos-duration="1000"
+        // data-aos="fade-up"
+        // data-aos-duration="1000"
       >
         <div className="w-full h-auto flex flex-col md:flex-row justify-between items-center relative">
           <div className="w-full h-auto mt-8 md:mt-0 px-4 lg:px-0">

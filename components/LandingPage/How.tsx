@@ -10,7 +10,7 @@ function How() {
         data-aos-duration="1000"
       >
         <p
-          className="text-[#555555] text-[20px] md:text-[32px] font-semibold mt-44 text-center"
+          className="text-customBlack text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold mt-44 text-center"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
@@ -18,7 +18,7 @@ function How() {
         </p>
 
         <p
-          className="text-[#555555] text-[14px] md:text-[18px] font-medium mt-[10px] text-center"
+          className="text-[#555555] text-[14px] 2xl:text-[18px] font-medium mt-[10px] text-center"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
