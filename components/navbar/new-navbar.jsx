@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ContainerLayout from "../../layouts/ContainerLayout";
-import logo from "../../assets/png/new-logo.png";
+import logo from "../../assets/svg/we-logo.svg";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import project from "../../assets/svg/project.svg";
@@ -8,7 +8,7 @@ import blog from "../../assets/png/blog-png.png";
 import cases from "../../assets/svg/cases.svg";
 import download from "../../assets/png/download-png.png";
 import Link from "next/link";
-import { ArrowDown } from "../../assets/svg";
+import { ArrowDown } from "../../assets/svg"; 
 import emuration from "../../assets/svg/emuration.svg";
 import reporting from "../../assets/svg/reporting.svg";
 
@@ -26,7 +26,7 @@ const NewNavbar = () => {
       <ContainerLayout>
         <div className="w-full flex items-center justify-between relative  h-[68px]">
           <div>
-            <span className="cursor-pointer" onClick={() => router.push("/")}>
+            <span className="cursor-pointer" onClick={() => router.push("/home")}>
               {" "}
               <Image src={logo} alt="logo" />{" "}
             </span>

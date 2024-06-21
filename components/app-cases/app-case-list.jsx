@@ -82,27 +82,27 @@ const AppCaseList = () => {
       <div className="mt-20">
         <ContainerLayout>
           <div className="w-full flex flex-col gap-10 flow-hide">
-            <h1 className="text-mainBlue lg:text-[32px] font-semibold max-w-[271px] lg:max-w-full text-center lg:text-start mx-auto lg:mx-0 ">
+            <h1 className="text-mainBlue 2xl:text-[32px] lg:text-2xl font-semibold max-w-[271px] lg:max-w-full text-center lg:text-start mx-auto lg:mx-0 ">
               Applicable in the following cases and more...
             </h1>
             <div className="w-full flex flex-col bg-[#F9F6FF] py-[30px] px-4 lg:p-[30px]  rounded-[30px] gap-[30px]  lg:gap-[40px]">
               {data?.map((item, index) => {
                 return (
                   <div
-                    className="w-full bg-white flex flex-col p-4 lg:p-8 gap-4 lg:gap-10 rounded-[30px] boxlee  "
+                    className="w-full bg-white flex flex-col p-4 lg:p-8 gap-4 lg:gap-7 2xl:gap-10 rounded-[30px] boxlee  "
                     key={index}
                   >
                     <span>
                       <Image
                         src={item.pic}
                         alt="pics"
-                        className="md:w-[120px] w-[80px] h-[80px] md:h-[120px] rounded-full"
+                        className="2xl:w-[120px] lg:w-[100px] w-[80px] h-[80px] lg:h-[100px] 2xl:h-[120px] rounded-full"
                       />
                     </span>
-                    <h1 className=" text-customBlack text-xl font-semibold leading-[48px] lg:text-[30px] ">
+                    <h1 className=" text-customBlack text-xl font-semibold leading-[48px] 2xl:text-[30px] lg:text-2xl ">
                       {item.title}
                     </h1>
-                    <p className="text-sm lg:text-lg text-ash font-medium leading-[35px] ">
+                    <p className="text-sm 2xl:text-lg lg:text-base text-ash font-medium leading-[35px] ">
                       {item.story}
                     </p>
                   </div>

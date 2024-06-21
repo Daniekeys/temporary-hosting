@@ -6,7 +6,7 @@ import Image from "next/image";
 import appleP from "../../assets/svg/apple-p.svg";
 import googleP from "../../assets/svg/google-p.svg";
 import MobileNav from "../navbar/mobile-nav";
-import mobileImage from "../../assets/png/mobile-download.png"
+import mobileImage from "../../assets/png/mobile-download.png";
 
 const DownloadHero = () => {
   return (
@@ -20,7 +20,7 @@ const DownloadHero = () => {
               <div className="w-full flex flex-col lg:w-1/2 justify-center ">
                 <div className="w-full px-4  lg:max-w-full  flex flex-col justify-center mt-10 lg:mt-0">
                   <h1
-                    className="text-mainBlue font-semibold text-[48px] lg:text-[64px]  "
+                    className="text-mainBlue font-semibold text-[48px] 2xl:text-[64px]  "
                     data-aos="fade-down"
                     data-aos-duration="1000"
                   >
@@ -31,8 +31,9 @@ const DownloadHero = () => {
                     data-aos="fade-down"
                     data-aos-duration="1000"
                   >
-                    Our Smart Data Collection Mobile app, specially built for Smart data
-                    and useful for Insight gathering in Nigeria ecosystem.
+                    Our Smart Data Collection Mobile app, specially built for
+                    Smart data and useful for Insight gathering in Nigeria
+                    ecosystem.
                   </p>
                   <div
                     className="w-full flex mt-6 gap-4 flex-col lg:flex-row"

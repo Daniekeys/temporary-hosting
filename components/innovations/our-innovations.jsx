@@ -4,10 +4,9 @@ import { SpecialArrow } from "../../assets/svg";
 import oval from "../../assets/png/oval.png";
 import fpmp from "../../assets/png/smart.png";
 import Image from "next/image";
-import phone from "../../assets/svg/phone-icon.svg"
+import phone from "../../assets/svg/phone-icon.svg";
 import appleP from "../../assets/svg/apple-p.svg";
 import googleP from "../../assets/svg/google-p.svg";
-
 
 const OurInnovation = () => {
   return (
@@ -21,7 +20,7 @@ const OurInnovation = () => {
         <div className="w-full py-20 lg:py-28 flex flex-col justify-center items-center">
           <div className="flex flex-col items-center w-full">
             <h1
-              className="text-ash font-semibold text-2xl lg:text-[32px] mb-2"
+              className="text-ash font-semibold text-2xl 2xl:text-[32px] lg:text-2xl mb-2"
               // data-aos="fade-up"
               // data-aos-duration="1000"
             >
@@ -39,7 +38,7 @@ const OurInnovation = () => {
               // data-aos-duration="1000"
             >
               <Image src={phone} alt="phone" />
-              <h1 className="text-mainBlue text-center font-semibold text-2xl lg:text-[32px] ">
+              <h1 className="text-mainBlue text-center font-semibold text-2xl 2xl:text-[32px] lg:text-2xl ">
                 Smart Data Collection App
               </h1>
             </div>
@@ -54,7 +53,7 @@ const OurInnovation = () => {
               </span>
             </div>
             <p
-              className="text-center mt-12 text-ash lg:text-lg text-sm max-w-[977px]"
+              className="text-center mt-12 text-ash 2xl:text-lg lg:text-base text-sm max-w-[977px]"
               // data-aos="fade-up"
               // data-aos-duration="1000"
             >

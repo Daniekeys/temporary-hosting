@@ -38,14 +38,14 @@ const PrivacyBody = () => {
           return (
             <div className="w-full flex flex-col gap-4">
               <h1
-                className=" text-2xl  lg:text-[40px] font-medium text-customBlack"
+                className=" lg:text-2xl  2xl:text-[40px] font-medium text-customBlack"
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
                 {item.title}
               </h1>
               <p
-                className=" text-base lg:text-xl font-normal text-ash leading-[30px] "
+                className=" text-base   2xl:text-xl font-normal text-ash leading-[30px] "
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >

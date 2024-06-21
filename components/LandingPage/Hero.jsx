@@ -27,7 +27,7 @@ const Hero = ({ active }) => {
             data-aos="fade-up"
             data-aos-duration="2000"
           >
-            <h1 className="text-[32px] lg:text-[64px] font-bold text-white w-11/12 lg:w-11/12">
+            <h1 className="text-[32px] 2xl:text-[64px] font-bold text-white w-11/12 lg:w-11/12">
               Data Collection Made Easy
             </h1>
 

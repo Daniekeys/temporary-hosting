@@ -22,7 +22,7 @@ function How() {
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
-          See how WeCollect allows you to collect data faster, safer and
+          See how WeCollect allows you to access data faster, safer and
           reliably
         </p>
       </div>

@@ -15,14 +15,14 @@ const OurProjectHero = () => {
             <div className="w-full lg:flex-row mt-12  flex flex-col  ">
               <div className="w-full flex flex-col lg:w-6/12 justify-center ">
                 <h1
-                  className="text-mainBlue font-semibold text-[48px] lg:text-[64px] max-w-[361px]  "
+                  className="text-mainBlue font-semibold text-[48px] 2xl:text-[64px] max-w-[500px] 2xl:leading-[96px]  "
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >
                   OUR PROJECTS
                 </h1>
                 <p
-                  className="text-customBlack font-medium lg:text-[32px] text-lg"
+                  className="text-customBlack font-medium md:text-2xl 2xl:text-[32px] text-lg leading-[39px]"
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >
@@ -35,7 +35,7 @@ const OurProjectHero = () => {
                   alt="hero"
                   width={heroPic.width}
                   height={heroPic.height}
-                  className="w-9/12 max-w-[250px] lg:max-w-full mx-auto lg:w-auto mt-32 lg:mt-0"
+                  className="w-9/12 lg:w-8/12 max-w-[250px] lg:max-w-full mx-auto 2xl:w-auto mt-32 lg:mt-0"
                 />
               </div>
             </div>

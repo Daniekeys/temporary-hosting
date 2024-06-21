@@ -117,8 +117,8 @@ const Section = () => {
               alt=""
               className={` ${
                 selectedStepIndex === 1
-                  ? "w-full  md:hidden h-auto scale-125"
-                  : "w-full md:hidden flex h-auto"
+                  ? "w-9/12 mx-auto  md:hidden h-auto "
+                  : "w-9/12 mx-auto md:hidden flex h-auto"
               }`}
             />
           </div>

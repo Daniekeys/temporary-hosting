@@ -108,7 +108,7 @@ const MobileNav = ({ present }) => {
               </div>
               <div className="flex flex-col  space-y-5 absolute bottom-40 ">
                 <button className="bg-[#4747D6] w-full max-w-fit px-5 rounded-[50px] hero-btn flex justify-center items-center h-[47px]  text-white bg-primary font-semibold">
-                  Create Account
+                  Get Started
                 </button>
                 <button className="w-full flex justify-center items-center h-[47px] px-5 rounded-[50px]  text-mainBlue bg-white hero-btn  font-semibold border-primary ">
                   Sign In

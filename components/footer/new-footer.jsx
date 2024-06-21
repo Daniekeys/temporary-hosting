@@ -3,7 +3,7 @@ import ContainerLayout from "../../layouts/ContainerLayout";
 import Image from "next/image";
 import Link from "next/link";
 
-import logo from "../../assets/png/new-logo.png";
+import logo from "../../assets/svg/we-logo.svg";
 import facebook from "../../assets/svg/facebook.svg";
 import instagram from "../../assets/svg/instagram.svg";
 import twitter from "../../assets/svg/twitter.svg";

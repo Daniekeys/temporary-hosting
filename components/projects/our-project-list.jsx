@@ -17,7 +17,7 @@ const OurProjectList = () => {
       <ContainerLayout>
         <div className="w-full py-20 lg:py-28 flex flex-col justify-center items-center">
           <div className="flex flex-col items-center w-full">
-            <h1 className="text-ash font-semibold text-2xl lg:text-[32px] mb-2">
+            <h1 className="text-customBlack font-semibold text-2xl 2xl:text-[32px] mb-2">
               OUR PROJECTS
             </h1>
             <span>
@@ -27,7 +27,7 @@ const OurProjectList = () => {
 
           <div className="flex flex-col items-center justify-center w-full mt-24 px-4 lg:px-0">
             <h1
-              className="text-mainBlue text-center font-semibold text-2xl lg:text-[32px] "
+              className="text-mainBlue text-center font-semibold text-2xl 2xl:text-[32px] "
               // data-aos="fade-up"
               // data-aos-duration="1000"
             >
@@ -42,15 +42,15 @@ const OurProjectList = () => {
                 <Image
                   src={fpmp}
                   alt="images"
-                  className="mx-auto w-[171px] h-[200px] lg:w-auto lg:h-auto  "
+                  className="mx-auto w-[171px] h-[200px] lg:w-10/12 lg:h-auto 2xl:w-auto 2xl:h-auto  "
                 />
               </span>
               <span className="z-0">
-                <Image src={oval} alt="ima" className="" />
+                <Image src={oval} alt="ima" className=" lg:w-9/12 lg:mx-auto lg:h-auto 2xl:w-auto 2xl:h-auto" />
               </span>
             </div>
             <p
-              className="text-center mt-12 text-ash lg:text-lg text-sm leading-[25px]  "
+              className="text-center mt-12 text-ash 2xl:text-lg lg:text-base text-sm leading-[25px]  "
               // data-aos="fade-up"
               // data-aos-duration="1000"
             >
@@ -66,12 +66,12 @@ const OurProjectList = () => {
                 href={"https://fpmpn.wecollect.tech/"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-mainBlue hero-btn text-white h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px] hover:bg-[#E3D5FF] hover:text-mainBlue w-full max-w-[200px] "
+                className="bg-mainBlue hero-btn text-white h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px] hover:bg-[#E3D5FF] hover:text-mainBlue w-full max-w-[200px] text-sm "
               >
                 Explore
               </Link>
               <button
-                className="bg-white hero-btn text-mainBlue h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px]  border-opacity-30 hover:bg-[#E3D5FF] w-full max-w-[200px]"
+                className="bg-white hero-btn text-mainBlue h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px]  border-opacity-30 hover:bg-[#E3D5FF] w-full max-w-[200px] text-sm"
                 onClick={() => router.push("/contact-us")}
               >
                 Contact Us

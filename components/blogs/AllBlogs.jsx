@@ -16,7 +16,7 @@ const AllBlogs = () => {
         data-aos-duration="1000"
       >
         <h1
-          className="mt-16 text-[#555] text-2xl md:text-[40px] mb-8 font-[500]"
+          className="mt-16 text-[#555] text-2xl 2xl:text-[40px] lg:text-2xl  mb-8 font-[500]"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
@@ -38,14 +38,14 @@ const AllBlogs = () => {
               <p className="text-[12px] md:text-base text-[#555] mt-4 ">
                 {item.date}
               </p>
-              <p className="text-2xl leading-[36px] md:text-[32px] text-[#555] md:leading-[40px] mt-4 truncate">
+              <p className=" 2xl:text-2xl leading-[36px] md:text-[32px] text-[#555] md:leading-[40px] mt-4 truncate">
                 {item.title}
               </p>
-              <p className=" md:text-xl text-[#555] mt-5 text-base leading-[30px]">
+              <p className=" text-sm lg:text-base 2xl:text-xl text-[#555] mt-5  leading-[30px]">
                 {item.summaryHeading}
               </p>
               <p
-                className="hover:bg-[#E3D5FF] bg-white   text-base text-mainBlue border border-mainBlue hover:border-none    font-semibold mt-4  w-fit px-[30px] py-[15px] cursor-pointer h-[50px] rounded-[50px] flex items-center justify-center hover:text-mainBlue "
+                className="hover:bg-[#E3D5FF] bg-white   text-base text-mainBlue border border-mainBlue hover:border-none    font-semibold mt-4  w-fit px-[30px] py-[15px] cursor-pointer h-[50px] rounded-[50px] flex items-center justify-center hover:text-mainBlue   "
                 onClick={() => router.push(`/blog/${index + 1}`)}
               >
                 Read

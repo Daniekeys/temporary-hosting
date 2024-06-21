@@ -1,26 +1,25 @@
-import React,{useEffect,useState} from 'react'
-import ContainerLayout from '../../layouts/ContainerLayout'
-import Image from 'next/image'
+import React, { useEffect, useState } from "react";
+import ContainerLayout from "../../layouts/ContainerLayout";
+import Image from "next/image";
 import google from "../../assets/svg/google1.svg";
 import apple from "../../assets/svg/apple2.svg";
 import twiiter from "../../assets/svg/twit.svg";
 import facebook from "../../assets/svg/face.svg";
 import linkedin from "../../assets/svg/linkedin.svg";
 import msg from "../../assets/svg/msg.svg";
-import log from "../../assets/svg/logg.svg"
-import { ArrowUp,  } from "../../assets/svg/index"
+import log from "../../assets/svg/logg.svg";
+import { ArrowUp } from "../../assets/svg/index";
 
-
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 const Footer = () => {
-
   const router = useRouter();
-  
-    
-    
+
   return (
     <ContainerLayout>
-      <div className="w-full lg:w-10/12 mx-auto flex flex-col lg:py-[70px] bg-white" id='waitlist'>
+      <div
+        className="w-full lg:w-10/12 mx-auto flex flex-col lg:py-[70px] bg-white"
+        id="waitlist"
+      >
         <h1
           className="text-customeBlack font-bold text-base lg:text-2xl pl-8"
           data-aos="fade-up"
@@ -82,7 +81,7 @@ const Footer = () => {
         <div className="flex w-full lg:justify-between lg:items-center mt-20 flex-col-reverse lg:flex-row">
           <div className="flex items-center space-x-4 mt-4 lg:mt-0 pb-8 lg:pb-0">
             <Image src={log} alt="log" className="w-[20px] h-auto lg:w-fit" />
-            <p className="text-xl lg:text-[32px] font-bold text-customBlack opacity-80">
+            <p className="text-xl 2xl:text-[32px] lg:text-2xl font-bold text-customBlack opacity-80">
               WeCollect
             </p>
             <p className="ltext-base lg:text-xl text-customBlack">
@@ -98,9 +97,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    
     </ContainerLayout>
   );
-}
+};
 
-export default Footer
+export default Footer;

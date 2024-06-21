@@ -15,14 +15,12 @@ import {
   AiFillTwitterCircle,
   AiFillInstagram,
 } from "react-icons/ai";
-import {BsFacebook} from "react-icons/bs"
+import { BsFacebook } from "react-icons/bs";
 const SingleBlogHeader = () => {
   const router = useRouter();
   const { id } = router.query;
   const blogId = Number(id);
   const item = blogPosts[blogId];
-  
-
 
   return (
     <ContainerLayout>
@@ -52,7 +50,7 @@ const SingleBlogHeader = () => {
           </div>
         </div>
         <p
-          className="text-base text-[#444] md:mt-16"
+          className="tex-sm 2xl:text-base text-[#444] md:mt-16"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
@@ -60,7 +58,7 @@ const SingleBlogHeader = () => {
         </p>
         <div className="w-8/12 flex flex-col">
           <h1
-            className="text-4xl md:text-[52px] text-[#333] leading-[78px]"
+            className="text-2xl lg:text-3xl 2xl:text-[40px] text-[#333] leading-[58px]"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
@@ -70,7 +68,7 @@ const SingleBlogHeader = () => {
             {item?.bodyContent?.slice(0, 2)?.map((item, index) => {
               return (
                 <p
-                  className="text-[#333] text-xl"
+                  className="text-[#333] 2xl:text-lg lg:text-base text-sm leading-[30px]"
                   key={index}
                   data-aos="fade-up"
                   data-aos-duration="1000"
@@ -95,7 +93,7 @@ const SingleBlogHeader = () => {
             {item?.bodyContent?.slice(2)?.map((item, index) => {
               return (
                 <p
-                  className="text-[#333] text-xl"
+                  className="text-[#333] 2xl:text-lg lg:text-base text-sm leading-[30px]"
                   key={index}
                   data-aos="fade-up"
                   data-aos-duration="1000"
@@ -106,7 +104,7 @@ const SingleBlogHeader = () => {
             })}
           </div>
           {/* end of an ending */}
-          <h1 className="md:text-[40px] text-[#555] mt-12 mb-8 font-normal ">
+          <h1 className="2xl:text-[40px] lg:text-2xl  text-[#555] mt-12 mb-8 font-normal ">
             People Also Read
           </h1>
         </div>
@@ -118,7 +116,6 @@ const SingleBlogHeader = () => {
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay={`${(index + 1) * 300}`}
-             
             >
               <Image
                 src={item.leadImage}
@@ -128,10 +125,10 @@ const SingleBlogHeader = () => {
               <p className="text-[12px] md:text-base text-[#555] mt-4 ">
                 {item.date}
               </p>
-              <p className="text-2xl md:text-[32px] text-[#555] leading-[40px] mt-4 truncate">
+              <p className="text-xl lg:text-2xl 2xl:text-[40px] text-[#333] leading-[58px] mt-4 truncate">
                 {item.title}
               </p>
-              <p className="text-sm md:text-xl text-[#555] mt-4">
+              <p className="2xl:text-lg lg:text-base text-sm leading-[30px] text-[#555] mt-4">
                 {item.summaryHeading}
               </p>
               <p

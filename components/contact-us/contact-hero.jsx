@@ -15,14 +15,14 @@ const ContactHero = () => {
             <div className="w-full lg:flex-row mt-12  flex flex-col ">
               <div className="w-full flex flex-col lg:w-5/12 justify-center ">
                 <h1
-                  className="text-mainBlue font-semibold text-[32px] lg:text-[64px]  "
+                  className="text-mainBlue font-semibold text-[32px] 2xl:text-[64px]  "
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >
                   CONTACT US
                 </h1>
                 <p
-                  className="text-customBlack font-medium lg:text-[32px] text-xl mt-[30px]"
+                  className="text-customBlack font-medium 2xl:text-[32px] lg:text-2xl text-xl mt-[30px]"
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >

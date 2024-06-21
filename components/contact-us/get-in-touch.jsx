@@ -1,8 +1,8 @@
-import React from 'react'
-import ContainerLayout from '../../layouts/ContainerLayout'
+import React from "react";
+import ContainerLayout from "../../layouts/ContainerLayout";
 import Image from "next/image";
-import { LocationIcon, PhoneIcon, EmailIcon } from '../../assets/svg'
-import woman from "../../assets/png/contact-woman.png"
+import { LocationIcon, PhoneIcon, EmailIcon } from "../../assets/svg";
+import woman from "../../assets/png/contact-woman.png";
 const GetInTouch = () => {
   return (
     <div className="w-full bg-white rounded-t-[30px] mt-16  lg:-mt-4 flex flex-col flow-hide">
@@ -22,7 +22,7 @@ const GetInTouch = () => {
               <h2 className="text-mainBlue text-base lg:text-2xl font-semibold ">
                 Email Address
               </h2>
-              <p className="text-customBlack text-sm lg:text-lg font-medium">
+              <p className="text-customBlack text-sm 2xl:text-lg lg:text-base font-medium">
                 help@wecollect.tech
               </p>
             </div>
@@ -41,7 +41,7 @@ const GetInTouch = () => {
               <h2 className="text-mainBlue text-base lg:text-2xl font-semibold ">
                 Phone number
               </h2>
-              <p className="text-customBlack text-sm lg:text-lg font-medium">
+              <p className="text-customBlack text-sm 2xl:text-lg lg:text-base font-medium">
                 +234(0) 816 360 8315
               </p>
             </div>
@@ -60,7 +60,7 @@ const GetInTouch = () => {
               <h2 className="text-mainBlue text-base lg:text-2xl font-semibold ">
                 Physical location
               </h2>
-              <p className="text-customBlack text-sm lg:text-lg font-medium lg:max-w-[239px] mx-auto text-center">
+              <p className="text-customBlack text-sm 2xl:text-lg lg:text-base font-medium lg:max-w-[239px] mx-auto text-center">
                 Unit D128 Ikota complex, Lekki Lagos
               </p>
             </div>
@@ -70,14 +70,14 @@ const GetInTouch = () => {
         </div>
         <div className="flex mt-[96px] flex-col items-center flow-hide">
           <h1
-            className="text-ash lg:text-[32px] text-2xl font-semibold"
+            className="text-ash 2xl:text-[32px] lg:text-2xl text-2xl font-semibold"
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >
             GET IN TOUCH
           </h1>
           <p
-            className="text-base  text-ash font-medium lg:text-lg mt-2"
+            className="text-base  text-ash font-medium 2xl:text-lg lg:text-base mt-2"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
@@ -196,6 +196,6 @@ const GetInTouch = () => {
       </ContainerLayout>
     </div>
   );
-}
+};
 
-export default GetInTouch
+export default GetInTouch;

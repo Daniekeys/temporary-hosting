@@ -31,14 +31,14 @@ const BlogHero = () => {
             <div className="w-full lg:flex-row mt-12  flex flex-col ">
               <div className="w-full flex flex-col lg:w-1/2">
                 <h1
-                  className="text-mainBlue font-semibold text-[48px] lg:text-[64px]  "
+                  className="text-mainBlue font-semibold text-[48px] 2xl:text-[64px]  "
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                 >
                   OUR BLOG
                 </h1>
                 <p
-                  className="text-customBlack font-medium lg:text-[32px] text-lg mt-7 "
+                  className="text-customBlack font-medium 2xl:text-[32px] lg:text-2xl text-lg mt-7 "
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                 >
@@ -54,7 +54,7 @@ const BlogHero = () => {
                   className="w-full h-auto "
                   // data-aos="fade-up"
 
-                  // data-aos-duration="1000" 
+                  // data-aos-duration="1000"
                 />
               </div>
             </div>
