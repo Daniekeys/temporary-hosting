@@ -9,7 +9,18 @@ import blueright from "../assets/svg/blueright.svg";
 
 function HomeHero() {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
 
+  useEffect(() => {
+    // Trigger the scroll animation on mount
+    setIsScrolling(true);
+    // Set timeout to reset the scroll state after the animation ends
+    const timer = setTimeout(() => {
+      setIsScrolling(false);
+    }, 1000); // 2 seconds duration for the scroll animation
+
+    return () => clearTimeout(timer);
+  }, []);
   useEffect(() => {
     setIsExpanded(true);
   }, []);
@@ -18,30 +29,68 @@ function HomeHero() {
       <ContainerLayout>
         <div className="w-full h-auto pt-24 flex flex-col md:flex-row justify-between items-center px-8 lg:px-0 ">
           <div className="w-full 2xl:w-[40%] max-w-[516px]  h-auto text-[#333333] text-center md:text-start ">
-            <p
-              className="text-[45px] 2xl:text-[55px] font-bold"
-              data-aos="fade-up"
-              data-aos-duration="500"
-              data-aos-delay="200"
-            >
-              Insight Gathering
-            </p>
-            <div
-              className="flex flex-col  relative"
-              data-aos="fade-up"
-              data-aos-duration="500"
-              data-aos-delay="300"
-            >
-              <p className="text-[45px] 2xl:text-[55px] font-bold z-10">
-                Made Easy
-              </p>
+            <div className="scroll-container">
               <div
-                className={`expanding-div ${
-                  isExpanded ? "expanded" : ""
-                } absolute bottom-2 z-0 max-w-[300px]`}
-              ></div>
+                className={`scroll-element ${isScrolling ? "scroll-out" : "opacity-0"}`}
+                // data-aos="flip-down"
+                // data-aos-duration="500"
+                // data-aos-delay="200"
+              >
+                <p
+                  className="text-[45px] 2xl:text-[55px] font-bold"
+                  // data-aos="flip-down"
+                  // data-aos-duration="500"
+                  // data-aos-delay="200"
+                >
+                  Insight Gathering
+                </p>
+                <div
+                  className="flex flex-col  relative"
+                  // data-aos="flip-down"
+                  // data-aos-duration="500"
+                  // data-aos-delay="300"
+                >
+                  <p className="text-[45px] 2xl:text-[55px] font-bold z-10">
+                    Made Easy
+                  </p>
+                  <div
+                    className={`expanding-div ${
+                      isExpanded ? "expanded" : ""
+                    } absolute bottom-2 z-0 max-w-[300px]`}
+                  ></div>
+                </div>
+              </div>
+              <div
+                className={`scroll-element ${isScrolling ? "scroll-in" : ""}`}
+                // data-aos="flip-down"
+                // data-aos-duration="500"
+                // data-aos-delay="200"
+              >
+                <p
+                  className="text-[45px] 2xl:text-[55px] font-bold"
+                  // data-aos="flip-down"
+                  // data-aos-duration="500"
+                  // data-aos-delay="200"
+                >
+                  Insight Gathering
+                </p>
+                <div
+                  className="flex flex-col  relative"
+                  // data-aos="flip-down"
+                  // data-aos-duration="500"
+                  // data-aos-delay="300"
+                >
+                  <p className="text-[45px] 2xl:text-[55px] font-bold z-10">
+                    Made Easy
+                  </p>
+                  <div
+                    className={`expanding-div ${
+                      isExpanded ? "expanded" : ""
+                    } absolute bottom-2 z-0 max-w-[300px]`}
+                  ></div>
+                </div>
+              </div>
             </div>
-
             <p
               className="text-[#6F6F6F] text-[14px]  font-medium mt-[30px] leading-[30px]"
               data-aos="fade-up"

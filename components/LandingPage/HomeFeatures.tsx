@@ -101,7 +101,7 @@ function HomeFeatures() {
                 GEOSPATIAL INFO SYSTEMS
               </p>
 
-              <p className="text-[#555555] lg:text-base 2xl:text-[30px]  leading-[35px] text-sm font-medium mt-7">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium mt-7">
                 With the GIS systems embedded, data monitoring and evaluation is
                 seamless, therefore increasing data accuracy.
               </p>

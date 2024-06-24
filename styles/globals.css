@@ -387,7 +387,7 @@ border-image-source: linear-gradient(132.27deg, #E4E4FF -7.78%, #FFFFFF 43.08%, 
   height: 30px;
   background-color: #FFE700;
   transition: width 3s;
-  transition-delay: 1.5s;
+  transition-delay: 1s;
 }
 
 .expanding-div.expanded {
@@ -425,4 +425,38 @@ border-image-source: linear-gradient(132.27deg, #E4E4FF -7.78%, #FFFFFF 43.08%, 
 
  0px 158px 44px 0px #8FD2FF00
 
+}
+
+
+/* ScrollAnimation.css */
+
+.scroll-container {
+  position: relative;
+  height: 174px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+
+.scroll-element {
+  position: absolute;
+  width: 100%;
+  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.scroll-out {
+  transform: translateY(-100%);
+}
+
+.scroll-in {
+  transform: translateY(100%);
+  animation: scrollIn 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+@keyframes scrollIn {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
