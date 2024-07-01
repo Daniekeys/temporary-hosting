@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 
 import ContainerLayout from "../../layouts/ContainerLayout";
 import Image from "next/image";
@@ -8,12 +8,27 @@ import { blogPosts } from "../../utils/blog-data";
 
 const AllBlogs = () => {
   const router = useRouter();
+  const { search } = router.query;
+  const [allBlogs, setAllBlogs] = useState([]);
+  useEffect(() => {
+    if (!search) {
+      setAllBlogs(blogPosts);
+    }
+    else {
+      const filteredBlogs = blogPosts.filter((blog) => blog.title.toLowerCase().includes(search.toLowerCase()));
+      setAllBlogs(filteredBlogs);
+    }
+  }, [search])
+  
+
+  console.log({search})
   return (
     <ContainerLayout>
       <div
         className="w-full flex flex-col mt-16 lg:mt-20 mb-8 md:mb-0"
-        data-aos="fade-up"
-        data-aos-duration="1000"
+        id="blog"
+        // data-aos="fade-up"
+        // data-aos-duration="1000" 
       >
         <h1
           className="mt-16 text-[#555] text-2xl 2xl:text-[40px] lg:text-2xl  mb-8 font-[500]"
@@ -22,13 +37,20 @@ const AllBlogs = () => {
         >
           OLDER POSTS
         </h1>
-        <div className="w-full grid grid-cols-1 gap-x-8 gap-y-12  sm:grid-cols-2 lg:grid-cols-3 overflow-y-hidden">
-          {blogPosts?.slice(1, 6)?.map((item, index) => (
+        {
+          allBlogs?.length === 0 ? (
+            <div className="flex items-center justify-center">
+              <h1>
+                No Blog  Found
+            </h1>
+            </div>
+          ) : ( <div className="w-full grid grid-cols-1 gap-x-8 gap-y-12  sm:grid-cols-2 lg:grid-cols-3 overflow-y-hidden">
+          {allBlogs?.slice(1, 6)?.map((item, index) => (
             <div
               className="w-full flex flex-col"
               key={index}
-              data-aos="fade-up"
-              data-aos-duration="1000"
+              // data-aos="fade-up"
+              // data-aos-duration="1000"
             >
               <Image
                 src={item.leadImage}
@@ -52,7 +74,9 @@ const AllBlogs = () => {
               </p>
             </div>
           ))}
-        </div>
+        </div>)
+        }
+       
       </div>
     </ContainerLayout>
   );

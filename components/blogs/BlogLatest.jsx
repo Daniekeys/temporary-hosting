@@ -12,8 +12,8 @@ const BlogLatest = () => {
     <ContainerLayout>
       <div
         className="w-full flex flex-col pt-2 lg:overflow-y-hidden"
-        data-aos="fade-up"
-        data-aos-duration="1000"
+        // data-aos="fade-up"
+        // data-aos-duration="1000"
       >
         {/* <div className='w-full h-[1px] mt-10 bg-[#999]' /> */}
         <h1

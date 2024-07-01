@@ -53,7 +53,7 @@ function HomeFeatures() {
             >
               <Image src={data} alt="data" className="w-[80px] h-[80px]" />
 
-              <p className="text-[#333333] 2xl:text-[30px] lg:text-2xl text-xl  font-semibold mt-7 md:leading-[48px]">
+              <p className="text-[#333333] 2xl:text-[30px] lg:text-2xl text-xl  font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]">
                 SMART DATA <br /> COLLECTION APP
               </p>
 
@@ -76,7 +76,7 @@ function HomeFeatures() {
                 className="w-[80px] h-[80px]"
               />
 
-              <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px]">
+              <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]">
                 PROJECT MANAGEMENT DASHBOARD
               </p>
 
@@ -97,7 +97,7 @@ function HomeFeatures() {
             >
               <Image src={gpss} alt="gpss" className="w-[80px] h-[80px]" />
 
-              <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px]">
+              <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]">
                 GEOSPATIAL INFO SYSTEMS
               </p>
 
@@ -115,7 +115,7 @@ function HomeFeatures() {
             >
               <Image src={wifi} alt="wifi" className="w-[80px] h-[80px]" />
 
-              <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px]">
+              <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]">
                 OFFLINE DATA COLLECTION
               </p>
 
@@ -137,7 +137,7 @@ function HomeFeatures() {
                 className="w-[80px] h-[80px]"
               />
 
-              <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px]">
+              <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]">
                 SECURE CLOUD STORAGE
               </p>
 

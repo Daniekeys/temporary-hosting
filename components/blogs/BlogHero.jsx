@@ -1,10 +1,23 @@
-import React from "react";
+import React,{useState} from "react";
 import NewNavbar from "../navbar/new-navbar";
 import ContainerLayout from "../../layouts/ContainerLayout";
 import heroPic from "../../assets/png/blog-hero-pic.png";
 import Image from "next/image";
 import MobileNav from "../navbar/mobile-nav";
+import { useRouter } from "next/router";
 const BlogHero = () => {
+  const [search, setSearch] = useState(""); 
+  const router = useRouter();
+  const handleBlogSearch = () => {
+router.push(`/blog?search=${search}#blog`)
+  }
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      handleBlogSearch();
+    }
+  };
+
+
   return (
     <div className=" w-full h-full flow-hide">
       <div className="w-full   relative blog-hero-bg flex flex-col ">
@@ -22,8 +35,13 @@ const BlogHero = () => {
                   type="text"
                   className="bg-transparent flex-grow border-none outline-none focus:outline-none focus:border-none placeholder:text-base placeholder:text-ash text-ash text-base "
                   placeholder="search blog"
+                  onKeyDown={handleKeyPress}
+                  onChange={(e) => setSearch(e.target.value)}
                 />
-                <button className="bg-mainBlue rounded-[50px] h-[50px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[168px] hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold  ">
+                <button
+                  className="bg-mainBlue rounded-[50px] h-[50px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[168px] hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold  "
+                  onClick={handleBlogSearch}
+                >
                   Search
                 </button>
               </div>
