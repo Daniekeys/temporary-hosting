@@ -4,6 +4,7 @@ import NewFooter from "../components/footer/new-footer";
 import RequestDemo from "../components/footer/request-demo";
 import TermHero from "../components/term-of-use/term-hero";
 import PrivacyBody from "../components/term-of-use/privacy-body";
+import CookiesBody from "../components/term-of-use/cookie-body";
 import MobileNav from "../components/navbar/mobile-nav";
 import Head from "next/head";
 const CookiePolicy = () => {
@@ -21,7 +22,7 @@ const CookiePolicy = () => {
       <NewNavbar />
       <MobileNav present={2} />
       <TermHero current={3} />
-      <PrivacyBody />
+      <CookiesBody />
       <RequestDemo />
       <NewFooter />
     </div>

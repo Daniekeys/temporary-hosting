@@ -17,7 +17,7 @@ const PrivacyPolicy = () => {
         />
         <link rel="icon" href="/we-logo.png" />
       </Head>
-      ;
+      
       <NewNavbar />
       <MobileNav present={2} />
       <TermHero current={1} />
