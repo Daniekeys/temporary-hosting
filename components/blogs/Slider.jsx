@@ -7,14 +7,14 @@ const Slider = () => {
   const [showComponent1, setShowComponent1] = useState(true);
   const [showComponent2, setShowComponent2] = useState(false);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setShowComponent1((prevState) => !prevState);
-  //     setShowComponent2((prevState) => !prevState);
-  //   }, 4000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowComponent1((prevState) => !prevState);
+      setShowComponent2((prevState) => !prevState);
+    }, 4000);
 
-  //   return () => clearInterval(interval);
-  // }, []);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div
       className="w-full flex justify-center mt-0 "
