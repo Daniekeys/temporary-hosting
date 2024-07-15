@@ -11,7 +11,7 @@ import Link from "next/link";
 import { ArrowDown } from "../../assets/svg"; 
 import emuration from "../../assets/svg/emuration.svg";
 import reporting from "../../assets/svg/reporting.svg";
-
+import learning from "../../assets/svg/wecollect-learning.svg"
 const NewNavbar = () => {
   const router = useRouter();
   const [isAboutUsDropdownOpen, setIsAboutUsDropdownOpen] = useState(false);
@@ -187,7 +187,7 @@ const NewNavbar = () => {
         )}
 
         {isProductDropdownOpen && (
-          <div className="w-[35rem] product-shadow  bg-[#F9F6FF] absolute right-0 2xl:right-[220px] p-2 rounded-b-[30px]">
+          <div className="w-[35rem] product-shadow  bg-[#F9F6FF] absolute right-0 2xl:right-[264px] p-2 rounded-b-[30px]">
             <div
               onClick={() => router.push("/innovations#app")}
               className="w-full h-auto flex items-center cursor-pointer hover:bg-[#fff]  rounded-[20px] px-4 py-2 transition-all duration-1000 ease-in-out "
@@ -217,6 +217,21 @@ const NewNavbar = () => {
                 </p>
               </div>
             </div>
+            <div
+              onClick={() => router.push("#")}
+              className="w-full h-auto flex items-center cursor-pointer hover:bg-[#fff]  rounded-[20px] px-4 py-2 transition-all duration-1000 ease-in-out "
+            >
+              <Image src={learning} alt="reporting" />
+              <div className="ml-[21px]">
+                <p className="text-[#555555] text-[16px] font-semibold">
+                  WeCollect Learning
+                </p>
+                <p className="text-[#555555] text-[14px] font-medium">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+              </div>
+            </div>
+
           </div>
         )}
       </ContainerLayout>

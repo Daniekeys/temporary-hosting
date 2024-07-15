@@ -22,7 +22,7 @@ const index = () => {
         />
         <link rel="icon" href="/we-logo.png" />
       </Head>
-      ;
+      
       <NewNavbar />
       <SingleBlogHeader />
       <RequestDemo />

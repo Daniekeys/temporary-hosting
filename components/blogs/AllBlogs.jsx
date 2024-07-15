@@ -21,7 +21,7 @@ const AllBlogs = () => {
   }, [search])
   
 
-  console.log({search})
+
   return (
     <ContainerLayout>
       <div
@@ -35,7 +35,11 @@ const AllBlogs = () => {
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
-          OLDER POSTS
+          {
+            search ? "Result"  : "Other Post"
+
+          }
+          
         </h1>
         {
           allBlogs?.length === 0 ? (
@@ -45,7 +49,7 @@ const AllBlogs = () => {
             </h1>
             </div>
           ) : ( <div className="w-full grid grid-cols-1 gap-x-8 gap-y-12  sm:grid-cols-2 lg:grid-cols-3 overflow-y-hidden">
-          {allBlogs?.slice(1, 6)?.map((item, index) => (
+          {allBlogs?.slice(0, 6)?.map((item, index) => (
             <div
               className="w-full flex flex-col"
               key={index}
@@ -68,7 +72,7 @@ const AllBlogs = () => {
               </p>
               <p
                 className="hover:bg-[#E3D5FF] bg-white   text-base text-mainBlue border border-mainBlue hover:border-none    font-semibold mt-4  w-fit px-[30px] py-[15px] cursor-pointer h-[50px] rounded-[50px] flex items-center justify-center hover:text-mainBlue   "
-                onClick={() => router.push(`/blog/${index + 1}`)}
+                onClick={() => router.push(`/blog/${item?.id}`)}
               >
                 Read
               </p>

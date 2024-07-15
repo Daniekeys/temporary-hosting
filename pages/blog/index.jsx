@@ -7,7 +7,10 @@ import RequestDemo from "../../components/footer/request-demo";
 import NewFooter from "../../components/footer/new-footer";
 import Slider from "../../components/blogs/Slider"
 import Head from "next/head";
-const index = () => {
+import { useRouter } from "next/router";
+const BlogPage = () => {
+    const router = useRouter();
+    const { search } = router.query;
   return (
     <div className="w-full flex flex-col flow-hide relative">
       <Head>
@@ -18,10 +21,18 @@ const index = () => {
         />
         <link rel="icon" href="/we-logo.png" />
       </Head>
-      
+
       <BlogHero />
-      <BlogLatest />
-      <AllBlogs />
+      {search ? (
+        <AllBlogs />
+      ) : (
+        <div className="flex flex-col">
+            <BlogLatest />
+            <AllBlogs />
+        </div>
+      )}
+      {/* <BlogLatest />
+      <AllBlogs /> */}
       <Slider />
       <RequestDemo />
       <NewFooter />
@@ -29,4 +40,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default BlogPage;

@@ -58,7 +58,7 @@ const SingleBlogHeader = () => {
         </p>
         <div className="w-8/12 flex flex-col">
           <h1
-            className="text-2xl lg:text-3xl 2xl:text-[40px] text-[#333] leading-[58px]"
+            className="text-2xl lg:text-3xl 2xl:text-[40px] text-[#333] leading-[58px] 2xl:leading-[65px]"
             data-aos="fade-up"
             data-aos-duration="1000"
           >

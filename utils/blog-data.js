@@ -8,6 +8,7 @@ import imageSeven from "../assets/blog-images/image-7.jpg";
 
 export const blogPosts = [
   {
+    id: 0,
     title:
       "Empower Her Data: Championing Female-Oriented Data Projects with WeCollect",
     summaryHeading:
@@ -24,6 +25,7 @@ export const blogPosts = [
     ],
   },
   {
+    id: 1,
     title:
       "Journey into the future of data — from AI to blockchain. WeCollect is your guide in navigating the ever-evolving data",
     summaryHeading:
@@ -40,6 +42,7 @@ export const blogPosts = [
     ],
   },
   {
+    id: 2,
     title:
       "Unleashing the Transparency Revolution in Governance with WeCollect",
     summaryHeading:
@@ -60,6 +63,7 @@ export const blogPosts = [
     ],
   },
   {
+    id: 3,
     title: "Why Your Data Deserves All the Love: Introducing WeCollect",
     summaryHeading:
       "In this digital age, data is more than just numbers and statistics — it’s the lifeblood of decision-making, innovation, and progress...",
@@ -74,6 +78,7 @@ export const blogPosts = [
     ],
   },
   {
+    id: 4,
     title: "WeCollect: Empowering Communities for Healthier Lives",
     summaryHeading:
       "Once upon a time, in the bustling streets of Lagos, Nigeria, there lived a vibrant community where stories were shared, laughter echoed, and life flourished. ",
@@ -93,6 +98,7 @@ export const blogPosts = [
     ],
   },
   {
+    id: 5,
     title: "A Journey into Financial Inclusion in Naija",
     summaryHeading:
       "Once upon a time in the diverse landscapes of Nigeria, a tale unfolded — a story of financial inclusion, innovation, and the transformative power of ...",
