@@ -85,26 +85,31 @@ const AppCaseList = () => {
             <h1 className="text-mainBlue 2xl:text-[32px] lg:text-2xl font-semibold max-w-[271px] lg:max-w-full text-center lg:text-start mx-auto lg:mx-0 ">
               Applicable in the following cases and more...
             </h1>
-            <div className="w-full flex flex-col bg-[#F9F6FF] py-[30px] px-4 lg:p-[30px]  rounded-[30px] gap-[30px]  lg:gap-[40px]">
+            <div className="w-full grid grid-cols-1 lg:grid-cols-3 bg-[#F9F6FF] py-[30px] px-4 lg:p-[30px]  rounded-[30px] gap-[30px]  lg:gap-[40px]">
               {data?.map((item, index) => {
                 return (
                   <div
-                    className="w-full bg-white flex flex-col p-4 lg:p-8 gap-4 lg:gap-7 2xl:gap-10 rounded-[30px] boxlee  "
+                    className="w-full bg-white flex flex-col p-4 lg:p-8 gap-4 lg:gap-7  2xl:gap-4 rounded-[30px] boxlee max-h-[620px]  "
                     key={index}
                   >
                     <span>
                       <Image
                         src={item.pic}
                         alt="pics"
-                        className="2xl:w-[120px] lg:w-[100px] w-[80px] h-[80px] lg:h-[100px] 2xl:h-[120px] rounded-full"
+                        className="2xl:w-[80px] lg:w-[60px] w-[50px] h-[50px] lg:h-[60px] 2xl:h-[80px] rounded-full"
                       />
                     </span>
-                    <h1 className=" text-customBlack text-xl font-semibold leading-[48px] 2xl:text-[30px] lg:text-2xl ">
+                    <h1 className=" text-customBlack text-xl font-semibold leading-[48px] 2xl:text-[30px] lg:text-2xl uppercase max-h-[120px] overflow-y-hidden ">
                       {item.title}
                     </h1>
-                    <p className="text-sm 2xl:text-lg lg:text-base text-ash font-medium leading-[35px] ">
+                    <p className="text-sm 2xl:text-lg lg:text-base text-ash font-medium leading-[35px]  w-full h-full max-h-[300px] overflow-y-hidden   ">
                       {item.story}
                     </p>
+                    <span className="mt-4 ">
+                      <button className="bg-mainBlue rounded-[50px] h-[46px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[168px] hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
+                        Learn more
+                      </button>
+                    </span>
                   </div>
                 );
               })}

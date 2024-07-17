@@ -10,7 +10,7 @@ const RequestDemo = () => {
       <ContainerLayout>
         <div className="w-full request-bg min-h-[300px] px-4 lg:min-h-[500px] flex flex-col items-center justify-center">
           <h1
-            className="text-customBlack text-center text-2xl 2xl:text-[30px] lg:text-2xl 2xl:text-[36px] font-semibold "
+            className="text-customBlack text-center text-2xl 2xl:text-[30px] lg:text-2xl  font-semibold "
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >
