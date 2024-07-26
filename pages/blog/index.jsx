@@ -8,6 +8,7 @@ import NewFooter from "../../components/footer/new-footer";
 import Slider from "../../components/blogs/Slider"
 import Head from "next/head";
 import { useRouter } from "next/router";
+import BlogCombo from "../../components/blogs/blog-combo";
 const BlogPage = () => {
     const router = useRouter();
     const { search } = router.query;
@@ -23,14 +24,15 @@ const BlogPage = () => {
       </Head>
 
       <BlogHero />
-      {search ? (
+      {/* {search ? (
         <AllBlogs />
       ) : (
         <div className="flex flex-col">
             <BlogLatest />
             <AllBlogs />
         </div>
-      )}
+      )} */}
+      <BlogCombo />
       {/* <BlogLatest />
       <AllBlogs /> */}
       <Slider />

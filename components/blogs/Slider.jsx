@@ -18,8 +18,8 @@ const Slider = () => {
   return (
     <div
       className="w-full flex justify-center mt-0 "
-      data-aos="fade-up"
-      data-aos-duration="1000"
+      // data-aos="fade-up"
+      // data-aos-duration="1000"
     >
       <div className="animation-container min-h-[480px] lg:h-[400px]  relative flex items-end justify-center">
         <div

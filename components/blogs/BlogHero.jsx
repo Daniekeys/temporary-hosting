@@ -37,7 +37,7 @@ router.push(`/blog?search=${search}#blog`)
         <MobileNav present={2} />
         <ContainerLayout>
           <div className="w-full flex flex-col  mt-[142px] justify-center flow-hide ">
-            <div className="w-full flex flex-col  max-w-[725px] relative mx-auto">
+            {/* <div className="w-full flex flex-col  max-w-[725px] relative mx-auto">
               <div
                 className=" w-full max-w-[725px] mx-auto rounded-[50px] h-[75px] bg-white bg-opacity-60 flex justify-between px-4 items-center mt-8"
                 // data-aos="fade-up"
@@ -108,7 +108,7 @@ router.push(`/blog?search=${search}#blog`)
                   </div>
                 </div>
               )}
-            </div>
+            </div> */}
             <div className="w-full lg:flex-row mt-12  flex flex-col ">
               <div className="w-full flex flex-col lg:w-1/2">
                 <h1

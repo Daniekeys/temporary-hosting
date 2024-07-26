@@ -259,6 +259,15 @@ const NewFooter = () => {
                 >
                   Project Management Dashboard
                 </Link>
+                <Link
+                  href="/home"
+                  className="text-ash sat-regular  text-base font-medium mt-[12px]"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                  // data-aos-delay="2700"
+                >
+                  WeCollect Learning
+                </Link>
               </div>
               {/* end of a pack */}
               {/* ################3 start of a park */}
