@@ -20,7 +20,7 @@ const OurProject = () => {
       
       <OurProjectHero />
       <OurProjectList />
-      <OtherProject />
+      {/* <OtherProject /> */}
       <div className="w-full mt-12">
         <Slider />
       </div>

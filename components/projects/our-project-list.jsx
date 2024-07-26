@@ -1,11 +1,13 @@
 import React from 'react'
 import ContainerLayout from '../../layouts/ContainerLayout'
 import { SpecialArrow } from '../../assets/svg'
-import oval from "../../assets/png/oval.png";
-import fpmp from "../../assets/png/fpmp-samp.png"
+
+import fpmp from "../../assets/png/fpmp-small.png";
+import kaduna from "../../assets/png/kaduna.png";
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+
 const OurProjectList = () => {
   const router = useRouter();
   return (
@@ -15,17 +17,69 @@ const OurProjectList = () => {
       data-aos-duration="1000"
     >
       <ContainerLayout>
-        <div className="w-full py-20 lg:py-28 flex flex-col justify-center items-center">
-          <div className="flex flex-col items-center w-full">
+        <div className="w-full pt-20 pb-10 lg:pt-28 lg:pb-4 flex flex-col justify-center items-center">
+          <div className="flex flex-col  w-full">
             <h1 className="text-customBlack font-semibold text-2xl 2xl:text-[32px] mb-2">
               OUR PROJECTS
             </h1>
-            <span>
+            {/* <span>
               <SpecialArrow />
-            </span>
+            </span> */}
+            <div className="w-full grid grid-cols-1 xl:grid-cols-3  gap-5 mt-12 2xl:mt-16">
+              {/* single session */}
+              <div className="w-full flex flex-col">
+                <div className="w-full max-h-[400px] border-[3px] rounded-[30px] border-[#F9F6FF]  xl:min-w-[400px] h-full min-h-[400px] flex justify-center items-center">
+                  <Image
+                    src={fpmp}
+                    alt="fpmp"
+                    className="w-auto h-auto object-contain"
+                  />
+                </div>
+                <div className="flex flex-col mt-8 ">
+                  <div className="w-full sm:h-[80px] 2xl:h-[100px] flex items-center ">
+                    <h1 className="text-mainBlue 2xl:text-[30px] text-2xl font-semibold xl:max-w-[250px] 2xl:max-w-[325px] 2xl:leading-[45px]">
+                      Food Price Monitoring Project In Nigeria
+                    </h1>
+                  </div>
+                  <p className="text-sm text-[#555] mt-5 font-medium leading-[36px] 2xl:text-base xl:max-w-[300px]  ">
+                    Tracking the availability of food in Nigeria using a data
+                    driven price model in line with the UN SD4
+                  </p>
+                  <button className="bg-mainBlue rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
+                    Learn more
+                  </button>
+                </div>
+              </div>
+              {/* end of single session */}
+              {/* single session */}
+              <div className="w-full flex flex-col">
+                <div className="w-full max-h-[400px] border-[3px] rounded-[30px] border-[#F9F6FF]  xl:min-w-[400px] h-full min-h-[400px] flex justify-center items-center">
+                  <Image
+                    src={kaduna}
+                    alt="fpmp"
+                    className="w-auto h-auto object-contain"
+                  />
+                </div>
+                <div className="flex flex-col mt-8 ">
+                  <div className="w-full sm:h-[80px] 2xl:h-[100px] flex items-center ">
+                    <h1 className="text-mainBlue 2xl:text-[30px] text-2xl font-semibold max-w-[325px] 2xl:leading-[45px]">
+                      Kaduna Electric Project
+                    </h1>
+                  </div>
+                  <p className="text-sm text-[#555] mt-5 font-medium leading-[36px] 2xl:text-base xl:max-w-[400px] ">
+                    Lorem ipsum dolor sit amet consectetur. Id suspendisse enim
+                    elit ipsum feugiat sed vulputate id amet.
+                  </p>
+                  <button className="bg-mainBlue rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
+                    Learn more
+                  </button>
+                </div>
+              </div>
+              {/* end of single session */}
+            </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center w-full mt-24 px-4 lg:px-0">
+          {/* <div className="flex flex-col items-center justify-center w-full mt-24 px-4 lg:px-0">
             <h1
               className="text-mainBlue text-center font-semibold text-2xl 2xl:text-[32px] "
               // data-aos="fade-up"
@@ -77,7 +131,7 @@ const OurProjectList = () => {
                 Contact Us
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </ContainerLayout>
     </div>
