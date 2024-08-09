@@ -189,6 +189,15 @@ const NewFooter = () => {
                 >
                   Contact Us
                 </Link>
+                <Link
+                  href="/faq"
+                  className="text-ash sat-regular  text-base font-medium mt-[12px]"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                  // data-aos-delay="2400"
+                >
+                  FAQ
+                </Link>
               </div>
               {/* end of a pack */}
               {/* ################3 start of a park */}

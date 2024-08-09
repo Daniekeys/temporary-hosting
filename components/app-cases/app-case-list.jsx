@@ -1,6 +1,7 @@
 import React from "react";
 import ContainerLayout from "../../layouts/ContainerLayout";
 import Image from "next/image";
+import Link from "next/link";
 import a1 from "../../assets/svg/a1.svg";
 import a2 from "../../assets/svg/a2.svg";
 import a3 from "../../assets/svg/a3.svg";
@@ -106,9 +107,12 @@ const AppCaseList = () => {
                       {item.story}
                     </p>
                     <span className="mt-4 ">
-                      <button className="bg-mainBlue rounded-[50px] h-[46px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[168px] hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
+                      <Link
+                        href={"/view-use-case"}
+                        className="bg-mainBlue rounded-[50px] h-[46px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[168px] hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold max-w-fit "
+                      >
                         Learn more
-                      </button>
+                      </Link>
                     </span>
                   </div>
                 );

@@ -4,6 +4,7 @@ import ContainerLayout from "../../layouts/ContainerLayout";
 import add from "../../assets/svg/arrow-down.svg";
 import minus from "../../assets/svg/minus.svg";
 import { faqData } from "../../utils/faqdata";
+import Link from "next/link";
 
 const Faq = () => {
   return (
@@ -35,6 +36,11 @@ const Faq = () => {
               return <SingleFaq item={item} key={index} />;
             })}
           </div>
+          <div className="w-full flex items-center justify-center mt-11 mb-4 ">
+            <Link href={"/faq"} className="faq-btn font-semibold  text-mainBlue flex items-center justify-center rounded-[50px] " >
+              See more {">"}
+            </Link>
+          </div>
         </div>
       </ContainerLayout>
     </div>
@@ -43,7 +49,7 @@ const Faq = () => {
 
 export default Faq;
 
-const SingleFaq = ({ item }: any) => {
+export const SingleFaq = ({ item }: any) => {
   const [isOpen, setIsOpen] = useState(false);
   const { title, story, list, isLast } = item;
 
