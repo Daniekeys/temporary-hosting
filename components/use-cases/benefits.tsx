@@ -10,7 +10,7 @@ import securecase from "../../assets/png/brand-b-3.png";
 
 import spiral from "../../assets/png/spiral-curve.png";
 import spiralRight from "../../assets/png/spiral-right.png";
-function Benefits() {
+function Benefits({benefits} : {benefits:any}) {
   return (
     <div
       className="w-full relative overflow-x-hidden overflow-y-hidden  "
@@ -30,11 +30,11 @@ function Benefits() {
 
       <ContainerLayout>
         <p
-          className="text-ash text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold  mt-16 lg:mt-36 text-center"
+          className="text-ash text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold  mt-16 lg:mt-36 text-center uppercase"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
-          Benefits
+          {benefits?.title}
         </p>
 
         <p
@@ -42,12 +42,39 @@ function Benefits() {
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
-          Discover benefits that will amplify your brand visibility
+         {benefits?.subtitle}
         </p>
 
         <div className="bg-[#F9F6FF] container-border w-full h-auto rounded-[50px] p-5 lg:p-[30px] mt-5 lg:mt-20  relative flow-hide ">
           <div className="w-full h-auto grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-10 justify-between items-center ">
-            <div
+            {
+              benefits?.items?.map((single: any) => {
+                return (
+                  <div
+                    className="boxlee w-full h-fit lg:h-full  rounded-[30px] p-5 lg:p-7  cursor-default"
+                    // data-aos="fade-up"
+                    // data-aos-duration="1000"
+                    // data-aos-delay="600"
+                  >
+                    <Image
+                      src={single?.icon}
+                      alt="gpss"
+                      className="w-[52px] h-[52px]"
+                    />
+
+                    <p className="text-[#333333] w-11/12 lg:text-2xl 2xl:text-2xl text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]">
+                      {single?.title}
+                    </p>
+
+                    <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium mt-7">
+                    {single?.description}
+                      
+                    </p>
+                  </div>
+                );
+              })
+            }
+            {/* <div
               className="boxlee w-full h-fit lg:h-full  rounded-[30px] p-5 lg:p-7  cursor-default"
               // data-aos="fade-up"
               // data-aos-duration="1000"
@@ -103,7 +130,7 @@ function Benefits() {
                 Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
                 ipsum feugiat sed vulputate id amet. Etiam arcu ultricies
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </ContainerLayout>

@@ -108,7 +108,7 @@ const AppCaseList = () => {
                     </p>
                     <span className="mt-4 ">
                       <Link
-                        href={"/view-use-case"}
+                        href={`/view-use-case/${index}`}
                         className="bg-mainBlue rounded-[50px] h-[46px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[168px] hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold max-w-fit "
                       >
                         Learn more

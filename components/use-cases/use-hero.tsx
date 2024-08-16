@@ -4,7 +4,8 @@ import MobileNav from "../navbar/mobile-nav";
 import ContainerLayout from "../../layouts/ContainerLayout";
 import heroPic from "../../assets/png/brand-hero.png";
 import Image from "next/image";
-const UseHero = () => {
+
+const UseHero = ({heroInfo} : {heroInfo:any}) => {
   return (
     <div className="grad-blog-bg w-full h-full">
       <div className="w-full lg:h-screen lg:max-h-[908px] relative blog-hero-bg flex flex-col">
@@ -19,23 +20,24 @@ const UseHero = () => {
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >
-                  BRAND VISIBILITY 
+                  {heroInfo?.title}
                 </h1>
                 <p
                   className="text-customBlack font-medium 2xl:text-[32px] lg:text-2xl text-xl  leading-[48px] max-w-[550px] "
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >
-                  Our data collection app empowers you to track, analyze, and
-                  amplify your brand presence.
+                  {heroInfo?.subtitle}
+                  {/* Our data collection app empowers you to track, analyze, and
+                  amplify your brand presence. */}
                 </p>
               </div>
               <div className="w-full lg:w-6/12 justify-center flex items-center">
                 <Image
-                  src={heroPic}
+                  src={heroInfo?.image}
                   alt="hero"
-                  width={heroPic.width}
-                  height={heroPic.height}
+                  width={heroInfo?.image?.width}
+                  height={heroInfo?.image?.height}
                   className="w-auto h-auto"
                 />
               </div>
