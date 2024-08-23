@@ -1,10 +1,13 @@
-import React from "react";
+import React,{useEffect} from "react";
 import NewNavbar from "../navbar/new-navbar";
 import MobileNav from "../navbar/mobile-nav";
 import ContainerLayout from "../../layouts/ContainerLayout";
 import heroPic from "../../assets/png/mac.png";
 import Image from "next/image";
 const InnovationHero = () => {
+    useEffect(() => {
+      window?.scrollTo(0, 0);
+    }, []);
   return (
     <div className="grad-blog-bg w-full h-full">
       <div className="w-full lg:h-screen lg:max-h-[908px] relative blog-hero-bg flex flex-col">
@@ -22,14 +25,14 @@ const InnovationHero = () => {
                   OUR INNOVATIVE & INTELLIGENT PRODUCTS
                 </h1>
                 <p
-                  className="text-customBlack font-medium 2xl:text-[32px] lg:text-2xl text-xl  leading-[40px] "
+                  className="text-customBlack font-medium 2xl:text-[32px] lg:text-2xl text-xl  leading-[40px] 2xl:leading-[48px] "
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >
                   Explore our carefully curated products
                 </p>
               </div>
-              <div className="w-full lg:w-6/12 justify-center flex items-center">
+              <div className="w-full lg:w-6/12 justify-center flex items-center"> 
                 <Image
                   src={heroPic}
                   alt="hero"

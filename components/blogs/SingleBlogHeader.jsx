@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import ContainerLayout from "../../layouts/ContainerLayout";
 import { Navlogo } from "../../assets/svg";
 import logo from "../../assets/svg/log2.svg";
@@ -21,6 +21,10 @@ const SingleBlogHeader = () => {
   const { id } = router.query;
   const blogId = Number(id);
   const item = blogPosts[blogId];
+  useEffect(() => {
+    window?.scrollTo(0, 0);
+  }, [])
+  
 
   return (
     <ContainerLayout>

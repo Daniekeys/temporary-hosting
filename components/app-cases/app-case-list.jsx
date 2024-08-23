@@ -2,6 +2,7 @@ import React from "react";
 import ContainerLayout from "../../layouts/ContainerLayout";
 import Image from "next/image";
 import Link from "next/link";
+import attachImage from "../../assets/png/yellow-attach.png"
 import a1 from "../../assets/svg/a1.svg";
 import a2 from "../../assets/svg/a2.svg";
 import a3 from "../../assets/svg/a3.svg";
@@ -90,9 +91,12 @@ const AppCaseList = () => {
               {data?.map((item, index) => {
                 return (
                   <div
-                    className="w-full bg-white flex flex-col p-4 lg:p-8 gap-4 lg:gap-7  2xl:gap-4 rounded-[30px] boxlee max-h-[620px]  "
+                    className="w-full bg-white flex flex-col p-4 lg:p-8 gap-4 lg:gap-7  2xl:gap-4 rounded-[30px]  max-h-[620px] relative  "
                     key={index}
                   >
+                    <span>
+                      <Image src={attachImage} alt="attachment" className="absolute right-0 top-0" />
+                    </span>
                     <span>
                       <Image
                         src={item.pic}

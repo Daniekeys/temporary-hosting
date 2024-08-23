@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import ContainerLayout from "../../layouts/ContainerLayout";
 import Image from "next/image";
 import cookie from "../../assets/png/cookie-pic.png";
@@ -6,6 +6,9 @@ import term from "../../assets/png/term-pic.png";
 import privacy from "../../assets/png/privacy-pic.png";
 
 const TermHero = ({ current }) => {
+    useEffect(() => {
+      window?.scrollTo(0, 0);
+    }, []);
   return (
     <ContainerLayout>
       <div className="w-full bg-[#F6F1FF] rounded-[30px] h-[153px] lg:h-[234px] mt-28 mb-16 flex items-center">

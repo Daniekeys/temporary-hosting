@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import NewNavbar from "../navbar/new-navbar";
 import ContainerLayout from "../../layouts/ContainerLayout";
 import heroPic from "../../assets/png/download-hero-pic.png";
@@ -9,6 +9,9 @@ import MobileNav from "../navbar/mobile-nav";
 import mobileImage from "../../assets/png/mobile-download.png";
 
 const DownloadHero = () => {
+    useEffect(() => {
+      window?.scrollTo(0, 0);
+    }, []);
   return (
     <div className="grad-blog-bg w-full h-full relative flex flex-col bg-[#EDE6FF] mb-8 lg:mb-0 flow-hide">
       <div className="w-full  relative blog-hero-bg flex flex-col flow-hide">
@@ -27,7 +30,7 @@ const DownloadHero = () => {
                     Download App
                   </h1>
                   <p
-                    className="text-customBlack font-medium text-sm mt-7 lg:text-base leading-[30px]  lg:max-w-[490px]"
+                    className="text-customBlack font-medium   2xl:text-[32px] lg:text-2xl text-lg  leading-[40px] 2xl:leading-[48px] mt-[30px]  lg:max-w-[490px]"
                     data-aos="fade-down"
                     data-aos-duration="1000"
                   >

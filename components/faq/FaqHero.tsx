@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ContainerLayout from "../../layouts/ContainerLayout";
 import Image from "next/image";
-import cookie from "../../assets/png/faq-hero.png";
+import cookie from "../../assets/png/chat-msg.png";
 
 
 const FaqHero = () => {
+    useEffect(() => {
+      window?.scrollTo(0, 0);
+    }, []);
   return (
     <ContainerLayout>
       <div className="w-full bg-[#F6F1FF] rounded-[30px] h-[153px] lg:h-[234px] mt-28 mb-16 flex items-center">
@@ -25,8 +28,11 @@ const FaqHero = () => {
            
               <Image
                 src={cookie}
-                alt="image"
-                className="w-[150px] h-[150px] rounded-full"
+              alt="image"
+              width={139}
+              height={139}
+              
+                className="w-auto aspect-square  rounded-full object-contain h-[200px]"
               />
          
           </div>

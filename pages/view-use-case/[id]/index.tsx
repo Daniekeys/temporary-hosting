@@ -7,11 +7,15 @@ import Benefits from "../../../components/use-cases/benefits";
 import UseHow from "../../../components/use-cases/use-how";
 import { useRouter } from "next/router";
 import { useCaseData } from "../../../utils/use-case-data";
+import { useEffect } from "react";
 const ViewUseCase = () => {
        const router = useRouter();
     const { id } = router.query;
     const idValue = Number(id);
-     const item = useCaseData[idValue];
+  const item = useCaseData[idValue];
+    useEffect(() => {
+      window?.scrollTo(0, 0);
+    }, []);
     
   return (
     <div className="w-full flex flex-col relative">

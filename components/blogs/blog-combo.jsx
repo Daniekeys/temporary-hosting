@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { blogPosts } from '../../utils/blog-data';
 import empty from "../../assets/svg/empty-result.svg";
 import { BlogSearchIcon } from '../../assets/svg';
+import { useRouter } from 'next/router';
 const BlogCombo = () => {
      const item = blogPosts[0];
       const [search, setSearch] = useState(""); 
@@ -23,6 +24,7 @@ const BlogCombo = () => {
           setAllBlogs(filteredBlogs);
         }
       }, [search]); 
+  const router = useRouter();
   return (
     <div className="flex flex-col">
       <ContainerLayout>
@@ -43,7 +45,7 @@ const BlogCombo = () => {
               //   onKeyDown={handleKeyPress}
               onChange={(e) => setSearch(e.target.value)}
             />
-            {allBlogs?.length === 0 ? (
+            {allBlogs?.length === 0 | search?.length > 0 ? (
               <button
                 className="bg-mainBlue rounded-[50px] h-[36px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[98px] hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold  "
                 onClick={() => setSearch("")}
@@ -62,7 +64,7 @@ const BlogCombo = () => {
           {search && (
             <div className="w-full bg-white  flow-hide rounded-b-[50px]   ">
               {allBlogs?.length === 0 && (
-                <div className="w-full flex h-full max-h-[412px] h-[412px] flex-col justify-center items-center ">
+                <div className="w-full flex  max-h-[412px] h-[412px] flex-col justify-center items-center ">
                   <span>
                     <Image src={empty} alt="empty" />
                   </span>

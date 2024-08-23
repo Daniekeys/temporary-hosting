@@ -22,7 +22,7 @@ const ContactHero = () => {
                   CONTACT US
                 </h1>
                 <p
-                  className="text-customBlack font-medium 2xl:text-[32px] lg:text-2xl text-xl mt-[30px]"
+                  className="text-customBlack font-medium 2xl:text-[32px] lg:text-2xl text-xl 2xl:leading-[48px] mt-[30px]"
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >

@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NewNavbar from "../navbar/new-navbar";
 import MobileNav from "../navbar/mobile-nav";
 import ContainerLayout from "../../layouts/ContainerLayout";
 import heroPic from "../../assets/png/brand-hero.png";
 import Image from "next/image";
 
-const UseHero = ({heroInfo} : {heroInfo:any}) => {
+const UseHero = ({ heroInfo }: { heroInfo: any }) => {
+    useEffect(() => {
+      window?.scrollTo(0, 0);
+    }, []);
   return (
     <div className="grad-blog-bg w-full h-full">
       <div className="w-full lg:h-screen lg:max-h-[908px] relative blog-hero-bg flex flex-col">
@@ -23,7 +26,7 @@ const UseHero = ({heroInfo} : {heroInfo:any}) => {
                   {heroInfo?.title}
                 </h1>
                 <p
-                  className="text-customBlack font-medium 2xl:text-[32px] lg:text-2xl text-xl  leading-[48px] max-w-[550px] "
+                  className="text-customBlack font-medium 2xl:text-[32px] lg:text-2xl text-xl 2xl:leading-[48px] leading-[48px] max-w-[550px] "
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >

@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import ContainerLayout from "../../layouts/ContainerLayout";
-import data from "../../assets/svg/data.svg";
-import management from "../../assets/svg/management.svg";
-import gpss from "../../assets/png/brand-b-1.png";
-import wifi from "../../assets/png/brand-b-2.png";
-import securecase from "../../assets/png/brand-b-3.png";
+// import data from "../../assets/svg/data.svg";
+// import management from "../../assets/svg/management.svg";
+// import gpss from "../../assets/png/brand-b-1.png";
+// import wifi from "../../assets/png/brand-b-2.png";
+// import securecase from "../../assets/png/brand-b-3.png";
 
 
 import spiral from "../../assets/png/spiral-curve.png";
@@ -30,7 +30,7 @@ function Benefits({benefits} : {benefits:any}) {
 
       <ContainerLayout>
         <p
-          className="text-ash text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold  mt-16 lg:mt-36 text-center uppercase"
+          className="text-ash text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold  mt-16 lg:mt-36 text-center uppercase 2xl:leading-[35px]"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
@@ -62,11 +62,11 @@ function Benefits({benefits} : {benefits:any}) {
                       className="w-[52px] h-[52px]"
                     />
 
-                    <p className="text-[#333333] w-11/12 lg:text-2xl 2xl:text-2xl text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]">
+                    <p className="text-[#333333] w-11/12 lg:text-2xl 2xl:text-2xl text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[35px]">
                       {single?.title}
                     </p>
 
-                    <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium mt-7">
+                    <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium mt-4">
                     {single?.description}
                       
                     </p>

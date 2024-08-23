@@ -26,7 +26,10 @@ const NewNavbar = () => {
       <ContainerLayout>
         <div className="w-full flex items-center justify-between relative  h-[68px]">
           <div>
-            <span className="cursor-pointer" onClick={() => router.push("/home")}>
+            <span
+              className="cursor-pointer"
+              onClick={() => router.push("/home")}
+            >
               {" "}
               <Image src={logo} alt="logo" />{" "}
             </span>
@@ -40,11 +43,11 @@ const NewNavbar = () => {
               <p className=" lg:text-base font-semibold ">Home</p>
             </Link> */}
             <div
-              onClick={() => {
+              onMouseEnter={() => {
                 setIsAboutUsDropdownOpen(!isAboutUsDropdownOpen);
                 setIsProductDropdownOpen(false);
                 setRotateAbout(!rotateAbout);
-                   setRotateProduct(false);
+                setRotateProduct(false);
               }}
               className="flex items-center gap-2 cursor-pointer hover:bg-[#E3D5FF] px-4 h-[50px] rounded-[50px] text-ash hover:text-mainBlue text-sm 2xl:text-base"
             >
@@ -60,11 +63,11 @@ const NewNavbar = () => {
               </span>
             </div>
             <div
-              onClick={() => {
+              onMouseEnter={() => {
                 setIsProductDropdownOpen(!isProductDropdownOpen);
                 setIsAboutUsDropdownOpen(false);
                 setRotateProduct(!rotateProduct);
-                   setRotateAbout(false);
+                setRotateAbout(false);
               }}
               className="flex items-center gap-2 cursor-pointer hover:bg-[#E3D5FF] px-4 h-[50px] rounded-[50px] hover:text-mainBlue text-ash"
             >
@@ -101,7 +104,15 @@ const NewNavbar = () => {
 
         {/* AboutUs DropDown */}
         {isAboutUsDropdownOpen && (
-          <div className="w-[900px] flex flex-col left-[25%] 2xl:left-[35%] absolute right-0 nav-layer rounded-b-[30px] bg-[#F9F6FF] py-2 px-3 transition-all ease-in-out duration-1000 ">
+          <div
+            className="w-[900px] flex flex-col left-[25%] 2xl:left-[35%] absolute right-0 nav-layer rounded-b-[30px] bg-[#F9F6FF] py-2 px-3 transition-all ease-in-out duration-1000 "
+            onMouseLeave={() => {
+              setIsAboutUsDropdownOpen(!isAboutUsDropdownOpen);
+              setIsProductDropdownOpen(false);
+              setRotateAbout(!rotateAbout);
+              setRotateProduct(false);
+            }}
+          >
             <div className="w-full     rounded-b-[30px]  grid grid-cols-2 gap-8">
               <div
                 onClick={() => router.push("/our-project")}
@@ -187,7 +198,15 @@ const NewNavbar = () => {
         )}
 
         {isProductDropdownOpen && (
-          <div className="w-[35rem] product-shadow  bg-[#F9F6FF] absolute right-0 2xl:right-[264px] p-2 rounded-b-[30px]">
+          <div
+            className="w-[35rem] product-shadow  bg-[#F9F6FF] absolute right-0 2xl:right-[264px] p-2 rounded-b-[30px]"
+            onMouseLeave={() => {
+              setIsProductDropdownOpen(!isProductDropdownOpen);
+              setIsAboutUsDropdownOpen(false);
+              setRotateProduct(!rotateProduct);
+              setRotateAbout(false);
+            }}
+          >
             <div
               onClick={() => router.push("/innovations#app")}
               className="w-full h-auto flex items-center cursor-pointer hover:bg-[#fff]  rounded-[20px] px-4 py-2 transition-all duration-1000 ease-in-out "
@@ -231,7 +250,6 @@ const NewNavbar = () => {
                 </p>
               </div>
             </div>
-
           </div>
         )}
       </ContainerLayout>
