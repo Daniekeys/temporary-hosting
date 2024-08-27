@@ -67,8 +67,8 @@ const OurProjectList = () => {
                     </h1>
                   </div>
                   <p className="text-sm text-[#555] mt-5 font-medium leading-[36px] 2xl:text-base xl:max-w-[400px] ">
-                    Lorem ipsum dolor sit amet consectetur. Id suspendisse enim
-                    elit ipsum feugiat sed vulputate id amet.
+                    WeCollect played a crucial role in helping Kaduna Electric
+                    efficiently collect and organize data on their assets...
                   </p>
                   <button className="bg-mainBlue rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
                     Learn more

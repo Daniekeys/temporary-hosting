@@ -42,10 +42,16 @@ const OtherInnovations = () => {
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >
-            Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
-            ipsum feugiat sed vulputate id amet. Etiam arcu ultricies mauris
-            neque porta porta egestas amet. Ut luctus risus dictum urna commodo
-            in egestas. Massa lectus ut ornare orci sit.
+            The WeCollect project management web application streamlines the
+            entire data collection process by providing a centralized platform
+            for planning, executing, and monitoring projects. Users can create
+            projects, assign tasks, and track progress in real-time, all from an
+            intuitive dashboard. The application integrates with our network of
+            field agents, allowing for seamless communication and data
+            submission. With features like automated task assignments,
+            location-based tracking, and instant notifications, the web app
+            ensures that projects stay on schedule and that collected data is
+            accurate and easily accessible for analysis.
           </p>
           <div className="w-full h-auto flex flex-col md:flex-row items-center mt-8 justify-center  lg:gap-6">
             <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px]  cursor-pointer font-semibold hero-btn">

@@ -29,8 +29,8 @@ const ViewUseCase = () => {
       </Head>
 
       <UseHero heroInfo={item?.heroInfo} />
-      <Benefits benefits={item?.benefits}  />
       <UseHow howInfo={item?.howInfo}  />
+      <Benefits benefits={item?.benefits}  />
       <div className="mb-32 w-full h-32 lg:hidden flex"></div>
       <CustomCarousel />
       <RequestDemo />

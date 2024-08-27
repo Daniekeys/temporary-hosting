@@ -128,7 +128,7 @@ const NewNavbar = () => {
                     Projects
                   </p>
                   <p className="text-[#555555] text-sm font-medium">
-                    Lorem ipsum dolor sit amet
+                    Check out our projects
                   </p>
                 </div>
               </div>
@@ -147,7 +147,7 @@ const NewNavbar = () => {
                     Cases
                   </p>
                   <p className="text-[#555555] text-[14px] font-medium">
-                    Lorem ipsum dolor sit amet
+                    Project examples
                   </p>
                 </div>
               </div>
@@ -166,7 +166,7 @@ const NewNavbar = () => {
                     Blog
                   </p>
                   <p className="text-[#555555] text-[14px] font-medium">
-                    Lorem ipsum dolor sit amet
+                    Learn about our process
                   </p>
                 </div>
               </div>
@@ -185,7 +185,7 @@ const NewNavbar = () => {
                     Download app
                   </p>
                   <p className="text-[#555555] text-[14px] font-medium">
-                    Lorem ipsum dolor sit ame.
+                    Start collecting data
                   </p>
                 </div>
               </div>
@@ -217,7 +217,7 @@ const NewNavbar = () => {
                   Smart Data Collection App
                 </p>
                 <p className="text-[#555555] text-[14px] font-medium">
-                  Lorem ipsum dolor sit amet
+                  Collect data anywhere and anytime
                 </p>
               </div>
             </div>
@@ -232,7 +232,7 @@ const NewNavbar = () => {
                   Project Management Dashboard
                 </p>
                 <p className="text-[#555555] text-[14px] font-medium">
-                  Lorem ipsum dolor sit amet consectetur.
+                  Track and monitor your project
                 </p>
               </div>
             </div>
@@ -246,7 +246,7 @@ const NewNavbar = () => {
                   WeCollect Learning
                 </p>
                 <p className="text-[#555555] text-[14px] font-medium">
-                  Lorem ipsum dolor sit amet consectetur.
+                  Get training on data and analytics
                 </p>
               </div>
             </div>

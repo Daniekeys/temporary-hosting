@@ -57,10 +57,17 @@ const OurInnovation = () => {
               // data-aos="fade-up"
               // data-aos-duration="1000"
             >
-              Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
-              ipsum feugiat sed vulputate id amet. Etiam arcu ultricies mauris
-              neque porta porta egestas amet. Ut luctus risus dictum urna
-              commodo in egestas. Massa lectus ut ornare orci sit.
+              The WeCollect collection app is designed to streamline field data
+              collection by leveraging a user-friendly mobile interface that
+              works both online and offline. Field agents use the app to gather
+              data through surveys, forms, and interviews, which are then
+              automatically geotagged for precise location accuracy using
+              integrated GIS technology. The app supports real-time data
+              validation to ensure accuracy, and all collected information is
+              securely synced to a central database once the device is connected
+              to the internet. This allows businesses to monitor progress,
+              analyze data, and make decisions quickly, based on reliable,
+              location-specific insights.
             </p>
             <div
               className="w-full flex mt-6 gap-4 justify-center items-center"

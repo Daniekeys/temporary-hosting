@@ -20,7 +20,7 @@ const Section = () => {
       mobile: featD,
       title: "Smart Location Picker",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit ipsum feugiat sed vulputate id amet. Etiam arcu ultricies mauris neque porta porta egestas amet. Ut luctus risus dictum urna commodo in egestas. Massa lectus ut ornare orci sit. Sapien ut cursus non magna bibendum non et nulla nulla. Orci mollis amet magna diam ultrices ultricies non quam. Id nisl cras sapien nisl. Sagittis malesuada suscipit duis lectus dignissim. Eget est sit quam fermentum urna egestas augue tempor.",
+        "The Smart Location Picker in WeCollect is a powerful tool that enhances data collection by allowing users to select optimal locations for their projects based on geographic data. This feature leverages GIS technology to provide accurate, location-based insights, ensuring that data is collected from the most relevant and strategic areas. The Smart Location Picker helps businesses target their data collection efforts more effectively, improving the quality and relevance of the data collected.",
     },
     {
       id: 2,
@@ -28,7 +28,7 @@ const Section = () => {
       mobile: featE,
       title: "Real-time Data Collection",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit ipsum feugiat sed vulputate id amet. Etiam arcu ultricies mauris neque porta porta egestas amet. Ut luctus risus dictum urna commodo in egestas. Massa lectus ut ornare orci sit. Sapien ut cursus non magna bibendum non et nulla nulla. Orci mollis amet magna diam ultrices ultricies non quam. Id nisl cras sapien nisl. Sagittis malesuada suscipit duis lectus dignissim. Eget est sit quam fermentum urna egestas augue tempor.",
+        "The process begins when field agents conduct surveys, record observations, or gather any other relevant data in their assigned locations. As soon as the data is collected, it is instantly transmitted via the app to WeCollect's centralised platform, where it is processed and made accessible to project managers and stakeholders in real-time. This immediate transmission ensures that businesses receive the most current data, reducing the time lag between data collection and analysis. real-time data collection is particularly valuable in dynamic environments where conditions can change rapidly, such as in market surveys, price monitoring, or emergency response situations. ",
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ const Section = () => {
       mobile: featF,
       title: "Comprehensive Reporting",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit ipsum feugiat sed vulputate id amet. Etiam arcu ultricies mauris neque porta porta egestas amet. Ut luctus risus dictum urna commodo in egestas. Massa lectus ut ornare orci sit. Sapien ut cursus non magna bibendum non et nulla nulla. Orci mollis amet magna diam ultrices ultricies non quam. Id nisl cras sapien nisl. Sagittis malesuada suscipit duis lectus dignissim. Eget est sit quam fermentum urna egestas augue tempor.",
+        "WeCollect’s comprehensive reporting offers businesses detailed and actionable insights by transforming raw data into meaningful reports. Our platform provides customizable dashboards and visualisations, enabling users to easily interpret complex data. With real-time updates, location-specific analysis, and automated data validation, our reporting system ensures that every decision is backed by accurate, up-to-date information. Whether it’s tracking trends, identifying patterns, or forecasting outcomes, WeCollect’s reporting capabilities empower businesses to make informed decisions with confidence.",
     },
   ];
 

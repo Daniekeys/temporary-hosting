@@ -18,19 +18,19 @@ function Benefits({benefits} : {benefits:any}) {
       data-aos-duration="1000"
     >
       <div className="absolute top-0 left-[-100px] ">
-        <Image
+        {/* <Image
           src={spiral}
           alt="spiral"
-          className="max-h-[1600px] hidden lg:flex"
-        />
+          className="max-h-[1200px] hidden lg:flex"
+        /> */}
       </div>
-      <div className="absolute top-0 right-[-100px] ">
+      {/* <div className="absolute top-0 right-[-100px] ">
         <Image src={spiralRight} alt="spiral" className=" hidden lg:flex" />
-      </div>
+      </div> */}
 
       <ContainerLayout>
         <p
-          className="text-ash text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold  mt-16 lg:mt-36 text-center uppercase 2xl:leading-[35px]"
+          className="text-ash text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold  mt-16 lg:mt-12 text-center uppercase 2xl:leading-[35px]"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
@@ -66,13 +66,13 @@ function Benefits({benefits} : {benefits:any}) {
                       {single?.title}
                     </p>
 
-                    <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium mt-4">
+                    <p className="text-[#777] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium mt-4">
                     {single?.description}
                       
                     </p>
                   </div>
                 );
-              })
+              }) 
             }
             {/* <div
               className="boxlee w-full h-fit lg:h-full  rounded-[30px] p-5 lg:p-7  cursor-default"

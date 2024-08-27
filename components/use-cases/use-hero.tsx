@@ -35,13 +35,13 @@ const UseHero = ({ heroInfo }: { heroInfo: any }) => {
                   amplify your brand presence. */}
                 </p>
               </div>
-              <div className="w-full lg:w-6/12 justify-center flex items-center">
+              <div className="w-full lg:w-6/12 justify-center flex items-center pb-8 lg:pb-0 mt-16 lg:mt-0">
                 <Image
                   src={heroInfo?.image}
                   alt="hero"
                   width={heroInfo?.image?.width}
                   height={heroInfo?.image?.height}
-                  className="w-auto h-auto"
+                  className="lg:w-auto lg:object-contain max-w-[230px] lg:max-w-max lg:h-auto "
                 />
               </div>
             </div>
