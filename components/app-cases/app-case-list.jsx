@@ -101,13 +101,13 @@ const AppCaseList = () => {
                       <Image
                         src={item.pic}
                         alt="pics"
-                        className="2xl:w-[80px] lg:w-[60px] w-[50px] h-[50px] lg:h-[60px] 2xl:h-[80px] rounded-full"
+                        className="2xl:w-[60px] lg:w-[50px] w-[40px] h-[40px] lg:h-[50px] 2xl:h-[60px] rounded-full"
                       />
                     </span>
-                    <h1 className=" text-customBlack text-xl font-semibold leading-[48px] 2xl:text-[30px] lg:text-2xl uppercase max-h-[120px]  ">
+                    <h1 className=" text-customBlack text-xl font-semibold leading-[48px] 2xl:text-2xl lg:text-xl uppercase max-h-[120px]  ">
                       {item.title}
                     </h1>
-                    <p className="text-sm 2xl:text-lg lg:text-base text-ash font-medium leading-[35px]  w-full h-full max-h-[300px] overflow-y-hidden   ">
+                    <p className="text-sm 2xl:text-base lg:text-sm text-ash font-medium leading-[35px]  w-full h-full max-h-[300px] overflow-y-hidden   ">
                       {item.story}
                     </p>
                     <span className="mt-4 ">
