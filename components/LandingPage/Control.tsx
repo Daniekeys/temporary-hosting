@@ -12,10 +12,7 @@ function Control() {
           POWER OF DATA IN YOUR HANDS
         </p>
 
-        <p
-          className="w-full md:w-8/12 m-auto text-[#555555] text-[14px] 2xl:text-[18px] font-medium text-center mt-[10px] leading-[25px] lg:leading-[30px]"
-       
-        >
+        <p className="w-full md:w-8/12 m-auto text-[#555555] text-[14px] 2xl:text-[18px] font-medium text-center mt-[10px] leading-[25px] lg:leading-[30px]">
           WeCollect is a smart data collection mobile app that allows you
           collect online and offline data, while Project Management to a dynamic
           dashboard that provides real-time updates on data collected. It
@@ -24,24 +21,30 @@ function Control() {
           when managing multiple projects or forms.
         </p>
         <div className="w-full relative ">
-          <Image
+          {/* <Image
             src={maskwoman}
             alt="maskwoman"
             className="w-full object-contain h-auto m-auto mt-9 lg:mt-20 lg:max-w-[850px] 2xl:max-w-[1030px]"
-            // data-aos="fade-up"
-            // data-aos-duration="1000"
-          />
-          <div className="w-full absolute inset-0 flex items-center justify-center">
+           
+          /> */}
+          <video
+            width="600"
+            controls
+            className="w-full object-contain h-auto m-auto mt-9 lg:mt-20 lg:max-w-[850px] 2xl:max-w-[1030px]"
+          >
+            <source src="/video/wecollect-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          {/* <div className="w-full absolute inset-0 flex items-center justify-center">
             <Image
               src={playIcon}
               width={playIcon.width}
               height={playIcon.height}
               alt="icon"
               className="w-16 h-16 rounded-full lg:w-auto lg:h-auto"
-              // data-aos="fade-up"
-              // data-aos-duration="2000"
+            
             />
-          </div>
+          </div> */}
         </div>
       </ContainerLayout>
     </div>
