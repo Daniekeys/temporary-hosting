@@ -7,7 +7,7 @@ import kaduna from "../../assets/png/kaduna.png";
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-
+import techpoint from "../../assets/svg/techpoint.svg"
 const OurProjectList = () => {
   const router = useRouter();
   return (
@@ -69,6 +69,31 @@ const OurProjectList = () => {
                   <p className="text-sm text-[#555] mt-5 font-medium leading-[36px] 2xl:text-base xl:max-w-[400px] ">
                     WeCollect played a crucial role in helping Kaduna Electric
                     efficiently collect and organize data on their assets...
+                  </p>
+                  <button className="bg-mainBlue rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
+                    Learn more
+                  </button>
+                </div>
+              </div>
+              {/* end of single session */}
+              {/* single session */}
+              <div className="w-full flex flex-col">
+                <div className="w-full max-h-[400px] border-[3px] rounded-[30px] border-[#F9F6FF]  xl:min-w-[400px] h-full min-h-[400px] flex justify-center items-center">
+                  <Image
+                    src={techpoint}
+                    alt="fpmp"
+                    className="w-auto h-auto object-contain"
+                  />
+                </div>
+                <div className="flex flex-col mt-8 ">
+                  <div className="w-full sm:h-[80px] 2xl:h-[100px] flex items-center ">
+                    <h1 className="text-mainBlue 2xl:text-[30px] text-2xl font-semibold max-w-[325px] 2xl:leading-[45px]">
+                      TechPoint Project
+                    </h1>
+                  </div>
+                  <p className="text-sm text-[#555] mt-5 font-medium leading-[36px] 2xl:text-base xl:max-w-[400px] ">
+                    WeCollect played a crucial role in helping Techpoint
+                    efficiently collect and organize data on their project...
                   </p>
                   <button className="bg-mainBlue rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
                     Learn more

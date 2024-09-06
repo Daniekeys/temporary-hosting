@@ -6,6 +6,7 @@ import Slider from "../components/blogs/Slider";
 import NewFooter from "../components/footer/new-footer";
 import RequestDemo from "../components/footer/request-demo";
 import Head from 'next/head';
+import OurProduct from '../components/innovations/our-product';
 const Innovations = () => {
   return (
     <div className="w-full flex flex-col">
@@ -19,8 +20,9 @@ const Innovations = () => {
       </Head>
       
       <InnovationHero />
-      <OurInnovation />
-      <OtherInnovations />
+      <OurProduct />
+      {/* <OurInnovation />
+      <OtherInnovations /> */}
       <div className="w-full mt-12">
         <Slider />
       </div>

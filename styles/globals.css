@@ -231,6 +231,16 @@ box-shadow: 0px 267px 75px 0px #1797EC00;
 
   overflow: hidden;
 }
+.btn-shadow{
+  box-shadow: 0px 3px 7px 0px #B3E0FF1A,
+
+ 0px 13px 13px 0px #B3E0FF17, 0px 28px 17px 0px #B3E0FF0D,
+
+ 0px 50px 20px 0px #B3E0FF03,
+
+ 0px 79px 22px 0px #B3E0FF00;
+
+}
 
 .component1,
 .component2 {
@@ -333,6 +343,7 @@ box-shadow: 0px 22px 48px 0px #189DF71A,
 , 0px 543px 152px 0px #189DF700;
 
 }
+
 
 .button-shadow{
   box-shadow: 0px 6px 14px 0px #8FD2FF1A,
@@ -475,4 +486,9 @@ border-image-source: linear-gradient(132.27deg, #E4E4FF -7.78%, #FFFFFF 43.08%, 
   100% {
     transform: translateY(0);
   }
+}
+
+.j-bg{
+  background: linear-gradient(96.63deg, #E7F3EC -9.64%, #BCB6EC 50.48%, #B48771 119.9%);
+
 }

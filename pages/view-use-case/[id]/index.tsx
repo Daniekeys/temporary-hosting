@@ -4,6 +4,7 @@ import Head from "next/head";
 import UseHero from "../../../components/use-cases/use-hero";
 import CustomCarousel from "../../../components/LandingPage/CustomCarousel";
 import Benefits from "../../../components/use-cases/benefits";
+import DataJourney from "../../../components/use-cases/data-journey";
 import UseHow from "../../../components/use-cases/use-how";
 import { useRouter } from "next/router";
 import { useCaseData } from "../../../utils/use-case-data";
@@ -29,8 +30,9 @@ const ViewUseCase = () => {
       </Head>
 
       <UseHero heroInfo={item?.heroInfo} />
-      <UseHow howInfo={item?.howInfo}  />
-      <Benefits benefits={item?.benefits}  />
+      <UseHow howInfo={item?.howInfo} />
+      <Benefits benefits={item?.benefits} />
+      <DataJourney />
       <div className="mb-32 w-full h-32 lg:hidden flex"></div>
       <CustomCarousel />
       <RequestDemo />
