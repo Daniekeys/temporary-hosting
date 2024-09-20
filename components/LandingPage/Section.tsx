@@ -8,7 +8,9 @@ import featC from "../../assets/png/co.png";
 import featD from "../../assets/png/mbo-sm.png";
 import featE from "../../assets/png/mob-re.png";
 import featF from "../../assets/png/mob-co.png";
+import blueright from "../../assets/svg/blueright.svg";
 import ContainerLayout from "../../layouts/ContainerLayout";
+import Link from "next/link";
 
 const Section = () => {
   const [selectedStepIndex, setSelectedStepIndex] = useState(0);
@@ -96,6 +98,22 @@ const Section = () => {
                 description={step.description}
               />
             ))}
+            <div
+              className="w-full h-auto flex flex-col  md:flex-row items-center mt-8  lg:gap-6 mb-8"
+              
+            >
+              <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px]  cursor-pointer font-semibold hero-btn text-sm 2xl:text-base">
+                Get started for free
+              </div>
+              <Link
+                href="https://demo.wecollect.tech"
+                target="_blank"
+                className="bg-[#FFFFFF] hover:bg-[#E3D5FF]  w-[197px]  h-[50px] flex justify-start pl-[10px] items-center text-mainBlue rounded-[50px] hero-btn cursor-pointer my-5 md:my-0 font-semibold text-sm 2xl:text-base  "
+              >
+                <Image src={blueright} alt="blueright" className="mr-[10px]" />
+                Book a demo
+              </Link>
+            </div>
           </div>
 
           <div className="w-full flex justify-center lg:justify-end md:w-full h-auto ">
