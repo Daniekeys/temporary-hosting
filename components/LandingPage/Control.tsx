@@ -1,10 +1,36 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import ContainerLayout from "../../layouts/ContainerLayout";
 import maskwoman from "../../assets/png/farmer-boy.png";
 import playIcon from "../../assets/png/play-icon.png";
 
 function Control() {
+   const videoRef = useRef(null);
+
+   useEffect(() => {
+     const observer = new IntersectionObserver(
+       (entries) => {
+         entries.forEach((entry) => {
+           if (entry.isIntersecting) {
+             videoRef.current.play();
+           } else {
+             videoRef.current.pause();
+           }
+         });
+       },
+       { threshold: 0.5 } // Trigger when 50% of the video is visible
+     );
+
+     if (videoRef.current) {
+       observer.observe(videoRef.current);
+     }
+
+     return () => {
+       if (videoRef.current) {
+         observer.unobserve(videoRef.current);
+       }
+     };
+   }, []);
   return (
     <div className="w-full" data-aos="fade-up" data-aos-duration="1000">
       <ContainerLayout>
@@ -29,7 +55,9 @@ function Control() {
           /> */}
           <video
             width="600"
+            ref={videoRef}
             controls
+            poster="../../assets/png/farmer-boy.png"
             className="w-full object-contain h-auto m-auto mt-9 lg:mt-20 lg:max-w-[850px] 2xl:max-w-[1030px]"
           >
             <source src="/video/wecollect-video.mp4" type="video/mp4" />
