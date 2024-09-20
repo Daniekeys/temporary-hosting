@@ -489,6 +489,8 @@ border-image-source: linear-gradient(132.27deg, #E4E4FF -7.78%, #FFFFFF 43.08%, 
 }
 
 .j-bg{
-  background: linear-gradient(96.63deg, #E7F3EC -9.64%, #BCB6EC 50.48%, #B48771 119.9%);
+background: linear-gradient(96.63deg, rgba(231, 243, 236, 0.2) -9.64%, rgba(188, 182, 236, 0.2) 50.48%, rgba(180, 135, 113, 0.1) 119.9%);
+
+
 
 }
