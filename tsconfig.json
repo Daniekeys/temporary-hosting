@@ -20,6 +20,6 @@
     "**/*.ts",
     "**/*.tsx",
     "components/blogs/Slider.jsx"
-  ],
+, "components/smart-data-collection/smart-hero.jsx"  ],
   "exclude": ["node_modules"]
 }

@@ -8,8 +8,13 @@ import wifi from "../../assets/svg/wifi.svg";
 import securecase from "../../assets/svg/securecase.svg";
 
 import spiral from "../../assets/png/spiral-curve.png";
-import spiralRight from "../../assets/png/spiral-right.png"
+import spiralRight from "../../assets/png/spiral-right.png" 
+
+import { useRouter } from "next/router";
 function HomeFeatures() {
+
+  const router = useRouter();
+
   return (
     <div
       className="w-full relative overflow-x-hidden overflow-y-hidden  "
@@ -47,7 +52,8 @@ function HomeFeatures() {
         <div className="bg-[#F9F6FF] container-border w-full h-auto rounded-[50px] p-5 lg:p-[30px] mt-5 lg:mt-20  relative flow-hide ">
           <div className="w-full h-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-4 lg:gap-10">
             <div
-              className=" w-full  h-fit lg:h-full rounded-[30px] py-5 lg:py-10 px-5 lg:px-[30px]   cursor-default boxlee"
+              className=" w-full  h-fit lg:h-full rounded-[30px] py-5 lg:py-10 px-5 lg:px-[30px]   cursor-pointer boxlee"
+              onClick={() => router.push("/smart-data-collection")}
               // data-aos="fade-up"
               // data-aos-duration="1000"
             >
@@ -65,7 +71,8 @@ function HomeFeatures() {
             </div>
 
             <div
-              className="boxlee w-full   h-fit lg:h-full rounded-[30px] p-5 lg:p-7  md:mt-0   cursor-default"
+              className="boxlee w-full   h-fit lg:h-full rounded-[30px] p-5 lg:p-7  md:mt-0   cursor-pointer"
+              onClick={() => router.push("/project-management-dashboard")}
               // data-aos="fade-up"
               // data-aos-duration="1000"
               // data-aos-delay="300"
