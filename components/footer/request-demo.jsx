@@ -1,5 +1,6 @@
 import React from "react";
 import ContainerLayout from "../../layouts/ContainerLayout";
+import Link from "next/link";
 const RequestDemo = () => {
   return (
     <div
@@ -34,9 +35,10 @@ const RequestDemo = () => {
               className="bg-transparent flex-grow border-none outline-none focus:outline-none focus:border-none placeholder:text-base placeholder:text-ash text-ash text-base "
               placeholder="e:g johndoe@email.com"
             />
-            <button className="bg-mainBlue rounded-[50px] h-[46px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[168px] hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
+            <Link   href="https://demo.wecollect.tech"
+                target="_blank" className="bg-mainBlue rounded-[50px] h-[46px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[168px] hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
               Submit
-            </button>
+            </Link>
           </div>
         </div>
       </ContainerLayout>
