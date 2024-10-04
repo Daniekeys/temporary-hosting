@@ -95,12 +95,10 @@ function HomeFeatures() {
             </div>
           </div>
 
-          <div
-            className="w-full h-auto grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-10 justify-between items-center mt-4 lg:mt-10"
-            onClick={() => router.push("/gis-systems")}
-          >
+          <div className="w-full h-auto grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-10 justify-between items-center mt-4 lg:mt-10">
             <div
               className="boxlee w-full h-fit lg:h-full  rounded-[30px] p-5 lg:p-7  cursor-default"
+              onClick={() => router.push("/gis-systems")}
               // data-aos="fade-up"
               // data-aos-duration="1000"
               // data-aos-delay="600"
