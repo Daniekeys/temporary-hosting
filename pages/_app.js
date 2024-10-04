@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import '../styles/globals.css'
 import AOS from "aos";
-import "aos/dist/aos.css";
+import "aos/dist/aos.css"; 
 import { Montserrat } from "@next/font/google";
 export const montserrat = Montserrat({
   subsets: ["latin"],
@@ -22,3 +22,5 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp
+
+

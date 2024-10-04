@@ -1,3 +1,70 @@
+export const CancelIcon = () => {
+  return (
+    <svg
+      width="43"
+      height="43"
+      viewBox="0 0 43 43"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g filter="url(#filter0_d_9160_3694)">
+        <rect
+          x="4"
+          width="34.486"
+          height="34.486"
+          rx="17.243"
+          fill="#4747D6"
+          fill-opacity="0.05"
+          shape-rendering="crispEdges"
+        />
+        <path
+          d="M16 22.486L21.243 17.243L26.486 22.486M26.486 12L21.242 17.243L16 12"
+          stroke="#999999"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_d_9160_3694"
+          x="0"
+          y="0"
+          width="42.4844"
+          height="42.4863"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset dy="4" />
+          <feGaussianBlur stdDeviation="2" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0.6 0 0 0 0 0.6 0 0 0 0 0.6 0 0 0 0.05 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_9160_3694"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_9160_3694"
+            result="shape"
+          />
+        </filter>
+      </defs>
+    </svg>
+  );
+}
 export const BlogSearchIcon = () => {
   return (
     <svg
