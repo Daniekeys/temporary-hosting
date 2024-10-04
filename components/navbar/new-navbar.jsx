@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ContainerLayout from "../../layouts/ContainerLayout";
-import logo from "../../assets/svg/we-logo.svg";
+import logo from "../../assets/svg/latest-logo.svg";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import project from "../../assets/svg/project.svg";
