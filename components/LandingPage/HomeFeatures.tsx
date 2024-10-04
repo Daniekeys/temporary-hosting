@@ -135,7 +135,8 @@ function HomeFeatures() {
             </div>
 
             <div
-              className="boxlee w-full  h-full rounded-[30px] p-7  cursor-default"
+              className="boxlee w-full  h-full rounded-[30px] p-7  cursor-pointer"
+              onClick={() => router.push("/secure-cloud-storage")}
               // data-aos="fade-up"
               // data-aos-duration="1000"
               // data-aos-delay="600"
