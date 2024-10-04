@@ -59,12 +59,15 @@ function GisFeatures() {
               />
 
               <p className="text-[#333333] w-full lg:text-2xl 2xl:text-2xl text-xl font-semibold mt-7   px-4 lg:px-7 md:leading-[48px] 2xl:leading-[50px]">
-                Real-Time Data Report
+                Zoomable Map
               </p>
 
               <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium mt-7 pb-7 px-4 lg:px-7">
-                Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
-                ipsum feugiat sed vulputate id amet. Etiam arcu ultricies
+                Zoomable maps in WeCollect allow users to interactively explore
+                geographic data at varying levels of detail. Users can zoom in
+                for specific insights or zoom out for a broader overview,
+                enhancing their understanding of spatial relationships and
+                patterns.
               </p>
             </div>
 
@@ -81,12 +84,14 @@ function GisFeatures() {
               />
 
               <p className="text-[#333333]  lg:text-2xl  text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]  px-4 lg:px-7 ">
-                Create & Assign Tasks
+                Location-Based Insights
               </p>
 
               <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium pb-7 px-4 lg:px-7 mt-4">
-                Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
-                ipsum feugiat sed vulputate id amet. Etiam arcu ultricies
+                Location-based insights from WeCollect provide businesses with
+                valuable data about their target markets, helping them
+                understand consumer behavior, regional trends, and competitive
+                dynamics.
               </p>
             </div>
 
@@ -103,12 +108,14 @@ function GisFeatures() {
               />
 
               <p className="text-[#333333] lg:text-2xl text-xl font-semibold mt-6 md:leading-[48px] 2xl:leading-[50px] px-4 lg:px-7">
-                Filter & Export Data
+                Easy Data Modification
               </p>
 
               <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium pb-7 px-4 lg:px-7 mt-4">
-                Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
-                ipsum feugiat sed vulputate id amet. Etiam arcu ultricies
+                easy data modification feature allows users to effortlessly
+                update, edit, or delete collected data in real time. This
+                ensures that information remains accurate and relevant, enabling
+                businesses to respond quickly to changing circumstances.
               </p>
             </div>
           </div>

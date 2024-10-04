@@ -52,15 +52,19 @@ function OfflineFeatures() {
               // data-aos-duration="1000"
               // data-aos-delay="600"
             >
-              <Image src={gpss} alt="gpss" className="w-full h-auto object-contain" />
+              <Image
+                src={gpss}
+                alt="gpss"
+                className="w-full h-auto object-contain"
+              />
 
               <p className="text-[#333333] w-full lg:text-2xl 2xl:text-2xl text-xl font-semibold mt-7   px-4 lg:px-7 md:leading-[48px] 2xl:leading-[50px]">
                 Offline Data Collection
               </p>
 
               <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium mt-7 pb-7 px-4 lg:px-7">
-                Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
-                ipsum feugiat sed vulputate id amet. Etiam arcu ultricies
+                Collect and store data in remote areas without internet access.
+                Sync it automatically when you’re back online.
               </p>
             </div>
 
@@ -87,8 +91,7 @@ function OfflineFeatures() {
               // data-aos="fade-up"
               // data-aos-duration="1000"
               // data-aos-delay="600"
-                      >
-                          
+            >
               <Image
                 src={securecase}
                 alt="securecase"
@@ -100,8 +103,8 @@ function OfflineFeatures() {
               </p>
 
               <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium pb-7 px-4 lg:px-7 mt-4">
-                Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
-                ipsum feugiat sed vulputate id amet. Etiam arcu ultricies
+                Collect multiple records and upload whenever you like. Lorem
+                ipsum dolor sit amet consectetur. Mi odio venenatis
               </p>
             </div>
           </div>
