@@ -12,6 +12,7 @@ import { ArrowDown, CancelIcon } from "../../assets/svg";
 import emuration from "../../assets/svg/emuration.svg";
 import reporting from "../../assets/svg/reporting.svg";
 import learning from "../../assets/svg/wecollect-learning.svg"
+import { IoIosArrowForward } from "react-icons/io";
 const NewNavbar = () => {
   const router = useRouter();
   const [isAboutUsDropdownOpen, setIsAboutUsDropdownOpen] = useState(false);
@@ -19,7 +20,8 @@ const NewNavbar = () => {
   const [rotateAbout, setRotateAbout] = useState(false);
   const [rotateProduct, setRotateProduct] = useState(false); 
   const [open, setOpen] = useState(false);
-  const [openSecond, setOpenSecond] = useState(false);
+  const [current, setCurrent] = useState(1); 
+  const [agentPresent, setAgentPresent] = useState(0); 
 
 
   return (
@@ -264,138 +266,184 @@ const NewNavbar = () => {
       </div>
       {open && (
         <div className="w-full fixed z-modal inset-0 overlay-shadow flex items-center justify-center bg-white h-screen ">
-          <div className="w-full max-h-[500px] lg:max-h-[750px] flow-hide bg-white rounded-lg lg:rounded-[50px] lg:max-w-[800px] xl:max-w-[900px] lg:p-12 xl:p-16 px-4 py-8 flex flex-col  ">
-            {/* header session */}
-            <div className="w-full flex items-center justify-between">
-              <p></p>
-              <h1 className="text-2xl lg:text-3xl text-customBlack font-bold">
-                GET A QUOTE
-              </h1>
+          {current === 0 && (
+            <div className="w-full max-h-[500px] lg:max-h-[750px] flow-hide bg-white rounded-lg lg:rounded-[50px] lg:max-w-lg   py-8 flex flex-col  ">
+              {/* header session */}
+              <div className="w-full flex items-center justify-between lg:px-12 xl:px-16  px-4  ">
+                <p></p>
+                <h1 className="text-2xl lg:text-3xl text-customBlack font-bold">
+                  GET A QUOTE
+                </h1>
+                <span
+                  className="cursor-pointer"
+                  onClick={() => {
+                    setOpen(false);
+                    setCurrent(0);
+                  }}
+                >
+                  <CancelIcon />
+                </span>
+              </div>
 
-              <span className="cursor-pointer" onClick={() => setOpen(false)}>
-                <CancelIcon />
-              </span>
-            </div>
+              {/* end of session */}
+              <p className="text-center text-[#555] text-lg bg-[#f1f1f1] h-[35px] px-2 py-1 mt-1 w-fit mx-auto rounded-[20px]">
+                Personalized quote for your project ✨
+              </p>
 
-            {/* end of session */}
-            <p className="text-center text-[#555] text-lg bg-[#f1f1f1] h-[35px] px-2 py-1 mt-1 w-fit mx-auto rounded-[20px]">
-              Personalized quote for your project ✨
-            </p>
+              <div className="w-full border-t border-t-[#999999] border-opacity-10 mt-6">
+                <div className="w-full lg:w-10/12 mx-auto flex flex-col pt-10 ">
+                  <p className="text-customBlack font-medium text-base">
+                    Select one that applies to you:
+                  </p>
+                  <div className={`flex justify-between items-center h-[50px]  ${agentPresent === 1 ? "bg-mainBlue text-white" : "bg-mainBlue bg-opacity-5 text-customBlack"} `}>
+                    <div className="flex items-center">
+                      <input type="checkbox" name="" id="" checked={agentPresent === 1} className="accent-white"  />
+                    </div>
+                    <span>
 
-            <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-9 mt-11">
-              {/* start */}
-              <div className="flex flex-col">
-                <label
-                  htmlFor=""
-                  className=" text-[#555] text-sm lg:text-base mb-1"
-                >
-                  Number of agents
-                </label>
-                <input
-                  type="number"
-                  className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
-                  placeholder="e.g 10"
-                />
-              </div>
-              {/* end */}
-              {/* start */}
-              <div className="flex flex-col">
-                <label
-                  htmlFor=""
-                  className=" text-[#555] text-sm lg:text-base mb-1"
-                >
-                  Number of locations
-                </label>
-                <input
-                  type="number"
-                  className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
-                  placeholder="e.g 10"
-                />
-              </div>
-              {/* end */}
-              {/* start */}
-              <div className="flex flex-col">
-                <label
-                  htmlFor=""
-                  className=" text-[#555] text-sm lg:text-base mb-1"
-                >
-                  Project start date
-                </label>
-                <input
-                  type="date"
-                  className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
-                  placeholder="e.g 10"
-                />
-              </div>
-              {/* end */}
-              {/* start */}
-              <div className="flex flex-col">
-                <label
-                  htmlFor=""
-                  className=" text-[#555] text-sm lg:text-base mb-1"
-                >
-                  Use cases
-                </label>
-                <input
-                  type="text"
-                  className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
-                  placeholder="Enter a use case"
-                />
-              </div>
-              {/* end */}
-              {/* start */}
-              <div className="flex flex-col">
-                <label
-                  htmlFor=""
-                  className=" text-[#555] text-sm lg:text-base mb-1"
-                >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
-                  placeholder="Enter a use case"
-                />
-              </div>
-              {/* end */}
-              {/* start */}
-              <div className="flex flex-col">
-                <label
-                  htmlFor=""
-                  className=" text-[#555] text-sm lg:text-base mb-1"
-                >
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
-                  placeholder="Enter a use case"
-                />
-              </div>
-              {/* end */}
-              {/* start */}
-              <div className="flex flex-col">
-                <button className="w-full font-semibold text-sm lg:text-base flex bg-mainBlue text-white h-[50px] items-center justify-center rounded-[50px]">
-                  Request Quote
-                </button>
-                <p className="text-center text-[#9999FF] mt-3 font-medium text-xs">
-                  You are agreeing to be contacted when you request a quote from
-                  us
-                </p>
-              </div>
-              {/* end */}
-              {/* start */}
-              <div className="flex flex-col">
-                <div className=" text-customBlack  mt-3 font-medium text-sm ">
-                  Don’t have account with Us yet?
-                  <Link href={"/home"} className="text-mainBlue font-semibold cursor-pointer ml-1">
-                  Sign up
-                  </Link>
+                    </span>
+                  </div>
                 </div>
               </div>
-              {/* end */}
             </div>
-          </div>
+          )}
+          {current === 1 && (
+            <div className="w-full max-h-[500px] lg:max-h-[750px] flow-hide bg-white rounded-lg lg:rounded-[50px] lg:max-w-[800px] xl:max-w-[900px] lg:p-12 xl:p-16 px-4 py-8 flex flex-col relative ">
+              <div className="quote-shadow absolute -top-[220px] left-0 z-0 "></div>
+              {/* header session */}
+              <div className="w-full flex items-center justify-between z-10">
+                <p></p>
+                <h1 className="text-2xl lg:text-3xl text-customBlack font-bold">
+                  GET A QUOTE
+                </h1>
+                <span className="cursor-pointer" onClick={() => setOpen(false)}>
+                  <CancelIcon />
+                </span>
+              </div>
+
+              {/* end of session */}
+              <p className="text-center z-10 text-[#555] text-lg bg-[#fff] h-[35px] px-2 py-1 mt-1 w-fit mx-auto rounded-[20px]">
+                Personalized quote for your project ✨
+              </p>
+
+              <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-9 mt-11 z-10">
+                {/* start */}
+                <div className="flex flex-col">
+                  <label
+                    htmlFor=""
+                    className=" text-[#555] text-sm lg:text-base mb-1"
+                  >
+                    Number of agents
+                  </label>
+                  <input
+                    type="number"
+                    className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
+                    placeholder="e.g 10"
+                  />
+                </div>
+                {/* end */}
+                {/* start */}
+                <div className="flex flex-col">
+                  <label
+                    htmlFor=""
+                    className=" text-[#555] text-sm lg:text-base mb-1"
+                  >
+                    Number of locations
+                  </label>
+                  <input
+                    type="number"
+                    className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
+                    placeholder="e.g 10"
+                  />
+                </div>
+                {/* end */}
+                {/* start */}
+                <div className="flex flex-col">
+                  <label
+                    htmlFor=""
+                    className=" text-[#555] text-sm lg:text-base mb-1"
+                  >
+                    Project start date
+                  </label>
+                  <input
+                    type="date"
+                    className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
+                    placeholder="e.g 10"
+                  />
+                </div>
+                {/* end */}
+                {/* start */}
+                <div className="flex flex-col">
+                  <label
+                    htmlFor=""
+                    className=" text-[#555] text-sm lg:text-base mb-1"
+                  >
+                    Use cases
+                  </label>
+                  <input
+                    type="text"
+                    className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
+                    placeholder="Enter a use case"
+                  />
+                </div>
+                {/* end */}
+                {/* start */}
+                <div className="flex flex-col">
+                  <label
+                    htmlFor=""
+                    className=" text-[#555] text-sm lg:text-base mb-1"
+                  >
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
+                    placeholder="Enter a use case"
+                  />
+                </div>
+                {/* end */}
+                {/* start */}
+                <div className="flex flex-col">
+                  <label
+                    htmlFor=""
+                    className=" text-[#555] text-sm lg:text-base mb-1"
+                  >
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
+                    placeholder="Enter a use case"
+                  />
+                </div>
+                {/* end */}
+                {/* start */}
+                <div className="flex flex-col">
+                  <button className="w-full font-semibold text-sm lg:text-base flex bg-mainBlue text-white h-[50px] items-center justify-center rounded-[50px]">
+                    Request Quote
+                  </button>
+                  <p className="text-left  text-[#9999FF] mt-3 font-medium text-xs">
+                    You are agreeing to be contacted when you request a quote
+                    from us
+                  </p>
+                </div>
+                {/* end */}
+                {/* start */}
+                <div className="flex flex-col">
+                  <div className=" text-customBlack  mt-3 font-medium text-sm ">
+                    Don’t have account with Us yet?
+                    <Link
+                      href={"/home"}
+                      className="text-mainBlue font-semibold cursor-pointer ml-1"
+                    >
+                      Sign up
+                    </Link>
+                  </div>
+                </div>
+                {/* end */}
+              </div>
+            </div>
+          )}
         </div>
       )}
     </>

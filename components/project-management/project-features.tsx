@@ -69,7 +69,9 @@ function ProjectManagementFeatures() {
               // data-aos="fade-up"
               // data-aos-duration="1000"
               // data-aos-delay="600"
+              
             >
+
               <Image src={wifi} alt="wifi" className="w-full h-auto -mt-8" />
 
               <p className="text-[#333333]  lg:text-2xl  text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]  px-4 lg:px-7 ">
@@ -124,3 +126,5 @@ function ProjectManagementFeatures() {
 }
 
 export default ProjectManagementFeatures;
+
+
