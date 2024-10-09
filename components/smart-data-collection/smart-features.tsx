@@ -59,8 +59,11 @@ function SmartFeatures() {
               </p>
 
               <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium mt-7 pb-7 px-4 lg:px-7">
-                Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
-                ipsum feugiat sed vulputate id amet. Etiam arcu ultricies
+                Real-time data collection allows businesses to gather and access
+                up-to-the-minute information instantly, enabling faster
+                decision-making. With WeCollect, data is captured and
+                transmitted in real-time, ensuring accuracy and immediate
+                insights.
               </p>
             </div>
 
@@ -77,8 +80,8 @@ function SmartFeatures() {
               </p>
 
               <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium pb-7 px-4 lg:px-7 mt-4">
-                Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
-                ipsum feugiat sed vulputate id amet. Etiam arcu ultricies
+                WeCollect’s easy-to-use forms simplify data collection, allowing
+                agents to quickly gather information without technical hassles.
               </p>
             </div>
 
@@ -99,8 +102,9 @@ function SmartFeatures() {
               </p>
 
               <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium pb-7 px-4 lg:px-7 mt-4">
-                Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
-                ipsum feugiat sed vulputate id amet. Etiam arcu ultricies
+                WeCollect's GPS-enabled points make data collection seamless by
+                allowing agents to capture precise location information during
+                surveys or fieldwork.
               </p>
             </div>
           </div>

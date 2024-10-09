@@ -52,17 +52,20 @@ function OfflineFeatures() {
               // data-aos-duration="1000"
               // data-aos-delay="600"
             >
+              <div className="feat-img-shadow flex justify-center pt-8 rounded-t-[30px]">
+                
               <Image
                 src={gpss}
                 alt="gpss"
-                className="w-full h-auto object-contain"
-              />
+                className="w-full h-auto  max-w-[300px] -mt-7 mb-7"
+                />
+                </div>
 
               <p className="text-[#333333] w-full lg:text-2xl 2xl:text-2xl text-xl font-semibold mt-7   px-4 lg:px-7 md:leading-[48px] 2xl:leading-[50px]">
                 Offline Data Collection
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium mt-7 pb-7 px-4 lg:px-7">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[36px] text-sm font-medium mt-7 pb-7 px-4 lg:px-7">
                 Collect and store data in remote areas without internet access.
                 Sync it automatically when you’re back online.
               </p>
@@ -74,13 +77,19 @@ function OfflineFeatures() {
               // data-aos-duration="1000"
               // data-aos-delay="600"
             >
-              <Image src={wifi} alt="wifi" className="w-full h-auto " />
+              <div className="feat-img-shadow flex justify-center pt-8 rounded-t-[30px]">
+                <Image
+                  src={wifi}
+                  alt="wifi"
+                  className=" h-auto object-contain max-w-[300px]  "
+                />
+              </div>
 
               <p className="text-[#333333]  lg:text-2xl  text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]  px-4 lg:px-7 ">
                 No Data Loss
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium pb-7 px-4 lg:px-7 mt-4">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[36px] text-sm font-medium pb-7 px-4 lg:px-7 mt-4">
                 Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
                 ipsum feugiat sed vulputate id amet. Etiam arcu ultricies
               </p>
@@ -92,17 +101,19 @@ function OfflineFeatures() {
               // data-aos-duration="1000"
               // data-aos-delay="600"
             >
-              <Image
-                src={securecase}
-                alt="securecase"
-                className="w-full h-auto object-contain max-w-[300px] mx-auto   "
-              />
+              <div className="feat-img-shadow flex justify-center pt-8 rounded-t-[30px]">
+                <Image
+                  src={securecase}
+                  alt="securecase"
+                  className="w-full h-auto object-contain max-w-[300px] mx-auto   "
+                />
+              </div>
 
               <p className="text-[#333333] lg:text-2xl text-xl font-semibold mt-6 md:leading-[48px] 2xl:leading-[50px] px-4 lg:px-7">
                 Upload Data Anytime
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium pb-7 px-4 lg:px-7 mt-4">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[36px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4">
                 Collect multiple records and upload whenever you like. Lorem
                 ipsum dolor sit amet consectetur. Mi odio venenatis
               </p>
