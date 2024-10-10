@@ -68,7 +68,7 @@ const Section = () => {
         <p
           // data-aos="fade-up"
           // data-aos-duration="1000"
-          className={`text-[14px] lg:text-base 2xl:text-[18px] font-medium text-[#555555] leading-[36px] mt-4 ${
+          className={`text-[14px] lg:text-[16px] lg:pl-12 2xl:text-[18px] font-medium text-[#555555] leading-[36px] mt-4 ${
             index === selectedStepIndex ? "block" : "hidden"
           }`}
         >
