@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import NewNavbar from "../navbar/new-navbar";
 import ContainerLayout from "../../layouts/ContainerLayout";
 import heroPic from "../../assets/png/blog-hero-pic.png";
@@ -8,11 +8,11 @@ import { useRouter } from "next/router";
 import empty from "../../assets/svg/empty-result.svg";
 import { blogPosts } from "../../utils/blog-data";
 const BlogHero = () => {
-  const [search, setSearch] = useState(""); 
+  const [search, setSearch] = useState("");
   const router = useRouter();
   const handleBlogSearch = () => {
-router.push(`/blog?search=${search}#blog`)
-  }
+    router.push(`/blog?search=${search}#blog`);
+  };
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
       handleBlogSearch();
@@ -28,7 +28,7 @@ router.push(`/blog?search=${search}#blog`)
       );
       setAllBlogs(filteredBlogs);
     }
-  }, [search]); 
+  }, [search]);
 
   return (
     <div className=" w-full h-full flow-hide">
@@ -37,7 +37,7 @@ router.push(`/blog?search=${search}#blog`)
         <MobileNav present={2} />
         <ContainerLayout>
           <div className="w-full flex flex-col  mt-[142px] justify-center flow-hide ">
-                       <div className="w-full lg:flex-row mt-12  flex flex-col ">
+            <div className="w-full lg:flex-row mt-12  flex flex-col ">
               <div className="w-full flex flex-col lg:w-1/2">
                 <h1
                   className="text-mainBlue font-semibold text-[48px] 2xl:text-[64px]  "
@@ -47,7 +47,7 @@ router.push(`/blog?search=${search}#blog`)
                   OUR BLOG
                 </h1>
                 <p
-                  className="text-customBlack font-medium 2xl:text-[32px] lg:text-2xl text-lg mt-7 "
+                  className="text-customBlack font-medium 2xl:text-[32px] lg:text-2xl text-[18px] mt-7 "
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                 >

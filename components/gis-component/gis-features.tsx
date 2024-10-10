@@ -37,7 +37,7 @@ function GisFeatures() {
         </p>
 
         <p
-          className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px] text-sm font-medium text-center"
+          className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px] text-[14px] font-medium text-center"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
@@ -62,7 +62,7 @@ function GisFeatures() {
                 Zoomable Map
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium mt-7 pb-7 px-4 lg:px-7">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7 pb-7 px-4 lg:px-7">
                 Zoomable maps in WeCollect allow users to interactively explore
                 geographic data at varying levels of detail. Users can zoom in
                 for specific insights or zoom out for a broader overview,
@@ -87,7 +87,7 @@ function GisFeatures() {
                 Location-Based Insights
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium pb-7 px-4 lg:px-7 mt-4">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4">
                 Location-based insights from WeCollect provide businesses with
                 valuable data about their target markets, helping them
                 understand consumer behavior, regional trends, and competitive
@@ -111,7 +111,7 @@ function GisFeatures() {
                 Easy Data Modification
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium pb-7 px-4 lg:px-7 mt-4">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4">
                 easy data modification feature allows users to effortlessly
                 update, edit, or delete collected data in real time. This
                 ensures that information remains accurate and relevant, enabling

@@ -53,7 +53,7 @@ const OurInnovation = () => {
               </span>
             </div>
             <p
-              className="text-center mt-12 text-ash 2xl:text-lg lg:text-base text-sm max-w-[977px]"
+              className="text-center mt-12 text-ash 2xl:text-[18px] lg:text-[16px] text-[14px] max-w-[977px]"
               // data-aos="fade-up"
               // data-aos-duration="1000"
             >

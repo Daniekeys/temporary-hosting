@@ -26,7 +26,7 @@ const GisHero = () => {
                   SYSTEMS
                 </h1>
                 <p
-                  className="text-customBlack font-medium md:text-2xl 2xl:text-[32px] text-lg leading-[39px] 2xl:leading-[48px] max-w-[500px]"
+                  className="text-customBlack font-medium md:text-2xl 2xl:text-[32px] text-[18px] leading-[39px] 2xl:leading-[48px] max-w-[500px]"
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >
@@ -36,7 +36,7 @@ const GisHero = () => {
                   <Link
                     href="https://demo.wecollect.tech"
                     target="_blank"
-                    className="bg-[#FFFFFF] hover:bg-[#E3D5FF]  w-[197px]  h-[50px] flex justify-start pl-[10px] items-center text-mainBlue rounded-[50px] hero-btn cursor-pointer my-5 md:my-0 font-semibold text-sm 2xl:text-base  "
+                    className="bg-[#FFFFFF] hover:bg-[#E3D5FF]  w-[197px]  h-[50px] flex justify-start pl-[10px] items-center text-mainBlue rounded-[50px] hero-btn cursor-pointer my-5 md:my-0 font-semibold text-[14px] 2xl:text-[16px]  "
                   >
                     <Image
                       src={blueright}

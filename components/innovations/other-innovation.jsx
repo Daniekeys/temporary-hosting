@@ -38,7 +38,7 @@ const OtherInnovations = () => {
             </span>
           </div>
           <p
-            className="text-center mx-auto text-ash text-sm 2xl:text-lg lg:text-base lg:leading-[36px] max-w-[977px] mt-6"
+            className="text-center mx-auto text-ash text-[14px] 2xl:text-[18px] lg:text-[16px] lg:leading-[36px] max-w-[977px] mt-6"
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >

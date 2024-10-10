@@ -30,7 +30,7 @@ function UseHow({howInfo} : {howInfo:any}) {
         </p>
 
         <p
-          className="text-[#555555] text-[14px] 2xl:text-[18px] font-medium mt-[10px] text-center"
+          className="text-[#555555] text-[14px] 2xl:text-[18px] font-medium mt-[10px] text-center leading-[36px]"
           // data-aos="fade-up"
           // data-aos-duration="1000"
           >

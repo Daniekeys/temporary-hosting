@@ -35,7 +35,7 @@ const BlogLatest = () => {
           </div>
           <div className="w-full md:w-5/12 flex flex-col justify-center">
             <p
-              className="text-[12px] md:text-base text-[#555] mt-6 2xl:mt-0 "
+              className="text-[12px] md:text-[16px] text-[#555] mt-6 2xl:mt-0 "
               // data-aos="fade-up"
               // data-aos-delay="300"
               // data-aos-duration="1000"
@@ -51,7 +51,7 @@ const BlogLatest = () => {
               {item?.title}
             </h2>
             <p
-              className="text-[#555] text-sm lg:text-base 2xl:text-xl leading-[30px]"
+              className="text-[#555] text-[14px] lg:text-[16px] 2xl:text-xl leading-[30px]"
               // data-aos="fade-up"
               // data-aos-delay="700"
               // data-aos-duration="1000"
@@ -59,7 +59,7 @@ const BlogLatest = () => {
               {item?.summaryHeading}
             </p>
             <p
-              className=" bg-white   text-base text-mainBlue border border-mainBlue hover:border-none  hover:text-mainBlue  font-semibold mt-4  w-fit px-[30px] py-[15px] cursor-pointer h-[50px] rounded-[50px] flex items-center justify-center hover:bg-[#E3D5FF]   "
+              className=" bg-white   text-[16px] text-mainBlue border border-mainBlue hover:border-none  hover:text-mainBlue  font-semibold mt-4  w-fit px-[30px] py-[15px] cursor-pointer h-[50px] rounded-[50px] flex items-center justify-center hover:bg-[#E3D5FF]   "
               onClick={() => router.push(`/blog/0`)}
               // data-aos="fade-up"
               // data-aos-duration="1000"

@@ -37,7 +37,6 @@ const contents = [
     story: ` If you have any questions about our use of cookies or this Cookie Policy, please contact us at hello@wecollect.tech.
 `,
   },
-
 ];
 const CookiesBody = () => {
   return (
@@ -55,7 +54,7 @@ const CookiesBody = () => {
               </h1>
 
               <p
-                className=" text-base   2xl:text-xl font-normal text-ash leading-[30px] "
+                className=" text-[16px]   2xl:text-xl font-normal text-ash leading-[30px] "
                 // data-aos="fade-up"
                 // data-aos-duration="1000"
               >
@@ -65,7 +64,7 @@ const CookiesBody = () => {
                 {item?.storyList?.map((item, index) => {
                   return (
                     <li
-                      className="text-sm lg:text-base 2xl:text-lg list-disc"
+                      className="text-[14px] lg:text-[16px] 2xl:text-[18px] list-disc"
                       key={index}
                     >
                       {item}

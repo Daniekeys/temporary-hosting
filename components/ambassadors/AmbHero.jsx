@@ -31,12 +31,12 @@ const AmbHero = () => {
               <h1 className="text-[#333] text-xl 2xl:text-[32px] lg:text-2xl font-bold leading-[50px] ">
                 About WeCollect
               </h1>
-              <p className="mt-4 text-[#555] text-sm lg:text-base font-medium">
+              <p className="mt-4 text-[#555] text-[14px] lg:text-[16px] font-medium">
                 WeCollect is an organization focused on providing individuals or
                 group with access to both data collection tools and management
                 dashboard.
               </p>
-              <p className="mt-5 text-[#555] text-sm lg:text-base font-medium">
+              <p className="mt-5 text-[#555] text-[14px] lg:text-[16px] font-medium">
                 We help companies across Africa to build and manage their agents
                 network through our seamless ease to use mobile application and
                 professional agent management dashboard.
@@ -58,7 +58,7 @@ const AmbHero = () => {
                       <div className="w-4 flex ">
                         <span className="bg-[#4747D6] w-[10px] h-[10px] rounded-full" />
                       </div>
-                      <p className="text-[#555] text-sm lg:text-base font-medium">
+                      <p className="text-[#555] text-[14px] lg:text-[16px] font-medium">
                         {item}
                       </p>
                     </div>

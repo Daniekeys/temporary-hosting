@@ -37,7 +37,7 @@ function SecureFeatures() {
         </p>
 
         <p
-          className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px] text-sm font-medium text-center"
+          className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px] text-[14px] font-medium text-center"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
@@ -62,7 +62,7 @@ function SecureFeatures() {
                 Regular Backup
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium mt-7 pb-7 px-4 lg:px-7">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7 pb-7 px-4 lg:px-7">
                 Secure, scalable cloud storage ensures your data is safe, backed
                 up, and accessible anytime
               </p>
@@ -74,13 +74,17 @@ function SecureFeatures() {
               // data-aos-duration="1000"
               // data-aos-delay="600"
             >
-              <Image src={wifi} alt="wifi" className="w-full h-auto max-w-[300px] " />
+              <Image
+                src={wifi}
+                alt="wifi"
+                className="w-full h-auto max-w-[300px] "
+              />
 
               <p className="text-[#333333]  lg:text-2xl  text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]  px-4 lg:px-7 ">
                 Project Access Control
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium pb-7 px-4 lg:px-7 mt-4">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4">
                 Project Access Control in WeCollect ensures that only authorized
                 users can access specific project data and features, enhancing
                 data security
@@ -103,7 +107,7 @@ function SecureFeatures() {
                 Privacy Compliant
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium pb-7 px-4 lg:px-7 mt-4">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4">
                 WeCollect is committed to upholding the highest standards of
                 privacy compliance, ensuring that all data collected adheres to
                 relevant regulations and guidelines

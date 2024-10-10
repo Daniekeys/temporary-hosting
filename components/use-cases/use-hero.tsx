@@ -19,14 +19,14 @@ const UseHero = ({ heroInfo }: { heroInfo: any }) => {
             <div className="w-full lg:flex-row mt-12  flex flex-col ">
               <div className="w-full flex flex-col lg:w-6/12 justify-center ">
                 <h1
-                  className="text-mainBlue font-semibold text-[32px] 2xl:text-[64px] max-w-[632px] leading-[40px] 2xl:leading-[96px]  "
+                  className="text-mainBlue font-semibold text-[32px] lg:text-[40px] 2xl:text-[64px] max-w-[632px] leading-[40px] 2xl:leading-[96px]  "
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >
                   {heroInfo?.title}
                 </h1>
                 <p
-                  className="text-customBlack font-medium 2xl:text-[32px] lg:text-2xl text-xl 2xl:leading-[48px] leading-[48px] max-w-[550px] "
+                  className="text-customBlack font-medium 2xl:text-[32px] lg:text-2xl text-xl 2xl:leading-[48px] leading-[48px] max-w-[550px] mt-8 "
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >

@@ -18,7 +18,7 @@ const RequestDemo = () => {
             REQUEST A DEMO
           </h1>
           <p
-            className="text-ash text-base 2xl:text-xl text-center max-w-[738px] mx-auto font-medium mt-2"
+            className="text-ash text-[16px] 2xl:text-xl text-center max-w-[738px] mx-auto font-medium mt-2"
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >
@@ -32,11 +32,14 @@ const RequestDemo = () => {
           >
             <input
               type="text"
-              className="bg-transparent flex-grow border-none outline-none focus:outline-none focus:border-none placeholder:text-base placeholder:text-ash text-ash text-base "
+              className="bg-transparent flex-grow border-none outline-none focus:outline-none focus:border-none placeholder:text-[16px] placeholder:text-ash text-ash text-[16px] "
               placeholder="e:g johndoe@email.com"
             />
-            <Link   href="https://demo.wecollect.tech"
-                target="_blank" className="bg-mainBlue rounded-[50px] h-[46px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[168px] hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
+            <Link
+              href="https://demo.wecollect.tech"
+              target="_blank"
+              className="bg-mainBlue rounded-[50px] h-[46px] px-5 flex items-center justify-center text-white text-[16px]  cursor-pointer lg:min-w-[168px] hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold "
+            >
               Submit
             </Link>
           </div>

@@ -19,10 +19,10 @@ const GetInTouch = () => {
               <span>
                 <EmailIcon />
               </span>
-              <h2 className="text-mainBlue text-base lg:text-2xl font-semibold ">
+              <h2 className="text-mainBlue text-[16px] lg:text-2xl font-semibold ">
                 Email Address
               </h2>
-              <p className="text-customBlack text-sm 2xl:text-lg lg:text-base font-medium">
+              <p className="text-customBlack text-[14px] 2xl:text-[18px] lg:text-[16px] font-medium">
                 help@wecollect.tech
               </p>
             </div>
@@ -38,10 +38,10 @@ const GetInTouch = () => {
               <span>
                 <PhoneIcon />
               </span>
-              <h2 className="text-mainBlue text-base lg:text-2xl font-semibold ">
+              <h2 className="text-mainBlue text-[16px] lg:text-2xl font-semibold ">
                 Phone number
               </h2>
-              <p className="text-customBlack text-sm 2xl:text-lg lg:text-base font-medium">
+              <p className="text-customBlack text-[14px] 2xl:text-[18px] lg:text-[16px] font-medium">
                 +234(0) 816 360 8315
               </p>
             </div>
@@ -57,10 +57,10 @@ const GetInTouch = () => {
               <span>
                 <LocationIcon />
               </span>
-              <h2 className="text-mainBlue text-base lg:text-2xl font-semibold ">
+              <h2 className="text-mainBlue text-[16px] lg:text-2xl font-semibold ">
                 Physical location
               </h2>
-              <p className="text-customBlack text-sm 2xl:text-lg lg:text-base font-medium lg:max-w-[239px] mx-auto text-center">
+              <p className="text-customBlack text-[14px] 2xl:text-[18px] lg:text-[16px] font-medium lg:max-w-[239px] mx-auto text-center">
                 Unit D128 Ikota complex, Lekki Lagos
               </p>
             </div>
@@ -77,7 +77,7 @@ const GetInTouch = () => {
             GET IN TOUCH
           </h1>
           <p
-            className="text-base  text-ash font-medium 2xl:text-lg lg:text-base mt-2"
+            className="text-[16px]  text-ash font-medium 2xl:text-[18px] lg:text-[16px] mt-2"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
@@ -96,7 +96,7 @@ const GetInTouch = () => {
                 // data-aos-delay="300"
                 // data-aos-duration="1000"
               >
-                <label className="font-semibold text-customBlack text-sm lg:text-base">
+                <label className="font-semibold text-customBlack text-[14px] lg:text-[16px]">
                   Full name*
                 </label>
                 <input
@@ -114,7 +114,7 @@ const GetInTouch = () => {
                 // data-aos-delay="500"
                 // data-aos-duration="1000"
               >
-                <label className="font-semibold text-customBlack text-sm lg:text-base">
+                <label className="font-semibold text-customBlack text-[14px] lg:text-[16px]">
                   Email Address*
                 </label>
                 <input
@@ -132,7 +132,7 @@ const GetInTouch = () => {
                 // data-aos-delay="700"
                 // data-aos-duration="1000"
               >
-                <label className="font-semibold text-customBlack text-sm lg:text-base">
+                <label className="font-semibold text-customBlack text-[14px] lg:text-[16px]">
                   Phone number*
                 </label>
                 <input
@@ -150,7 +150,7 @@ const GetInTouch = () => {
                 // data-aos-delay="900"
                 // data-aos-duration="1000"
               >
-                <label className="font-semibold text-customBlack text-sm lg:text-base">
+                <label className="font-semibold text-customBlack text-[14px] lg:text-[16px]">
                   Message*
                 </label>
                 <textarea
@@ -169,7 +169,7 @@ const GetInTouch = () => {
                   id=""
                   className="accent-mainBlue w-6 h-6"
                 />
-                <span className="text-ash text-base">
+                <span className="text-ash text-[16px]">
                   I agree to be contacted
                 </span>
               </div>

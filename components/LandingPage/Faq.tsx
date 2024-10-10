@@ -24,7 +24,7 @@ const Faq = () => {
             FAQ
           </p>
           <p
-            className="text-[#555555] text-sm  lg:text-base 2xl:text-[20px] font-medium text-center mt-[10px] leading-[25px] lg:leading-[35px]"
+            className="text-[#555555] text-[14px]  lg:text-[16px] 2xl:text-[20px] font-medium text-center mt-[10px] leading-[25px] lg:leading-[35px]"
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >
@@ -32,12 +32,15 @@ const Faq = () => {
           </p>
 
           <div className="w-full bg-[#F9F6FF] h-auto rounded-[30px] flex flex-col mt-[30px] md:mt-[50px] p-5  lg:p-[30px]">
-            {faqData?.slice(0,3)?.map((item: any, index: number) => {
+            {faqData?.slice(0, 3)?.map((item: any, index: number) => {
               return <SingleFaq item={item} key={index} />;
             })}
           </div>
           <div className="w-full flex items-center justify-center mt-11 mb-4 ">
-            <Link href={"/faq"} className="faq-btn font-semibold  text-mainBlue flex items-center justify-center rounded-[50px] " >
+            <Link
+              href={"/faq"}
+              className="faq-btn font-semibold  text-mainBlue flex items-center justify-center rounded-[50px] "
+            >
               See more {">"}
             </Link>
           </div>
@@ -64,9 +67,9 @@ export const SingleFaq = ({ item }: any) => {
         onClick={() => setIsOpen(!isOpen)}
       >
         <p
-          className={`lg:text-base 2xl:text-lg  ${
+          className={`lg:text-[16px] 2xl:text-[18px]  ${
             isOpen ? "text-customBlack" : "text-customBlack"
-          }  font-semibold  text-sm cursor-pointer`}
+          }  font-semibold  text-[14px] cursor-pointer`}
         >
           {title}
         </p>
@@ -82,13 +85,13 @@ export const SingleFaq = ({ item }: any) => {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <p className="text-ash  2xl:text-lg lg:w-11/12 ">{story}</p>
+          <p className="text-ash  2xl:text-[18px] lg:w-11/12 ">{story}</p>
           {list.length !== 0 && (
             <ul className="list-disc ">
               {list.map((item: any, index: number) => {
                 return (
                   <li
-                    className="text-ash lg:text-base 2xl:text-lg text-sm lg:w-9/12"
+                    className="text-ash lg:text-[16px] 2xl:text-[18px] text-[14px] lg:w-9/12"
                     key={index}
                   >
                     {item}

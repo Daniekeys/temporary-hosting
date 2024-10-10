@@ -1,11 +1,9 @@
 import { useState } from "react";
-import ContainerLayout from "../../layouts/ContainerLayout"
+import ContainerLayout from "../../layouts/ContainerLayout";
 import Image from "next/image";
-import happy from "../../assets/png/happy-girl.png"
-
+import happy from "../../assets/png/happy-girl.png";
 
 import { useRouter } from "next/router";
-
 
 const Become = () => {
   const [open, setOpen] = useState(false);
@@ -55,7 +53,7 @@ const Become = () => {
               Become WeCollect campus ambassador
             </h1>
             <button
-              className="bg-[#4747D6] text-white text-base py-[10px] px-5 rounded-[30px] font-bold mt-8 w-fit border-none outline-none"
+              className="bg-[#4747D6] text-white text-[16px] py-[10px] px-5 rounded-[30px] font-bold mt-8 w-fit border-none outline-none"
               onClick={() => router.push("/ambassador")}
             >
               Apply now
@@ -69,7 +67,7 @@ const Become = () => {
             Become WeCollect campus ambassador
           </h1>
           <button
-            className="bg-[#4747D6] text-white text-base py-[10px] px-5 rounded-[30px] font-bold mt-8 w-fit border-none outline-none"
+            className="bg-[#4747D6] text-white text-[16px] py-[10px] px-5 rounded-[30px] font-bold mt-8 w-fit border-none outline-none"
             onClick={() => router.push("/ambassador")}
           >
             Apply now
@@ -78,6 +76,6 @@ const Become = () => {
       </div>
     </ContainerLayout>
   );
-}
+};
 
-export default Become
+export default Become;

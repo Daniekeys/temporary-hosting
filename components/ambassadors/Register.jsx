@@ -31,7 +31,7 @@ const Register = () => {
                       <div className="w-4 flex ">
                         <span className="bg-[#4747D6] w-[10px] h-[10px] rounded-full" />
                       </div>
-                      <p className="text-[#555] text-sm lg:text-base font-medium">
+                      <p className="text-[#555] text-[14px] lg:text-[16px] font-medium">
                         {item}
                       </p>
                     </div>

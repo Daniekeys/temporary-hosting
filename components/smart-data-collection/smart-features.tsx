@@ -37,7 +37,7 @@ function SmartFeatures() {
         </p>
 
         <p
-          className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px] text-sm font-medium text-center"
+          className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px] text-[14px] font-medium text-center"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
@@ -58,7 +58,7 @@ function SmartFeatures() {
                 Real-Time Data Syncing
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium mt-7 pb-7 px-4 lg:px-7">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7 pb-7 px-4 lg:px-7">
                 Real-time data collection allows businesses to gather and access
                 up-to-the-minute information instantly, enabling faster
                 decision-making. With WeCollect, data is captured and
@@ -79,7 +79,7 @@ function SmartFeatures() {
                 Easy-To-Use Data Form
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium pb-7 px-4 lg:px-7 mt-4">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4">
                 WeCollect’s easy-to-use forms simplify data collection, allowing
                 agents to quickly gather information without technical hassles.
               </p>
@@ -101,7 +101,7 @@ function SmartFeatures() {
                 GPS-Enabled Points
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium pb-7 px-4 lg:px-7 mt-4">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4">
                 WeCollect's GPS-enabled points make data collection seamless by
                 allowing agents to capture precise location information during
                 surveys or fieldwork.
@@ -128,4 +128,3 @@ function SmartFeatures() {
 }
 
 export default SmartFeatures;
-

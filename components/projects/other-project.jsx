@@ -19,7 +19,7 @@ const OtherProject = () => {
       <ContainerLayout>
         <div className="w-full py-20 lg:py-28 flex flex-col items-center justify-center px-4 lg:px-0">
           <h1
-            className="text-base text-center lg:text-start 2xl:text-[32px] lg:text-2xl font-semibold text-mainBlue"
+            className="text-[16px] text-center lg:text-start 2xl:text-[32px] lg:text-2xl font-semibold text-mainBlue"
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >
@@ -42,7 +42,7 @@ const OtherProject = () => {
             </span>
           </div>
           <p
-            className="text-center mx-auto text-fade text-sm 2xl:text-lg lg:text-base lg:leading-[36px] leading-[25px] max-w-[977px] mt-6"
+            className="text-center mx-auto text-fade text-[14px] 2xl:text-[18px] lg:text-[16px] lg:leading-[36px] leading-[25px] max-w-[977px] mt-6"
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >

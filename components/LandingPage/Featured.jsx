@@ -1,16 +1,14 @@
-import { useState,useEffect } from "react";
-import ContainerLayout from "../../layouts/ContainerLayout"
-import Link from "next/link"
+import { useState, useEffect } from "react";
+import ContainerLayout from "../../layouts/ContainerLayout";
+import Link from "next/link";
 const Featured = () => {
   const [show, setShow] = useState(true);
   useEffect(() => {
-   setTimeout(() => {
-    setShow(!show)
-   }, 4000);
+    setTimeout(() => {
+      setShow(!show);
+    }, 4000);
+  }, [show]);
 
-   
-  }, [show])
-  
   return (
     <ContainerLayout>
       <div className="w-full overflow-x-hidden bg-feat  lg:flex overflow-y-hidden space-x-4 justify-between hidden  ">
@@ -63,7 +61,7 @@ const Featured = () => {
           <Link
             href="https://fpmpn.wecollect.tech/"
             target="_blank"
-            className="bg-[#4747D6] text-white text-base py-[10px] px-5 rounded-[30px] mt-4 w-fit"
+            className="bg-[#4747D6] text-white text-[16px] py-[10px] px-5 rounded-[30px] mt-4 w-fit"
           >
             Learn more
           </Link>
@@ -85,7 +83,7 @@ const Featured = () => {
           <Link
             href="https://fpmpn.wecollect.tech/"
             target="_blank"
-            className="bg-[#4747D6] text-white text-base py-[10px] px-5 rounded-[30px] mt-4 w-fit"
+            className="bg-[#4747D6] text-white text-[16px] py-[10px] px-5 rounded-[30px] mt-4 w-fit"
           >
             Learn more
           </Link>
@@ -93,6 +91,6 @@ const Featured = () => {
       </div>
     </ContainerLayout>
   );
-}
+};
 
-export default Featured
+export default Featured;

@@ -37,7 +37,7 @@ function ProjectManagementFeatures() {
         </p>
 
         <p
-          className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px] text-sm font-medium text-center"
+          className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px] text-[14px] font-medium text-center"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
@@ -58,7 +58,7 @@ function ProjectManagementFeatures() {
                 Real-Time Data Report
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium mt-7 pb-7 px-4 lg:px-7">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7 pb-7 px-4 lg:px-7">
                 Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
                 ipsum feugiat sed vulputate id amet. Etiam arcu ultricies
               </p>
@@ -69,16 +69,14 @@ function ProjectManagementFeatures() {
               // data-aos="fade-up"
               // data-aos-duration="1000"
               // data-aos-delay="600"
-              
             >
-
               <Image src={wifi} alt="wifi" className="w-full h-auto -mt-8" />
 
               <p className="text-[#333333]  lg:text-2xl  text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]  px-4 lg:px-7 ">
                 Create & Assign Tasks
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium pb-7 px-4 lg:px-7 mt-4">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4">
                 Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
                 ipsum feugiat sed vulputate id amet. Etiam arcu ultricies
               </p>
@@ -100,7 +98,7 @@ function ProjectManagementFeatures() {
                 Filter & Export Data
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-base leading-[35px] text-sm font-medium pb-7 px-4 lg:px-7 mt-4">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4">
                 Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
                 ipsum feugiat sed vulputate id amet. Etiam arcu ultricies
               </p>
@@ -126,5 +124,3 @@ function ProjectManagementFeatures() {
 }
 
 export default ProjectManagementFeatures;
-
-

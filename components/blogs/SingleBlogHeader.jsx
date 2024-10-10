@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import ContainerLayout from "../../layouts/ContainerLayout";
 import { Navlogo } from "../../assets/svg";
 import logo from "../../assets/svg/log2.svg";
@@ -23,8 +23,7 @@ const SingleBlogHeader = () => {
   const item = blogPosts[blogId];
   useEffect(() => {
     window?.scrollTo(0, 0);
-  }, [])
-  
+  }, []);
 
   return (
     <ContainerLayout>
@@ -54,7 +53,7 @@ const SingleBlogHeader = () => {
           </div>
         </div>
         <p
-          className="tex-sm 2xl:text-base text-[#444] md:mt-16"
+          className="tex-sm 2xl:text-[16px] text-[#444] md:mt-16"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
@@ -72,7 +71,7 @@ const SingleBlogHeader = () => {
             {item?.bodyContent?.slice(0, 2)?.map((item, index) => {
               return (
                 <p
-                  className="text-[#333] 2xl:text-lg lg:text-base text-sm leading-[30px]"
+                  className="text-[#333] 2xl:text-[18px] lg:text-[16px] text-[14px] leading-[30px]"
                   key={index}
                   data-aos="fade-up"
                   data-aos-duration="1000"
@@ -97,7 +96,7 @@ const SingleBlogHeader = () => {
             {item?.bodyContent?.slice(2)?.map((item, index) => {
               return (
                 <p
-                  className="text-[#333] 2xl:text-lg lg:text-base text-sm leading-[30px]"
+                  className="text-[#333] 2xl:text-[18px] lg:text-[16px] text-[14px] leading-[30px]"
                   key={index}
                   data-aos="fade-up"
                   data-aos-duration="1000"
@@ -126,17 +125,17 @@ const SingleBlogHeader = () => {
                 alt="image"
                 className="w-full object-cover mx-auto md:w-full h-auto rounded-[30px]"
               />
-              <p className="text-[12px] md:text-base text-[#555] mt-4 ">
+              <p className="text-[12px] md:text-[16px] text-[#555] mt-4 ">
                 {item.date}
               </p>
               <p className="text-xl lg:text-2xl 2xl:text-[40px] text-[#333] leading-[58px] mt-4 truncate">
                 {item.title}
               </p>
-              <p className="2xl:text-lg lg:text-base text-sm leading-[30px] text-[#555] mt-4">
+              <p className="2xl:text-[18px] lg:text-[16px] text-[14px] leading-[30px] text-[#555] mt-4">
                 {item.summaryHeading}
               </p>
               <p
-                className="hover:bg-mainBlue bg-white   text-base text-mainBlue border border-mainBlue hover:border-none  hover:text-white  font-semibold mt-4  w-fit px-[30px] py-[15px] cursor-pointer h-[50px] rounded-[50px] flex items-center justify-center "
+                className="hover:bg-mainBlue bg-white   text-[16px] text-mainBlue border border-mainBlue hover:border-none  hover:text-white  font-semibold mt-4  w-fit px-[30px] py-[15px] cursor-pointer h-[50px] rounded-[50px] flex items-center justify-center "
                 onClick={() => router.push(`/blog/${index}`)}
               >
                 Read

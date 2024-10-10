@@ -22,7 +22,7 @@ const AppCaseHero = () => {
                   APPLICABLE CASES
                 </h1>
                 <p
-                  className="text-customBlack font-medium 2xl:text-[32px] lg:text-2xl text-lg 2xl:leading-[48px]  leading-[40px] mt-[30px] "
+                  className="text-customBlack font-medium 2xl:text-[32px] lg:text-2xl text-[18px] 2xl:leading-[48px]  leading-[40px] mt-[30px] "
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                 >

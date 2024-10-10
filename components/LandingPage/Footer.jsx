@@ -21,7 +21,7 @@ const Footer = () => {
         id="waitlist"
       >
         <h1
-          className="text-customeBlack font-bold text-base lg:text-2xl pl-8"
+          className="text-customeBlack font-bold text-[16px] lg:text-2xl pl-8"
           data-aos="fade-up"
           data-aos-duration="2000"
         >
@@ -84,7 +84,7 @@ const Footer = () => {
             <p className="text-xl 2xl:text-[32px] lg:text-2xl font-bold text-customBlack opacity-80">
               WeCollect
             </p>
-            <p className="ltext-base lg:text-xl text-customBlack">
+            <p className="ltext-[16px] lg:text-xl text-customBlack">
               {" "}
               | All rights reserved.
             </p>

@@ -38,7 +38,7 @@ function Control() {
           POWER OF DATA IN YOUR HANDS
         </p>
 
-        <p className="w-full md:w-8/12 m-auto text-[#555555] text-[14px] 2xl:text-[18px] font-medium text-center mt-[10px] leading-[25px] lg:leading-[30px]">
+        <p className="w-full md:w-8/12 m-auto text-[#555555] text-[14px] 2xl:text-[18px] font-medium text-center mt-[10px] leading-[25px] lg:leading-[36px]">
           WeCollect is a smart data collection mobile app that allows you
           collect online and offline data, while Project Management to a dynamic
           dashboard that provides real-time updates on data collected. It

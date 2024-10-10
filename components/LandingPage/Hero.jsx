@@ -31,7 +31,7 @@ const Hero = ({ active }) => {
               Data Collection Made Easy
             </h1>
 
-            <p className="text-base lg:text-xl leading-9 text-white mt-3">
+            <p className="text-[16px] lg:text-xl leading-9 text-white mt-3">
               Leverage advanced data-collecting technology and numerous field
               agents to access and track data for various projects.
             </p>
@@ -75,7 +75,7 @@ const Hero = ({ active }) => {
           <h1 className="lg:text-2xl text-xl font-bold text-[#333]  max-w-[377px] mx-auto text-center leading-[36px]">
             Excited about how WeCollect is Automating Data Collection?
           </h1>
-          <p className="text-sm lg:text-base font-medium mt-4 text-center">
+          <p className="text-[14px] lg:text-[16px] font-medium mt-4 text-center">
             Join the waitlist and be the first to know.
           </p>
           <div className="mt-3 flex justify-center my-2 mx-auto">

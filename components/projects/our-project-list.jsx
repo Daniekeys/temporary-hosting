@@ -1,13 +1,13 @@
-import React from 'react'
-import ContainerLayout from '../../layouts/ContainerLayout'
-import { SpecialArrow } from '../../assets/svg'
+import React from "react";
+import ContainerLayout from "../../layouts/ContainerLayout";
+import { SpecialArrow } from "../../assets/svg";
 
 import fpmp from "../../assets/png/fpmp-small.png";
 import kaduna from "../../assets/png/kaduna.png";
-import Image from 'next/image';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import techpoint from "../../assets/svg/techpoint.svg"
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import techpoint from "../../assets/svg/techpoint.svg";
 const OurProjectList = () => {
   const router = useRouter();
   return (
@@ -41,11 +41,11 @@ const OurProjectList = () => {
                       Food Price Monitoring Project In Nigeria
                     </h1>
                   </div>
-                  <p className="text-sm text-[#555] mt-5 font-medium leading-[36px] 2xl:text-base xl:max-w-[300px]  ">
+                  <p className="text-[14px] text-[#555] mt-5 font-medium leading-[36px] 2xl:text-[16px] xl:max-w-[300px]  ">
                     Tracking the availability of food in Nigeria using a data
                     driven price model in line with the UN SD4
                   </p>
-                  <button className="bg-mainBlue rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
+                  <button className="bg-mainBlue rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-[16px]  cursor-pointer lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
                     Learn more
                   </button>
                 </div>
@@ -66,11 +66,11 @@ const OurProjectList = () => {
                       Kaduna Electric Project
                     </h1>
                   </div>
-                  <p className="text-sm text-[#555] mt-5 font-medium leading-[36px] 2xl:text-base xl:max-w-[400px] ">
+                  <p className="text-[14px] text-[#555] mt-5 font-medium leading-[36px] 2xl:text-[16px] xl:max-w-[400px] ">
                     WeCollect played a crucial role in helping Kaduna Electric
                     efficiently collect and organize data on their assets...
                   </p>
-                  <button className="bg-mainBlue rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
+                  <button className="bg-mainBlue rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-[16px]  cursor-pointer lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
                     Learn more
                   </button>
                 </div>
@@ -91,11 +91,11 @@ const OurProjectList = () => {
                       TechPoint Project
                     </h1>
                   </div>
-                  <p className="text-sm text-[#555] mt-5 font-medium leading-[36px] 2xl:text-base xl:max-w-[400px] ">
+                  <p className="text-[14px] text-[#555] mt-5 font-medium leading-[36px] 2xl:text-[16px] xl:max-w-[400px] ">
                     WeCollect played a crucial role in helping Techpoint
                     efficiently collect and organize data on their project...
                   </p>
-                  <button className="bg-mainBlue rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-base  cursor-pointer lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
+                  <button className="bg-mainBlue rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-[16px]  cursor-pointer lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
                     Learn more
                   </button>
                 </div>
@@ -129,7 +129,7 @@ const OurProjectList = () => {
               </span>
             </div>
             <p
-              className="text-center mt-12 text-ash 2xl:text-lg lg:text-base text-sm leading-[25px]  "
+              className="text-center mt-12 text-ash 2xl:text-[18px] lg:text-[16px] text-[14px] leading-[25px]  "
               // data-aos="fade-up"
               // data-aos-duration="1000"
             >
@@ -145,12 +145,12 @@ const OurProjectList = () => {
                 href={"https://fpmpn.wecollect.tech/"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-mainBlue hero-btn text-white h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px] hover:bg-[#E3D5FF] hover:text-mainBlue w-full max-w-[200px] text-sm "
+                className="bg-mainBlue hero-btn text-white h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px] hover:bg-[#E3D5FF] hover:text-mainBlue w-full max-w-[200px] text-[14px] "
               >
                 Explore
               </Link>
               <button
-                className="bg-white hero-btn text-mainBlue h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px]  border-opacity-30 hover:bg-[#E3D5FF] w-full max-w-[200px] text-sm"
+                className="bg-white hero-btn text-mainBlue h-[47px] items-center justify-center rounded-[50px] font-semibold flex lg:min-w-[197px]  border-opacity-30 hover:bg-[#E3D5FF] w-full max-w-[200px] text-[14px]"
                 onClick={() => router.push("/contact-us")}
               >
                 Contact Us
@@ -161,6 +161,6 @@ const OurProjectList = () => {
       </ContainerLayout>
     </div>
   );
-}
+};
 
-export default OurProjectList
+export default OurProjectList;

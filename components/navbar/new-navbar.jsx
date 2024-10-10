@@ -8,21 +8,20 @@ import blog from "../../assets/png/blog-png.png";
 import cases from "../../assets/svg/cases.svg";
 import download from "../../assets/png/download-png.png";
 import Link from "next/link";
-import { ArrowDown, CancelIcon, SuccessIcon } from "../../assets/svg"; 
+import { ArrowDown, CancelIcon, SuccessIcon } from "../../assets/svg";
 import emuration from "../../assets/svg/emuration.svg";
 import reporting from "../../assets/svg/reporting.svg";
-import learning from "../../assets/svg/wecollect-learning.svg"
+import learning from "../../assets/svg/wecollect-learning.svg";
 import { IoIosArrowForward } from "react-icons/io";
 const NewNavbar = () => {
   const router = useRouter();
   const [isAboutUsDropdownOpen, setIsAboutUsDropdownOpen] = useState(false);
   const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
   const [rotateAbout, setRotateAbout] = useState(false);
-  const [rotateProduct, setRotateProduct] = useState(false); 
+  const [rotateProduct, setRotateProduct] = useState(false);
   const [open, setOpen] = useState(false);
-  const [current, setCurrent] = useState(2); 
-  const [agentPresent, setAgentPresent] = useState(1); 
-
+  const [current, setCurrent] = useState(2);
+  const [agentPresent, setAgentPresent] = useState(1);
 
   return (
     <>
@@ -46,7 +45,7 @@ const NewNavbar = () => {
               href="/home"
               className="rounded-[50px] gap-2 h-[50px] hover:bg-[#E3D5FF] flex items-center px-4 hover:text-mainBlue text-ash"
               >
-              <p className=" lg:text-base font-semibold ">Home</p>
+              <p className=" lg:text-[16px] font-semibold ">Home</p>
               </Link> */}
               <div
                 onMouseEnter={() => {
@@ -55,9 +54,9 @@ const NewNavbar = () => {
                   setRotateAbout(!rotateAbout);
                   setRotateProduct(false);
                 }}
-                className="flex items-center gap-2 cursor-pointer hover:bg-[#E3D5FF] px-4 h-[50px] rounded-[50px] text-ash hover:text-mainBlue text-sm 2xl:text-base"
+                className="flex items-center gap-2 cursor-pointer hover:bg-[#E3D5FF] px-4 h-[50px] rounded-[50px] text-ash hover:text-mainBlue text-[14px] 2xl:text-[16px]"
               >
-                <p className=" text-sm 2xl:text-base font-semibold ">
+                <p className=" text-[14px] 2xl:text-[16px] font-semibold ">
                   About Us
                 </p>
                 <span
@@ -79,7 +78,7 @@ const NewNavbar = () => {
                 }}
                 className="flex items-center gap-2 cursor-pointer hover:bg-[#E3D5FF] px-4 h-[50px] rounded-[50px] hover:text-mainBlue text-ash"
               >
-                <p className=" text-sm 2xl:text-base font-semibold ">
+                <p className=" text-[14px] 2xl:text-[16px] font-semibold ">
                   Products
                 </p>
                 <span
@@ -96,10 +95,10 @@ const NewNavbar = () => {
                 href="/contact-us"
                 className="rounded-[50px] gap-2 h-[50px] hover:bg-[#E3D5FF] flex items-center px-4 text-ash hover:text-mainBlue"
               >
-                <p className=" lg:text-base font-semibold ">Contact Us</p>
+                <p className=" lg:text-[16px] font-semibold ">Contact Us</p>
               </Link>
               <div className="flex items-center gap-2 ">
-                <p className="text-mainBlue h-[50px] hover:bg-[#E3D5FF] flex items-center lg:text-base font-semibold px-4 py-2 rounded-[50px] cursor-pointer ">
+                <p className="text-mainBlue h-[50px] hover:bg-[#E3D5FF] flex items-center lg:text-[16px] font-semibold px-4 py-2 rounded-[50px] cursor-pointer ">
                   Sign in
                 </p>
               </div>
@@ -134,10 +133,10 @@ const NewNavbar = () => {
                     className="w-20 h-20 rounded-full"
                   />
                   <div className="ml-[21px]">
-                    <p className="text-[#555555] text-base font-semibold">
+                    <p className="text-[#555555] text-[16px] font-semibold">
                       Projects
                     </p>
-                    <p className="text-[#555555] text-sm font-medium">
+                    <p className="text-[#555555] text-[14px] font-medium">
                       Check out our projects
                     </p>
                   </div>
@@ -218,7 +217,7 @@ const NewNavbar = () => {
               }}
             >
               <div
-                onClick={() => router.push("/innovations#app")}
+                onClick={() => router.push("/smart-data-collection")}
                 className="w-full h-auto flex items-center cursor-pointer hover:bg-[#fff]  rounded-[20px] px-4 py-2 transition-all duration-1000 ease-in-out "
               >
                 <Image src={emuration} alt="emuration" />
@@ -233,7 +232,7 @@ const NewNavbar = () => {
               </div>
 
               <div
-                onClick={() => router.push("/innovations#dashboard")}
+                onClick={() => router.push("/project-management-dashboard")}
                 className="w-full h-auto flex items-center cursor-pointer hover:bg-[#fff]  rounded-[20px] px-4 py-2 transition-all duration-1000 ease-in-out "
               >
                 <Image src={reporting} alt="reporting" />
@@ -287,13 +286,13 @@ const NewNavbar = () => {
               </div>
 
               {/* end of session */}
-              <p className="text-center text-[#555] text-lg bg-[#fff] h-[35px] px-2 py-1 mt-1 w-fit mx-auto rounded-[20px] z-10">
+              <p className="text-center text-[#555] text-[18px] bg-[#fff] h-[35px] px-2 py-1 mt-1 w-fit mx-auto rounded-[20px] z-10">
                 Personalized quote for your project ✨
               </p>
 
               <div className="w-full border-t border-t-[#999999] border-opacity-10 mt-6">
                 <div className="w-full lg:w-10/12 mx-auto flex flex-col pt-10 ">
-                  <p className="text-customBlack font-medium text-base">
+                  <p className="text-customBlack font-medium text-[16px]">
                     Select one that applies to you:
                   </p>
                   <div
@@ -315,7 +314,7 @@ const NewNavbar = () => {
                         checked={agentPresent === 1}
                         className="accent-white w-6 h-6"
                       />
-                      <p className="text-base font-medium">
+                      <p className="text-[16px] font-medium">
                         I don’t have agents for this project
                       </p>
                     </div>
@@ -342,7 +341,7 @@ const NewNavbar = () => {
                         checked={agentPresent === 2}
                         className="accent-white w-6 h-6"
                       />
-                      <p className="text-base font-medium">
+                      <p className="text-[16px] font-medium">
                         I have agents for this project
                       </p>
                     </div>
@@ -384,7 +383,7 @@ const NewNavbar = () => {
                   We will respond via your submitted email soon. Thank you.
                 </p>
                 <button
-                  className="mt-8 lg:mt-16 bg-mainBlue bg-opacity-10 h-[50px] rounded-[50px] w-full max-w-[427px] mx-auto flex items-center justify-center text-base text-mainBlue font-semibold "
+                  className="mt-8 lg:mt-16 bg-mainBlue bg-opacity-10 h-[50px] rounded-[50px] w-full max-w-[427px] mx-auto flex items-center justify-center text-[16px] text-mainBlue font-semibold "
                   onClick={() => {
                     setOpen(false);
                     setAgentPresent(0);
@@ -420,7 +419,7 @@ const NewNavbar = () => {
               </div>
 
               {/* end of session */}
-              <p className="text-center z-10 text-[#555] text-lg bg-[#fff] h-[35px] px-2 py-1 mt-1 w-fit mx-auto rounded-[20px]">
+              <p className="text-center z-10 text-[#555] text-[18px] bg-[#fff] h-[35px] px-2 py-1 mt-1 w-fit mx-auto rounded-[20px]">
                 Personalized quote for your project ✨
               </p>
 
@@ -429,7 +428,7 @@ const NewNavbar = () => {
                 <div className="flex flex-col">
                   <label
                     htmlFor=""
-                    className=" text-[#555] text-sm lg:text-base mb-1"
+                    className=" text-[#555] text-[14px] lg:text-[16px] mb-1"
                   >
                     Number of agents
                   </label>
@@ -444,7 +443,7 @@ const NewNavbar = () => {
                 <div className="flex flex-col">
                   <label
                     htmlFor=""
-                    className=" text-[#555] text-sm lg:text-base mb-1"
+                    className=" text-[#555] text-[14px] lg:text-[16px] mb-1"
                   >
                     Number of locations
                   </label>
@@ -459,7 +458,7 @@ const NewNavbar = () => {
                 <div className="flex flex-col">
                   <label
                     htmlFor=""
-                    className=" text-[#555] text-sm lg:text-base mb-1"
+                    className=" text-[#555] text-[14px] lg:text-[16px] mb-1"
                   >
                     Project start date
                   </label>
@@ -474,7 +473,7 @@ const NewNavbar = () => {
                 <div className="flex flex-col">
                   <label
                     htmlFor=""
-                    className=" text-[#555] text-sm lg:text-base mb-1"
+                    className=" text-[#555] text-[14px] lg:text-[16px] mb-1"
                   >
                     Use cases
                   </label>
@@ -489,7 +488,7 @@ const NewNavbar = () => {
                 <div className="flex flex-col">
                   <label
                     htmlFor=""
-                    className=" text-[#555] text-sm lg:text-base mb-1"
+                    className=" text-[#555] text-[14px] lg:text-[16px] mb-1"
                   >
                     Email
                   </label>
@@ -504,7 +503,7 @@ const NewNavbar = () => {
                 <div className="flex flex-col">
                   <label
                     htmlFor=""
-                    className=" text-[#555] text-sm lg:text-base mb-1"
+                    className=" text-[#555] text-[14px] lg:text-[16px] mb-1"
                   >
                     Phone Number
                   </label>
@@ -517,7 +516,10 @@ const NewNavbar = () => {
                 {/* end */}
                 {/* start */}
                 <div className="flex flex-col">
-                  <button className="w-full font-semibold text-sm lg:text-base flex bg-mainBlue text-white h-[50px] items-center justify-center rounded-[50px] cursor-pointer" onClick={() => setCurrent(2)}>
+                  <button
+                    className="w-full font-semibold text-[14px] lg:text-[16px] flex bg-mainBlue text-white h-[50px] items-center justify-center rounded-[50px] cursor-pointer"
+                    onClick={() => setCurrent(2)}
+                  >
                     Request Quote
                   </button>
                   <p className="text-left  text-[#9999FF] mt-3 font-medium text-xs">
@@ -528,7 +530,7 @@ const NewNavbar = () => {
                 {/* end */}
                 {/* start */}
                 <div className="flex flex-col">
-                  <div className=" text-customBlack  mt-3 font-medium text-sm ">
+                  <div className=" text-customBlack  mt-3 font-medium text-[14px] ">
                     Don’t have account with Us yet?
                     <Link
                       href={"/home"}

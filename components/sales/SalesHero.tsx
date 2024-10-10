@@ -4,7 +4,7 @@ import ContainerLayout from "../../layouts/ContainerLayout";
 import heroPic from "../../assets/png/pop-sweet.png";
 import Image from "next/image";
 import MobileNav from "../navbar/mobile-nav";
-import saleBoy from "../../assets/png/sales-boy.png"
+import saleBoy from "../../assets/png/sales-boy.png";
 import * as Yup from "yup";
 import axios from "axios";
 import { Formik } from "formik";
@@ -15,15 +15,13 @@ const initialValues = {
   age: "",
   phonenumber: "",
   orgName: "",
-  dataNeed:"",
-  painPoint:"",
-
-
+  dataNeed: "",
+  painPoint: "",
 };
 
 const SalesHero = () => {
-    const [success, setSuccess] = useState(false);
-      const [stage, setStage] = useState(1);
+  const [success, setSuccess] = useState(false);
+  const [stage, setStage] = useState(1);
   return (
     <div className=" w-full h-full sales-hero-bg  ">
       <div className="w-full lg:h-screen h-screen l  relative  flex flex-col">
@@ -117,7 +115,7 @@ const SalesHero = () => {
                     <h1 className="text-primary font-semibold text-mainBlue lg:max-w-[500px] lg:text-[40px] 2xl:text-[48px] text-2xl lg:leading-[65px] pl-10 mt-10 lg:mt-4 ">
                       Your Data Journey Begins Here
                     </h1>
-                    <p className="mt-4 text-ash text-base lg:text-lg  lg:pl-10">
+                    <p className="mt-4 text-ash text-[16px] lg:text-[18px]  lg:pl-10">
                       Help Us learn more about your data needs.
                     </p>
                     <div className="w-full  rounded-[20px]  pb-5 ">
@@ -128,7 +126,7 @@ const SalesHero = () => {
                             <div className="flex flex-col space-y-[30px]">
                               {/* single input */}
                               <div className="flex flex-col">
-                                <label className="text-[#333] text-sm lg:text-base font-semibold">
+                                <label className="text-[#333] text-[14px] lg:text-[16px] font-semibold">
                                   Name*
                                 </label>
                                 <input
@@ -138,14 +136,14 @@ const SalesHero = () => {
                                   value={values.name}
                                   onChange={handleChange}
                                   onBlur={handleBlur}
-                                  className="w-full h-[42px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-sm lg:placeholder:text-base placeholder:text-[#999] font-medium mt-2"
+                                  className="w-full h-[42px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2"
                                   placeholder="Enter full name"
                                 />
                               </div>
                               {/* end of single input */}
                               {/* single input */}
                               <div className="flex flex-col">
-                                <label className="text-[#333] text-sm lg:text-base font-semibold">
+                                <label className="text-[#333] text-[14px] lg:text-[16px] font-semibold">
                                   Email Address
                                 </label>
                                 <input
@@ -156,14 +154,14 @@ const SalesHero = () => {
                                   value={values.email}
                                   onChange={handleChange}
                                   onBlur={handleBlur}
-                                  className="w-full h-[42px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-sm lg:placeholder:text-base placeholder:text-[#999] font-medium mt-2"
+                                  className="w-full h-[42px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2"
                                   placeholder="johndoe@wecollect.tech"
                                 />
                               </div>
                               {/* end of single input */}
                               {/* single input */}
                               <div className="flex flex-col">
-                                <label className="text-[#333] text-sm lg:text-base font-semibold">
+                                <label className="text-[#333] text-[14px] lg:text-[16px] font-semibold">
                                   Phone
                                 </label>
                                 <input
@@ -173,14 +171,14 @@ const SalesHero = () => {
                                   value={values.phonenumber}
                                   onChange={handleChange}
                                   onBlur={handleBlur}
-                                  className="w-full h-[42px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-sm lg:placeholder:text-base placeholder:text-[#999] font-medium mt-2"
+                                  className="w-full h-[42px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2"
                                   placeholder="Enter phone"
                                 />
                               </div>
                               {/* end of single input */}
                               {/* single input */}
                               <div className="flex flex-col">
-                                <label className="text-[#333] text-sm lg:text-base font-semibold">
+                                <label className="text-[#333] text-[14px] lg:text-[16px] font-semibold">
                                   Organization Name*
                                 </label>
                                 <input
@@ -190,14 +188,14 @@ const SalesHero = () => {
                                   value={values.orgName}
                                   onChange={handleChange}
                                   onBlur={handleBlur}
-                                  className="w-full h-[42px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-sm lg:placeholder:text-base placeholder:text-[#999] font-medium mt-2"
+                                  className="w-full h-[42px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2"
                                   placeholder="Enter full name"
                                 />
                               </div>
                               {/* end of single input */}
                               {/* single input */}
                               <div className="flex flex-col">
-                                <label className="text-[#333] text-sm lg:text-base font-semibold">
+                                <label className="text-[#333] text-[14px] lg:text-[16px] font-semibold">
                                   Data Need*
                                 </label>
                                 <div className="w-full border h-[42px] pr-4 flex items-center bg-white rounded-md shadow-sm focus:outline-none   focus:border-[#333] border-opacity-30">
@@ -207,7 +205,7 @@ const SalesHero = () => {
                                     value={values.dataNeed}
                                     onChange={handleChange}
                                     onBlur={handleBlur}
-                                    className="mt-2 block w-full px-3 border h-[42px]  bg-transparent  focus:outline-none  border-none sm:text-sm   "
+                                    className="mt-2 block w-full px-3 border h-[42px]  bg-transparent  focus:outline-none  border-none sm:text-[14px]   "
                                   >
                                     <option value="male">Research</option>
                                     <option value="female">Survey</option>
@@ -217,7 +215,7 @@ const SalesHero = () => {
                               {/* end of single input */}
                               {/* single input */}
                               <div className="flex flex-col">
-                                <label className="text-[#333] text-sm lg:text-base font-semibold">
+                                <label className="text-[#333] text-[14px] lg:text-[16px] font-semibold">
                                   What Are Your Data Pain Point *
                                 </label>
                                 <input
@@ -227,16 +225,15 @@ const SalesHero = () => {
                                   value={values.phonenumber}
                                   onChange={handleChange}
                                   onBlur={handleBlur}
-                                  className="w-full h-[42px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-sm lg:placeholder:text-base placeholder:text-[#999] font-medium mt-2"
+                                  className="w-full h-[42px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2"
                                   placeholder="Enter your data pain point"
                                 />
                               </div>
                               {/* end of single input */}
                             </div>
                           )}
-                        
                         </div>
-                   
+
                         {stage === 1 && (
                           <button
                             disabled={!isValid || isSubmitting}

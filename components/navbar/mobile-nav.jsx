@@ -43,7 +43,7 @@ const MobileNav = ({ present }) => {
               <div className="w-full py-6 " onClick={() => setShow(false)}>
                 <Link
                   href="/home"
-                  className="text-ash text-base font-semibold"
+                  className="text-ash text-[16px] font-semibold"
                 >
                   Home
                 </Link>
@@ -52,26 +52,26 @@ const MobileNav = ({ present }) => {
                 className="w-full py-6 flex items-center gap-2 "
                 onClick={() => setShowAbout(!showAbout)}
               >
-                <p className=" text-base font-semibold text-ash">About Us</p>
+                <p className=" text-[16px] font-semibold text-ash">About Us</p>
                 <span>
                   <ArrowDown />
                 </span>
               </div>
               {showAbout && (
                 <div className="flex flex-col gap-4 ">
-                  <Link href="/our-project" className="text-ash text-base ">
+                  <Link href="/our-project" className="text-ash text-[16px] ">
                     Projects
                   </Link>
                   <Link
                     href="/applicable-cases"
-                    className="text-ash text-base "
+                    className="text-ash text-[16px] "
                   >
                     Applicable Cases
                   </Link>
-                  <Link href="/blog" className="text-ash text-base ">
+                  <Link href="/blog" className="text-ash text-[16px] ">
                     Blog
                   </Link>
-                  <Link href="/download" className="text-ash text-base ">
+                  <Link href="/download" className="text-ash text-[16px] ">
                     Download
                   </Link>
                 </div>
@@ -80,19 +80,22 @@ const MobileNav = ({ present }) => {
                 className="w-full py-6 flex items-center gap-2"
                 onClick={() => setShowProduct(!showProduct)}
               >
-                <p className=" text-base font-semibold text-ash">Products</p>
+                <p className=" text-[16px] font-semibold text-ash">Products</p>
                 <span>
                   <ArrowDown />
                 </span>
               </div>
               {showProduct && (
                 <div className="flex flex-col gap-4 ">
-                  <Link href="/innovations#app" className="text-ash text-base ">
+                  <Link
+                    href="/innovations#app"
+                    className="text-ash text-[16px] "
+                  >
                     Smart Data Collection App
                   </Link>
                   <Link
                     href="/innovations#dashboard"
-                    className="text-ash text-base "
+                    className="text-ash text-[16px] "
                   >
                     Project Management Dashboard
                   </Link>
@@ -101,7 +104,7 @@ const MobileNav = ({ present }) => {
               <div className="w-full py-6 " onClick={() => setShow(false)}>
                 <Link
                   href="/contact-us"
-                  className="text-ash text-base font-semibold"
+                  className="text-ash text-[16px] font-semibold"
                 >
                   Contact Us
                 </Link>
