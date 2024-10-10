@@ -36,27 +36,21 @@ function SecureFeatures() {
           Features
         </p>
 
-        <p
-          className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px] text-[14px] font-medium text-center"
-          // data-aos="fade-up"
-          // data-aos-duration="1000"
-        >
+        <p className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px]  font-medium text-center">
           Discover the features that help you collect data you can trust.
         </p>
 
         <div className="bg-[#F9F6FF] container-border w-full h-auto rounded-[50px] p-5 lg:p-[30px] mt-5 lg:mt-20  relative flow-hide ">
           <div className="w-full h-auto grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-10 justify-between items-center ">
-            <div
-              className="boxlee w-full h-fit lg:h-full  rounded-[30px]   cursor-default"
-              // data-aos="fade-up"
-              // data-aos-duration="1000"
-              // data-aos-delay="600"
-            >
+            <div className="boxlee w-full h-fit lg:h-full  rounded-[30px]   cursor-default">
+              <div className="feat-img-shadow flex justify-center pt-8 rounded-t-[30px]">
+                
               <Image
                 src={gpss}
                 alt="gpss"
                 className="w-full h-auto object-contain max-w-[300px]"
-              />
+                />
+                </div>
 
               <p className="text-[#333333] w-full lg:text-2xl 2xl:text-2xl text-xl font-semibold mt-7   px-4 lg:px-7 md:leading-[48px] 2xl:leading-[50px]">
                 Regular Backup
@@ -70,15 +64,16 @@ function SecureFeatures() {
 
             <div
               className="boxlee w-full  h-fit lg:h-full rounded-[30px]    md:my-0  cursor-default"
-              // data-aos="fade-up"
-              // data-aos-duration="1000"
-              // data-aos-delay="600"
+            
             >
+              <div className="feat-img-shadow flex justify-end pt-8 rounded-t-[30px]">
+                
               <Image
                 src={wifi}
                 alt="wifi"
                 className="w-full h-auto max-w-[300px] "
-              />
+                />
+                </div>
 
               <p className="text-[#333333]  lg:text-2xl  text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]  px-4 lg:px-7 ">
                 Project Access Control
@@ -97,11 +92,14 @@ function SecureFeatures() {
               // data-aos-duration="1000"
               // data-aos-delay="600"
             >
+              <div className="feat-img-shadow flex justify-center pt-8 rounded-t-[30px]">
+                
               <Image
                 src={securecase}
                 alt="securecase"
                 className="w-full h-auto object-contain max-w-[300px] mx-auto   "
-              />
+                />
+                </div>
 
               <p className="text-[#333333] lg:text-2xl text-xl font-semibold mt-6 md:leading-[48px] 2xl:leading-[50px] px-4 lg:px-7">
                 Privacy Compliant
