@@ -13,7 +13,9 @@ import googleIcon from "../../assets/svg/playstore.svg";
 import appleIcon from "../../assets/svg/applestore.svg";
 import copy from "../../assets/svg/copy.svg";
 import FooterFaq from "../LandingPage/FooterFaq";
+import { useRouter } from "next/router";
 const NewFooter = () => {
+  const router = useRouter();
   return (
     <div
       className="w-full flex flex-col bg-[#F9F6FF] pt-8 flow-hide"
@@ -31,7 +33,8 @@ const NewFooter = () => {
                 width={logo.width}
                 height={logo.height}
                 alt="image"
-                className="m-auto md:m-0"
+                className="m-auto md:m-0 cursor-pointer"
+                onClick={() => router.push("home")}
                 // data-aos="fade-up"
                 // data-aos-duration="1000"
               />

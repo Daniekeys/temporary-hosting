@@ -8,7 +8,7 @@ import blog from "../../assets/png/blog-png.png";
 import cases from "../../assets/svg/cases.svg";
 import download from "../../assets/png/download-png.png";
 import Link from "next/link";
-import { ArrowDown, CancelIcon } from "../../assets/svg"; 
+import { ArrowDown, CancelIcon, SuccessIcon } from "../../assets/svg"; 
 import emuration from "../../assets/svg/emuration.svg";
 import reporting from "../../assets/svg/reporting.svg";
 import learning from "../../assets/svg/wecollect-learning.svg"
@@ -20,8 +20,8 @@ const NewNavbar = () => {
   const [rotateAbout, setRotateAbout] = useState(false);
   const [rotateProduct, setRotateProduct] = useState(false); 
   const [open, setOpen] = useState(false);
-  const [current, setCurrent] = useState(1); 
-  const [agentPresent, setAgentPresent] = useState(0); 
+  const [current, setCurrent] = useState(2); 
+  const [agentPresent, setAgentPresent] = useState(1); 
 
 
   return (
@@ -265,13 +265,14 @@ const NewNavbar = () => {
         </ContainerLayout>
       </div>
       {open && (
-        <div className="w-full fixed z-modal inset-0 overlay-shadow flex items-center justify-center bg-white h-screen ">
+        <div className="w-full fixed z-modal inset-0 overlay-shadow flex items-center justify-center bg-white h-screen px-2 ">
           {current === 0 && (
-            <div className="w-full max-h-[500px] lg:max-h-[750px] flow-hide bg-white rounded-lg lg:rounded-[50px] lg:max-w-lg   py-8 flex flex-col  ">
+            <div className="w-full max-h-[500px] lg:max-h-[750px] flow-hide bg-white rounded-lg lg:rounded-[50px] lg:max-w-lg   py-8 flex flex-col relative ">
+              <div className="quote-shadow absolute -top-[220px] left-0 z-0 "></div>
               {/* header session */}
-              <div className="w-full flex items-center justify-between lg:px-12 xl:px-16  px-4  ">
+              <div className="w-full flex items-center justify-between   px-4 z-10  ">
                 <p></p>
-                <h1 className="text-2xl lg:text-3xl text-customBlack font-bold">
+                <h1 className="text-2xl lg:text-3xl text-customBlack font-bold text-center">
                   GET A QUOTE
                 </h1>
                 <span
@@ -286,7 +287,7 @@ const NewNavbar = () => {
               </div>
 
               {/* end of session */}
-              <p className="text-center text-[#555] text-lg bg-[#f1f1f1] h-[35px] px-2 py-1 mt-1 w-fit mx-auto rounded-[20px]">
+              <p className="text-center text-[#555] text-lg bg-[#fff] h-[35px] px-2 py-1 mt-1 w-fit mx-auto rounded-[20px] z-10">
                 Personalized quote for your project ✨
               </p>
 
@@ -295,16 +296,106 @@ const NewNavbar = () => {
                   <p className="text-customBlack font-medium text-base">
                     Select one that applies to you:
                   </p>
-                  <div className={`flex justify-between items-center h-[50px]  ${agentPresent === 1 ? "bg-mainBlue text-white" : "bg-mainBlue bg-opacity-5 text-customBlack"} `}>
-                    <div className="flex items-center">
-                      <input type="checkbox" name="" id="" checked={agentPresent === 1} className="accent-white"  />
+                  <div
+                    className={`flex justify-between items-center h-[50px] hover:bg-mainBlue hover:text-white cursor-pointer rounded-[8px] mt-5 px-3 lg:px-5  ${
+                      agentPresent === 1
+                        ? "bg-mainBlue text-white"
+                        : "bg-mainBlue bg-opacity-5 text-customBlack"
+                    } `}
+                    onClick={() => {
+                      setAgentPresent(1);
+                      setCurrent(1);
+                    }}
+                  >
+                    <div className="flex items-center gap-4">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        checked={agentPresent === 1}
+                        className="accent-white w-6 h-6"
+                      />
+                      <p className="text-base font-medium">
+                        I don’t have agents for this project
+                      </p>
                     </div>
-                    <span>
-
+                    <span className="text-xl">
+                      <IoIosArrowForward />
+                    </span>
+                  </div>
+                  <div
+                    className={`flex justify-between items-center hover:bg-mainBlue hover:text-white h-[50px] cursor-pointer rounded-[8px] mt-5 px-3 lg:px-5  ${
+                      agentPresent === 2
+                        ? "bg-mainBlue text-white"
+                        : "bg-mainBlue bg-opacity-5 text-customBlack"
+                    } `}
+                    onClick={() => {
+                      setAgentPresent(2);
+                      setCurrent(1);
+                    }}
+                  >
+                    <div className="flex items-center gap-4">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id=""
+                        checked={agentPresent === 2}
+                        className="accent-white w-6 h-6"
+                      />
+                      <p className="text-base font-medium">
+                        I have agents for this project
+                      </p>
+                    </div>
+                    <span className="text-xl">
+                      <IoIosArrowForward />
                     </span>
                   </div>
                 </div>
               </div>
+            </div>
+          )}
+          {current === 2 && (
+            <div className="w-full   flow-hide bg-white rounded-lg lg:rounded-[50px] lg:max-w-[746px]   py-8 flex flex-col relative ">
+              <div className="quote-shadow absolute -top-[220px] left-0 z-0 "></div>
+              {/* header session */}
+              <div className="w-full flex justify-end px-4 ">
+                <span
+                  className="cursor-pointer"
+                  onClick={() => {
+                    setOpen(false);
+                    setAgentPresent(0);
+                    setCurrent(0);
+                  }}
+                >
+                  <CancelIcon />
+                </span>
+              </div>
+              <div className="w-full flex-col items-center px-4 lg:px-8 lg:w-11/12 mx-auto xl:w-10/12  ">
+                <span className="mx-auto flex justify-center">
+                  <SuccessIcon />
+                </span>
+                <p className="text-center text-[32px] leading-[35px] text-customBlack mt-6 font-bold">
+                  Requested !
+                </p>
+                <p className="text-center text-ash text-[14px] lg:text-[18px] leading-[35px] font-medium mt-4">
+                  You have successfully requested a quote for your project.
+                </p>
+                <p className="text-center text-ash text-[14px] lg:text-[18px] leading-[35px] font-medium">
+                  We will respond via your submitted email soon. Thank you.
+                </p>
+                <button
+                  className="mt-8 lg:mt-16 bg-mainBlue bg-opacity-10 h-[50px] rounded-[50px] w-full max-w-[427px] mx-auto flex items-center justify-center text-base text-mainBlue font-semibold "
+                  onClick={() => {
+                    setOpen(false);
+                    setAgentPresent(0);
+                    setCurrent(0);
+                  }}
+                >
+                  Okay
+                </button>
+              </div>
+
+              {/* end of session */}
             </div>
           )}
           {current === 1 && (
@@ -316,7 +407,14 @@ const NewNavbar = () => {
                 <h1 className="text-2xl lg:text-3xl text-customBlack font-bold">
                   GET A QUOTE
                 </h1>
-                <span className="cursor-pointer" onClick={() => setOpen(false)}>
+                <span
+                  className="cursor-pointer"
+                  onClick={() => {
+                    setOpen(false);
+                    setCurrent(0);
+                    setAgentPresent(0);
+                  }}
+                >
                   <CancelIcon />
                 </span>
               </div>
@@ -419,7 +517,7 @@ const NewNavbar = () => {
                 {/* end */}
                 {/* start */}
                 <div className="flex flex-col">
-                  <button className="w-full font-semibold text-sm lg:text-base flex bg-mainBlue text-white h-[50px] items-center justify-center rounded-[50px]">
+                  <button className="w-full font-semibold text-sm lg:text-base flex bg-mainBlue text-white h-[50px] items-center justify-center rounded-[50px] cursor-pointer" onClick={() => setCurrent(2)}>
                     Request Quote
                   </button>
                   <p className="text-left  text-[#9999FF] mt-3 font-medium text-xs">

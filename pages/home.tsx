@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import NewNavbar from "../components/navbar/new-navbar";
 import MobileNav from "../components/navbar/mobile-nav";
 import HomeHero from "../components/HomeHero";
@@ -16,7 +16,12 @@ import Footer from "../components/footer/new-footer";
 import Faq from "../components/LandingPage/Faq";
 import Head from "next/head";
 
-function home() {
+
+function Home() {
+useEffect(() => {
+  window?.scrollTo(0, 0);
+}, [])
+
   return (
     <div className="w-full h-auto ">
       <Head>
@@ -47,4 +52,4 @@ function home() {
   );
 }
 
-export default home;
+export default Home;
