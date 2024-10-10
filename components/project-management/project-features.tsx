@@ -37,7 +37,7 @@ function ProjectManagementFeatures() {
         </p>
 
         <p
-          className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px] text-[14px] font-medium text-center"
+          className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px]  font-medium text-center"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
@@ -59,8 +59,9 @@ function ProjectManagementFeatures() {
               </p>
 
               <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7 pb-7 px-4 lg:px-7">
-                Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
-                ipsum feugiat sed vulputate id amet. Etiam arcu ultricies
+                WeCollect’s real-time data reporting feature allows businesses
+                to access and analyze data as it’s collected, ensuring timely
+                insights for decision-making.
               </p>
             </div>
 
@@ -77,8 +78,10 @@ function ProjectManagementFeatures() {
               </p>
 
               <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4">
-                Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
-                ipsum feugiat sed vulputate id amet. Etiam arcu ultricies
+                WeCollect's "Create and Assign Tasks" feature allows project
+                managers to efficiently set up specific tasks for agents, assign
+                them based on location or expertise, and track progress in
+                real-time.
               </p>
             </div>
 
@@ -99,8 +102,9 @@ function ProjectManagementFeatures() {
               </p>
 
               <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4">
-                Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
-                ipsum feugiat sed vulputate id amet. Etiam arcu ultricies
+                WeCollect’s filter and export feature allows users to easily
+                sort through large datasets by applying specific criteria,
+                ensuring they find the exact information they need.
               </p>
             </div>
           </div>
