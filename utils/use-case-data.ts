@@ -3,7 +3,42 @@ import brandHeroPic from "../assets/png/brand-hero.png";
 import brandA from "../assets/png/brand-b-1.png";
 import brandB from "../assets/png/brand-b-2.png";
 import brandC from "../assets/png/brand-b-3.png";
-
+import supplyHeroPic from "../assets/png/supply-b-hero.png";
+import supplyA from "../assets/png/supply-b-1.png";
+import supplyB from "../assets/png/supply-b-2.png";
+import supplyC from "../assets/png/supply-b-3.png";
+import inventHeroPic from "../assets/png/invent-b-hero.png";
+import inventA from "../assets/png/supply-b-1.png";
+import inventB from "../assets/png/invent-b-2.png";
+import inventC from "../assets/png/invent-b-3.png";
+import onshefHeroPic from "../assets/png/onshef-b-hero.png";
+import onshefA from "../assets/png/supply-b-1.png";
+import onshefB from "../assets/png/invent-b-2.png";
+import onshefC from "../assets/png/invent-b-3.png";
+import outletHeroPic from "../assets/png/outlet-b-hero.png";
+import outletA from "../assets/png/outlet-b-1.png";
+import outletB from "../assets/png/outlet-b-2.png";
+import outletC from "../assets/png/outlet-b-3.png";
+import assetHeroPic from "../assets/png/asset-b-hero.png";
+import assetA from "../assets/png/asset-b-1.png";
+import assetB from "../assets/png/asset-b-2.png";
+import assetC from "../assets/png/asset-b-3.png";
+import financialHeroPic from "../assets/png/financial-b-hero.png";
+import financialA from "../assets/png/financial-b-1.png";
+import financialB from "../assets/png/financial-b-2.png";
+import financialC from "../assets/png/financial-b-3.png";
+import productHeroPic from "../assets/png/product-b-hero.png";
+import productA from "../assets/png/product-b-1.png";
+import productB from "../assets/png/product-b-2.png";
+import productC from "../assets/png/product-b-3.png";
+import populationHeroPic from "../assets/png/population-b-hero.png";
+import populationA from "../assets/png/population-b-1.png";
+import populationB from "../assets/png/population-b-2.png";
+import populationC from "../assets/png/population-b-3.png";
+import demoHeroPic from "../assets/png/demo-b-hero.png";
+import demoA from "../assets/png/demo-b-1.png";
+import demoB from "../assets/png/demo-b-2.png";
+import demoC from "../assets/png/demo-b-3.png";
 
 
 export const useCaseData = [
@@ -49,7 +84,7 @@ MONITORING AND
 REPORTING`,
       subtitle:
         "Track goods and activities throughout the supply chain in real-time.",
-      image: brandHeroPic,
+      image: supplyHeroPic,
     },
     benefits: {
       title: "BENEFITS",
@@ -59,17 +94,17 @@ REPORTING`,
         {
           title: `Increased Efficiency`,
           description: `You can track your business supply chain in real-time with our intuitive delineation mobile app and project management dashboard. `,
-          icon: brandA,
+          icon: supplyA,
         },
         {
           title: "Cost Saving",
           description: `  Generate detailed supply chain reports to analyze performance and identify issues.  You don’t have to use third-party software just yet.`,
-          icon: brandB,
+          icon: supplyB,
         },
         {
           title: " Ehanced Decision Making",
           description: ` With our product, you will receive notifications for critical events and thresholds, this will help you notice suspicious activities.`,
-          icon: brandC,
+          icon: supplyC,
         },
       ],
     },
@@ -82,7 +117,7 @@ REPORTING`,
     heroInfo: {
       title: "INVENTORY MANAGEMENT",
       subtitle: "Efficiently track and control of your inventory in real-time.",
-      image: brandHeroPic,
+      image: inventHeroPic,
     },
     benefits: {
       title: "BENEFITS",
@@ -92,17 +127,17 @@ REPORTING`,
         {
           title: `Increased Efficiency`,
           description: `You can track and store your business inventory in real-time with our intuitive delineation mobile app and project management dashboard. `,
-          icon: brandA,
+          icon: inventA,
         },
         {
           title: "Reduce Stockout and Overstock",
           description: `  Receive notifications of average orders,  stock level, reorders, and other insightful analytics for your business. `,
-          icon: brandB,
+          icon: inventB,
         },
         {
           title: " Improved Cash Flow",
           description: `  Leverage the potentials of  our intuitive products to manage inventories, improve cashflow and figure out where you’re losing money.`,
-          icon: brandC,
+          icon: inventC,
         },
       ],
     },
@@ -115,7 +150,7 @@ REPORTING`,
     heroInfo: {
       title: "ONSHELF PRODUCT MONITORING",
       subtitle: "Optimize Your On-Shelf Product Monitoring.",
-      image: brandHeroPic,
+      image: onshefHeroPic,
     },
     benefits: {
       title: "BENEFITS",
@@ -125,18 +160,18 @@ REPORTING`,
         {
           title: `Improve Operational Efficiency`,
           description: `Leverage our advanced technologies and track product availability and placement in real-time `,
-          icon: brandA,
+          icon: onshefA,
         },
         {
           title: "Eradicate Out-of-Stock ",
           description: `  Generate comprehensive reports on shelf performance and stock levels.`,
-          icon: brandB,
+          icon: onshefB,
         },
         {
           title: " Increase Sales",
           description: `  Never lose customers anymore.
 Get notified when shelves need restocking or products are misplaced.`,
-          icon: brandC,
+          icon: onshefC,
         },
       ],
     },
@@ -150,7 +185,7 @@ Get notified when shelves need restocking or products are misplaced.`,
       title: "OUTLET ENUMERATION",
       subtitle:
         "Streamline outlet enumeration for efficient data collection and management.",
-      image: brandHeroPic,
+      image: outletHeroPic,
     },
     benefits: {
       title: "BENEFITS",
@@ -160,17 +195,17 @@ Get notified when shelves need restocking or products are misplaced.`,
         {
           title: `Precise Enumeration With Geolocation`,
           description: `Seamlessly gather precise and organised outlet data with our intuitive interface and geolocation feature. `,
-          icon: brandA,
+          icon: outletA,
         },
         {
           title: " Real-Time Updates",
           description: `  Access real-time data and ensure your records are always up-to-date.`,
-          icon: brandB,
+          icon: outletB,
         },
         {
           title: " Advanced Analytics",
           description: `  Generate detailed reports and insights to make informed decisions.`,
-          icon: brandC,
+          icon: outletC,
         },
       ],
     },
@@ -183,7 +218,7 @@ Get notified when shelves need restocking or products are misplaced.`,
     heroInfo: {
       title: "ASSET TRACKING AND MANAGEMENT",
       subtitle: "Streamline Your Asset Tracking and Management.",
-      image: brandHeroPic,
+      image: assetHeroPic,
     },
     benefits: {
       title: "BENEFITS",
@@ -193,17 +228,17 @@ Get notified when shelves need restocking or products are misplaced.`,
         {
           title: `Increase Operational Efficiency`,
           description: `Monitor your assets in real-time across multiple locations. `,
-          icon: brandA,
+          icon: assetA,
         },
         {
           title: " Reduce Loss and Misplacement",
           description: `  Simplify inventory management with automated tracking and updates.`,
-          icon: brandB,
+          icon: assetB,
         },
         {
           title: " Improve Asset Utilization",
           description: `  Receive notifications for asset movement, maintenance schedules, and other critical events.`,
-          icon: brandC,
+          icon: assetC,
         },
       ],
     },
@@ -216,7 +251,7 @@ Get notified when shelves need restocking or products are misplaced.`,
     heroInfo: {
       title: "FINANCIAL INCLUSION TRAINING",
       subtitle: "Learn, grow, and achieve financial stability with Us.",
-      image: brandHeroPic,
+      image: financialHeroPic,
     },
     benefits: {
       title: "BENEFITS",
@@ -225,17 +260,17 @@ Get notified when shelves need restocking or products are misplaced.`,
         {
           title: `Gain Financial Independence`,
           description: `Gain knowledge and support on how to manage money from top financial experts.  `,
-          icon: brandA,
+          icon: financialA,
         },
         {
           title: " Improve Money Management Skills",
           description: `  Gain knowledge and support on how to manage money from top financial experts. `,
-          icon: brandC,
+          icon: financialB,
         },
         {
           title: " Access Anytime, Anywhere",
           description: `  Access and monitor your learning progress and achievements in real-time, from anywhere in the world.`,
-          icon: brandB,
+          icon: financialC,
         },
       ],
     },
@@ -248,7 +283,7 @@ Get notified when shelves need restocking or products are misplaced.`,
     heroInfo: {
       title: "PRODUCT PRICE MONITORING PROJECT",
       subtitle: "Stay Ahead with Real-Time Price Monitoring",
-      image: brandHeroPic,
+      image: productHeroPic,
     },
     benefits: {
       title: "BENEFITS",
@@ -257,17 +292,17 @@ Get notified when shelves need restocking or products are misplaced.`,
         {
           title: `Make Informed Pricing Decisions`,
           description: ` Monitor product prices across multiple retailers and locations that interest you, in real-time. `,
-          icon: brandA,
+          icon: productA,
         },
         {
           title: "Stay Competitive in the Market",
           description: `  Receive instant notifications for price changes and discrepancies.`,
-          icon: brandB,
+          icon: productB,
         },
         {
           title: " Optimize Pricing Strategies ",
           description: `  Generate comprehensive reports to analyze pricing trends and competitor strategies.`,
-          icon: brandC,
+          icon: productC,
         },
       ],
     },
@@ -281,7 +316,7 @@ Get notified when shelves need restocking or products are misplaced.`,
       title: `POPULATION
 ENUMERATION`,
       subtitle: "Empowering data-driven decisions with our  enumeration app.",
-      image: brandHeroPic,
+      image: populationHeroPic,
     },
     benefits: {
       title: "BENEFITS",
@@ -290,17 +325,17 @@ ENUMERATION`,
         {
           title: `Real-time Data Collection`,
           description: ` Collect and update population data in real-time, for efficiency and accuracy`,
-          icon: brandA,
+          icon: populationA,
         },
         {
           title: "Efficient GPS tracking",
           description: `  Ensure accurate location data with integrated GPS tracking.`,
-          icon: brandB,
+          icon: populationB,
         },
         {
           title: "Low Internet Bandwidth Support  ",
           description: ` Conduct surveys even without internet access, with automatic data synchronization when back online.`,
-          icon: brandC,
+          icon: populationC,
         },
       ],
     },
@@ -314,7 +349,7 @@ ENUMERATION`,
       title: `DEMOGRAPHY
 ANALYSIS`,
       subtitle: "Advanced analytics for comprehensive population studies.",
-      image: brandHeroPic,
+      image: demoHeroPic,
     },
     benefits: {
       title: "BENEFITS",
@@ -323,17 +358,17 @@ ANALYSIS`,
         {
           title: `Gain In-Depth Demographic Insights`,
           description: ` Dynamic charts and graphs to illustrate demographic trends and patterns.`,
-          icon: brandA,
+          icon: demoA,
         },
         {
           title: "Make Data-Driven Decisions",
           description: `Generate tailored reports to meet specific needs and make informed decisions. `,
-          icon: brandB,
+          icon: demoB,
         },
         {
           title: "Streamline Data Management Processes  ",
           description: ` Manage your data and process from the WeCollect project management dashboard.`,
-          icon: brandC,
+          icon: demoC,
         },
       ],
     },
