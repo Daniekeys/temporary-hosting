@@ -246,9 +246,8 @@ Get notified when shelves need restocking or products are misplaced.`,
   },
   {
     heroInfo: {
-      title: "BRAND VISIBILITY",
-      subtitle:
-        "Our data collection app empowers you to track, analyze, and amplify your brand presence.",
+      title: "PRODUCT PRICE MONITORING PROJECT",
+      subtitle: "Stay Ahead with Real-Time Price Monitoring",
       image: brandHeroPic,
     },
     benefits: {
@@ -256,91 +255,91 @@ Get notified when shelves need restocking or products are misplaced.`,
       subtitle: "Discover benefits that will amplify your brand visibility",
       items: [
         {
-          title: `Measure Brand Awareness`,
-          description: `Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit ipsum feugiat sed vulputate id amet. Etiam arcu ultricies `,
+          title: `Make Informed Pricing Decisions`,
+          description: ` Monitor product prices across multiple retailers and locations that interest you, in real-time. `,
           icon: brandA,
         },
         {
-          title: " Gather Customer Feedback",
-          description: `  Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
-                ipsum feugiat sed vulputate id amet. Etiam arcu ultricies`,
+          title: "Stay Competitive in the Market",
+          description: `  Receive instant notifications for price changes and discrepancies.`,
           icon: brandB,
         },
         {
-          title: "   Recruit Brand Ambassadors",
-          description: `  Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
-                ipsum feugiat sed vulputate id amet. Etiam arcu ultricies`,
+          title: " Optimize Pricing Strategies ",
+          description: `  Generate comprehensive reports to analyze pricing trends and competitor strategies.`,
           icon: brandC,
         },
       ],
     },
     howInfo: {
       title: "HOW IT WORKS",
-      subtitle: `WeCollect enhances brand visibility by leveraging a network of field agents equipped with a dynamic mobile application. These agents conduct on-the-ground assessments, capturing real-time data on brand presence, product displays, and competitor activities. The app's geotagging feature ensures accurate location data, providing businesses with actionable insights to optimize their brand visibility strategies and outshine the competition.`,
+      subtitle: `WeCollect revolutionizes product price monitoring by deploying field agents to collect real-time data on product prices, promotions, and competitor pricing strategies. The mobile app streamlines data collection and ensures accuracy, allowing businesses to stay agile in pricing strategies, respond to market dynamics, and maintain a competitive edge.`,
     },
   },
   {
     heroInfo: {
-      title: "",
-      subtitle: "",
-      image: "",
+      title: `POPULATION
+ENUMERATION`,
+      subtitle: "Empowering data-driven decisions with our  enumeration app.",
+      image: brandHeroPic,
     },
     benefits: {
       title: "BENEFITS",
-      subtitle: "",
+      subtitle: "Discover benefits that will amplify your brand visibility",
       items: [
         {
-          title: "",
-          description: ``,
-          icon: "",
+          title: `Real-time Data Collection`,
+          description: ` Collect and update population data in real-time, for efficiency and accuracy`,
+          icon: brandA,
         },
         {
-          title: "",
-          description: "",
-          icon: "",
+          title: "Efficient GPS tracking",
+          description: `  Ensure accurate location data with integrated GPS tracking.`,
+          icon: brandB,
         },
         {
-          title: "",
-          description: ``,
-          icon: "",
+          title: "Low Internet Bandwidth Support  ",
+          description: ` Conduct surveys even without internet access, with automatic data synchronization when back online.`,
+          icon: brandC,
         },
       ],
     },
     howInfo: {
-      title: "",
-      subtitle: ``,
+      title: "HOW IT WORKS",
+      subtitle: `For population enumeration projects, WeCollect utilizes its mobile application to enable field agents to conduct a systematic count of individuals within specific areas. The app's offline data collection feature ensures accuracy, even in remote locations. This approach facilitates comprehensive population enumeration, supporting data-driven decision-making for public policy, resource allocation, and community development initiatives.`,
     },
   },
   {
     heroInfo: {
-      title: "",
-      subtitle: "",
-      image: "",
+      title: `DEMOGRAPHY
+ANALYSIS`,
+      subtitle: "Advanced analytics for comprehensive population studies.",
+      image: brandHeroPic,
     },
     benefits: {
       title: "BENEFITS",
-      subtitle: "",
+      subtitle: "Discover benefits that will amplify your brand visibility",
       items: [
         {
-          title: "",
-          description: ``,
-          icon: "",
+          title: `Gain In-Depth Demographic Insights`,
+          description: ` Dynamic charts and graphs to illustrate demographic trends and patterns.`,
+          icon: brandA,
         },
         {
-          title: "",
-          description: "",
-          icon: "",
+          title: "Make Data-Driven Decisions",
+          description: `Generate tailored reports to meet specific needs and make informed decisions. `,
+          icon: brandB,
         },
         {
-          title: "",
-          description: ``,
-          icon: "",
+          title: "Streamline Data Management Processes  ",
+          description: ` Manage your data and process from the WeCollect project management dashboard.`,
+          icon: brandC,
         },
       ],
     },
     howInfo: {
-      title: "",
-      subtitle: ``,
+      title: "HOW IT WORKS",
+      subtitle: `WeCollect facilitates demography analysis by empowering field agents to collect detailed demographic data using customizable forms within the mobile application. This rich dataset enables businesses and policymakers to conduct in-depth demographic analyses, understand population trends, and tailor strategies that align with the unique characteristics of specific regions or communities.`,
     },
   },
 ];

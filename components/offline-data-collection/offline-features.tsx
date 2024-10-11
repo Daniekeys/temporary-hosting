@@ -37,7 +37,7 @@ function OfflineFeatures() {
         </p>
 
         <p
-          className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px] text-[14px] font-medium text-center"
+          className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px]  font-medium text-center"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
