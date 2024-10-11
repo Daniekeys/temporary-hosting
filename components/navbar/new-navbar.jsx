@@ -13,6 +13,7 @@ import emuration from "../../assets/svg/emuration.svg";
 import reporting from "../../assets/svg/reporting.svg";
 import learning from "../../assets/svg/wecollect-learning.svg";
 import { IoIosArrowForward } from "react-icons/io";
+import axios from "axios";
 const NewNavbar = () => {
   const router = useRouter();
   const [isAboutUsDropdownOpen, setIsAboutUsDropdownOpen] = useState(false);
@@ -22,6 +23,43 @@ const NewNavbar = () => {
   const [open, setOpen] = useState(false);
   const [current, setCurrent] = useState(0);
   const [agentPresent, setAgentPresent] = useState(0);
+  const [loading, setLoading] = useState(false);
+
+  const [email, setEmail] = useState("");
+  const [records, setRecords] = useState(0);
+  const [location, setLocation] = useState(0);
+  const [phone, setPhone] = useState("");
+  const [useCase, setUseCase] = useState("");
+  const [date, setDate] = useState("");
+  const [description, setDescription] = useState("");
+
+  const handleSubmit = async () => {
+    setLoading(true);
+    const data = {
+      noOfRecords: records,
+      noOfLocation: location,
+      description: description,
+      email: email,
+      phone: phone, // Client's phone number
+      useCase: useCase, // Specific use case for the data
+      personalAgent: agentPresent === 2 ? true : false,
+    };
+         try {
+           const response = await axios.post(
+             "https://api.wecollect.tech/quote",
+    data
+           );
+
+           if (response.status === 200) {
+             setLoading(false);
+             setCurrent(2);
+
+           }
+         } catch (e) {
+           throw new Error(e);
+           setLoading(false);
+         }
+  }
 
   return (
     <>
@@ -430,12 +468,14 @@ const NewNavbar = () => {
                     htmlFor=""
                     className=" text-[#555] text-[14px] lg:text-[16px] mb-1"
                   >
-                    Number of agents
+                    Number of records
                   </label>
                   <input
                     type="number"
                     className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
                     placeholder="e.g 10"
+                    value={records}
+                    onChange={(e) => setRecords(e.target.value)}
                   />
                 </div>
                 {/* end */}
@@ -451,21 +491,26 @@ const NewNavbar = () => {
                     type="number"
                     className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
                     placeholder="e.g 10"
+                    value={location}
+                    onChange={(e) => setLocation(e.target.value)}
                   />
                 </div>
                 {/* end */}
+         
                 {/* start */}
                 <div className="flex flex-col">
                   <label
                     htmlFor=""
                     className=" text-[#555] text-[14px] lg:text-[16px] mb-1"
                   >
-                    Project start date
+                    Project Description
                   </label>
                   <input
-                    type="date"
+                    type="text"
                     className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
-                    placeholder="e.g 10"
+                    placeholder="enter description "
+                    value={description}
+                    onChange={(e) => setDescription(e.target.value)}
                   />
                 </div>
                 {/* end */}
@@ -481,6 +526,8 @@ const NewNavbar = () => {
                     type="text"
                     className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
                     placeholder="Enter a use case"
+                    value={useCase}
+                    onChange={(e) => setUseCase(e.target.value)}
                   />
                 </div>
                 {/* end */}
@@ -495,7 +542,9 @@ const NewNavbar = () => {
                   <input
                     type="email"
                     className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
-                    placeholder="Enter a use case"
+                    placeholder="Enter email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
                 {/* end */}
@@ -510,7 +559,9 @@ const NewNavbar = () => {
                   <input
                     type="tel"
                     className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
-                    placeholder="Enter a use case"
+                    placeholder="Enter phone number"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
                   />
                 </div>
                 {/* end */}
@@ -518,9 +569,10 @@ const NewNavbar = () => {
                 <div className="flex flex-col">
                   <button
                     className="w-full font-semibold text-[14px] lg:text-[16px] flex bg-mainBlue text-white h-[50px] items-center justify-center rounded-[50px] cursor-pointer"
-                    onClick={() => setCurrent(2)}
+                    onClick={handleSubmit}
+                    disabled={loading}
                   >
-                    Request Quote
+                    {loading ? "Loading..." : "Request Quote"} 
                   </button>
                   <p className="text-left  text-[#9999FF] mt-3 font-medium text-xs">
                     You are agreeing to be contacted when you request a quote
