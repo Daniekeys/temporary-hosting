@@ -20,8 +20,8 @@ const NewNavbar = () => {
   const [rotateAbout, setRotateAbout] = useState(false);
   const [rotateProduct, setRotateProduct] = useState(false);
   const [open, setOpen] = useState(false);
-  const [current, setCurrent] = useState(2);
-  const [agentPresent, setAgentPresent] = useState(1);
+  const [current, setCurrent] = useState(0);
+  const [agentPresent, setAgentPresent] = useState(0);
 
   return (
     <>
