@@ -40,7 +40,7 @@ function HomeHero() {
                 // data-aos-delay="200"
               >
                 <p
-                  className="text-[45px] 2xl:text-[55px] font-bold"
+                  className="text-[45px] 2xl:text-[55px] font-bold font-serif"
                   // data-aos="flip-down"
                   // data-aos-duration="500"
                   // data-aos-delay="200"
@@ -53,7 +53,7 @@ function HomeHero() {
                   // data-aos-duration="500"
                   // data-aos-delay="300"
                 >
-                  <p className="text-[45px] 2xl:text-[55px] font-bold z-10">
+                  <p className="text-[45px] 2xl:text-[55px] font-bold z-10 font-serif">
                     Made Easy
                   </p>
                   <div
@@ -70,7 +70,7 @@ function HomeHero() {
                 // data-aos-delay="200"
               >
                 <p
-                  className="text-[45px] 2xl:text-[55px] font-bold"
+                  className="text-[45px] 2xl:text-[55px] font-bold font-serif"
                   // data-aos="flip-down"
                   // data-aos-duration="500"
                   // data-aos-delay="200"
@@ -83,7 +83,7 @@ function HomeHero() {
                   // data-aos-duration="500"
                   // data-aos-delay="300"
                 >
-                  <p className="text-[45px] 2xl:text-[55px] font-bold z-10">
+                  <p className="text-[45px] 2xl:text-[55px] font-bold z-10 font-serif">
                     Made Easy
                   </p>
                   <div
@@ -95,7 +95,7 @@ function HomeHero() {
               </div>
             </div>
             <p
-              className="text-[#6F6F6F]   font-medium mt-[30px] leading-[30px] text-[14px] "
+              className="text-[#6F6F6F]   font-medium mt-[30px] leading-[30px] text-[14px] font-sans "
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="1200"
