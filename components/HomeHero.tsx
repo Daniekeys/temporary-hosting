@@ -95,7 +95,7 @@ function HomeHero() {
               </div>
             </div>
             <p
-              className="text-[#6F6F6F]   font-medium mt-[30px] leading-[30px] text-[14px] font-sans "
+              className="text-[#6F6F6F]   font-medium mt-[30px] leading-[30px] text-[18px] font-sans "
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="1200"
