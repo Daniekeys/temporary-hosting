@@ -75,7 +75,7 @@ function HomeHero() {
                   // data-aos-duration="500"
                   // data-aos-delay="200"
                 >
-                  Insight Gathering
+                  Insight Gathering,
                 </p>
                 <div
                   className="flex flex-col  relative"
@@ -95,7 +95,7 @@ function HomeHero() {
               </div>
             </div>
             <p
-              className="text-[#6F6F6F]   font-medium mt-[30px] leading-[30px] text-[18px] font-sans "
+              className="text-[#333]   font-[300] mt-[30px] leading-[30px] text-[18px] font-sans  "
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="1200"
