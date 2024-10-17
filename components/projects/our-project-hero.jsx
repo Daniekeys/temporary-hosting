@@ -21,7 +21,7 @@ const OurProjectHero = () => {
                 >
                   OUR PROJECTS
                 </h1>
-                <p 
+                <p
                   className="text-customBlack font-sans font-medium md:text-2xl 2xl:text-[32px] text-[18px] leading-[39px] 2xl:leading-[48px]"
                   data-aos="fade-down"
                   data-aos-duration="1000"

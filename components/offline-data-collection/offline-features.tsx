@@ -60,11 +60,11 @@ function OfflineFeatures() {
                 />
               </div>
 
-              <p className="text-[#333333] w-full lg:text-2xl 2xl:text-2xl text-xl font-semibold mt-7   px-4 lg:px-7 md:leading-[48px] 2xl:leading-[50px]">
+              <p className="text-[#333333] w-full lg:text-2xl 2xl:text-2xl text-xl font-semibold mt-7   px-4 lg:px-7 md:leading-[48px] 2xl:leading-[50px] font-serif">
                 Offline Data Collection
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[36px] text-[14px] font-medium mt-7 pb-7 px-4 lg:px-7">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[36px] text-[14px] font-medium mt-7 pb-7 px-4 lg:px-7 font-sans">
                 Collect and store data in remote areas without internet access.
                 Sync it automatically when you’re back online.
               </p>
@@ -84,13 +84,13 @@ function OfflineFeatures() {
                 />
               </div>
 
-              <p className="text-[#333333]  lg:text-2xl  text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]  px-4 lg:px-7 ">
+              <p className="text-[#333333] font-serif  lg:text-2xl  text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]  px-4 lg:px-7 ">
                 No Data Loss
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[36px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4">
-                Lorem ipsum dolor sit amet consectetur. Id suspendisse enim elit
-                ipsum feugiat sed vulputate id amet. Etiam arcu ultricies
+              <p className="text-[#555555] font-sans 2xl:text-[18px] lg:text-[16px] leading-[36px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4">
+                Data is stored on your mobile device until you have internet
+                access.
               </p>
             </div>
 

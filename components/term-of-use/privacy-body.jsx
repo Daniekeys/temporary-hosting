@@ -75,7 +75,7 @@ const PrivacyBody = () => {
           return (
             <div className="w-full flex flex-col gap-4">
               <h1
-                className=" lg:text-2xl  2xl:text-[40px] font-medium text-customBlack"
+                className=" lg:text-2xl  2xl:text-[40px] font-medium text-customBlack font-serif  "
                 // data-aos="fade-up"
                 // data-aos-duration="1000"
               >
@@ -83,7 +83,7 @@ const PrivacyBody = () => {
               </h1>
 
               <p
-                className=" text-[16px]   2xl:text-xl font-normal text-ash leading-[30px] "
+                className=" text-[16px]   2xl:text-xl font-normal text-ash leading-[30px] font-sans "
                 // data-aos="fade-up"
                 // data-aos-duration="1000"
               >
@@ -93,7 +93,7 @@ const PrivacyBody = () => {
                 {item?.storyList?.map((item, index) => {
                   return (
                     <li
-                      className="text-[14px] lg:text-[16px] 2xl:text-[18px] list-disc"
+                      className="text-[14px] lg:text-[16px] 2xl:text-[18px] list-disc font-sans"
                       key={index}
                     >
                       {item}

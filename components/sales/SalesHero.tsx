@@ -49,11 +49,11 @@ const SalesHero = () => {
                       <Image src={check} alt="checker" />
                     </span>
 
-                    <p className="text-[14px] lg:text-[16px] text-[#333] font-medium mt-4 text-center">
+                    <p className="text-[14px] font-sans lg:text-[16px] text-[#333] font-medium mt-4 text-center">
                       Thank you for completing the form. It was nice meeting yu
                       and your business.
                     </p>
-                  
+
                     <div className="w-full max-w-[287px] mx-auto mt-14 ">
                       <button
                         type="button"
@@ -74,8 +74,10 @@ const SalesHero = () => {
                       .email("Must be a valid email")
                       .max(255)
                       .required("Email is required"),
-                    orgName: Yup.string().required("Organization Name is required"),
-                 
+                    orgName: Yup.string().required(
+                      "Organization Name is required"
+                    ),
+
                     phonenumber: Yup.string()
                       .required("Phonenumber is required")
                       .min(
@@ -93,7 +95,7 @@ const SalesHero = () => {
                           value.trim().replace(/\s/g, "")
                         );
                       }),
-                   
+
                     dataNeed: Yup.string().required(
                       "Please the type of data you need"
                     ),
@@ -136,10 +138,10 @@ const SalesHero = () => {
                       onSubmit={handleSubmit}
                       className="w-full flex flex-col"
                     >
-                      <h1 className="text-primary font-semibold text-mainBlue lg:max-w-[500px] lg:text-[40px] 2xl:text-[48px] text-2xl lg:leading-[65px] pl-10 mt-10 lg:mt-4 ">
+                      <h1 className="text-primary font-semibold text-mainBlue lg:max-w-[500px] lg:text-[40px] 2xl:text-[48px] text-2xl lg:leading-[65px] pl-10 mt-10 lg:mt-4  font-serif">
                         Your Data Journey Begins Here
                       </h1>
-                      <p className="mt-4 text-ash text-[16px] lg:text-[18px]  lg:pl-10">
+                      <p className="mt-4 text-ash text-[16px] lg:text-[18px]  lg:pl-10 font-sans">
                         Help Us learn more about your data needs.
                       </p>
                       <div className="w-full  rounded-[20px]  pb-5 ">
@@ -150,7 +152,7 @@ const SalesHero = () => {
                               <div className="flex flex-col space-y-[30px]">
                                 {/* single input */}
                                 <div className="flex flex-col">
-                                  <label className="text-[#333] text-[14px] lg:text-[16px] font-semibold">
+                                  <label className="text-[#333] text-[14px] font-sans lg:text-[16px] font-semibold">
                                     Name*
                                   </label>
                                   <input
@@ -167,7 +169,7 @@ const SalesHero = () => {
                                 {/* end of single input */}
                                 {/* single input */}
                                 <div className="flex flex-col">
-                                  <label className="text-[#333] text-[14px] lg:text-[16px] font-semibold">
+                                  <label className="text-[#333] text-[14px] font-sans lg:text-[16px] font-semibold">
                                     Email Address
                                   </label>
                                   <input
@@ -185,7 +187,7 @@ const SalesHero = () => {
                                 {/* end of single input */}
                                 {/* single input */}
                                 <div className="flex flex-col">
-                                  <label className="text-[#333] text-[14px] lg:text-[16px] font-semibold">
+                                  <label className="text-[#333] text-[14px] font-sans lg:text-[16px] font-semibold">
                                     Phone
                                   </label>
                                   <input
@@ -202,7 +204,7 @@ const SalesHero = () => {
                                 {/* end of single input */}
                                 {/* single input */}
                                 <div className="flex flex-col">
-                                  <label className="text-[#333] text-[14px] lg:text-[16px] font-semibold">
+                                  <label className="text-[#333] text-[14px] font-sans lg:text-[16px] font-semibold">
                                     Organization Name*
                                   </label>
                                   <input
@@ -219,7 +221,7 @@ const SalesHero = () => {
                                 {/* end of single input */}
                                 {/* single input */}
                                 <div className="flex flex-col">
-                                  <label className="text-[#333] text-[14px] lg:text-[16px] font-semibold">
+                                  <label className="text-[#333] text-[14px] font-sans lg:text-[16px] font-semibold">
                                     Data Need*
                                   </label>
                                   <div className="w-full border h-[42px] pr-4 flex items-center bg-white rounded-md shadow-sm focus:outline-none   focus:border-[#333] border-opacity-30">
@@ -239,7 +241,7 @@ const SalesHero = () => {
                                 {/* end of single input */}
                                 {/* single input */}
                                 <div className="flex flex-col">
-                                  <label className="text-[#333] text-[14px] lg:text-[16px] font-semibold">
+                                  <label className="text-[#333] text-[14px] font-sans lg:text-[16px] font-semibold">
                                     What Are Your Data Pain Point *
                                   </label>
                                   <input
@@ -258,17 +260,15 @@ const SalesHero = () => {
                             )}
                           </div>
 
-                         
-                            <button
-                              // disabled={!isValid || isSubmitting}
-                              type="submit"
-                              className={`w-full ${
-                                isValid ? "bg-[#4747D6]" : "bg-slate-500"
-                              } rounded-[30px] py-[10px] px-5 mt-10 flex items-center justify-center text-white font-semibold`}
-                            >
-                              Submit
-                            </button>
-                          
+                          <button
+                            // disabled={!isValid || isSubmitting}
+                            type="submit"
+                            className={`w-full ${
+                              isValid ? "bg-[#4747D6]" : "bg-slate-500"
+                            } rounded-[30px] font-sans py-[10px] px-5 mt-10 flex items-center justify-center text-white font-semibold`}
+                          >
+                            Submit
+                          </button>
                         </div>
                       </div>
                     </form>
