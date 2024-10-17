@@ -122,14 +122,14 @@ const CustomCarousel = () => {
     >
       <ContainerLayout>
         <p
-          className="text-[#333333] text-xl leading-[30px] lg:text-2xl 2xl:text-[36px] font-semibold text-center   lg:mt-40"
+          className="text-[#333333] text-xl leading-[30px] lg:text-2xl 2xl:text-[36px] font-semibold text-center   lg:mt-40 font-serif"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
           TESTIMONIALS
         </p>
 
-        <p className="text-[#555555] leading-[25px] text-[14px] lg:text-[16px] 2xl:text-[20px] font-medium text-center mt-[10px] mb-[50px]">
+        <p className="text-[#555555] leading-[25px] text-[14px] lg:text-[16px] 2xl:text-[20px] font-medium text-center mt-[10px] mb-[50px] font-sans">
           Our users have the following to say about Us:
         </p>
         <div className="relative w-full bg-white border-none outline-none px-4 lg:px-10 overflow-x-hidden">
@@ -155,10 +155,10 @@ const CustomCarousel = () => {
                       height={24}
                       className="m-auto mt-10 mb-6"
                     />
-                    <p className="text-center mb-[35px] text-[#555555] text-[14px]  leading-[25px] lg:leading-[30px] lg:text-[14px] 2xl:text-[18px] font-medium">
+                    <p className="text-center mb-[35px] text-[#555555] text-[14px]  leading-[25px] lg:leading-[30px] lg:text-[14px] 2xl:text-[18px] font-medium font-sans">
                       {d.review}
                     </p>
-                    <p className="text-center mb-[54px] text-[#555555] text-[14px] 2xl:text-[16px] leading-[25px] font-semibold italic">
+                    <p className="text-center mb-[54px] text-[#555555] text-[14px] 2xl:text-[16px] leading-[25px] font-semibold italic font-sans">
                       {d.name}
                     </p>
                   </div>
@@ -179,10 +179,10 @@ const CustomCarousel = () => {
                       height={24}
                       className="m-auto mt-10 mb-6"
                     />
-                    <p className="text-center mb-[35px] text-[#555555] text-[18px] font-medium">
+                    <p className="text-center mb-[35px] text-[#555555] text-[18px] font-medium font-sans">
                       {d.review}
                     </p>
-                    <p className="text-center mb-[54px] text-[#555555] text-[16px] font-semibold">
+                    <p className="text-center mb-[54px] text-[#555555] text-[16px] font-semibold font-sans">
                       {d.name}
                     </p>
                   </div>

@@ -13,11 +13,11 @@ const Become = () => {
       <div className="lg:flex flex-col relative  hidden ">
         <div className="w-full bg-[#4747d626] min-h-[200px] lg:min-h-[248px] h-full rounded-[30px] hidden lg:grid grid-cols-2 mt-12 overflow-x-hidden  ">
           <div className="w-full lg:pl-12 xl:pl-[60px] flex flex-col pt-[10px] pb-5">
-            <h1 className="max-w-[639px] text-[#333] font-bold text-[40px]">
+            <h1 className="max-w-[639px] text-[#333] font-bold text-[40px] font-serif">
               Join WeCollect Campus Network
             </h1>
             <button
-              className="bg-[#4747D6] text-white text-xl py-[10px] px-5 rounded-[30px] font-bold mt-8 w-fit"
+              className="bg-[#4747D6] text-white text-xl py-[10px] px-5 rounded-[30px] font-bold mt-8 w-fit font-sans"
               onClick={() => router.push("/ambassador")}
             >
               Apply now
@@ -49,11 +49,11 @@ const Become = () => {
             <div className="bg-[#333] w-full h-[214px] -mt-16 rounded-[200px]"></div>
           </div>
           <div className="flex flex-col pt-4 pb-11 px-4">
-            <h1 className=" text-[#333] font-bold text-2xl">
+            <h1 className=" text-[#333] font-bold text-2xl font-serif">
               Become WeCollect campus ambassador
             </h1>
             <button
-              className="bg-[#4747D6] text-white text-[16px] py-[10px] px-5 rounded-[30px] font-bold mt-8 w-fit border-none outline-none"
+              className="bg-[#4747D6] text-white text-[16px] py-[10px] px-5 font-sans rounded-[30px] font-bold mt-8 w-fit border-none outline-none"
               onClick={() => router.push("/ambassador")}
             >
               Apply now
@@ -63,11 +63,11 @@ const Become = () => {
       </div>
       <div className="w-full become-bg lg:hidden h-[404px] relative rounded-b-[30px] ">
         <div className="flex flex-col pt-4 absolute bottom-8 px-4 ">
-          <h1 className=" text-[#333] font-bold text-2xl">
+          <h1 className=" text-[#333] font-bold text-2xl font-serif">
             Become WeCollect campus ambassador
           </h1>
           <button
-            className="bg-[#4747D6] text-white text-[16px] py-[10px] px-5 rounded-[30px] font-bold mt-8 w-fit border-none outline-none"
+            className="bg-[#4747D6] text-white text-[16px] font-sans py-[10px] px-5 rounded-[30px] font-bold mt-8 w-fit border-none outline-none"
             onClick={() => router.push("/ambassador")}
           >
             Apply now

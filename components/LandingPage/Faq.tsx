@@ -17,14 +17,14 @@ const Faq = () => {
       <ContainerLayout>
         <div className="w-full flex flex-col">
           <p
-            className="text-[#333333] text-xl leading-[30px] lg:text-2xl 2xl:text-[36px] font-semibold text-center"
+            className="text-[#333333] text-xl leading-[30px] lg:text-2xl 2xl:text-[36px] font-semibold text-center font-serif"
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >
             FAQ
           </p>
           <p
-            className="text-[#555555] text-[14px]  lg:text-[16px] 2xl:text-[20px] font-medium text-center mt-[10px] leading-[25px] lg:leading-[35px]"
+            className="text-[#555555] text-[14px] font-sans  lg:text-[16px] 2xl:text-[20px] font-medium text-center mt-[10px] leading-[25px] lg:leading-[35px]"
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >
@@ -39,7 +39,7 @@ const Faq = () => {
           <div className="w-full flex items-center justify-center mt-11 mb-4 ">
             <Link
               href={"/faq"}
-              className="faq-btn font-semibold  text-mainBlue flex items-center justify-center rounded-[50px] "
+              className="faq-btn font-semibold  text-mainBlue flex items-center justify-center rounded-[50px] font-sans "
             >
               See more {">"}
             </Link>
@@ -67,9 +67,9 @@ export const SingleFaq = ({ item }: any) => {
         onClick={() => setIsOpen(!isOpen)}
       >
         <p
-          className={`lg:text-[16px] 2xl:text-[18px]  ${
+          className={`lg:text-[16px] font-sans 2xl:text-[18px]  ${
             isOpen ? "text-customBlack" : "text-customBlack"
-          }  font-semibold  text-[14px] cursor-pointer`}
+          }  font-semibold  text-[14px] cursor-pointer `}
         >
           {title}
         </p>
@@ -91,7 +91,7 @@ export const SingleFaq = ({ item }: any) => {
               {list.map((item: any, index: number) => {
                 return (
                   <li
-                    className="text-ash lg:text-[16px] 2xl:text-[18px] text-[14px] lg:w-9/12"
+                    className="text-ash lg:text-[16px] font-sans 2xl:text-[18px] text-[14px] lg:w-9/12"
                     key={index}
                   >
                     {item}

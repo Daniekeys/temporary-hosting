@@ -111,7 +111,7 @@ const NewFooter = () => {
                     />
                   </Link>
                 </div>
-                <p className="text-ash font-bold text-[16px] mt-12 text-center mx-auto lg:mx-0 lg:text-start">
+                <p className="text-ash font-bold text-[16px] mt-12 text-center mx-auto lg:mx-0 lg:text-start font-sans">
                   Download App
                 </p>
                 <div className="flex items-center gap-4 mt-2 justify-center lg:justify-start ">
@@ -140,7 +140,7 @@ const NewFooter = () => {
               {/* ################3 start of a park */}
               <div className="flex flex-col space-y-6">
                 <h1
-                  className="text-ash sat-bold  text-[16px] font-bold"
+                  className="text-ash sat-bold  text-[16px] font-bold font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="600"
                   // data-aos-delay="600"
@@ -149,7 +149,7 @@ const NewFooter = () => {
                 </h1>
                 <Link
                   href="/innovations"
-                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px]"
+                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="900"
@@ -158,7 +158,7 @@ const NewFooter = () => {
                 </Link>
                 <Link
                   href="/our-project"
-                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px]"
+                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="1300"
@@ -167,7 +167,7 @@ const NewFooter = () => {
                 </Link>
                 <Link
                   href="/applicable-cases"
-                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px]"
+                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="1600"
@@ -176,7 +176,7 @@ const NewFooter = () => {
                 </Link>
                 <Link
                   href="/blog"
-                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px]"
+                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="2100"
@@ -185,7 +185,7 @@ const NewFooter = () => {
                 </Link>
                 <Link
                   href="/contact-us"
-                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px]"
+                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="2400"
@@ -194,7 +194,7 @@ const NewFooter = () => {
                 </Link>
                 <Link
                   href="/faq"
-                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px]"
+                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="2400"
@@ -203,7 +203,7 @@ const NewFooter = () => {
                 </Link>
                 <Link
                   href="/sales-form"
-                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px]"
+                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="2400"
@@ -215,7 +215,7 @@ const NewFooter = () => {
               {/* ################3 start of a park */}
               <div className="flex flex-col space-y-6">
                 <h1
-                  className="text-ash sat-bold  text-[16px] font-bold"
+                  className="text-ash sat-bold  text-[16px] font-bold font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="2400"
@@ -224,7 +224,7 @@ const NewFooter = () => {
                 </h1>
                 <Link
                   href="/privacy-policy"
-                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px]"
+                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="2600"
@@ -233,7 +233,7 @@ const NewFooter = () => {
                 </Link>
                 <Link
                   href="/term-of-use"
-                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px]"
+                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="2800"
@@ -242,7 +242,7 @@ const NewFooter = () => {
                 </Link>
                 <Link
                   href="/cookie-policy"
-                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px]"
+                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="3000"
@@ -254,7 +254,7 @@ const NewFooter = () => {
               {/* ################3 start of a park */}
               <div className="flex flex-col space-y-6">
                 <h1
-                  className="text-ash sat-bold  text-[16px] font-bold"
+                  className="text-ash sat-bold  text-[16px] font-bold font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="2000"
@@ -264,7 +264,7 @@ const NewFooter = () => {
                 <Link
                   href="/innovations#app"
                   // target="_blank"
-                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px]"
+                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="2400"
@@ -273,7 +273,7 @@ const NewFooter = () => {
                 </Link>
                 <Link
                   href="/innovations#dashboard"
-                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px]"
+                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="2700"
@@ -282,7 +282,7 @@ const NewFooter = () => {
                 </Link>
                 <Link
                   href="/home"
-                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px]"
+                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="2700"
@@ -294,7 +294,7 @@ const NewFooter = () => {
               {/* ################3 start of a park */}
               <div className="flex flex-col space-y-6">
                 <h1
-                  className="text-ash sat-bold  text-[16px] font-bold"
+                  className="text-ash sat-bold  text-[16px] font-bold font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="2100"
@@ -305,7 +305,7 @@ const NewFooter = () => {
                   href="/"
                   //   target="_blank"
                   //   rel="noopener noreferrer"
-                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px]"
+                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="2300"
@@ -316,7 +316,7 @@ const NewFooter = () => {
                   href="/"
                   // target="_blank"
                   // rel="noopener noreferrer"
-                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px]"
+                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="2500"
@@ -327,7 +327,7 @@ const NewFooter = () => {
                   href="/"
                   // target="_blank"
                   // rel="noopener noreferrer"
-                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px]"
+                  className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="2700"
@@ -346,7 +346,7 @@ const NewFooter = () => {
       <div className="flex  justify-center items-center gap-2 my-8 ">
         <Image src={copy} width={copy.width} height={copy.height} alt="copy" />
 
-        <p className="text-[#1B213E] text-[18px] sat-regular ">
+        <p className="text-[#1B213E] text-[18px] sat-regular font-sans ">
           All rights reserved, WeCollect, 2024
         </p>
       </div>

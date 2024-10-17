@@ -58,7 +58,7 @@ const Section = () => {
             <Image src={grayangle} alt="" className="w-[32px] h-[32px]" />
           )}
           <p
-            className={`text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold ml-[15px] min-w-max  ${
+            className={`text-[20px] lg:text-2xl 2xl:text-[32px]  font-semibold ml-[15px] font-serif min-w-max  ${
               index === selectedStepIndex ? "text-[#4747D6]" : "text-[#999999]"
             }`}
           >
@@ -68,7 +68,7 @@ const Section = () => {
         <p
           // data-aos="fade-up"
           // data-aos-duration="1000"
-          className={`text-[14px] lg:text-[16px] lg:pl-12 2xl:text-[18px] font-medium text-[#555555] leading-[36px] mt-4 ${
+          className={`text-[14px] lg:text-[16px] font-sans lg:pl-12 2xl:text-[18px] font-medium text-[#555555] leading-[36px] mt-4 ${
             index === selectedStepIndex ? "block" : "hidden"
           }`}
         >
@@ -99,13 +99,13 @@ const Section = () => {
               />
             ))}
             <div className="w-full h-auto flex flex-col  md:flex-row items-center mt-8  lg:gap-6 mb-8">
-              <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px]  cursor-pointer font-semibold hero-btn text-[14px] 2xl:text-[16px]">
+              <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px]  cursor-pointer font-semibold hero-btn text-[14px] 2xl:text-[16px] font-sans">
                 Get started for free
               </div>
               <Link
                 href="https://demo.wecollect.tech"
                 target="_blank"
-                className="bg-[#FFFFFF] hover:bg-[#E3D5FF]  w-[197px]  h-[50px] flex justify-start pl-[10px] items-center text-mainBlue rounded-[50px] hero-btn cursor-pointer my-5 md:my-0 font-semibold text-[14px] 2xl:text-[16px]  "
+                className="bg-[#FFFFFF] hover:bg-[#E3D5FF]  w-[197px]  h-[50px] flex justify-start pl-[10px] items-center text-mainBlue font-sans rounded-[50px] hero-btn cursor-pointer my-5 md:my-0 font-semibold text-[14px] 2xl:text-[16px]  "
               >
                 <Image src={blueright} alt="blueright" className="mr-[10px]" />
                 Book a demo

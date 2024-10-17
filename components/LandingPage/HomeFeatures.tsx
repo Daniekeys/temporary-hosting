@@ -33,7 +33,7 @@ function HomeFeatures() {
 
       <ContainerLayout>
         <p
-          className="text-ash text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold  mt-16 lg:mt-36 text-center"
+          className="text-ash text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold  mt-16 lg:mt-36 text-center font-serif"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
@@ -41,7 +41,7 @@ function HomeFeatures() {
         </p>
 
         <p
-          className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px] text-[14px] font-medium text-center"
+          className="text-[#555555] font-sans  2xl:md:text-[18px] leading-[35px] text-[14px] font-medium text-center"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
@@ -58,11 +58,11 @@ function HomeFeatures() {
             >
               <Image src={data} alt="data" className="w-[80px] h-[80px]" />
 
-              <p className="text-[#333333] 2xl:text-[30px] lg:text-2xl text-xl  font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]">
+              <p className="text-[#333333] 2xl:text-[30px] lg:text-2xl text-xl  font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px] font-serif">
                 SMART DATA <br /> COLLECTION APP
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7">
+              <p className="text-[#555555] font-sans 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7">
                 We have simplified your data collection efforts. Now you can
                 seamlessly collect and analyze accurate, insightful, and
                 complete data using our smart application
@@ -82,11 +82,11 @@ function HomeFeatures() {
                 className="w-[80px] h-[80px]"
               />
 
-              <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]">
+              <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px] font-serif">
                 PROJECT MANAGEMENT DASHBOARD
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7">
+              <p className="text-[#555555] font-sans 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7">
                 We are taking the stress out of your data collection project.
                 Now you can conveniently create, track and monitor your project
                 on one platform from anywhere.
@@ -104,11 +104,11 @@ function HomeFeatures() {
             >
               <Image src={gpss} alt="gpss" className="w-[80px] h-[80px]" />
 
-              <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]">
+              <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px] font-serif">
                 GEOSPATIAL INFO SYSTEMS
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7">
+              <p className="text-[#555555] font-sans 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7">
                 With the GIS systems embedded, data monitoring and evaluation is
                 seamless, therefore increasing data accuracy.
               </p>
@@ -123,11 +123,11 @@ function HomeFeatures() {
             >
               <Image src={wifi} alt="wifi" className="w-[80px] h-[80px]" />
 
-              <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]">
+              <p className="text-[#333333] font-serif lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]">
                 OFFLINE DATA COLLECTION
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7">
+              <p className="text-[#555555] font-sans 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7">
                 Harness the power of seamless offline data collection, anytime,
                 anywhere, even without an internet connection.
               </p>
@@ -146,11 +146,11 @@ function HomeFeatures() {
                 className="w-[80px] h-[80px]"
               />
 
-              <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]">
+              <p className="text-[#333333] font-serif lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]">
                 SECURE CLOUD STORAGE
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7">
+              <p className="text-[#555555] font-sans 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7">
                 Build, create and save data securely to your cloud without
                 network connectivity. Sync data when network is restored.
               </p>

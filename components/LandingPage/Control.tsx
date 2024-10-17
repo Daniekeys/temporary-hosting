@@ -34,11 +34,11 @@ function Control() {
   return (
     <div className="w-full" data-aos="fade-up" data-aos-duration="1000">
       <ContainerLayout>
-        <p className="text-customBlack text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold text-center mt-[60px] lg:mt-[119px]">
+        <p className="text-customBlack text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold text-center mt-[60px] lg:mt-[119px] font-serif">
           POWER OF DATA IN YOUR HANDS
         </p>
 
-        <p className="w-full md:w-8/12 m-auto text-[#555555] text-[14px] 2xl:text-[18px] font-medium text-center mt-[10px] leading-[25px] lg:leading-[36px]">
+        <p className="w-full md:w-8/12 m-auto text-[#555555] text-[14px] 2xl:text-[18px] font-medium text-center mt-[10px] leading-[25px] lg:leading-[36px] font-sans">
           WeCollect is a smart data collection mobile app that allows you
           collect online and offline data, while Project Management to a dynamic
           dashboard that provides real-time updates on data collected. It
