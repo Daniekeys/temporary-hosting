@@ -64,7 +64,7 @@ const NewNavbar = () => {
   return (
     <>
       <div
-        className={`bg-[#F5F4FB] fixed top-0 right-0 left-0 z-high w-full h-[68px] lg:flex items-center hidden rounded-b-[50px] `}
+        className={`bg-[#F5F4FB] fixed top-0 right-0 left-0 z-high w-full h-[68px] lg:flex items-center hidden rounded-b-[50px] font-sans `}
       >
         <ContainerLayout>
           <div className="w-full flex items-center justify-between relative  h-[68px]">
@@ -79,12 +79,6 @@ const NewNavbar = () => {
             </div>
 
             <div className="flex items-center gap-6">
-              {/* <Link
-              href="/home"
-              className="rounded-[50px] gap-2 h-[50px] hover:bg-[#E3D5FF] flex items-center px-4 hover:text-mainBlue text-ash"
-              >
-              <p className=" lg:text-[16px] font-semibold ">Home</p>
-              </Link> */}
               <div
                 onMouseEnter={() => {
                   setIsAboutUsDropdownOpen(!isAboutUsDropdownOpen);
@@ -135,6 +129,8 @@ const NewNavbar = () => {
               >
                 <p className=" lg:text-[16px] font-semibold ">Contact Us</p>
               </Link>
+            </div>
+            <div className="flex items-center gap-6">
               <div className="flex items-center gap-2 ">
                 <p className="text-mainBlue h-[50px] hover:bg-[#E3D5FF] flex items-center lg:text-[16px] font-semibold px-4 py-2 rounded-[50px] cursor-pointer ">
                   Sign in
@@ -152,7 +148,7 @@ const NewNavbar = () => {
           {/* AboutUs DropDown */}
           {isAboutUsDropdownOpen && (
             <div
-              className="w-[900px] flex flex-col left-[25%] 2xl:left-[35%] absolute right-0 nav-layer rounded-b-[30px] bg-[#F9F6FF] py-2 px-3 transition-all ease-in-out duration-1000 "
+              className="w-[900px] flex flex-col left-0 2xl:left-0 mx-auto absolute right-0 nav-layer rounded-b-[30px] bg-[#F9F6FF] py-2 px-3 transition-all ease-in-out duration-1000 "
               onMouseLeave={() => {
                 setIsAboutUsDropdownOpen(!isAboutUsDropdownOpen);
                 setIsProductDropdownOpen(false);
@@ -246,7 +242,7 @@ const NewNavbar = () => {
 
           {isProductDropdownOpen && (
             <div
-              className="w-[35rem] product-shadow  bg-[#F9F6FF] absolute right-0 2xl:right-[264px] p-2 rounded-b-[30px]"
+              className="w-[35rem] product-shadow  bg-[#F9F6FF] absolute right-0 2xl:left-0 mx-auto p-2 rounded-b-[30px]"
               onMouseLeave={() => {
                 setIsProductDropdownOpen(!isProductDropdownOpen);
                 setIsAboutUsDropdownOpen(false);
@@ -496,7 +492,7 @@ const NewNavbar = () => {
                   />
                 </div>
                 {/* end */}
-         
+
                 {/* start */}
                 <div className="flex flex-col">
                   <label
@@ -572,7 +568,7 @@ const NewNavbar = () => {
                     onClick={handleSubmit}
                     disabled={loading}
                   >
-                    {loading ? "Loading..." : "Request Quote"} 
+                    {loading ? "Loading..." : "Request Quote"}
                   </button>
                   <p className="text-left  text-[#9999FF] mt-3 font-medium text-xs">
                     You are agreeing to be contacted when you request a quote

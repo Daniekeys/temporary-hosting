@@ -15,6 +15,7 @@ import RequestDemo from "../components/footer/request-demo";
 import Footer from "../components/footer/new-footer";
 import Faq from "../components/LandingPage/Faq";
 import Head from "next/head";
+import NewHomeHero from "../components/LandingPage/new-home-hero";
 
 
 function Home() {
@@ -33,9 +34,10 @@ useEffect(() => {
         <link rel="icon" href="/we-logo.png" />
       </Head>
 
-      <NewNavbar />
+      {/* <NewNavbar />
       <MobileNav present={1} />
-      <HomeHero />
+      <HomeHero /> */}
+      <NewHomeHero />
       <OurPartner />
       <Control />
       <HomeFeatures />
