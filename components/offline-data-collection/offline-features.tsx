@@ -37,7 +37,7 @@ function OfflineFeatures() {
         </p>
 
         <p
-          className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px]  font-medium text-center"
+          className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px]  font-medium text-center font-sans"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
@@ -88,7 +88,7 @@ function OfflineFeatures() {
                 No Data Loss
               </p>
 
-              <p className="text-[#555555] font-sans 2xl:text-[18px] lg:text-[16px] leading-[36px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4">
+              <p className="text-[#555555] font-sans 2xl:text-[18px] lg:text-[16px] leading-[36px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4 ">
                 Data is stored on your mobile device until you have internet
                 access.
               </p>
@@ -108,11 +108,11 @@ function OfflineFeatures() {
                 />
               </div>
 
-              <p className="text-[#333333] lg:text-2xl text-xl font-semibold mt-6 md:leading-[48px] 2xl:leading-[50px] px-4 lg:px-7">
+              <p className="text-[#333333] lg:text-2xl text-xl font-semibold mt-6 md:leading-[48px] 2xl:leading-[50px] px-4 lg:px-7 font-serif">
                 Upload Data Anytime
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[36px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[36px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4 font-sans">
                 Collect multiple records and upload whenever you like. Lorem
                 ipsum dolor sit amet consectetur. Mi odio venenatis
               </p>
@@ -120,13 +120,13 @@ function OfflineFeatures() {
           </div>
         </div>
         <div className="w-full h-auto flex flex-col md:flex-row items-center mt-8 justify-center  lg:gap-6 mb-8 pb-32">
-          <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px]  cursor-pointer font-semibold hero-btn">
+          <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px]  cursor-pointer font-semibold hero-btn font-sans">
             Get started for free
           </div>
           <Link
             href="https://demo.wecollect.tech"
             target="_blank"
-            className="bg-[#FFFFFF] hover:bg-[#E3D5FF]  w-[197px]  h-[50px] flex justify-start pl-[10px] items-center text-mainBlue rounded-[50px] hero-btn cursor-pointer my-5 md:my-0 font-semibold  "
+            className="bg-[#FFFFFF] hover:bg-[#E3D5FF]  w-[197px]  h-[50px] flex justify-start pl-[10px] items-center text-mainBlue rounded-[50px] hero-btn cursor-pointer my-5 md:my-0 font-semibold font-sans  "
           >
             <Image src={blueright} alt="blueright" className="mr-[10px]" />
             Book a demo

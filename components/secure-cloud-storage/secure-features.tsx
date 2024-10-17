@@ -29,14 +29,14 @@ function SecureFeatures() {
 
       <ContainerLayout>
         <p
-          className="text-ash text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold  mt-16 lg:mt-12 text-center uppercase 2xl:leading-[35px]"
+          className="text-ash text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold  mt-16 lg:mt-12 text-center uppercase 2xl:leading-[35px] font-serif"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
           Features
         </p>
 
-        <p className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px]  font-medium text-center">
+        <p className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px]  font-medium text-center font-sans">
           Discover the features that help you collect data you can trust.
         </p>
 
@@ -44,42 +44,37 @@ function SecureFeatures() {
           <div className="w-full h-auto grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-10 justify-between items-center ">
             <div className="boxlee w-full h-fit lg:h-full  rounded-[30px]   cursor-default">
               <div className="feat-img-shadow flex justify-center pt-8 rounded-t-[30px]">
-                
-              <Image
-                src={gpss}
-                alt="gpss"
-                className="w-full h-auto object-contain max-w-[300px]"
+                <Image
+                  src={gpss}
+                  alt="gpss"
+                  className="w-full h-auto object-contain max-w-[300px]"
                 />
-                </div>
+              </div>
 
-              <p className="text-[#333333] w-full lg:text-2xl 2xl:text-2xl text-xl font-semibold mt-7   px-4 lg:px-7 md:leading-[48px] 2xl:leading-[50px]">
+              <p className="text-[#333333] w-full lg:text-2xl 2xl:text-2xl text-xl font-semibold mt-7   px-4 lg:px-7 md:leading-[48px] 2xl:leading-[50px] font-serif">
                 Regular Backup
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7 pb-7 px-4 lg:px-7">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7 pb-7 px-4 lg:px-7 font-sans ">
                 Secure, scalable cloud storage ensures your data is safe, backed
                 up, and accessible anytime
               </p>
             </div>
 
-            <div
-              className="boxlee w-full  h-fit lg:h-full rounded-[30px]    md:my-0  cursor-default"
-            
-            >
+            <div className="boxlee w-full  h-fit lg:h-full rounded-[30px]    md:my-0  cursor-default">
               <div className="feat-img-shadow flex justify-end pt-8 rounded-t-[30px]">
-                
-              <Image
-                src={wifi}
-                alt="wifi"
-                className="w-full h-auto max-w-[300px] "
+                <Image
+                  src={wifi}
+                  alt="wifi"
+                  className="w-full h-auto max-w-[300px] "
                 />
-                </div>
+              </div>
 
-              <p className="text-[#333333]  lg:text-2xl  text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]  px-4 lg:px-7 ">
+              <p className="text-[#333333]  lg:text-2xl  text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]  px-4 lg:px-7 font-serif ">
                 Project Access Control
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4 font-sans">
                 Project Access Control in WeCollect ensures that only authorized
                 users can access specific project data and features, enhancing
                 data security
@@ -93,19 +88,18 @@ function SecureFeatures() {
               // data-aos-delay="600"
             >
               <div className="feat-img-shadow flex justify-center pt-8 rounded-t-[30px]">
-                
-              <Image
-                src={securecase}
-                alt="securecase"
-                className="w-full h-auto object-contain max-w-[300px] mx-auto   "
+                <Image
+                  src={securecase}
+                  alt="securecase"
+                  className="w-full h-auto object-contain max-w-[300px] mx-auto   "
                 />
-                </div>
+              </div>
 
-              <p className="text-[#333333] lg:text-2xl text-xl font-semibold mt-6 md:leading-[48px] 2xl:leading-[50px] px-4 lg:px-7">
+              <p className="text-[#333333] lg:text-2xl text-xl font-semibold mt-6 md:leading-[48px] 2xl:leading-[50px] px-4 lg:px-7 font-serif">
                 Privacy Compliant
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4">
+              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4 font-sans">
                 WeCollect is committed to upholding the highest standards of
                 privacy compliance, ensuring that all data collected adheres to
                 relevant regulations and guidelines
@@ -114,13 +108,13 @@ function SecureFeatures() {
           </div>
         </div>
         <div className="w-full h-auto flex flex-col md:flex-row items-center mt-8 justify-center  lg:gap-6 mb-8 pb-32">
-          <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px]  cursor-pointer font-semibold hero-btn">
+          <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px]  cursor-pointer font-semibold hero-btn font-sans">
             Get started for free
           </div>
           <Link
             href="https://demo.wecollect.tech"
             target="_blank"
-            className="bg-[#FFFFFF] hover:bg-[#E3D5FF]  w-[197px]  h-[50px] flex justify-start pl-[10px] items-center text-mainBlue rounded-[50px] hero-btn cursor-pointer my-5 md:my-0 font-semibold  "
+            className="bg-[#FFFFFF] hover:bg-[#E3D5FF]  w-[197px]  h-[50px] flex justify-start pl-[10px] items-center text-mainBlue rounded-[50px] hero-btn cursor-pointer my-5 md:my-0 font-semibold font-sans   "
           >
             <Image src={blueright} alt="blueright" className="mr-[10px]" />
             Book a demo

@@ -17,7 +17,7 @@ const SecureHero = () => {
             <div className="w-full lg:flex-row mt-12  flex flex-col  ">
               <div className="w-full flex flex-col lg:w-6/12 justify-center ">
                 <h1
-                  className="text-mainBlue font-semibold text-[48px] 2xl:text-[64px] max-w-[600px] 2xl:leading-[96px]  "
+                  className="text-mainBlue font-semibold text-[48px] 2xl:text-[64px] max-w-[600px] 2xl:leading-[96px] font-serif  "
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >
@@ -26,7 +26,7 @@ const SecureHero = () => {
                   STORAGE
                 </h1>
                 <p
-                  className="text-customBlack font-medium md:text-2xl 2xl:text-[32px] text-[18px] leading-[39px] 2xl:leading-[48px] max-w-[500px]"
+                  className="text-customBlack font-medium md:text-2xl 2xl:text-[32px] text-[18px] leading-[39px] 2xl:leading-[48px] max-w-[500px] font-sans"
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >
@@ -36,7 +36,7 @@ const SecureHero = () => {
                   <Link
                     href="https://demo.wecollect.tech"
                     target="_blank"
-                    className="bg-[#FFFFFF] hover:bg-[#E3D5FF]  w-[197px]  h-[50px] flex justify-start pl-[10px] items-center text-mainBlue rounded-[50px] hero-btn cursor-pointer my-5 md:my-0 font-semibold text-[14px] 2xl:text-[16px]  "
+                    className="bg-[#FFFFFF] hover:bg-[#E3D5FF]  w-[197px]  h-[50px] flex justify-start pl-[10px] items-center text-mainBlue rounded-[50px] hero-btn cursor-pointer my-5 md:my-0 font-semibold text-[14px] 2xl:text-[16px] font-sans  "
                   >
                     <Image
                       src={blueright}
