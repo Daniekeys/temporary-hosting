@@ -302,7 +302,7 @@ const NewFooter = () => {
                   Features
                 </h1>
                 <Link
-                  href="/"
+                  href="/gis-systems"
                   //   target="_blank"
                   //   rel="noopener noreferrer"
                   className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
@@ -313,7 +313,7 @@ const NewFooter = () => {
                   GPS coordinates
                 </Link>
                 <Link
-                  href="/"
+                  href="/smart-data-collection"
                   // target="_blank"
                   // rel="noopener noreferrer"
                   className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
@@ -321,10 +321,10 @@ const NewFooter = () => {
                   // data-aos-duration="1000"
                   // data-aos-delay="2500"
                 >
-                  Real-time data collection
+                  Smart data collection
                 </Link>
                 <Link
-                  href="/"
+                  href="/secure-cloud-storage"
                   // target="_blank"
                   // rel="noopener noreferrer"
                   className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
@@ -332,7 +332,7 @@ const NewFooter = () => {
                   // data-aos-duration="1000"
                   // data-aos-delay="2700"
                 >
-                  Secure case management
+                  Secure cloud storage
                 </Link>
               </div>
               {/* end of a pack */}
