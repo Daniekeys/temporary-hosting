@@ -74,7 +74,8 @@ box-shadow: 0px 3px 6px 0px #ADDEFF1A, 0px 10px 10px 0px #ADDEFF17
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-}
+} 
+
 .hero-shadow{
   box-shadow: 0px -14px 31px 0px #61709E1A, 0px -57px 57px 0px #61709E17
 
@@ -85,6 +86,7 @@ box-shadow: 0px 3px 6px 0px #ADDEFF1A, 0px 10px 10px 0px #ADDEFF17
 , 0px -355px 99px 0px #61709E00;
 
 }
+
 .project-hero-bg {
   background: url("../assets/png/project-bgs.png");
   background-position: center;
@@ -92,6 +94,7 @@ box-shadow: 0px 3px 6px 0px #ADDEFF1A, 0px 10px 10px 0px #ADDEFF17
   background-size: cover;
   width: 100%;
 }
+
 .sales-hero-bg {
   background: url("../assets/png/sales-option.png");
   background-position: center;

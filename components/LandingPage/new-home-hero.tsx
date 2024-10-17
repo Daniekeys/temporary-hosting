@@ -15,7 +15,7 @@ const NewHomeHero = () => {
       {/* content */}
       <ContainerLayout>
         <div className="w-full flex flex-col mt-32 ">
-          <h1 className="font-serif inline-flex text-[48px] text-customBlack tracking-widest font-bold mx-auto">
+          <h1 className="font-serif md:inline-flex  hidden text-[48px] text-customBlack tracking-widest font-bold mx-auto">
             Insight Gathering Made{" "}
             <span className="text-mainBlue flex flex-col relative ml-3 ">
               Easy
@@ -23,6 +23,21 @@ const NewHomeHero = () => {
                 <Image src={trademark} alt="trade" />
               </span>
             </span>{" "}
+          </h1>
+          <h1 className="font-serif md:hidden text-[45px] text-customBlack tracking-widest font-bold mx-auto">
+            Insight
+          </h1>
+          <h1 className="font-serif md:hidden text-[45px]  text-customBlack tracking-widest font-bold mx-auto">
+            Gathering
+          </h1>
+          <h1 className="font-serif md:hidden text-[45px] inline-flex text-center   text-customBlack tracking-widest font-bold mx-auto">
+            Made
+            <span className="text-mainBlue flex ml-2 flex-col relative  ">
+              Easy
+              <span className="absolute -bottom-2">
+                <Image src={trademark} alt="trade" className="" />
+              </span>
+            </span>
           </h1>
           <p className="font-sans text-ash leading-[22px] tracking-wider text-center mt-1 font-[500] max-w-[768px] mx-auto">
             Leverage advanced data collecting technology with features like GIS
@@ -50,7 +65,7 @@ const NewHomeHero = () => {
             </Link>
           </div>
           <div className="w-full mt-8 hero-shadow">
-            <Image src={HeroPhoto} className='w-full' alt='hero' />
+            <Image src={HeroPhoto} className="w-full" alt="hero" />
           </div>
         </div>
       </ContainerLayout>
