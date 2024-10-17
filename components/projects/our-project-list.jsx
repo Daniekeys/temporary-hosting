@@ -19,7 +19,7 @@ const OurProjectList = () => {
       <ContainerLayout>
         <div className="w-full pt-20 pb-10 lg:pt-28 lg:pb-4 flex flex-col justify-center items-center">
           <div className="flex flex-col  w-full">
-            <h1 className="text-customBlack font-semibold text-2xl 2xl:text-[32px] mb-2">
+            <h1 className="text-customBlack font-semibold text-2xl 2xl:text-[32px] mb-2 font-serif">
               OUR PROJECTS
             </h1>
             {/* <span>
@@ -37,15 +37,15 @@ const OurProjectList = () => {
                 </div>
                 <div className="flex flex-col mt-8 ">
                   <div className="w-full sm:h-[80px] 2xl:h-[100px] flex items-center ">
-                    <h1 className="text-mainBlue 2xl:text-[30px] text-2xl font-semibold xl:max-w-[250px] 2xl:max-w-[325px] 2xl:leading-[45px]">
+                    <h1 className="text-mainBlue 2xl:text-[30px] font-serif text-2xl font-semibold xl:max-w-[250px] 2xl:max-w-[325px] 2xl:leading-[45px] ">
                       Food Price Monitoring Project In Nigeria
                     </h1>
                   </div>
-                  <p className="text-[14px] text-[#555] mt-5 font-medium leading-[36px] 2xl:text-[16px] xl:max-w-[300px]  ">
+                  <p className="text-[14px] text-[#555] font-sans mt-5 font-medium leading-[36px] 2xl:text-[16px] xl:max-w-[300px]  ">
                     Tracking the availability of food in Nigeria using a data
                     driven price model in line with the UN SD4
                   </p>
-                  <button className="bg-mainBlue rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-[16px]  cursor-pointer lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
+                  <button className="bg-mainBlue rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-[16px]  cursor-pointer font-sans lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
                     Learn more
                   </button>
                 </div>
@@ -53,7 +53,7 @@ const OurProjectList = () => {
               {/* end of single session */}
               {/* single session */}
               <div className="w-full flex flex-col">
-                <div className="w-full max-h-[400px] border-[3px] rounded-[30px] border-[#F9F6FF]  xl:min-w-[400px] h-full min-h-[400px] flex justify-center items-center">
+                <div className="w-full max-h-[400px] border-[3px]  rounded-[30px] border-[#F9F6FF]  xl:min-w-[400px] h-full min-h-[400px] flex justify-center items-center">
                   <Image
                     src={kaduna}
                     alt="fpmp"
@@ -62,15 +62,15 @@ const OurProjectList = () => {
                 </div>
                 <div className="flex flex-col mt-8 ">
                   <div className="w-full sm:h-[80px] 2xl:h-[100px] flex items-center ">
-                    <h1 className="text-mainBlue 2xl:text-[30px] text-2xl font-semibold max-w-[325px] 2xl:leading-[45px]">
+                    <h1 className="text-mainBlue 2xl:text-[30px] font-serif text-2xl font-semibold max-w-[325px] 2xl:leading-[45px]">
                       Kaduna Electric Project
                     </h1>
                   </div>
-                  <p className="text-[14px] text-[#555] mt-5 font-medium leading-[36px] 2xl:text-[16px] xl:max-w-[400px] ">
+                  <p className="text-[14px] text-[#555] mt-5 font-sans font-medium leading-[36px] 2xl:text-[16px] xl:max-w-[400px] ">
                     WeCollect played a crucial role in helping Kaduna Electric
                     efficiently collect and organize data on their assets...
                   </p>
-                  <button className="bg-mainBlue rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-[16px]  cursor-pointer lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
+                  <button className="bg-mainBlue font-sans rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-[16px]  cursor-pointer lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
                     Learn more
                   </button>
                 </div>
@@ -87,15 +87,15 @@ const OurProjectList = () => {
                 </div>
                 <div className="flex flex-col mt-8 ">
                   <div className="w-full sm:h-[80px] 2xl:h-[100px] flex items-center ">
-                    <h1 className="text-mainBlue 2xl:text-[30px] text-2xl font-semibold max-w-[325px] 2xl:leading-[45px]">
+                    <h1 className="text-mainBlue 2xl:text-[30px] font-serif text-2xl font-semibold max-w-[325px] 2xl:leading-[45px]">
                       TechPoint Project
                     </h1>
                   </div>
-                  <p className="text-[14px] text-[#555] mt-5 font-medium leading-[36px] 2xl:text-[16px] xl:max-w-[400px] ">
+                  <p className="text-[14px] text-[#555] mt-5 font-sans font-medium leading-[36px] 2xl:text-[16px] xl:max-w-[400px] ">
                     WeCollect played a crucial role in helping Techpoint
                     efficiently collect and organize data on their project...
                   </p>
-                  <button className="bg-mainBlue rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-[16px]  cursor-pointer lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
+                  <button className="bg-mainBlue rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-[16px]  cursor-pointer lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold font-sans ">
                     Learn more
                   </button>
                 </div>

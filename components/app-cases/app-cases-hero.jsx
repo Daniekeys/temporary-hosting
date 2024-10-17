@@ -15,14 +15,14 @@ const AppCaseHero = () => {
             <div className="w-full lg:flex-row mt-12  flex flex-col ">
               <div className="w-full flex flex-col lg:w-6/12 justify-center ">
                 <h1
-                  className="text-mainBlue font-semibold text-[48px] 2xl:text-[64px] max-w-[361px] lg:max-w-none leading-[72px] 2xl:leading-[96px] "
+                  className="text-mainBlue font-semibold text-[48px] 2xl:text-[64px] max-w-[361px] lg:max-w-none leading-[72px] 2xl:leading-[96px] font-serif "
                   // data-aos="fade-down"
                   // data-aos-duration="1000"
                 >
                   APPLICABLE CASES
                 </h1>
                 <p
-                  className="text-customBlack font-medium 2xl:text-[32px] lg:text-2xl text-[18px] 2xl:leading-[48px]  leading-[40px] mt-[30px] "
+                  className="text-customBlack font-medium 2xl:text-[32px] lg:text-2xl text-[18px] 2xl:leading-[48px]  leading-[40px] mt-[30px] font-sans "
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                 >

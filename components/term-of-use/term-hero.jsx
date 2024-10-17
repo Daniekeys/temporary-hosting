@@ -14,7 +14,7 @@ const TermHero = ({ current }) => {
       <div className="w-full bg-[#F6F1FF] rounded-[30px] h-[153px] lg:h-[234px] mt-28 mb-16 flex items-center">
         <div className="w-10/12 lg:w-10/12 flex items-center justify-between mx-auto">
           <h1
-            className="text-mainBlue font-semibold   2xl:text-[64px] uppercase text-[48px] leading-[55px] "
+            className="text-mainBlue font-semibold font-serif  2xl:text-[64px] uppercase text-[48px] leading-[55px] "
             data-aos="fade-up"
             data-aos-duration="1000"
           >

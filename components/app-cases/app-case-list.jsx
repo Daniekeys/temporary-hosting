@@ -84,7 +84,7 @@ const AppCaseList = () => {
       <div className="mt-20">
         <ContainerLayout>
           <div className="w-full flex flex-col gap-10 flow-hide">
-            <h1 className="text-mainBlue 2xl:text-[32px] lg:text-2xl font-semibold max-w-[271px] lg:max-w-full text-center lg:text-start mx-auto lg:mx-0 ">
+            <h1 className="text-mainBlue 2xl:text-[32px] lg:text-2xl font-semibold max-w-[271px] lg:max-w-full text-center lg:text-start mx-auto lg:mx-0 font-serif  ">
               Applicable in the following cases and more...
             </h1>
             <div className="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 bg-[#F9F6FF] py-[30px] px-4 lg:p-[30px]  rounded-[30px] gap-[30px]  lg:gap-[40px]">
@@ -108,16 +108,16 @@ const AppCaseList = () => {
                         className="2xl:w-[60px] lg:w-[50px] w-[40px] h-[40px] lg:h-[50px] 2xl:h-[60px] rounded-full"
                       />
                     </span>
-                    <h1 className=" text-customBlack text-xl font-semibold leading-[48px] 2xl:text-2xl lg:text-xl uppercase max-h-[120px]  ">
+                    <h1 className=" text-customBlack text-xl font-semibold leading-[48px] 2xl:text-2xl lg:text-xl uppercase max-h-[120px] font-serif ">
                       {item.title}
                     </h1>
-                    <p className="text-[14px] 2xl:text-[16px] lg:text-[14px] text-ash font-medium leading-[35px]  w-full h-full max-h-[300px] overflow-y-hidden   ">
+                    <p className="text-[14px] 2xl:text-[16px] lg:text-[14px] text-ash font-medium leading-[35px]  w-full h-full max-h-[300px] overflow-y-hidden font-sans   ">
                       {item.story}
                     </p>
                     <span className="mt-4 ">
                       <Link
                         href={`/view-use-case/${index}`}
-                        className="bg-mainBlue rounded-[50px] h-[46px] px-5 flex items-center justify-center text-white text-[16px]  cursor-pointer lg:min-w-[168px] hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold max-w-fit "
+                        className="bg-mainBlue rounded-[50px] h-[46px] px-5 flex items-center justify-center text-white text-[16px]  cursor-pointer font-sans  lg:min-w-[168px] hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold max-w-fit "
                       >
                         Learn more
                       </Link>

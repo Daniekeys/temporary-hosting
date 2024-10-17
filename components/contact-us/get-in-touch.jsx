@@ -19,10 +19,10 @@ const GetInTouch = () => {
               <span>
                 <EmailIcon />
               </span>
-              <h2 className="text-mainBlue text-[16px] lg:text-2xl font-semibold ">
+              <h2 className="text-mainBlue font-sans text-[16px] lg:text-2xl font-semibold ">
                 Email Address
               </h2>
-              <p className="text-customBlack text-[14px] 2xl:text-[18px] lg:text-[16px] font-medium">
+              <p className="text-customBlack font-sans text-[14px] 2xl:text-[18px] lg:text-[16px] font-medium">
                 help@wecollect.tech
               </p>
             </div>
@@ -30,7 +30,7 @@ const GetInTouch = () => {
             {/* end */}
             {/* start */}
             <div
-              className="w-fit mx-auto lg:mx-0 lg:w-full flex flex-col justify-center items-center gap-4 border-t-[10px] border-b-[10px]  border-l-[#F9F6FF] border-t-[#F9F6FF] lg:border-l-[10px] lg:border-r-[10px] border-b-[#F9F6FF] border-r-[#F9F6FF] lg:border-t-0 lg:border-b-0 py-8 lg:py-0 "
+              className="w-fit mx-auto lg:mx-0 lg:w-full flex flex-col justify-center items-center gap-4 border-t-[10px] border-b-[10px]  border-l-[#F9F6FF] border-t-[#F9F6FF] lg:border-l-[10px] lg:border-r-[10px] border-b-[#F9F6FF] border-r-[#F9F6FF]  lg:border-t-0 lg:border-b-0 py-8 lg:py-0 "
               // data-aos="fade-up"
               // data-aos-delay="600"
               // data-aos-duration="1000"
@@ -38,10 +38,10 @@ const GetInTouch = () => {
               <span>
                 <PhoneIcon />
               </span>
-              <h2 className="text-mainBlue text-[16px] lg:text-2xl font-semibold ">
+              <h2 className="text-mainBlue font-sans text-[16px] lg:text-2xl font-semibold ">
                 Phone number
               </h2>
-              <p className="text-customBlack text-[14px] 2xl:text-[18px] lg:text-[16px] font-medium">
+              <p className="text-customBlack text-[14px] font-sans 2xl:text-[18px] lg:text-[16px] font-medium">
                 +234(0) 816 360 8315
               </p>
             </div>
@@ -57,10 +57,10 @@ const GetInTouch = () => {
               <span>
                 <LocationIcon />
               </span>
-              <h2 className="text-mainBlue text-[16px] lg:text-2xl font-semibold ">
+              <h2 className="text-mainBlue text-[16px] lg:text-2xl font-semibold font-sans ">
                 Physical location
               </h2>
-              <p className="text-customBlack text-[14px] 2xl:text-[18px] lg:text-[16px] font-medium lg:max-w-[239px] mx-auto text-center">
+              <p className="text-customBlack text-[14px] font-sans 2xl:text-[18px] lg:text-[16px] font-medium lg:max-w-[239px] mx-auto text-center">
                 Unit D128 Ikota complex, Lekki Lagos
               </p>
             </div>
@@ -70,14 +70,14 @@ const GetInTouch = () => {
         </div>
         <div className="flex mt-[96px] flex-col items-center flow-hide">
           <h1
-            className="text-ash 2xl:text-[32px] lg:text-2xl text-2xl font-semibold"
+            className="text-ash 2xl:text-[32px] lg:text-2xl text-2xl font-semibold font-serif"
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >
             GET IN TOUCH
           </h1>
           <p
-            className="text-[16px]  text-ash font-medium 2xl:text-[18px] lg:text-[16px] mt-2"
+            className="text-[16px]  text-ash font-medium 2xl:text-[18px] font-sans lg:text-[16px] mt-2"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
@@ -96,12 +96,12 @@ const GetInTouch = () => {
                 // data-aos-delay="300"
                 // data-aos-duration="1000"
               >
-                <label className="font-semibold text-customBlack text-[14px] lg:text-[16px]">
+                <label className="font-semibold text-customBlack text-[14px] font-sans lg:text-[16px]">
                   Full name*
                 </label>
                 <input
                   type="text"
-                  className=" h-[50px] w-full bg-white outline-none focus:outline-none border-[#999] border rounded-[8px] border-opacity-30 px-5 placeholder:text-ash placeholder:font-medium mt-2"
+                  className=" h-[50px] w-full bg-white outline-none focus:outline-none border-[#999] border rounded-[8px] border-opacity-30 px-5 placeholder:text-ash placeholder:font-medium font-sans mt-2"
                   placeholder="enter full name"
                 />
               </div>
@@ -114,7 +114,7 @@ const GetInTouch = () => {
                 // data-aos-delay="500"
                 // data-aos-duration="1000"
               >
-                <label className="font-semibold text-customBlack text-[14px] lg:text-[16px]">
+                <label className="font-semibold text-customBlack text-[14px] lg:text-[16px] font-sans">
                   Email Address*
                 </label>
                 <input
@@ -132,12 +132,12 @@ const GetInTouch = () => {
                 // data-aos-delay="700"
                 // data-aos-duration="1000"
               >
-                <label className="font-semibold text-customBlack text-[14px] lg:text-[16px]">
+                <label className="font-semibold text-customBlack text-[14px] lg:text-[16px] font-sans">
                   Phone number*
                 </label>
                 <input
                   type="tel"
-                  className=" h-[50px] w-full bg-white outline-none focus:outline-none border-[#999] border rounded-[8px] border-opacity-30 px-5 placeholder:text-ash placeholder:font-medium mt-2"
+                  className=" h-[50px] w-full bg-white outline-none focus:outline-none border-[#999] border rounded-[8px] border-opacity-30 px-5 placeholder:text-ash placeholder:font-medium mt-2 font-sans"
                   placeholder="enter phone number"
                 />
               </div>
@@ -150,12 +150,12 @@ const GetInTouch = () => {
                 // data-aos-delay="900"
                 // data-aos-duration="1000"
               >
-                <label className="font-semibold text-customBlack text-[14px] lg:text-[16px]">
+                <label className="font-semibold text-customBlack text-[14px] lg:text-[16px] font-sans">
                   Message*
                 </label>
                 <textarea
                   type="tel"
-                  className=" h-[50px] w-full bg-white outline-none focus:outline-none border-[#999] border rounded-[8px] border-opacity-30 min-h-[93px] lg:min-h-[245px] py-3 px-5 placeholder:text-ash placeholder:font-medium mt-2"
+                  className=" h-[50px] w-full bg-white outline-none focus:outline-none border-[#999] border rounded-[8px] border-opacity-30 min-h-[93px] lg:min-h-[245px] py-3 px-5 font-sans placeholder:text-ash placeholder:font-medium mt-2"
                   placeholder="Message here... "
                 />
               </div>
@@ -169,13 +169,13 @@ const GetInTouch = () => {
                   id=""
                   className="accent-mainBlue w-6 h-6"
                 />
-                <span className="text-ash text-[16px]">
+                <span className="text-ash text-[16px] font-sans">
                   I agree to be contacted
                 </span>
               </div>
               {/* end */}
               <div className="w-full mt-1">
-                <button className="w-full rounded-[30px] h-[44px] flex items-center justify-center bg-mainBlue text-[#F2F4F5]  ">
+                <button className="w-full rounded-[30px] font-sans h-[44px] flex items-center justify-center bg-mainBlue text-[#F2F4F5]  ">
                   Send message
                 </button>
               </div>

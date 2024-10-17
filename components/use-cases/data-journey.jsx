@@ -18,7 +18,7 @@ const DataJourney = () => {
       <ContainerLayout>
         <div className="w-full j-bg grid bg-opacity-75 grid-cols-1 lg:grid-cols-2 lg:px-[60px] lg:pt-[60px] rounded-[35px] px-5 pt-5 ">
           <div className="w-full flex flex-col justify-center">
-            <h1 className="2xl:text-[44px] lg:text-[36px] text-3xl font-bold text-customBlack leading-[50px]  xl:leading-[65px]">
+            <h1 className="2xl:text-[44px] lg:text-[36px] text-3xl font-bold text-customBlack leading-[50px]  xl:leading-[65px] font-serif">
               Your <span className="text-ash">Data</span>
               <br />
               <span className="text-ash">Journey</span>
@@ -29,17 +29,21 @@ const DataJourney = () => {
               <Link
                 href="https://demo.wecollect.tech"
                 target="_blank"
-                className="bg-[#FFFFFF] hover:bg-[#E3D5FF]  w-[197px]  h-[50px] flex justify-start pl-[10px] items-center text-mainBlue rounded-[50px] hero-btn cursor-pointer my-5 md:my-0 font-semibold  "
+                className="bg-[#FFFFFF] font-sans  hover:bg-[#E3D5FF]  w-[197px]  h-[50px] flex justify-start pl-[10px] items-center text-mainBlue rounded-[50px] hero-btn cursor-pointer my-5 md:my-0 font-semibold  "
               >
                 <Image src={blueright} alt="blueright" className="mr-[10px]" />
                 Book a demo
               </Link>
             </div>
-                  </div>
-                  {/* end of a section */}
-                  <div className="w-full">
-                      <Image src={phone} alt='phone' className='w-auto h-auto object-contain' />
-                  </div>
+          </div>
+          {/* end of a section */}
+          <div className="w-full">
+            <Image
+              src={phone}
+              alt="phone"
+              className="w-auto h-auto object-contain"
+            />
+          </div>
         </div>
       </ContainerLayout>
     </div>

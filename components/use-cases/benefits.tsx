@@ -29,7 +29,7 @@ function Benefits({ benefits }: { benefits: any }) {
 
       <ContainerLayout>
         <p
-          className="text-ash text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold  mt-16 lg:mt-12 text-center uppercase 2xl:leading-[35px]"
+          className="text-ash text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold  mt-16 lg:mt-12 text-center uppercase 2xl:leading-[35px] font-serif"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
@@ -37,7 +37,7 @@ function Benefits({ benefits }: { benefits: any }) {
         </p>
 
         <p
-          className="text-[#555555] text-[14px]  2xl:md:text-[18px] leading-[35px] text-[14px] font-medium text-center"
+          className="text-[#555555] text-[14px]  font-sans 2xl:md:text-[18px] leading-[35px]  font-medium text-center"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
@@ -60,11 +60,11 @@ function Benefits({ benefits }: { benefits: any }) {
                     className="w-[52px] h-[52px]"
                   />
 
-                  <p className="text-[#333333] w-11/12 lg:text-2xl 2xl:text-2xl text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[35px]">
+                  <p className="text-[#333333] w-11/12 lg:text-2xl 2xl:text-2xl text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[35px] font-serif">
                     {single?.title}
                   </p>
 
-                  <p className="text-[#777] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-4">
+                  <p className="text-[#777] font-sans 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-4">
                     {single?.description}
                   </p>
                 </div>
