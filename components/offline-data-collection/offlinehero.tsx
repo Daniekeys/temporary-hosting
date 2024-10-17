@@ -6,7 +6,7 @@ import Image from "next/image";
 import MobileNav from "../navbar/mobile-nav";
 import Google from "../../assets/svg/g-play.svg";
 import Apple from "../../assets/svg/a-store.svg";
-import Link from "next/link";
+import Link from "next/link"; 
 const OfflineHero = () => {
   return (
     <div className=" w-full h-full project-hero-bg ">
@@ -20,7 +20,7 @@ const OfflineHero = () => {
                 <h1
                   className="text-mainBlue font-serif font-semibold text-[48px] 2xl:text-[64px] max-w-[600px] 2xl:leading-[96px]  "
                   data-aos="fade-down"
-                  data-aos-duration="1000"
+                  data-aos-duration="1000"  
                 >
                   OFFLINE DATA <br className="hidden lg:block" /> COLLECTION
                 </h1>
