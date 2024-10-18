@@ -98,7 +98,7 @@ const Section = () => {
                 description={step.description}
               />
             ))}
-            <div className="w-full h-auto flex flex-col  md:flex-row items-center mt-8  lg:gap-6 mb-8">
+            <div className="w-full h-auto flex flex-col  md:flex-row items-center mt-8  lg:gap-6  lg:pl-12 pb-10">
               <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px]  cursor-pointer font-semibold hero-btn text-[14px] 2xl:text-[16px] font-sans">
                 Get started for free
               </div>

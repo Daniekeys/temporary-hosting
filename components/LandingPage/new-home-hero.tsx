@@ -65,7 +65,7 @@ const NewHomeHero = () => {
             </Link>
           </div>
           <div
-            className="w-full mt-24 pb-12 lg:pb-0 lg:mt-40  hero-shado"
+            className="w-full mt-24  lg:pb-0 lg:mt-40  hero-shado"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="1000"
