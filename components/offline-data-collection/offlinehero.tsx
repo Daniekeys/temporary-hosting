@@ -36,7 +36,7 @@ const OfflineHero = () => {
                     <Image
                       src={Google}
                       alt="goodle"
-                      className="w-auto h-auto"
+                      className="w-auto h-auto" 
                     />
                   </Link>
                   <Link href={"#"}>

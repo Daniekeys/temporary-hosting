@@ -64,7 +64,7 @@ const NewHomeHero = () => {
               Book a demo
             </Link>
           </div>
-          <div className="w-full mt-8 hero-shadow">
+          <div className="w-full mt-20 lg:mt-24  hero-shadow">
             <Image src={HeroPhoto} className="w-full" alt="hero" />
           </div>
         </div>

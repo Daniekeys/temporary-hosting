@@ -305,7 +305,7 @@ const NewNavbar = () => {
               {/* header session */}
               <div className="w-full flex items-center justify-between   px-4 z-10  ">
                 <p></p>
-                <h1 className="text-2xl lg:text-3xl text-customBlack font-bold text-center">
+                <h1 className="text-2xl lg:text-3xl text-customBlack font-bold text-center font-serif">
                   GET A QUOTE
                 </h1>
                 <span
@@ -320,13 +320,13 @@ const NewNavbar = () => {
               </div>
 
               {/* end of session */}
-              <p className="text-center text-[#555] text-[18px] bg-[#fff] h-[35px] px-2 py-1 mt-1 w-fit mx-auto rounded-[20px] z-10">
+              <p className="text-center text-[#555] text-[18px] bg-[#fff] h-[35px] px-2 py-1 mt-1 w-fit mx-auto rounded-[20px] z-10 font-sans">
                 Personalized quote for your project ✨
               </p>
 
               <div className="w-full border-t border-t-[#999999] border-opacity-10 mt-6">
                 <div className="w-full lg:w-10/12 mx-auto flex flex-col pt-10 ">
-                  <p className="text-customBlack font-medium text-[16px]">
+                  <p className="font-sans text-customBlack font-medium text-[16px]">
                     Select one that applies to you:
                   </p>
                   <div
@@ -348,7 +348,7 @@ const NewNavbar = () => {
                         checked={agentPresent === 1}
                         className="accent-white w-6 h-6"
                       />
-                      <p className="text-[16px] font-medium">
+                      <p className="text-[16px] font-medium font-sans">
                         I don’t have agents for this project
                       </p>
                     </div>
@@ -375,7 +375,7 @@ const NewNavbar = () => {
                         checked={agentPresent === 2}
                         className="accent-white w-6 h-6"
                       />
-                      <p className="text-[16px] font-medium">
+                      <p className="text-[16px] font-medium font-sans">
                         I have agents for this project
                       </p>
                     </div>
@@ -407,13 +407,13 @@ const NewNavbar = () => {
                 <span className="mx-auto flex justify-center">
                   <SuccessIcon />
                 </span>
-                <p className="text-center text-[32px] leading-[35px] text-customBlack mt-6 font-bold">
+                <p className="text-center text-[32px] leading-[35px] text-customBlack mt-6 font-bold font-sans">
                   Requested !
                 </p>
-                <p className="text-center text-ash text-[14px] lg:text-[18px] leading-[35px] font-medium mt-4">
+                <p className="text-center text-ash text-[14px] lg:text-[18px] leading-[35px] font-medium mt-4 font-sans">
                   You have successfully requested a quote for your project.
                 </p>
-                <p className="text-center text-ash text-[14px] lg:text-[18px] leading-[35px] font-medium">
+                <p className="text-center text-ash text-[14px] lg:text-[18px] leading-[35px] font-medium font-sans">
                   We will respond via your submitted email soon. Thank you.
                 </p>
                 <button
@@ -437,7 +437,7 @@ const NewNavbar = () => {
               {/* header session */}
               <div className="w-full flex items-center justify-between z-10">
                 <p></p>
-                <h1 className="text-2xl lg:text-3xl text-customBlack font-bold">
+                <h1 className="text-2xl lg:text-3xl text-customBlack font-bold font-serif">
                   GET A QUOTE
                 </h1>
                 <span
@@ -453,7 +453,7 @@ const NewNavbar = () => {
               </div>
 
               {/* end of session */}
-              <p className="text-center z-10 text-[#555] text-[18px] bg-[#fff] h-[35px] px-2 py-1 mt-1 w-fit mx-auto rounded-[20px]">
+              <p className="text-center z-10 text-[#555] text-[18px] bg-[#fff] h-[35px] px-2 py-1 mt-1 w-fit font-sans mx-auto rounded-[20px]">
                 Personalized quote for your project ✨
               </p>
 
@@ -462,7 +462,7 @@ const NewNavbar = () => {
                 <div className="flex flex-col">
                   <label
                     htmlFor=""
-                    className=" text-[#555] text-[14px] lg:text-[16px] mb-1"
+                    className=" text-[#555] text-[14px]  font-sans  lg:text-[16px] mb-1"
                   >
                     Number of records
                   </label>
@@ -479,7 +479,7 @@ const NewNavbar = () => {
                 <div className="flex flex-col">
                   <label
                     htmlFor=""
-                    className=" text-[#555] text-[14px] lg:text-[16px] mb-1"
+                    className=" text-[#555] font-sans  text-[14px] lg:text-[16px] mb-1"
                   >
                     Number of locations
                   </label>
@@ -497,13 +497,13 @@ const NewNavbar = () => {
                 <div className="flex flex-col">
                   <label
                     htmlFor=""
-                    className=" text-[#555] text-[14px] lg:text-[16px] mb-1"
+                    className=" text-[#555] font-sans  text-[14px] lg:text-[16px] mb-1"
                   >
                     Project Description
                   </label>
                   <input
                     type="text"
-                    className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
+                    className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 font-sans  outline-none h-[50px] rounded-[50px] px-4 "
                     placeholder="enter description "
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
@@ -514,7 +514,7 @@ const NewNavbar = () => {
                 <div className="flex flex-col">
                   <label
                     htmlFor=""
-                    className=" text-[#555] text-[14px] lg:text-[16px] mb-1"
+                    className=" text-[#555] font-sans  text-[14px] lg:text-[16px] mb-1"
                   >
                     Use cases
                   </label>
@@ -531,13 +531,13 @@ const NewNavbar = () => {
                 <div className="flex flex-col">
                   <label
                     htmlFor=""
-                    className=" text-[#555] text-[14px] lg:text-[16px] mb-1"
+                    className=" text-[#555] font-sans  text-[14px] lg:text-[16px] mb-1"
                   >
                     Email
                   </label>
                   <input
                     type="email"
-                    className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
+                    className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 font-sans  outline-none h-[50px] rounded-[50px] px-4 "
                     placeholder="Enter email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -548,13 +548,13 @@ const NewNavbar = () => {
                 <div className="flex flex-col">
                   <label
                     htmlFor=""
-                    className=" text-[#555] text-[14px] lg:text-[16px] mb-1"
+                    className=" text-[#555]  font-sans text-[14px] lg:text-[16px] mb-1"
                   >
                     Phone Number
                   </label>
                   <input
                     type="tel"
-                    className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
+                    className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 font-sans  outline-none h-[50px] rounded-[50px] px-4 "
                     placeholder="Enter phone number"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
@@ -564,13 +564,13 @@ const NewNavbar = () => {
                 {/* start */}
                 <div className="flex flex-col">
                   <button
-                    className="w-full font-semibold text-[14px] lg:text-[16px] flex bg-mainBlue text-white h-[50px] items-center justify-center rounded-[50px] cursor-pointer"
+                    className="w-full font-semibold text-[14px] lg:text-[16px] flex bg-mainBlue text-white h-[50px] items-center justify-center font-sans  rounded-[50px] cursor-pointer"
                     onClick={handleSubmit}
                     disabled={loading}
                   >
                     {loading ? "Loading..." : "Request Quote"}
                   </button>
-                  <p className="text-left  text-[#9999FF] mt-3 font-medium text-xs">
+                  <p className="text-left  font-sans  text-[#9999FF] mt-3 font-medium text-xs">
                     You are agreeing to be contacted when you request a quote
                     from us
                   </p>
@@ -578,11 +578,11 @@ const NewNavbar = () => {
                 {/* end */}
                 {/* start */}
                 <div className="flex flex-col">
-                  <div className=" text-customBlack  mt-3 font-medium text-[14px] ">
+                  <div className=" text-customBlack  font-sans  mt-3 font-medium text-[14px] ">
                     Don’t have account with Us yet?
                     <Link
                       href={"/home"}
-                      className="text-mainBlue font-semibold cursor-pointer ml-1"
+                      className="text-mainBlue font-sans  font-semibold cursor-pointer ml-1"
                     >
                       Sign up
                     </Link>
