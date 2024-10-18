@@ -14,7 +14,7 @@ const NewHomeHero = () => {
       <MobileNav present={1} />
       {/* content */}
       <ContainerLayout>
-        <div className="w-full flex flex-col mt-52 ">
+        <div className="w-full flex flex-col mt-32 lg:mt-52 ">
           <h1 className="font-serif md:inline-flex  hidden text-[48px] text-customBlack tracking-widest font-bold mx-auto">
             Insight Gathering Made{" "}
             <span className="text-mainBlue flex flex-col relative ml-3 ">
@@ -39,14 +39,14 @@ const NewHomeHero = () => {
               </span>
             </span>
           </h1>
-          <p className="font-sans text-ash leading-[22px] tracking-wider text-center mt-1 font-[500] max-w-[768px] mx-auto">
+          <p className="font-sans text-ash leading-[22px] tracking-wider text-center mt-8 lg:mt-1 font-[500] max-w-[768px] mx-auto">
             Leverage advanced data collecting technology with features like GIS
             and offline data collection as well as a vast network of field
             agents to collect, track, and ensure accurate data for various
             projects.
           </p>
           <div
-            className="w-full h-auto flex flex-col  md:flex-row items-center mt-6  lg:gap-6 justify-center "
+            className="w-full h-auto flex flex-col  md:flex-row items-center mt-12 lg:mt-6  lg:gap-6 justify-center "
             // data-aos="fade-up"
             // data-aos-duration="1000"
             // data-aos-delay="1000"
@@ -65,7 +65,7 @@ const NewHomeHero = () => {
             </Link>
           </div>
           <div
-            className="w-full mt-20 lg:mt-40  hero-shado"
+            className="w-full mt-24 pb-12 lg:pb-0 lg:mt-40  hero-shado"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="1000"

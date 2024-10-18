@@ -16,7 +16,7 @@ const MobileNav = ({ present }) => {
   const router = useRouter();
   return (
     <div>
-      <div className="w-full bg-white pt-4 fixed top-0 z-high left-0 right-0 flex flex-col lg:hidden overflow-x-hidden ">
+      <div className="w-full bg-white  fixed top-0 z-high left-0 right-0 flex flex-col lg:hidden overflow-x-hidden ">
         <div className="w-full flex items-center justify-between px-4 h-[65px]">
           <Link href="/">
             <Image src={logo} alt="logo" />
