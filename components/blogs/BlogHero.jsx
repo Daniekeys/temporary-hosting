@@ -32,7 +32,7 @@ const BlogHero = () => {
 
   return (
     <div className=" w-full h-full flow-hide">
-      <div className="w-full   relative blog-hero-bg flex flex-col ">
+      <div className="w-full   relative new-hero-bg flex flex-col ">
         <NewNavbar />
         <MobileNav present={2} />
         <ContainerLayout>

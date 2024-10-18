@@ -6,12 +6,12 @@ import heroPic from "../../assets/png/brand-hero.png";
 import Image from "next/image";
 
 const UseHero = ({ heroInfo }: { heroInfo: any }) => {
-    useEffect(() => {
-      window?.scrollTo(0, 0);
-    }, []);
+  useEffect(() => {
+    window?.scrollTo(0, 0);
+  }, []);
   return (
-    <div className="grad-blog-bg w-full h-full">
-      <div className="w-full lg:h-screen lg:max-h-[908px] relative blog-hero-bg flex flex-col">
+    <div className="new-hero-bg w-full h-full">
+      <div className="w-full lg:h-screen lg:max-h-[908px] relative new-hero-bg flex flex-col">
         <NewNavbar />
         <MobileNav present={1} />
         <ContainerLayout>

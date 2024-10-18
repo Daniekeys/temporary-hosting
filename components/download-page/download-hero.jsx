@@ -13,8 +13,8 @@ const DownloadHero = () => {
     window?.scrollTo(0, 0);
   }, []);
   return (
-    <div className="grad-blog-bg w-full h-full relative flex flex-col bg-[#EDE6FF] mb-8 lg:mb-0 flow-hide">
-      <div className="w-full  relative blog-hero-bg flex flex-col flow-hide">
+    <div className="new-hero-bg w-full h-full relative flex flex-col bg-[#EDE6FF] mb-8 lg:mb-0 flow-hide">
+      <div className="w-full  relative new-hero-bg flex flex-col flow-hide">
         <NewNavbar />
         <MobileNav present={2} />
         <ContainerLayout>

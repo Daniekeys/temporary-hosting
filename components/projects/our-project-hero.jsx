@@ -6,7 +6,7 @@ import Image from "next/image";
 import MobileNav from "../navbar/mobile-nav";
 const OurProjectHero = () => {
   return (
-    <div className=" w-full h-full project-hero-bg ">
+    <div className=" w-full h-full new-hero-bg ">
       <div className="w-full lg:h-screen h-[700px] lg:max-h-[908px] relative  flex flex-col">
         <NewNavbar />
         <MobileNav present={2} />

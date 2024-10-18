@@ -1,16 +1,16 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import NewNavbar from "../navbar/new-navbar";
 import MobileNav from "../navbar/mobile-nav";
 import ContainerLayout from "../../layouts/ContainerLayout";
 import heroPic from "../../assets/png/mac.png";
 import Image from "next/image";
 const InnovationHero = () => {
-    useEffect(() => {
-      window?.scrollTo(0, 0);
-    }, []);
+  useEffect(() => {
+    window?.scrollTo(0, 0);
+  }, []);
   return (
-    <div className="grad-blog-bg w-full h-full">
-      <div className="w-full lg:h-screen lg:max-h-[908px] relative blog-hero-bg flex flex-col">
+    <div className="new-hero-bg w-full h-full">
+      <div className="w-full lg:h-screen lg:max-h-[908px] relative new-hero-bg flex flex-col">
         <NewNavbar />
         <MobileNav present={1} />
         <ContainerLayout>
@@ -32,7 +32,7 @@ const InnovationHero = () => {
                   Explore our carefully curated products
                 </p>
               </div>
-              <div className="w-full lg:w-6/12 justify-center flex items-center"> 
+              <div className="w-full lg:w-6/12 justify-center flex items-center">
                 <Image
                   src={heroPic}
                   alt="hero"
