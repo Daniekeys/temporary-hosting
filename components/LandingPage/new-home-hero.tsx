@@ -6,7 +6,7 @@ import Image from 'next/image';
 import trademark from "../../assets/svg/trade-mark.svg"
 import Link from 'next/link';
 import blueright from "../../assets/svg/blueright.svg";
-import HeroPhoto from "../../assets/png/new-hero-photo.png"
+import HeroPhoto from "../../assets/png/new-frame-hero.png"
 const NewHomeHero = () => {
   return (
     <div className="new-hero-bg w-full h-full flex flex-col min-h-screen">
@@ -14,7 +14,7 @@ const NewHomeHero = () => {
       <MobileNav present={1} />
       {/* content */}
       <ContainerLayout>
-        <div className="w-full flex flex-col mt-32 ">
+        <div className="w-full flex flex-col mt-52 ">
           <h1 className="font-serif md:inline-flex  hidden text-[48px] text-customBlack tracking-widest font-bold mx-auto">
             Insight Gathering Made{" "}
             <span className="text-mainBlue flex flex-col relative ml-3 ">
@@ -64,7 +64,7 @@ const NewHomeHero = () => {
               Book a demo
             </Link>
           </div>
-          <div className="w-full mt-20 lg:mt-24  hero-shadow">
+          <div className="w-full mt-20 lg:mt-40  hero-shado">
             <Image src={HeroPhoto} className="w-full" alt="hero" />
           </div>
         </div>
