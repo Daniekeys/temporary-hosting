@@ -8,7 +8,7 @@ import blueright from "../../assets/svg/blueright.svg";
 import Link from "next/link";
 const SecureHero = () => {
   return (
-    <div className=" w-full h-full project-hero-bg ">
+    <div className=" w-full h-full new-hero-bg ">
       <div className="w-full lg:h-screen h-[700px] lg:max-h-[908px] relative  flex flex-col">
         <NewNavbar />
         <MobileNav present={2} />

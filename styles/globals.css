@@ -57,13 +57,13 @@
     #fceaff 101.36%
   );
 }
-.new-hero-bg {
+/* .new-hero-bg {
   background: url("../assets/png/blog-hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-}
+} */
 
 .new-hero-bg {
   background: url("../assets/png/new-hero-bg-mode.png");
@@ -79,13 +79,13 @@
     0px -355px 99px 0px #61709e00;
 }
 
-.project-hero-bg {
+/* .new-hero-bg {
   background: url("../assets/png/project-bgs.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-}
+} */
 
 .sales-hero-bg {
   background: url("../assets/png/sales-option.png");

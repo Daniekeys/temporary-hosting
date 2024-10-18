@@ -6,10 +6,10 @@ import Image from "next/image";
 import MobileNav from "../navbar/mobile-nav";
 import Google from "../../assets/svg/g-play.svg";
 import Apple from "../../assets/svg/a-store.svg";
-import Link from "next/link"; 
+import Link from "next/link";
 const OfflineHero = () => {
   return (
-    <div className=" w-full h-full project-hero-bg ">
+    <div className=" w-full h-full new-hero-bg ">
       <div className="w-full lg:h-screen h-[700px] lg:max-h-[908px] relative  flex flex-col">
         <NewNavbar />
         <MobileNav present={2} />
@@ -20,7 +20,7 @@ const OfflineHero = () => {
                 <h1
                   className="text-mainBlue font-serif font-semibold text-[48px] 2xl:text-[64px] max-w-[600px] 2xl:leading-[96px]  "
                   data-aos="fade-down"
-                  data-aos-duration="1000"  
+                  data-aos-duration="1000"
                 >
                   OFFLINE DATA <br className="hidden lg:block" /> COLLECTION
                 </h1>
@@ -36,7 +36,7 @@ const OfflineHero = () => {
                     <Image
                       src={Google}
                       alt="goodle"
-                      className="w-auto h-auto" 
+                      className="w-auto h-auto"
                     />
                   </Link>
                   <Link href={"#"}>
