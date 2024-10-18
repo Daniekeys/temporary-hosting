@@ -64,7 +64,12 @@ const NewHomeHero = () => {
               Book a demo
             </Link>
           </div>
-          <div className="w-full mt-20 lg:mt-40  hero-shado">
+          <div
+            className="w-full mt-20 lg:mt-40  hero-shado"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1000"
+          >
             <Image src={HeroPhoto} className="w-full" alt="hero" />
           </div>
         </div>
