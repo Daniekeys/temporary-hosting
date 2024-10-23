@@ -1,4 +1,70 @@
 
+
+
+export const BackIcon = () => {
+  return (
+    <svg
+      width="44"
+      height="43"
+      viewBox="0 0 44 43"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g filter="url(#filter0_d_11066_8161)">
+        <rect
+          x="4"
+          width="35.2957"
+          height="35"
+          rx="17.5"
+          fill="#4747D6"
+          fill-opacity="0.05"
+          shape-rendering="crispEdges"
+        />
+        <path
+          d="M26.5708 16.7789H18.4737L22.0112 13.2414C22.2939 12.9586 22.2939 12.4947 22.0112 12.212C21.9441 12.1448 21.8645 12.0915 21.7768 12.0551C21.6891 12.0187 21.5951 12 21.5002 12C21.4052 12 21.3112 12.0187 21.2235 12.0551C21.1358 12.0915 21.0562 12.1448 20.9891 12.212L16.212 16.9891C16.1448 17.0562 16.0915 17.1358 16.0551 17.2235C16.0187 17.3112 16 17.4052 16 17.5002C16 17.5951 16.0187 17.6891 16.0551 17.7768C16.0915 17.8645 16.1448 17.9441 16.212 18.0112L20.9891 22.7883C21.0562 22.8554 21.1359 22.9087 21.2236 22.945C21.3113 22.9813 21.4052 23 21.5002 23C21.5951 23 21.689 22.9813 21.7767 22.945C21.8644 22.9087 21.9441 22.8554 22.0112 22.7883C22.0783 22.7212 22.1316 22.6415 22.1679 22.5538C22.2042 22.4662 22.2229 22.3722 22.2229 22.2773C22.2229 22.1823 22.2042 22.0884 22.1679 22.0007C22.1316 21.913 22.0783 21.8333 22.0112 21.7662L18.4737 18.2287H26.5708C26.9695 18.2287 27.2957 17.9025 27.2957 17.5038C27.2957 17.1051 26.9695 16.7789 26.5708 16.7789Z"
+          fill="#999999"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_d_11066_8161"
+          x="0"
+          y="0"
+          width="43.2969"
+          height="43"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset dy="4" />
+          <feGaussianBlur stdDeviation="2" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0.6 0 0 0 0 0.6 0 0 0 0 0.6 0 0 0 0.05 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_11066_8161"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_11066_8161"
+            result="shape"
+          />
+        </filter>
+      </defs>
+    </svg>
+  );
+}
 export const SuccessIcon = () => {
   return (
     <svg

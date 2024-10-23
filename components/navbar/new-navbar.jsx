@@ -8,12 +8,25 @@ import blog from "../../assets/png/blog-png.png";
 import cases from "../../assets/svg/cases.svg";
 import download from "../../assets/png/download-png.png";
 import Link from "next/link";
-import { ArrowDown, CancelIcon, SuccessIcon } from "../../assets/svg";
+import { ArrowDown, BackIcon, CancelIcon, SuccessIcon } from "../../assets/svg";
 import emuration from "../../assets/svg/emuration.svg";
 import reporting from "../../assets/svg/reporting.svg";
 import learning from "../../assets/svg/wecollect-learning.svg";
 import { IoIosArrowForward } from "react-icons/io";
 import axios from "axios";
+import SearchSelect from "../selects/search-select";
+const list = [
+  { name: "Brand visibility", id: 0 },
+  { name: "Supply chain monitoring & project management", id: 0 },
+  { name: "Inventory management", id: 0 },
+  { name: "On-shelf product monitoring", id: 0 },
+  { name: "Outlet enumeration", id: 0 },
+  { name: "Asset tracking & management", id: 0 },
+  { name: "Financial inclusion", id: 0 },
+  { name: "Product price monitoring project", id: 0 },
+  { name: "Population Enumeration", id: 0 },
+  { name: "Demography Analysis", id: 0 }, 
+];
 const NewNavbar = () => {
   const router = useRouter();
   const [isAboutUsDropdownOpen, setIsAboutUsDropdownOpen] = useState(false);
@@ -26,13 +39,16 @@ const NewNavbar = () => {
   const [loading, setLoading] = useState(false);
 
   const [email, setEmail] = useState("");
-  const [records, setRecords] = useState(0);
-  const [location, setLocation] = useState(0);
+  const [records, setRecords] = useState();
+  const [agents, setAgents] = useState();
+  const [location, setLocation] = useState();
   const [phone, setPhone] = useState("");
-  const [useCase, setUseCase] = useState("");
+  const [useCase, setUseCase] = useState({name:"", id:0});
   const [date, setDate] = useState("");
+
   const [description, setDescription] = useState("");
 
+  
   const handleSubmit = async () => {
     setLoading(true);
     const data = {
@@ -305,13 +321,13 @@ const NewNavbar = () => {
             <div className="w-full max-h-[500px] lg:max-h-[750px] flow-hide bg-white rounded-lg lg:rounded-[50px] lg:max-w-lg   py-8 flex flex-col relative ">
               <div className="quote-shadow absolute -top-[220px] left-0 z-0 "></div>
               {/* header session */}
-              <div className="w-full flex items-center justify-between   px-4 z-10  ">
+              <div className="w-full flex items-center justify-center relative  px-4 z-10  ">
                 <p></p>
                 <h1 className="text-2xl lg:text-3xl text-customBlack font-bold text-center font-serif">
                   GET A QUOTE
                 </h1>
                 <span
-                  className="cursor-pointer"
+                  className="cursor-pointer absolute right-6 top-0"
                   onClick={() => {
                     setOpen(false);
                     setCurrent(0);
@@ -322,7 +338,7 @@ const NewNavbar = () => {
               </div>
 
               {/* end of session */}
-              <p className="text-center text-[#555] text-[18px] bg-[#fff] h-[35px] px-2 py-1 mt-1 w-fit mx-auto rounded-[20px] z-10 font-sans">
+              <p className="text-center text-[#555] text-[18px]  h-[35px] px-2 py-1 mt-1 w-fit mx-auto  z-10 font-sans">
                 Personalized quote for your project ✨
               </p>
 
@@ -437,13 +453,22 @@ const NewNavbar = () => {
             <div className="w-full max-h-[500px] lg:max-h-[750px] flow-hide bg-white rounded-lg lg:rounded-[50px] lg:max-w-[800px] xl:max-w-[900px] lg:p-12 xl:p-16 px-4 py-8 flex flex-col relative ">
               <div className="quote-shadow absolute -top-[220px] left-0 z-0 "></div>
               {/* header session */}
-              <div className="w-full flex items-center justify-between z-10">
-                <p></p>
+              <div className="w-full flex items-center justify-center z-10 relative">
                 <h1 className="text-2xl lg:text-3xl text-customBlack font-bold font-serif">
                   GET A QUOTE
                 </h1>
                 <span
-                  className="cursor-pointer"
+                  className="cursor-pointer absolute left-4 top-0"
+                  onClick={() => {
+                    setOpen(true);
+                    setCurrent(0);
+                    setAgentPresent(0);
+                  }}
+                >
+                  <BackIcon />
+                </span>
+                <span
+                  className="cursor-pointer absolute right-4 top-0"
                   onClick={() => {
                     setOpen(false);
                     setCurrent(0);
@@ -455,27 +480,46 @@ const NewNavbar = () => {
               </div>
 
               {/* end of session */}
-              <p className="text-center z-10 text-[#555] text-[18px] bg-[#fff] h-[35px] px-2 py-1 mt-1 w-fit font-sans mx-auto rounded-[20px]">
+              <p className="text-center z-10 text-[#555] text-[18px]   px-2 py-1 mt-1 w-fit font-sans mx-auto rounded-[20px] ">
                 Personalized quote for your project ✨
               </p>
 
               <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-9 mt-11 z-10">
                 {/* start */}
-                <div className="flex flex-col">
-                  <label
-                    htmlFor=""
-                    className=" text-[#555] text-[14px]  font-sans  lg:text-[16px] mb-1"
-                  >
-                    Number of records
-                  </label>
-                  <input
-                    type="number"
-                    className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
-                    placeholder="e.g 10"
-                    value={records}
-                    onChange={(e) => setRecords(e.target.value)}
-                  />
-                </div>
+                {agentPresent === 1 && (
+                  <div className="flex flex-col">
+                    <label
+                      htmlFor=""
+                      className=" text-[#555] text-[14px]  font-sans  lg:text-[16px] mb-1"
+                    >
+                      Number of Records
+                    </label>
+                    <input
+                      type="number"
+                      className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
+                      placeholder="e.g 10"
+                      value={records}
+                      onChange={(e) => setRecords(e.target.value)}
+                    />
+                  </div>
+                )}
+                {agentPresent === 2 && (
+                  <div className="flex flex-col">
+                    <label
+                      htmlFor=""
+                      className=" text-[#555] text-[14px]  font-sans  lg:text-[16px] mb-1"
+                    >
+                      Number of Agents
+                    </label>
+                    <input
+                      type="number"
+                      className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
+                      placeholder="e.g 10"
+                      value={agents}
+                      onChange={(e) => setAgents(e.target.value)}
+                    />
+                  </div>
+                )}
                 {/* end */}
                 {/* start */}
                 <div className="flex flex-col">
@@ -483,7 +527,7 @@ const NewNavbar = () => {
                     htmlFor=""
                     className=" text-[#555] font-sans  text-[14px] lg:text-[16px] mb-1"
                   >
-                    Number of locations
+                    Number of Locations
                   </label>
                   <input
                     type="number"
@@ -496,21 +540,41 @@ const NewNavbar = () => {
                 {/* end */}
 
                 {/* start */}
-                <div className="flex flex-col">
-                  <label
-                    htmlFor=""
-                    className=" text-[#555] font-sans  text-[14px] lg:text-[16px] mb-1"
-                  >
-                    Project Description
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 font-sans  outline-none h-[50px] rounded-[50px] px-4 "
-                    placeholder="enter description "
-                    value={description}
-                    onChange={(e) => setDescription(e.target.value)}
-                  />
-                </div>
+                {agentPresent === 1 && (
+                  <div className="flex flex-col">
+                    <label
+                      htmlFor=""
+                      className=" text-[#555] font-sans  text-[14px] lg:text-[16px] mb-1"
+                    >
+                      Project Description
+                    </label>
+                    <textarea
+                      type="text"
+                      className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 font-sans  outline-none  rounded-md px-4 pt-3 min-h-[100px] "
+                      placeholder="type description ... "
+                      value={description}
+                      onChange={(e) => setDescription(e.target.value)}
+                    />
+                  </div>
+                )}
+                {agentPresent === 2 && (
+                  <div className="flex flex-col">
+                    <label
+                      htmlFor=""
+                      className=" text-[#555] font-sans  text-[14px] lg:text-[16px] mb-1"
+                    >
+                      Project Start Date
+                    </label>
+                    <input
+                      type="date"
+                      className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 font-sans "
+                      placeholder="select date"
+                      value={date}
+                      onChange={(e) => setDate(e.target.value)}
+                    />
+                  </div>
+                )}
+
                 {/* end */}
                 {/* start */}
                 <div className="flex flex-col">
@@ -518,14 +582,19 @@ const NewNavbar = () => {
                     htmlFor=""
                     className=" text-[#555] font-sans  text-[14px] lg:text-[16px] mb-1"
                   >
-                    Use cases
+                    Use Cases
                   </label>
-                  <input
+                  {/* <input
                     type="text"
                     className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 outline-none h-[50px] rounded-[50px] px-4 "
                     placeholder="Enter a use case"
                     value={useCase}
                     onChange={(e) => setUseCase(e.target.value)}
+                  /> */}
+                  <SearchSelect
+                    selected={useCase}
+                    setSelected={setUseCase}
+                    options={list}
                   />
                 </div>
                 {/* end */}
@@ -573,15 +642,14 @@ const NewNavbar = () => {
                     {loading ? "Loading..." : "Request Quote"}
                   </button>
                   <p className="text-left  font-sans  text-[#9999FF] mt-3 font-medium text-xs">
-                    You are agreeing to be contacted when you request a quote
-                    from us
+                   By requesting a quote you are agreeing to our terms and conditions
                   </p>
                 </div>
                 {/* end */}
                 {/* start */}
                 <div className="flex flex-col">
                   <div className=" text-customBlack  font-sans  mt-3 font-medium text-[14px] ">
-                    Don’t have account with Us yet?
+                    Don’t have account with us yet?
                     <Link
                       href={"/home"}
                       className="text-mainBlue font-sans  font-semibold cursor-pointer ml-1"
