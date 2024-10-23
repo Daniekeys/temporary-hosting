@@ -127,7 +127,9 @@ const NewNavbar = () => {
                 href="/contact-us"
                 className="rounded-[50px] gap-2 h-[50px] hover:bg-[#E3D5FF] flex items-center px-4 text-ash hover:text-mainBlue"
               >
-                <p className=" lg:text-[16px] font-semibold ">Contact Us</p>
+                <p className=" text-[14px] 2xl:text-[16px] font-semibold ">
+                  Contact Us
+                </p>
               </Link>
             </div>
             <div className="flex items-center gap-6">

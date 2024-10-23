@@ -70,7 +70,7 @@ const NewHomeHero = () => {
             data-aos-duration="1000"
             data-aos-delay="1000"
           >
-            <Image src={HeroPhoto} className="w-full" alt="hero" />
+            <Image src={HeroPhoto} className="w-full md:w-10/12 mx-auto " alt="hero" />
           </div>
         </div>
       </ContainerLayout>

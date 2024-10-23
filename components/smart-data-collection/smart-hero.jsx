@@ -25,7 +25,7 @@ const SmartDataHero = () => {
                   SMART DATA <br className="hidden lg:block" /> COLLECTION APP
                 </h1>
                 <p
-                  className="text-customBlack font-medium md:text-2xl 2xl:text-[32px] text-[18px] leading-[39px] 2xl:leading-[48px] max-w-[500px] font-sans"
+                  className="text-customBlack font-medium md:text-[18px] 2xl:text-[32px] text-[18px] leading-[39px] 2xl:leading-[48px] max-w-[500px] font-sans"
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >
