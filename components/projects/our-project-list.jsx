@@ -2,7 +2,7 @@ import React from "react";
 import ContainerLayout from "../../layouts/ContainerLayout";
 import { SpecialArrow } from "../../assets/svg";
 
-import fpmp from "../../assets/png/fpmp-small.png";
+import fpmp from "../../assets/png/fpmp-new.png";
 import kaduna from "../../assets/png/kaduna.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -41,9 +41,10 @@ const OurProjectList = () => {
                       Food Price Monitoring Project In Nigeria
                     </h1>
                   </div>
-                  <p className="text-[14px] text-[#555] font-sans mt-5 font-medium leading-[36px] 2xl:text-[16px] xl:max-w-[300px]  ">
+                  <p className="text-[14px] text-[#555] font-sans mt-5 font-medium leading-[36px] lg:text-[16px] xl:max-w-[300px]  ">
                     Tracking the availability of food in Nigeria using a data
-                    driven price model in line with the UN SD4
+                    driven price model
+                    {/* in line with the UN SD4 */}
                   </p>
                   <button className="bg-mainBlue rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-[16px]  cursor-pointer font-sans lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
                     Learn more
@@ -66,9 +67,10 @@ const OurProjectList = () => {
                       Kaduna Electric Project
                     </h1>
                   </div>
-                  <p className="text-[14px] text-[#555] mt-5 font-sans font-medium leading-[36px] 2xl:text-[16px] xl:max-w-[400px] ">
+                  <p className="text-[14px] lg:text-[16px] text-[#555] mt-5 font-sans font-medium leading-[36px] 2xl:text-[16px] xl:max-w-[400px] ">
                     WeCollect played a crucial role in helping Kaduna Electric
-                    efficiently collect and organize data on their assets...
+                    efficiently collect and organize data
+                    {/* on their assets... */}
                   </p>
                   <button className="bg-mainBlue font-sans rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-[16px]  cursor-pointer lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold ">
                     Learn more
@@ -91,9 +93,10 @@ const OurProjectList = () => {
                       TechPoint Project
                     </h1>
                   </div>
-                  <p className="text-[14px] text-[#555] mt-5 font-sans font-medium leading-[36px] 2xl:text-[16px] xl:max-w-[400px] ">
+                  <p className="text-[14px] text-[#555] mt-5 font-sans font-medium leading-[36px] lg:text-[16px] xl:max-w-[400px] ">
                     WeCollect played a crucial role in helping Techpoint
-                    efficiently collect and organize data on their project...
+                    efficiently collect and organize data
+                    {/* on their project... */}
                   </p>
                   <button className="bg-mainBlue rounded-[50px] mt-5 h-[50px] px-5 flex items-center justify-center text-white text-[16px]  cursor-pointer lg:min-w-[197px] max-w-fit hover:bg-[#E3D5FF] hover:text-mainBlue font-semibold font-sans ">
                     Learn more
