@@ -18,61 +18,61 @@ const data = [
     title: "BRAND VISIBILITY",
     pic: a1,
     story:
-      "WeCollect enhances brand visibility by leveraging a network of field agents equipped with a dynamic mobile application. These agents conduct on-the-ground assessments, capturing real-time data on brand presence, product displays, and competitor activities. The app's geotagging feature ensures accurate location data, providing businesses with actionable insights to optimize their brand visibility strategies and outshine the competition.",
+      "WeCollect enhances brand visibility by leveraging a network of field agents equipped with a dynamic mobile application. These agents conduct on-the-ground assessments, capturing real-time data on brand presence... ",
   },
   {
     title: "SUPPLY CHAIN MONITORING AND Project Management",
     pic: a2,
     story:
-      "For supply chain monitoring, WeCollect transforms the logistics landscape by enabling real-time tracking of goods and activities throughout the supply chain. Field agents utilize the mobile app to record crucial data points, ensuring visibility from warehouse to delivery. Automated Project Management and analytics streamline the monitoring process, allowing businesses to identify bottlenecks, improve efficiency, and make informed decisions for a seamless and optimized supply chain.",
+      "For supply chain monitoring, WeCollect transforms the logistics landscape by enabling real-time tracking of goods and activities throughout the supply chain. Field agents utilize the mobile app to record crucial data points...",
   },
   {
     title: "INVENTORY MANAGEMENT",
     pic: a3,
     story:
-      "WeCollect revolutionizes inventory management by empowering field agents to digitally track and manage inventory levels using customizable forms within the mobile application. From stock levels to product conditions, agents provide real-time updates, preventing stockouts and minimizing wastage. This dynamic inventory management system enhances accuracy, reduces manual errors, and ensures businesses maintain optimal stock levels to meet customer demands.",
+      "WeCollect revolutionizes inventory management by empowering field agents to digitally track and manage inventory levels using customizable forms within the mobile application. From stock levels to product...",
   },
   {
     title: "ONSHELF PRODUCT MONITORING",
     pic: a4,
     story:
-      "With WeCollect, onshelf product monitoring becomes a breeze. Field agents equipped with the mobile app systematically capture data on product availability, pricing, and shelf placements. This real-time information enables businesses to make swift adjustments to merchandising strategies, ensuring that products are prominently displayed and readily available to meet consumer demands.",
+      "With WeCollect, onshelf product monitoring becomes a breeze. Field agents equipped with the mobile app systematically capture data on product availability, pricing, and shelf placements. This real-time information..",
   },
   {
     title: "OUTLET ENUMERATION",
     pic: a5,
     story:
-      "WeCollect simplifies outlet enumeration by deploying field agents equipped with the mobile application to systematically catalog and geo-tag existing outlets. This comprehensive data provides businesses with a clear understanding of market coverage, allowing for strategic expansion, targeted marketing efforts, and improved distribution planning.",
+      "WeCollect simplifies outlet enumeration by deploying field agents equipped with the mobile application to systematically catalog and geo-tag existing outlets. This comprehensive data provides businesses with a clear...",
   },
   {
     title: "ASSET TRACKING AND MANAGEMENT",
     pic: a6,
     story:
-      "WeCollect transforms asset tracking and management by enabling field agents to monitor assets in real time using the mobile application. From equipment to vehicles, agents record essential data points, facilitating proactive maintenance and minimizing downtime. This innovative approach ensures businesses maintain control and visibility over their assets, optimizing operational efficiency.",
+      "WeCollect transforms asset tracking and management by enabling field agents to monitor assets in real time using the mobile application. From equipment to vehicles, agents record essential data points, facilitating proactive...",
   },
   {
     title: "FINANCIAL INCLUSION TRAINING",
     pic: a7,
     story:
-      "In a financial inclusion project, WeCollect empowers field agents to gather essential data for assessing the needs and preferences of underserved communities. The mobile app facilitates community engagement, allowing residents to provide insights that inform the development of tailored financial inclusion initiatives. WeCollect ensures accurate data collection, promoting inclusivity and enabling businesses to design impactful financial services.",
+      "In a financial inclusion project, WeCollect empowers field agents to gather essential data for assessing the needs and preferences of underserved communities. The mobile app facilitates...",
   },
   {
     title: "PRODUCT PRICE MONITORING PROJECT",
     pic: a8,
     story:
-      "WeCollect revolutionizes product price monitoring by deploying field agents to collect real-time data on product prices, promotions, and competitor pricing strategies. The mobile app streamlines data collection and ensures accuracy, allowing businesses to stay agile in pricing strategies, respond to market dynamics, and maintain a competitive edge.",
+      "WeCollect revolutionizes product price monitoring by deploying field agents to collect real-time data on product prices, promotions, and competitor pricing strategies. The mobile app streamlines data collection ...",
   },
   {
     title: "POPULATION ENUMERATION",
     pic: a9,
     story:
-      "For population enumeration projects, WeCollect utilizes its mobile application to enable field agents to conduct a systematic count of individuals within specific areas. The app's offline data collection feature ensures accuracy, even in remote locations. This approach facilitates comprehensive population enumeration, supporting data-driven decision-making for public policy, resource allocation, and community development initiatives.",
+      "For population enumeration projects, WeCollect utilizes its mobile application to enable field agents to conduct a systematic count of individuals within specific areas. The app's offline data collection feature ensures accuracy..",
   },
   {
     title: "DEMOGRAPHY ANALYSIS",
     pic: a10,
     story:
-      "WeCollect facilitates demography analysis by empowering field agents to collect detailed demographic data using customizable forms within the mobile application. This rich dataset enables businesses and policymakers to conduct in-depth demographic analyses, understand population trends, and tailor strategies that align with the unique characteristics of specific regions or communities.",
+      "WeCollect facilitates demography analysis by empowering field agents to collect detailed demographic data using customizable forms within the mobile application. This rich dataset enables businesses...",
   },
 ];
 
@@ -108,10 +108,10 @@ const AppCaseList = () => {
                         className="2xl:w-[60px] lg:w-[50px] w-[40px] h-[40px] lg:h-[50px] 2xl:h-[60px] rounded-full"
                       />
                     </span>
-                    <h1 className=" text-customBlack text-xl font-semibold leading-[48px] 2xl:text-2xl lg:text-xl uppercase max-h-[120px] font-serif ">
+                    <h1 className=" text-customBlack text-[20px] font-semibold leading-[35px] 2xl:text-[24px] lg:text-[20px] lg:leading-[35px] 2xl:leading-[42px] uppercase max-h-[120px] min-h-[100px]  flex items-center font-serif ">
                       {item.title}
                     </h1>
-                    <p className="text-[14px] 2xl:text-[16px] lg:text-[14px] text-ash font-medium leading-[35px]  w-full h-full max-h-[300px] overflow-y-hidden font-sans   ">
+                    <p className="text-[14px] 2xl:text-[16px] lg:text-[16px] text-ash font-medium leading-[35px]  w-full h-full max-h-[300px] overflow-y-hidden font-sans   ">
                       {item.story}
                     </p>
                     <span className="mt-4 ">
