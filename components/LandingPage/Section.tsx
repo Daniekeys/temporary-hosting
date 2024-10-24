@@ -82,12 +82,12 @@ const Section = () => {
     <ContainerLayout>
       <div
         id="features"
-        className="w-full h-auto mt-0 lg:pt-[98px] flex flex-col md:flex-row justify-between items-center overflow-x-hidden flow-hide  "
+        className="w-full h-auto mt-0 md:pt-12 2xl:pt-[98px] flex flex-col md:flex-row justify-between items-center overflow-x-hidden flow-hide  "
         // data-aos="fade-up"
         // data-aos-duration="1000"
       >
         <div className="w-full h-auto flex flex-col md:flex-row justify-between items-center relative">
-          <div className="w-full h-auto mt-8 md:mt-0 px-4 lg:px-0">
+          <div className="w-full  h-auto mt-8 md:mt-0 px-4 lg:px-0">
             {steps.map((step, index) => (
               <Step
                 key={index}
@@ -132,7 +132,7 @@ const Section = () => {
               alt=""
               className={` ${
                 selectedStepIndex === 1
-                  ? "w-9/12 mx-auto  md:hidden h-auto "
+                  ? "w-9/12 md:w-11/12 2xl:w-9/12 mx-auto  md:hidden h-auto "
                   : "w-9/12 mx-auto md:hidden flex h-auto"
               }`}
             />

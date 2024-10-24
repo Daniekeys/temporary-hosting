@@ -34,7 +34,7 @@ function Control() {
   return (
     <div className="w-full" data-aos="fade-up" data-aos-duration="1000">
       <ContainerLayout>
-        <p className="text-customBlack text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold text-center mt-[60px] lg:mt-[119px] font-serif">
+        <p className="text-customBlack text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold text-center mt-[60px] 2xl:mt-[119px] font-serif">
           POWER OF DATA IN YOUR HANDS
         </p>
 

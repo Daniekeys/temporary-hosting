@@ -9,7 +9,7 @@ import Link from "next/link";
 const Faq = () => {
   return (
     <div
-      className="w-full bg-[#fff] h-auto py-[100px] mt-12 flow-hide"
+      className="w-full bg-[#fff] h-auto -mb-16 pt-10 2xl:py-[100px] mt-12 flow-hide"
       id="faq"
       // data-aos="fade-up"
       // data-aos-duration="1000"

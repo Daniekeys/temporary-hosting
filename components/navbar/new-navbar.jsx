@@ -260,7 +260,7 @@ const NewNavbar = () => {
 
           {isProductDropdownOpen && (
             <div
-              className="w-[35rem] product-shadow  bg-[#F9F6FF] absolute right-0 2xl:left-0 mx-auto p-2 rounded-b-[30px]"
+              className="w-[35rem] product-shadow  bg-[#F9F6FF] absolute right-0 left-0 mx-auto p-2 rounded-b-[30px]"
               onMouseLeave={() => {
                 setIsProductDropdownOpen(!isProductDropdownOpen);
                 setIsAboutUsDropdownOpen(false);

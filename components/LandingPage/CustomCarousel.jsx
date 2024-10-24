@@ -116,13 +116,13 @@ const CustomCarousel = () => {
 
   return (
     <div
-      className="w-full -mt-40 lg:mt-0 "
+      className="w-full   "
       data-aos="fade-up"
       data-aos-duration="1000"
     >
       <ContainerLayout>
         <p
-          className="text-[#333333] text-xl leading-[30px] lg:text-2xl 2xl:text-[36px] font-semibold text-center   lg:mt-40 font-serif"
+          className="text-[#333333] text-xl leading-[30px] lg:text-2xl 2xl:text-[36px] font-semibold text-center mt-40  lg:mt-20 font-serif"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >

@@ -10,7 +10,7 @@ function How() {
         // data-aos-duration="1000"
       >
         <p
-          className="text-customBlack font-serif text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold mt-44 text-center"
+          className="text-customBlack font-serif text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold mt-20 2xl:mt-32 text-center"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
