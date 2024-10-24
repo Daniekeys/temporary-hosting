@@ -59,6 +59,8 @@ const NewNavbar = () => {
       phone: phone, // Client's phone number
       useCase: useCase, // Specific use case for the data
       personalAgent: agentPresent === 2 ? true : false,
+      noOfAgents: agents,
+      startDate:date
     };
          try {
            const response = await axios.post(

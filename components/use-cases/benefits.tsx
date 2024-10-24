@@ -29,7 +29,7 @@ function Benefits({ benefits }: { benefits: any }) {
 
       <ContainerLayout>
         <p
-          className="text-ash text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold  mt-16 lg:mt-12 text-center uppercase 2xl:leading-[35px] font-serif"
+          className="text-ash text-[20px] lg:text-2xl 2xl:text-[32px] font-semibold  mt-0 lg:mt-0 text-center uppercase 2xl:leading-[35px] font-serif"
           // data-aos="fade-up"
           // data-aos-duration="1000"
         >
@@ -44,7 +44,7 @@ function Benefits({ benefits }: { benefits: any }) {
           {benefits?.subtitle}
         </p>
 
-        <div className="bg-[#F9F6FF] container-border w-full h-auto rounded-[50px] p-5 lg:p-[30px] mt-5 lg:mt-20  relative flow-hide ">
+        <div className="bg-[#F9F6FF] container-border w-full h-auto rounded-[50px] p-5 lg:p-[30px] mt-5 lg:mt-12  relative flow-hide ">
           <div className="w-full h-auto grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-10 justify-between items-center ">
             {benefits?.items?.map((single: any) => {
               return (

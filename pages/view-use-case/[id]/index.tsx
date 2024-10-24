@@ -33,8 +33,11 @@ const ViewUseCase = () => {
       <UseHow howInfo={item?.howInfo} />
       <Benefits benefits={item?.benefits} />
       <DataJourney />
-      <div className="mb-32 w-full h-32 lg:hidden flex"></div>
+      <div className=" lg:mb-0 w-full  lg:h-0 lg:hidden flex"></div>
+      <div className="w-full mt-[-80px]">
+
       <CustomCarousel />
+      </div>
       <RequestDemo />
       <NewFooter />
     </div>

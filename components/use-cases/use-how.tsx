@@ -21,7 +21,7 @@ function UseHow({howInfo} : {howInfo:any}) {
           // data-aos-duration="1000"
         >
           <p
-            className="text-customBlack text-[20px] lg:text-2xl 2xl:text-[32px] font-serif font-semibold mt-44 text-center"
+            className="text-customBlack text-[20px] lg:text-2xl 2xl:text-[32px] font-serif font-semibold mt-20 text-center"
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >
@@ -29,13 +29,13 @@ function UseHow({howInfo} : {howInfo:any}) {
           </p>
 
           <p
-            className="text-[#555555] text-[14px] 2xl:text-[18px] font-sans font-medium mt-[10px] text-center leading-[36px]"
+            className="text-[#555555] text-[14px] 2xl:text-[18px] font-sans font-medium mt-[10px] md:text-center leading-[36px]"
             // data-aos="fade-up"
             // data-aos-duration="1000"
           >
             {howInfo?.subtitle}
           </p>
-          <div className="w-full h-auto flex flex-col md:flex-row items-center mt-8 justify-center  lg:gap-6 mb-8 pb-32">
+          <div className="w-full h-auto flex flex-col md:flex-row md:items-center mt-8 md:justify-center  lg:gap-6 mb-8 pb-20">
             <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px]  cursor-pointer font-semibold hero-btn font-sans ">
               Get started for free
             </div>

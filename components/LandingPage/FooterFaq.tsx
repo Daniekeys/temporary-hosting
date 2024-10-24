@@ -31,7 +31,7 @@ const SingleActivities = ({ item }: any) => {
       >
         <p
           className="text-[14px] font-bold cursor-pointer
-        text-[#555555] "
+        text-[#555555] font-sans "
         >
           {title}
         </p>
@@ -48,32 +48,32 @@ const SingleActivities = ({ item }: any) => {
         <div className="text-[#555555] text-[14px] font-medium  flex flex-col gap-[30px] mt-4">
           <p
             onClick={() => router.push(list1?.url)}
-            className="mt-4 hover:bg-mainBlue w-fit hover:text-white text-[14px] text-ash hover:py-2 hover:px-4 hover:rounded-md"
+            className="mt-4 hover:bg-mainBlue w-fit hover:text-white text-[14px] text-ash hover:py-2 hover:px-4 hover:rounded-md font-sans"
           >
             {list1?.name}
           </p>
           <p
             onClick={() => router.push(list2?.url)}
-            className="mt-3 hover:bg-mainBlue w-fit hover:text-white text-[14px] text-ash hover:py-2 hover:px-4 hover:rounded-md"
+            className="mt-3 hover:bg-mainBlue w-fit hover:text-white text-[14px] text-ash hover:py-2 hover:px-4 hover:rounded-md font-sans"
           >
             {list2?.name}
           </p>
           <p
             onClick={() => router.push(list3?.url)}
-            className="mt-3 hover:bg-mainBlue w-fit hover:text-white text-[14px] text-ash hover:py-2 hover:px-4 hover:rounded-md"
+            className="mt-3 hover:bg-mainBlue w-fit hover:text-white text-[14px] text-ash hover:py-2 hover:px-4 hover:rounded-md font-sans"
           >
             {list3?.name}
           </p>
           <p
             onClick={() => router.push(list4?.url)}
-            className="mt-3 hover:bg-mainBlue w-fit hover:text-white text-[14px] text-ash hover:py-2 hover:px-4 hover:rounded-md"
+            className="mt-3 hover:bg-mainBlue w-fit hover:text-white text-[14px] text-ash hover:py-2 hover:px-4 hover:rounded-md font-sans"
           >
             {list4?.name}
           </p>
 
           <p
             onClick={() => router.push(list5?.url)}
-            className="mt-3 hover:bg-mainBlue w-fit hover:text-white text-[14px] text-ash hover:py-2 hover:px-4 hover:rounded-md"
+            className="mt-3 hover:bg-mainBlue w-fit hover:text-white text-[14px] text-ash hover:py-2 hover:px-4 hover:rounded-md font-sans"
           >
             {list5?.name}
           </p>
