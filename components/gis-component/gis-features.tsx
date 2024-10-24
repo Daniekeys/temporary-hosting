@@ -52,17 +52,20 @@ function GisFeatures() {
               // data-aos-duration="1000"
               // data-aos-delay="600"
             >
+              <div className="min-h-[309px]">
+
               <Image
                 src={gpss}
                 alt="gpss"
-                className="w-full h-auto max-h-[309px]  "
-              />
+                className="w-full h-auto max-h-[309px]   "
+                />
+                </div>
 
               <p className="text-[#333333] w-full lg:text-2xl 2xl:text-2xl text-xl font-semibold mt-7   px-4 lg:px-7 md:leading-[48px] 2xl:leading-[50px] font-serif">
                 Zoomable Map
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7 pb-7 px-4 lg:px-7 font-sans ">
+              <p className="text-[#555555] 2xl:text-[16px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-5 pb-7 px-4 lg:px-7 font-sans ">
                 Zoomable maps in WeCollect allow users to interactively explore
                 geographic data at varying levels of detail. Users can zoom in
                 for specific insights or zoom out for a broader overview,
@@ -77,17 +80,20 @@ function GisFeatures() {
               // data-aos-duration="1000"
               // data-aos-delay="600"
             >
+              <div className="min-h-[309px]">
+                
               <Image
                 src={wifi}
                 alt="wifi"
                 className="w-full h-auto max-h-[309px] "
-              />
+                />
+                </div>
 
               <p className="text-[#333333]  lg:text-2xl  text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]  px-4 lg:px-7 font-serif ">
                 Location-Based Insights
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4 font-sans">
+              <p className="text-[#555555] 2xl:text-[16px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4 font-sans">
                 Location-based insights from WeCollect provide businesses with
                 valuable data about their target markets, helping them
                 understand consumer behavior, regional trends, and competitive
@@ -101,18 +107,21 @@ function GisFeatures() {
               // data-aos-duration="1000"
               // data-aos-delay="600"
             >
+              <div className="min-h-[309px]">
+                
               <Image
                 src={securecase}
                 alt="securecase"
                 className="w-full h-auto max-h-[309px] object-cover "
-              />
+                />
+                </div>
 
               <p className="text-[#333333] lg:text-2xl text-xl font-semibold mt-6 md:leading-[48px] 2xl:leading-[50px] px-4 lg:px-7 font-serif">
                 Easy Data Modification
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4 font-sans">
-                easy data modification feature allows users to effortlessly
+              <p className="text-[#555555] 2xl:text-[16px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4 font-sans">
+                Easy data modification feature allows users to effortlessly
                 update, edit, or delete collected data in real time. This
                 ensures that information remains accurate and relevant, enabling
                 businesses to respond quickly to changing circumstances.

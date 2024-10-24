@@ -9,12 +9,12 @@ import blueright from "../../assets/svg/blueright.svg";
 import HeroPhoto from "../../assets/png/new-frame-hero.png"
 const NewHomeHero = () => {
   return (
-    <div className="new-hero-bg w-full h-full flex flex-col min-h-screen">
+    <div className="new-hero-bg w-full h-full flex flex-col min-h-screen flow-hide">
       <NewNavbar />
       <MobileNav present={1} />
       {/* content */}
       <ContainerLayout>
-        <div className="w-full flex flex-col mt-32 lg:mt-52 ">
+        <div className="w-full flex flex-col mt-32 lg:mt-52 flow-hide ">
           <h1 className="font-serif md:inline-flex  hidden text-[48px] text-customBlack tracking-widest font-bold mx-auto">
             Insight Gathering Made{" "}
             <span className="text-mainBlue flex flex-col relative ml-3 ">

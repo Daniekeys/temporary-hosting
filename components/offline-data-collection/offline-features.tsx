@@ -12,7 +12,7 @@ import blueright from "../../assets/svg/blueright.svg";
 function OfflineFeatures() {
   return (
     <div
-      className="w-full relative overflow-x-hidden overflow-y-hidden mt-12 "
+      className="w-full relative overflow-x-hidden overflow-y-hidden mt-10 "
       data-aos="fade-up"
       data-aos-duration="1000"
     >
@@ -52,7 +52,7 @@ function OfflineFeatures() {
               // data-aos-duration="1000"
               // data-aos-delay="600"
             >
-              <div className="feat-img-shadow flex justify-center pt-8 rounded-t-[30px]">
+              <div className="feat-img-shadow flex justify-center pt-8 rounded-t-[30px] min-h-[309px]">
                 <Image
                   src={gpss}
                   alt="gpss"
@@ -64,7 +64,7 @@ function OfflineFeatures() {
                 Offline Data Collection
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[36px] text-[14px] font-medium mt-7 pb-7 px-4 lg:px-7 font-sans">
+              <p className="text-[#555555] 2xl:text-[16px] lg:text-[16px] leading-[36px] text-[14px] font-medium mt-5 pb-7 px-4 lg:px-7 font-sans">
                 Collect and store data in remote areas without internet access.
                 Sync it automatically when you’re back online.
               </p>
@@ -76,7 +76,7 @@ function OfflineFeatures() {
               // data-aos-duration="1000"
               // data-aos-delay="600"
             >
-              <div className="feat-img-shadow flex justify-center pt-8 rounded-t-[30px]">
+              <div className="feat-img-shadow flex justify-center pt-8 rounded-t-[30px] min-h-[309px]">
                 <Image
                   src={wifi}
                   alt="wifi"
@@ -88,7 +88,7 @@ function OfflineFeatures() {
                 No Data Loss
               </p>
 
-              <p className="text-[#555555] font-sans 2xl:text-[18px] lg:text-[16px] leading-[36px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4 ">
+              <p className="text-[#555555] font-sans 2xl:text-[16px] lg:text-[16px] leading-[36px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4 ">
                 Data is stored on your mobile device until you have internet
                 access.
               </p>
@@ -100,7 +100,7 @@ function OfflineFeatures() {
               // data-aos-duration="1000"
               // data-aos-delay="600"
             >
-              <div className="feat-img-shadow flex justify-center pt-8 rounded-t-[30px]">
+              <div className="feat-img-shadow flex justify-center pt-8 rounded-t-[30px] min-h-[309px]">
                 <Image
                   src={securecase}
                   alt="securecase"
@@ -112,7 +112,7 @@ function OfflineFeatures() {
                 Upload Data Anytime
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[36px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4 font-sans">
+              <p className="text-[#555555] 2xl:text-[16px] lg:text-[16px] leading-[36px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4 font-sans">
                 Collect multiple records and upload whenever you like. Lorem
                 ipsum dolor sit amet consectetur. Mi odio venenatis
               </p>

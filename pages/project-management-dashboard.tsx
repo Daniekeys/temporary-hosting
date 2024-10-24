@@ -19,7 +19,7 @@ const ProjectDashboard = () => {
       <ProjectManagementHero />
       <ProjectManagementFeatures />
       {/* <OtherProject /> */}
-      <div className="w-full mt-[200px] lg:mt-0">
+      <div className="w-full mt-[200px] lg:mt-[-120px]">
         <CustomCarousel />
       </div>
       <RequestDemo />

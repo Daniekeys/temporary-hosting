@@ -52,13 +52,13 @@ function SmartFeatures() {
               // data-aos-duration="1000"
               // data-aos-delay="600"
             >
-              <Image src={gpss} alt="gpss" className="w-full h-auto -mt-16" />
+              <Image src={gpss} alt="gpss" className="w-full h-auto -mt-16 " />
 
               <p className="text-[#333333] w-full lg:text-2xl 2xl:text-2xl text-xl font-semibold mt-7   px-4 lg:px-7 md:leading-[48px] 2xl:leading-[50px]  font-serif ">
                 Real-Time Data Syncing
               </p>
 
-              <p className="text-[#555555] font-sans 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7 pb-7 px-4 lg:px-7">
+              <p className="text-[#555555] font-sans 2xl:text-[16px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-5 pb-7 px-4 lg:px-7">
                 Real-time data collection allows businesses to gather and access
                 up-to-the-minute information instantly, enabling faster
                 decision-making. With WeCollect, data is captured and

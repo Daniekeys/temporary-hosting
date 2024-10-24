@@ -43,7 +43,7 @@ function SecureFeatures() {
         <div className="bg-[#F9F6FF] container-border w-full h-auto rounded-[50px] p-5 lg:p-[30px] mt-5 lg:mt-20  relative flow-hide ">
           <div className="w-full h-auto grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-10 justify-between items-center ">
             <div className="boxlee w-full h-fit lg:h-full  rounded-[30px]   cursor-default">
-              <div className="feat-img-shadow flex justify-center pt-8 rounded-t-[30px]">
+              <div className="feat-img-shadow flex justify-center pt-8 rounded-t-[30px] min-h-[309px]">
                 <Image
                   src={gpss}
                   alt="gpss"
@@ -51,18 +51,18 @@ function SecureFeatures() {
                 />
               </div>
 
-              <p className="text-[#333333] w-full lg:text-2xl 2xl:text-2xl text-xl font-semibold mt-7   px-4 lg:px-7 md:leading-[48px] 2xl:leading-[50px] font-serif">
+              <p className="text-[#333333] w-full lg:text-2xl 2xl:text-2xl text-xl font-semibold mt-5   px-4 lg:px-7 md:leading-[48px] 2xl:leading-[50px] font-serif">
                 Regular Backup
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7 pb-7 px-4 lg:px-7 font-sans ">
+              <p className="text-[#555555] 2xl:text-[16px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7 pb-7 px-4 lg:px-7 font-sans ">
                 Secure, scalable cloud storage ensures your data is safe, backed
                 up, and accessible anytime
               </p>
             </div>
 
             <div className="boxlee w-full  h-fit lg:h-full rounded-[30px]    md:my-0  cursor-default">
-              <div className="feat-img-shadow flex justify-end pt-8 rounded-t-[30px]">
+              <div className="feat-img-shadow flex justify-end pt-8 rounded-t-[30px] min-h-[309px]">
                 <Image
                   src={wifi}
                   alt="wifi"
@@ -74,7 +74,7 @@ function SecureFeatures() {
                 Project Access Control
               </p>
 
-              <p className="text-[#555555] 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4 font-sans">
+              <p className="text-[#555555] 2xl:text-[16px] lg:text-[16px] leading-[35px] text-[14px] font-medium pb-7 px-4 lg:px-7 mt-4 font-sans">
                 Project Access Control in WeCollect ensures that only authorized
                 users can access specific project data and features, enhancing
                 data security
@@ -87,7 +87,7 @@ function SecureFeatures() {
               // data-aos-duration="1000"
               // data-aos-delay="600"
             >
-              <div className="feat-img-shadow flex justify-center pt-8 rounded-t-[30px]">
+              <div className="feat-img-shadow flex justify-center pt-8 rounded-t-[30px] min-h-[309px]">
                 <Image
                   src={securecase}
                   alt="securecase"
