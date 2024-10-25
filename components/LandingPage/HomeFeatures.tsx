@@ -59,7 +59,7 @@ function HomeFeatures() {
               <Image src={data} alt="data" className="w-[80px] h-[80px]" />
 
               <p className="text-[#333333] 2xl:text-[30px] lg:text-2xl text-xl  font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px] font-serif">
-                SMART DATA <br /> COLLECTION APP
+                SMART DATA <br /> COLLECTION APPLICATION
               </p>
 
               <p className="text-[#555555] font-sans 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7">
@@ -105,7 +105,7 @@ function HomeFeatures() {
               <Image src={gpss} alt="gpss" className="w-[80px] h-[80px]" />
 
               <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px] font-serif">
-                GEOSPATIAL INFO SYSTEMS
+                GEOSPATIAL INFORMATION SYSTEMS
               </p>
 
               <p className="text-[#555555] font-sans 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7">
