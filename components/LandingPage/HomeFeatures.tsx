@@ -58,8 +58,9 @@ function HomeFeatures() {
             >
               <Image src={data} alt="data" className="w-[80px] h-[80px]" />
 
-              <p className="text-[#333333] 2xl:text-[30px] lg:text-2xl text-xl  font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px] font-serif">
-                SMART DATA <br /> COLLECTION APPLICATION
+              <p className="text-[#333333] 2xl:text-[30px] lg:text-2xl text-xl  font-semibold mt-7 leading-[36px] md:leading-[48px] 2xl:leading-[50px] font-serif">
+                SMART DATA <br className="hidden lg:flex" /> COLLECTION
+                APPLICATION
               </p>
 
               <p className="text-[#555555] font-sans 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7">
@@ -82,7 +83,7 @@ function HomeFeatures() {
                 className="w-[80px] h-[80px]"
               />
 
-              <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px] font-serif">
+              <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] leading-[36px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px] font-serif">
                 PROJECT MANAGEMENT DASHBOARD
               </p>
 
@@ -104,7 +105,7 @@ function HomeFeatures() {
             >
               <Image src={gpss} alt="gpss" className="w-[80px] h-[80px]" />
 
-              <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px] font-serif">
+              <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] leading-[36px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px] font-serif">
                 GEOSPATIAL INFORMATION SYSTEMS
               </p>
 
@@ -123,7 +124,7 @@ function HomeFeatures() {
             >
               <Image src={wifi} alt="wifi" className="w-[80px] h-[80px]" />
 
-              <p className="text-[#333333] font-serif lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]">
+              <p className="text-[#333333] font-serif lg:text-2xl leading-[36px] 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]">
                 OFFLINE DATA COLLECTION
               </p>
 
@@ -146,7 +147,7 @@ function HomeFeatures() {
                 className="w-[80px] h-[80px]"
               />
 
-              <p className="text-[#333333] font-serif lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]">
+              <p className="text-[#333333] font-serif leading-[36px] lg:text-2xl 2xl:text-[30px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px]">
                 SECURE CLOUD STORAGE
               </p>
 

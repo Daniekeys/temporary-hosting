@@ -11,7 +11,9 @@ import featF from "../../assets/png/mob-co.png";
 import blueright from "../../assets/svg/blueright.svg";
 import ContainerLayout from "../../layouts/ContainerLayout";
 import Link from "next/link";
-
+// This feature leverages GIS technology to provide accurate, location-based insights, ensuring that data is collected from the most relevant and strategic areas. The Smart Location Picker helps businesses target their data collection efforts more effectively, improving the quality and relevance of the data collected.
+// This immediate transmission ensures that businesses receive the most current data, reducing the time lag between data collection and analysis.real - time data collection is particularly valuable in dynamic environments where conditions can change rapidly, such as in market surveys, price monitoring, or emergency response situations. 
+// With real-time updates, location-specific analysis, and automated data validation, our reporting system ensures that every decision is backed by accurate, up-to-date information. Whether it’s tracking trends, identifying patterns, or forecasting outcomes, WeCollect’s reporting capabilities empower businesses to make informed decisions with confidence.
 const Section = () => {
   const [selectedStepIndex, setSelectedStepIndex] = useState(0);
 
@@ -22,7 +24,7 @@ const Section = () => {
       mobile: featD,
       title: "Smart Location Picker",
       description:
-        "The Smart Location Picker in WeCollect is a powerful tool that enhances data collection by allowing users to select optimal locations for their projects based on geographic data. This feature leverages GIS technology to provide accurate, location-based insights, ensuring that data is collected from the most relevant and strategic areas. The Smart Location Picker helps businesses target their data collection efforts more effectively, improving the quality and relevance of the data collected.",
+        "The Smart Location Picker in WeCollect is a powerful tool that enhances data collection by allowing users to select optimal locations for their projects based on geographic data. ",
     },
     {
       id: 2,
@@ -30,7 +32,7 @@ const Section = () => {
       mobile: featE,
       title: "Real-time Data Collection",
       description:
-        "The process begins when field agents conduct surveys, record observations, or gather any other relevant data in their assigned locations. As soon as the data is collected, it is instantly transmitted via the app to WeCollect's centralised platform, where it is processed and made accessible to project managers and stakeholders in real-time. This immediate transmission ensures that businesses receive the most current data, reducing the time lag between data collection and analysis. real-time data collection is particularly valuable in dynamic environments where conditions can change rapidly, such as in market surveys, price monitoring, or emergency response situations. ",
+        "The process begins when field agents conduct surveys, record observations, or gather any other relevant data in their assigned locations. As soon as the data is collected, it is instantly transmitted via the app to WeCollect's centralised platform, where it is processed and made accessible to project managers and stakeholders in real-time. ",
     },
     {
       id: 3,
@@ -38,14 +40,14 @@ const Section = () => {
       mobile: featF,
       title: "Comprehensive Reporting",
       description:
-        "WeCollect’s comprehensive reporting offers businesses detailed and actionable insights by transforming raw data into meaningful reports. Our platform provides customizable dashboards and visualisations, enabling users to easily interpret complex data. With real-time updates, location-specific analysis, and automated data validation, our reporting system ensures that every decision is backed by accurate, up-to-date information. Whether it’s tracking trends, identifying patterns, or forecasting outcomes, WeCollect’s reporting capabilities empower businesses to make informed decisions with confidence.",
+        "WeCollect’s comprehensive reporting offers businesses detailed and actionable insights by transforming raw data into meaningful reports. Our platform provides customizable dashboards and visualizations, enabling users to easily interpret complex data. ",
     },
   ];
 
   // Step component
   const Step = ({ index, phoneImage, title, description }) => (
     <div
-      className={`w-full md:w-9/12 py-4 rounded-2xl flex items-center lg:mb-6 cursor-pointer  max-w-[525px]  ${
+      className={`w-full md:w-9/12 py-4 rounded-2xl flex items-center  cursor-pointer  max-w-[525px]  ${
         index === selectedStepIndex ? "text-[#4747D6]" : ""
       }`}
       onClick={() => setSelectedStepIndex(index)}

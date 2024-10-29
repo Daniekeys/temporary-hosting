@@ -1,7 +1,7 @@
 import React from "react";
 import NewNavbar from "../navbar/new-navbar";
 import ContainerLayout from "../../layouts/ContainerLayout";
-import heroPic from "../../assets/png/smart-data-image.png";
+import heroPic from "../../assets/png/project-image.png";
 import Image from "next/image";
 import MobileNav from "../navbar/mobile-nav";
 import blueright from "../../assets/svg/blueright.svg";
@@ -17,7 +17,7 @@ const ProjectManagementHero = () => {
             <div className="w-full lg:flex-row mt-12  flex flex-col  ">
               <div className="w-full flex flex-col lg:w-6/12 justify-center ">
                 <h1
-                  className="text-[#1e1e1e] font-serif font-semibold text-[48px] 2xl:text-[48px] max-w-[600px] 2xl:leading-[96px]  "
+                  className="text-[#1e1e1e] font-serif font-semibold text-[32px] leading-[50px] 2xl:text-[40px] max-w-[600px] 2xl:leading-[67px]  "
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >
@@ -53,7 +53,7 @@ const ProjectManagementHero = () => {
                   alt="hero"
                   width={heroPic.width}
                   height={heroPic.height}
-                  className="w-9/12 lg:w-8/12 max-w-[250px] lg:max-w-full mx-auto 2xl:w-auto mt-32 lg:mt-0"
+                  className="w-9/12 lg:w-10/12  lg:max-w-full mx-auto 2xl:w-auto mt-32 lg:mt-0"
                 />
               </div>
             </div>
