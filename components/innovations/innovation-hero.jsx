@@ -10,7 +10,7 @@ const InnovationHero = () => {
   }, []);
   return (
     <div className="new-hero-bg w-full h-full">
-      <div className="w-full lg:h-screen lg:max-h-[908px] relative new-hero-bg flex flex-col">
+      <div className="w-full lg:h-[670px] lg:max-h-[670px] relative new-hero-bg flex flex-col">
         <NewNavbar />
         <MobileNav present={1} />
         <ContainerLayout>
@@ -18,14 +18,14 @@ const InnovationHero = () => {
             <div className="w-full lg:flex-row mt-12  flex flex-col ">
               <div className="w-full flex flex-col lg:w-6/12 justify-center ">
                 <h1
-                  className="text-mainBlue font-semibold text-[32px] 2xl:text-[64px] max-w-[632px] leading-[40px] 2xl:leading-[96px]  "
+                  className="text-[#1e1e1e] font-serif font-semibold text-[32px] leading-[50px] 2xl:text-[40px] max-w-[600px] 2xl:leading-[67px]  "
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >
                   OUR INNOVATIVE & INTELLIGENT PRODUCTS
                 </h1>
                 <p
-                  className="text-customBlack font-medium 2xl:text-[32px] lg:text-2xl text-xl  leading-[40px] 2xl:leading-[48px] "
+                  className="text-customBlack font-medium 2xl:text-[32px] lg:text-[18px] text-[18px]  leading-[40px] 2xl:leading-[48px] "
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >

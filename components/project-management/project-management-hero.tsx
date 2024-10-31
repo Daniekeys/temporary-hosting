@@ -9,7 +9,7 @@ import Link from "next/link";
 const ProjectManagementHero = () => {
   return (
     <div className=" w-full h-full new-hero-bg ">
-      <div className="w-full lg:h-screen h-[700px] lg:max-h-[908px] relative  flex flex-col">
+      <div className="w-full  h-[670px] lg:max-h-[670px] relative  flex flex-col">
         <NewNavbar />
         <MobileNav present={2} />
         <ContainerLayout>
@@ -21,12 +21,12 @@ const ProjectManagementHero = () => {
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >
-                  PROJECT <br className="hidden lg:block" /> MANAGEMENT{" "}
+                  PROJECT  MANAGEMENT{" "}
                   <br className="hidden lg:block" />
                   DASHBOARD
                 </h1>
                 <p
-                  className="text-customBlack font-medium md:text-[18px] 2xl:text-[32px] text-[18px] leading-[39px] 2xl:leading-[48px] max-w-[500px] font-sans"
+                  className="text-customBlack font-medium md:text-[18px] 2xl:text-[18px] text-[18px] leading-[39px] 2xl:leading-[48px] max-w-[500px] font-sans"
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >

@@ -10,7 +10,7 @@ import Link from "next/link";
 const SmartDataHero = () => {
   return (
     <div className=" w-full h-full new-hero-bg ">
-      <div className="w-full lg:h-screen h-[700px] lg:max-h-[908px] relative  flex flex-col">
+      <div className="w-full lg:h-screen h-[700px] lg:max-h-[670px] relative  flex flex-col">
         <NewNavbar />
         <MobileNav present={2} />
         <ContainerLayout>
@@ -18,14 +18,14 @@ const SmartDataHero = () => {
             <div className="w-full lg:flex-row mt-12  flex flex-col  ">
               <div className="w-full flex flex-col lg:w-6/12 justify-center ">
                 <h1
-                  className="text-mainBlue font-serif font-semibold text-[48px] 2xl:text-[64px] max-w-[600px] 2xl:leading-[96px]  "
+                  className="text-[#1e1e1e] font-serif font-semibold text-[32px] leading-[50px] 2xl:text-[40px] max-w-[600px] 2xl:leading-[67px]  "
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >
                   SMART DATA <br className="hidden lg:block" /> COLLECTION APP
                 </h1>
                 <p
-                  className="text-customBlack font-medium md:text-[18px] 2xl:text-[32px] text-[18px] leading-[39px] 2xl:leading-[48px] max-w-[500px] font-sans"
+                  className="text-customBlack font-medium md:text-[18px] 2xl:text-[18px] text-[18px] leading-[39px] 2xl:leading-[48px] max-w-[500px] font-sans"
                   data-aos="fade-down"
                   data-aos-duration="1000"
                 >

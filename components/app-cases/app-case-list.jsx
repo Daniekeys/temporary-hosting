@@ -84,7 +84,7 @@ const AppCaseList = () => {
       <div className="mt-20">
         <ContainerLayout>
           <div className="w-full flex flex-col gap-10 flow-hide">
-            <h1 className="text-mainBlue 2xl:text-[32px] lg:text-2xl font-semibold max-w-[271px] lg:max-w-full text-center lg:text-start mx-auto lg:mx-0 font-serif  ">
+            <h1 className="text-customBlack 2xl:text-[32px] lg:text-2xl font-semibold max-w-[271px] lg:max-w-full text-center lg:text-start mx-auto lg:mx-0 font-serif  ">
               Applicable in the following cases and more...
             </h1>
             <div className="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 bg-[#F9F6FF] py-[30px] px-4 lg:p-[30px]  rounded-[30px] gap-[30px]  lg:gap-[40px]">
