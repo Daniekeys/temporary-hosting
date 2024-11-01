@@ -108,7 +108,7 @@ const AppCaseList = () => {
                         className="2xl:w-[60px] lg:w-[50px] w-[40px] h-[40px] lg:h-[50px] 2xl:h-[60px] rounded-full"
                       />
                     </span>
-                    <h1 className=" text-customBlack text-[20px] font-semibold leading-[35px] 2xl:text-[24px] lg:text-[20px] lg:leading-[35px] 2xl:leading-[42px] uppercase max-h-[120px] min-h-[100px]  flex items-center font-serif ">
+                    <h1 className=" text-customBlack text-[20px] font-semibold leading-[35px] 2xl:text-[20px] lg:text-[20px] lg:leading-[35px] 2xl:leading-[42px] uppercase max-h-[120px] min-h-[100px]  flex items-center font-serif ">
                       {item.title}
                     </h1>
                     <p className="text-[14px] 2xl:text-[16px] lg:text-[16px] text-ash font-medium leading-[35px]  w-full h-full max-h-[300px] overflow-y-hidden font-sans   ">
