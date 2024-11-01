@@ -89,7 +89,7 @@ const NewNavbar = () => {
             <div>
               <span
                 className="cursor-pointer"
-                onClick={() => router.push("/home")}
+                onClick={() => router.push("/")}
               >
                 {" "}
                 <Image src={logo} alt="logo" />{" "}

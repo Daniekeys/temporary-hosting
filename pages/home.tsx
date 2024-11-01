@@ -1,15 +1,10 @@
-import React, {useEffect} from "react";
-import NewNavbar from "../components/navbar/new-navbar";
-import MobileNav from "../components/navbar/mobile-nav";
-import HomeHero from "../components/HomeHero";
+import { useEffect } from "react";
 import OurPartner from "../components/download-page/partners-card";
 import Control from "../components/LandingPage/Control";
 import HomeFeatures from "../components/LandingPage/HomeFeatures";
 import How from "../components/LandingPage/How";
 import Section from "../components/LandingPage/Section";
-import DesktopCarousel from "../components/LandingPage/DesktopCarousel";
 import CustomCarousel from "../components/LandingPage/CustomCarousel";
-import MobileCarousel from "../components/LandingPage/MobileCarousel";
 import Slider from "../components/blogs/Slider";
 import RequestDemo from "../components/footer/request-demo";
 import Footer from "../components/footer/new-footer";

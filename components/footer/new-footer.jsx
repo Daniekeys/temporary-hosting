@@ -34,7 +34,7 @@ const NewFooter = () => {
                 height={logo.height}
                 alt="image"
                 className="m-auto md:m-0 cursor-pointer"
-                onClick={() => router.push("home")}
+                onClick={() => router.push("/")}
                 // data-aos="fade-up"
                 // data-aos-duration="1000"
               />

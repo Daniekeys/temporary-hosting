@@ -1,32 +1,24 @@
-import { useState, useEffect, useRef } from "react";
+import React, { useEffect } from "react";
+import OurPartner from "../components/download-page/partners-card";
+import Control from "../components/LandingPage/Control";
+import HomeFeatures from "../components/LandingPage/HomeFeatures";
+import How from "../components/LandingPage/How";
+import Section from "../components/LandingPage/Section";
+import CustomCarousel from "../components/LandingPage/CustomCarousel";
+import Slider from "../components/blogs/Slider";
+import RequestDemo from "../components/footer/request-demo";
+import Footer from "../components/footer/new-footer";
+import Faq from "../components/LandingPage/Faq";
 import Head from "next/head";
-import Hero from "../components/LandingPage/Hero";
-import Features from "../components/LandingPage/Features";
-import Dashboard from "../components/LandingPage/Dashboard";
-import Paid from "../components/LandingPage/Paid";
-import Footer from "../components/LandingPage/Footer";
-import Featured from "../components/LandingPage/Featured";
-import Become from "../components/LandingPage/Become";
-import { useRouter } from "next/router";
-export default function Home() {
-  const [active, setActive] = useState(false);
+import NewHomeHero from "../components/LandingPage/new-home-hero";
 
+function Home() {
   useEffect(() => {
-    if (typeof window) {
-      const handleScroll = () => {
-        window.pageYOffset > 600 ? setActive(true) : setActive(false);
-      };
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }
-  }, []);
-  const router = useRouter();
-  useEffect(() => {
-    router?.push("/home");
+    window?.scrollTo(0, 0);
   }, []);
 
   return (
-    <>
+    <div className="w-full h-auto ">
       <Head>
         <title>WeCollect</title>
         <meta
@@ -35,17 +27,25 @@ export default function Home() {
         />
         <link rel="icon" href="/we-logo.png" />
       </Head>
-      <div className="w-full flex flex-col relative">
-        <Hero active={active} />
-        <div>
-          <Features />
-          <Featured />
-        </div>
-        <Dashboard />
-        <Paid />
-        <Become />
-        <Footer />
-      </div>
-    </>
+
+      {/* <NewNavbar />
+      <MobileNav present={1} />
+      <HomeHero /> */}
+      <NewHomeHero />
+      <OurPartner />
+      <Control />
+      <HomeFeatures />
+      <How />
+      <Section />
+      {/* <DesktopCarousel /> */}
+      <CustomCarousel />
+      {/* <MobileCarousel /> */}
+      <Faq />
+      <Slider />
+      <RequestDemo />
+      <Footer />
+    </div>
   );
 }
+
+export default Home;
