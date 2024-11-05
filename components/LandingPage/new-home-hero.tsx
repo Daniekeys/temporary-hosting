@@ -9,7 +9,7 @@ import blueright from "../../assets/svg/blueright.svg";
 import HeroPhoto from "../../assets/png/new-frame-hero.png"
 const NewHomeHero = () => {
   return (
-    <div className="new-hero-bg w-full h-full flex flex-col min-h-screen flow-hide">
+    <div className="new-hero-b w-full h-full flex flex-col min-h-screen flow-hide">
       <NewNavbar />
       <MobileNav present={1} />
       {/* content */}
@@ -17,7 +17,7 @@ const NewHomeHero = () => {
         <div className="w-full flex flex-col mt-32 lg:mt-52 flow-hide ">
           <h1 className="font-serif md:inline-flex  hidden text-[48px] text-customBlack tracking-widest font-bold mx-auto">
             Insight Gathering Made{" "}
-            <span className="text-mainBlue flex flex-col relative ml-3 ">
+            <span className="text-customBlack flex flex-col relative ml-3 ">
               Easy
               <span className="-mt-2">
                 <Image src={trademark} alt="trade" />
@@ -32,7 +32,7 @@ const NewHomeHero = () => {
           </h1>
           <h1 className="font-serif md:hidden text-[45px] inline-flex text-center   text-customBlack tracking-widest font-bold mx-auto">
             Made
-            <span className="text-mainBlue flex ml-2 flex-col relative  ">
+            <span className="text-customBlack flex ml-2 flex-col relative  ">
               Easy
               <span className="absolute -bottom-2">
                 <Image src={trademark} alt="trade" className="" />
@@ -40,10 +40,9 @@ const NewHomeHero = () => {
             </span>
           </h1>
           <p className="font-sans text-ash leading-[22px] tracking-wider text-center mt-8 lg:mt-1 font-[500] max-w-[768px] mx-auto">
-            Leverage advanced data collecting technology with features like GIS
-            and offline data collection as well as a vast network of field
-            agents to collect, track, and ensure accurate data for various
-            projects.
+            Transform your data collection process with a smart, user-friendly
+            tool that empowers businesses of all sizes to make informed
+            decisions.
           </p>
           <div
             className="w-full h-auto flex flex-col  md:flex-row items-center mt-12 lg:mt-6  lg:gap-6 justify-center "
@@ -70,7 +69,11 @@ const NewHomeHero = () => {
             data-aos-duration="1000"
             data-aos-delay="1000"
           >
-            <Image src={HeroPhoto} className="w-full md:w-10/12 mx-auto " alt="hero" />
+            <Image
+              src={HeroPhoto}
+              className="w-full md:w-10/12 mx-auto "
+              alt="hero"
+            />
           </div>
         </div>
       </ContainerLayout>
