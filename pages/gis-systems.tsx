@@ -15,7 +15,7 @@ const GisSystems = () => {
           name="description"
           content="Leverage advanced data-collecting technology and numerous field agents to access and track data for various projects."
         />
-        <link rel="icon" href="/we-logo.png" />
+        <link rel="icon" href="/wecollect-new-logo.png" />
       </Head>
 
       <GisHero />

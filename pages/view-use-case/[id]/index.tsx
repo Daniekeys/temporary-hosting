@@ -10,14 +10,14 @@ import { useRouter } from "next/router";
 import { useCaseData } from "../../../utils/use-case-data";
 import { useEffect } from "react";
 const ViewUseCase = () => {
-       const router = useRouter();
-    const { id } = router.query;
-    const idValue = Number(id);
+  const router = useRouter();
+  const { id } = router.query;
+  const idValue = Number(id);
   const item = useCaseData[idValue];
-    useEffect(() => {
-      window?.scrollTo(0, 0);
-    }, []);
-    
+  useEffect(() => {
+    window?.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="w-full flex flex-col relative">
       <Head>
@@ -26,7 +26,7 @@ const ViewUseCase = () => {
           name="description"
           content="Leverage advanced data-collecting technology and numerous field agents to access and track data for various projects."
         />
-        <link rel="icon" href="/we-logo.png" />
+        <link rel="icon" href="/wecollect-new-logo.png" />
       </Head>
 
       <UseHero heroInfo={item?.heroInfo} />
@@ -35,8 +35,7 @@ const ViewUseCase = () => {
       <DataJourney />
       <div className=" lg:mb-0 w-full  lg:h-0 lg:hidden flex"></div>
       <div className="w-full mt-[-80px]">
-
-      <CustomCarousel />
+        <CustomCarousel />
       </div>
       <RequestDemo />
       <NewFooter />

@@ -12,11 +12,10 @@ import Faq from "../components/LandingPage/Faq";
 import Head from "next/head";
 import NewHomeHero from "../components/LandingPage/new-home-hero";
 
-
 function Home() {
-useEffect(() => {
-  window?.scrollTo(0, 0);
-}, [])
+  useEffect(() => {
+    window?.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="w-full h-auto ">
@@ -26,7 +25,7 @@ useEffect(() => {
           name="description"
           content="Leverage advanced data-collecting technology and numerous field agents to access and track data for various projects."
         />
-        <link rel="icon" href="/we-logo.png" />
+        <link rel="icon" href="/wecollect-new-logo.png" />
       </Head>
 
       {/* <NewNavbar />
