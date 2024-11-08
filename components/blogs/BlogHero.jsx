@@ -40,14 +40,14 @@ const BlogHero = () => {
             <div className="w-full lg:flex-row mt-12  flex flex-col ">
               <div className="w-full flex flex-col lg:w-1/2 justify-center">
                 <h1
-                  className="text-customBlack font-semibold text-[48px] 2xl:text-[64px]  "
+                  className="text-customBlack font-semibold text-[48px] 2xl:text-[64px] font-serif  "
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                 >
                   OUR BLOG
                 </h1>
                 <p
-                  className="text-customBlack font-medium 2xl:text-[32px]  text-[18px] mt-5 "
+                  className="text-customBlack font-medium 2xl:text-[32px]  text-[18px] mt-5 font-sans "
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                 >

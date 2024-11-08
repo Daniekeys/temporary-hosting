@@ -26,7 +26,7 @@ const BlogCombo = () => {
   }, [search]);
   const router = useRouter();
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col font-sans">
       <ContainerLayout>
         <div className="w-full flex flex-col">
           <div

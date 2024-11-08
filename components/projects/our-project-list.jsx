@@ -37,7 +37,7 @@ const OurProjectList = () => {
                 </div>
                 <div className="flex flex-col mt-8 ">
                   <div className="w-full sm:h-[80px] 2xl:h-[100px] flex items-center ">
-                    <h1 className="text-mainBlue 2xl:text-[30px] font-serif text-2xl font-semibold xl:max-w-[250px] 2xl:max-w-[325px] 2xl:leading-[45px] ">
+                    <h1 className="text-customBlack 2xl:text-[30px] font-serif text-2xl font-semibold xl:max-w-[250px] 2xl:max-w-[325px] 2xl:leading-[45px] ">
                       Food Price Monitoring Project In Nigeria
                     </h1>
                   </div>
@@ -63,7 +63,7 @@ const OurProjectList = () => {
                 </div>
                 <div className="flex flex-col mt-8 ">
                   <div className="w-full sm:h-[80px] 2xl:h-[100px] flex items-center ">
-                    <h1 className="text-mainBlue 2xl:text-[30px] font-serif text-2xl font-semibold max-w-[325px] 2xl:leading-[45px]">
+                    <h1 className="text-customBlack 2xl:text-[30px] font-serif text-2xl font-semibold max-w-[325px] 2xl:leading-[45px]">
                       Kaduna Electric Project
                     </h1>
                   </div>
@@ -89,7 +89,7 @@ const OurProjectList = () => {
                 </div>
                 <div className="flex flex-col mt-8 ">
                   <div className="w-full sm:h-[80px] 2xl:h-[100px] flex items-center ">
-                    <h1 className="text-mainBlue 2xl:text-[30px] font-serif text-2xl font-semibold max-w-[325px] 2xl:leading-[45px]">
+                    <h1 className="text-customBlack 2xl:text-[30px] font-serif text-2xl font-semibold max-w-[325px] 2xl:leading-[45px]">
                       TechPoint Project
                     </h1>
                   </div>

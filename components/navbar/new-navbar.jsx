@@ -57,7 +57,7 @@ const NewNavbar = () => {
       description: description,
       email: email,
       phone: phone, // Client's phone number
-      useCase: useCase, // Specific use case for the data
+      useCase: useCase?.name, // Specific use case for the data
       personalAgent: agentPresent === 2 ? true : false,
       noOfAgents: agents,
       startDate:date
@@ -475,6 +475,7 @@ const NewNavbar = () => {
                     setOpen(false);
                     setCurrent(0);
                     setAgentPresent(0);
+                    setLoading(false)
                   }}
                 >
                   <CancelIcon />
