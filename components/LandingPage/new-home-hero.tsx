@@ -6,7 +6,7 @@ import Image from 'next/image';
 import trademark from "../../assets/svg/trade-mark.svg"
 import Link from 'next/link';
 import blueright from "../../assets/svg/blueright.svg";
-import HeroPhoto from "../../assets/png/new-frame-hero.png"
+import HeroPhoto from "../../assets/png/new-frame.png"
 const NewHomeHero = () => {
   return (
     <div className="new-hero-b w-full h-full flex flex-col min-h-screen flow-hide">
