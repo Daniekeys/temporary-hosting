@@ -8,76 +8,64 @@ export const mobileFooterData = [
     },
     list2: {
       name: "Projects",
-      url:"/our-project"
+      url: "/our-project",
     },
-    list3: 
-    {
+    list3: {
       name: "Use Cases",
-      url:"/applicable-cases"
+      url: "/applicable-cases",
     },
 
-
-    list4: 
-      {
+    list4: {
       name: "Blog",
-      url:"/blog"
+      url: "/blog",
     },
-    list5: 
-    {
+    list5: {
       name: "Contact Us",
-      url:"/contact-us"
+      url: "/contact-us",
     },
   },
   {
     id: 2,
     title: "Legality",
-    list1: 
-    {
+    list1: {
       name: "Privacy Policy",
-      url:"/privacy-policy"
+      url: "/privacy-policy",
     },
-    list2: 
-    {
+    list2: {
       name: "Term of Use",
-      url:"/term-of-use"
+      url: "/term-of-use",
     },
-    list3: 
-    {
+    list3: {
       name: "Cookie Policy",
-      url:"/cookie-policy"
+      url: "/cookie-policy",
     },
   },
   {
     id: 3,
     title: "Features",
-    list1: 
-    {
+    list1: {
       name: "GPS coordinates",
-      url:"/home#features"
+      url: "/home#features",
     },
-    list2: 
-    {
+    list2: {
       name: "Real-time data collection",
-      url:"/home#features"
+      url: "/home#features",
     },
-    list3: 
-    {
+    list3: {
       name: "Secure case management",
-      url:"/home#feature"
+      url: "/home#feature",
     },
   },
   {
     id: 4,
     title: "Products",
-    list1: 
-    {
+    list1: {
       name: "Delineation app",
-      url:"/innovations#app"
+      url: "/innovations#app",
     },
-    list2: 
-    {
-      name: "Project Management Dashboard",
-      url:"/innovations#dashboard"
+    list2: {
+      name: "Project Management Tool",
+      url: "/innovations#dashboard",
     },
   },
 ];

@@ -8,7 +8,7 @@ const ProjectDashboard = () => {
   return (
     <div className="w-full flex flex-col">
       <Head>
-        <title>Project Management Dashboard </title>
+        <title>Project Management Tool </title>
         <meta
           name="description"
           content="Leverage advanced data-collecting technology and numerous field agents to access and track data for various projects."

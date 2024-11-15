@@ -25,7 +25,7 @@ const OtherInnovations = () => {
               <Image src={desktopIcon} alt="des" />
             </span>
             <h1 className="text-2xl 2xl:text-[32px] lg:text-2xl font-semibold text-mainBlue">
-              Project Management Dashboard
+              Project Management Tool
             </h1>
           </div>
           <div className="flex flex-col items-center relative mt-12">

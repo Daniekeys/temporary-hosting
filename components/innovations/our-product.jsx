@@ -50,7 +50,7 @@ const OurProduct = () => {
                 className="w-full object-cover min-h-[400px]"
               />
               <p className="mt-10 text-mainBlue text-xl md:text-[18px] 2xl:text-[30px] md:leading-[45px]  font-semibold ">
-                Project Management Dashboard
+                Project Management Tool
               </p>
               <p className="mt-5 text-ash text-[14px] sm:text-[16px] 2xl:text-[18px]">
                 The WeCollect project management web application streamlines the

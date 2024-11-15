@@ -1,4 +1,3 @@
-
 import brandHeroPic from "../assets/png/brand-hero.png";
 import brandA from "../assets/png/brand-b-1.png";
 import brandB from "../assets/png/brand-b-2.png";
@@ -39,7 +38,6 @@ import demoHeroPic from "../assets/png/demo-b-hero.png";
 import demoA from "../assets/png/demo-b-1.png";
 import demoB from "../assets/png/demo-b-2.png";
 import demoC from "../assets/png/demo-b-3.png";
-
 
 export const useCaseData = [
   {
@@ -93,7 +91,7 @@ REPORTING`,
       items: [
         {
           title: `Increased Efficiency`,
-          description: `You can track your business supply chain in real-time with our intuitive delineation mobile app and project management dashboard. `,
+          description: `You can track your business supply chain in real-time with our intuitive delineation mobile app and Project Management Tool. `,
           icon: supplyA,
         },
         {
@@ -126,7 +124,7 @@ REPORTING`,
       items: [
         {
           title: `Increased Efficiency`,
-          description: `You can track and store your business inventory in real-time with our intuitive delineation mobile app and project management dashboard. `,
+          description: `You can track and store your business inventory in real-time with our intuitive delineation mobile app and Project Management Tool. `,
           icon: inventA,
         },
         {
@@ -367,7 +365,7 @@ ANALYSIS`,
         },
         {
           title: "Streamline Data Management Processes  ",
-          description: ` Manage your data and process from the WeCollect project management dashboard.`,
+          description: ` Manage your data and process from the WeCollect Project Management Tool.`,
           icon: demoC,
         },
       ],

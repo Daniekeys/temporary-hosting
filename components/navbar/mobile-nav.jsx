@@ -110,7 +110,7 @@ const MobileNav = ({ present }) => {
                     href="/innovations#dashboard"
                     className="text-ash font-sans text-[16px] "
                   >
-                    Project Management Dashboard
+                    Project Management Tool
                   </Link>
                 </div>
               )}

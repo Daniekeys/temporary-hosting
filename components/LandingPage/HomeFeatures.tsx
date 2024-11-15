@@ -84,7 +84,7 @@ function HomeFeatures() {
               />
 
               <p className="text-[#333333] lg:text-2xl 2xl:text-[30px] leading-[36px] text-xl font-semibold mt-7 md:leading-[48px] 2xl:leading-[50px] font-serif">
-                PROJECT MANAGEMENT DASHBOARD
+                Project Management Tool
               </p>
 
               <p className="text-[#555555] font-sans 2xl:text-[18px] lg:text-[16px] leading-[35px] text-[14px] font-medium mt-7">

@@ -25,7 +25,7 @@ const list = [
   { name: "Financial inclusion", id: 0 },
   { name: "Product price monitoring project", id: 0 },
   { name: "Population Enumeration", id: 0 },
-  { name: "Demography Analysis", id: 0 }, 
+  { name: "Demography Analysis", id: 0 },
 ];
 const NewNavbar = () => {
   const router = useRouter();
@@ -43,12 +43,11 @@ const NewNavbar = () => {
   const [agents, setAgents] = useState();
   const [location, setLocation] = useState();
   const [phone, setPhone] = useState("");
-  const [useCase, setUseCase] = useState({name:"", id:0});
+  const [useCase, setUseCase] = useState({ name: "", id: 0 });
   const [date, setDate] = useState("");
 
   const [description, setDescription] = useState("");
 
-  
   const handleSubmit = async () => {
     setLoading(true);
     const data = {
@@ -60,24 +59,23 @@ const NewNavbar = () => {
       useCase: useCase?.name, // Specific use case for the data
       personalAgent: agentPresent === 2 ? true : false,
       noOfAgents: agents,
-      startDate:date
+      startDate: date,
     };
-         try {
-           const response = await axios.post(
-             "https://api.wecollect.tech/quote",
-    data
-           );
+    try {
+      const response = await axios.post(
+        "https://api.wecollect.tech/quote",
+        data
+      );
 
-           if (response.status === 200) {
-             setLoading(false);
-             setCurrent(2);
-
-           }
-         } catch (e) {
-           throw new Error(e);
-           setLoading(false);
-         }
-  }
+      if (response.status === 200) {
+        setLoading(false);
+        setCurrent(2);
+      }
+    } catch (e) {
+      throw new Error(e);
+      setLoading(false);
+    }
+  };
 
   return (
     <>
@@ -87,10 +85,7 @@ const NewNavbar = () => {
         <ContainerLayout>
           <div className="w-full flex items-center justify-between relative  h-[68px]">
             <div>
-              <span
-                className="cursor-pointer"
-                onClick={() => router.push("/")}
-              >
+              <span className="cursor-pointer" onClick={() => router.push("/")}>
                 {" "}
                 <Image src={logo} alt="logo" />{" "}
               </span>
@@ -292,7 +287,7 @@ const NewNavbar = () => {
                 <Image src={reporting} alt="reporting" />
                 <div className="ml-[21px]">
                   <p className="text-[#555555] text-[16px] font-semibold">
-                    Project Management Dashboard
+                    Project Management Tool
                   </p>
                   <p className="text-[#555555] text-[14px] font-medium">
                     Track and monitor your project
@@ -300,7 +295,7 @@ const NewNavbar = () => {
                 </div>
               </div>
               <div
-                onClick={() => router.push("#")}
+                onClick={() => router.push("/coming-soon")}
                 className="w-full h-auto flex items-center cursor-pointer hover:bg-[#fff]  rounded-[20px] px-4 py-2 transition-all duration-1000 ease-in-out "
               >
                 <Image src={learning} alt="reporting" />
@@ -475,7 +470,7 @@ const NewNavbar = () => {
                     setOpen(false);
                     setCurrent(0);
                     setAgentPresent(0);
-                    setLoading(false)
+                    setLoading(false);
                   }}
                 >
                   <CancelIcon />
@@ -645,7 +640,8 @@ const NewNavbar = () => {
                     {loading ? "Loading..." : "Request Quote"}
                   </button>
                   <p className="text-left  font-sans  text-[#9999FF] mt-3 font-medium text-xs">
-                   By requesting a quote you are agreeing to our terms and conditions
+                    By requesting a quote you are agreeing to our terms and
+                    conditions
                   </p>
                 </div>
                 {/* end */}

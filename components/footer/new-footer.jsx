@@ -278,10 +278,10 @@ const NewFooter = () => {
                   // data-aos-duration="1000"
                   // data-aos-delay="2700"
                 >
-                  Project Management Dashboard
+                  Project Management Tool
                 </Link>
                 <Link
-                  href="/home"
+                  href="/coming-soon"
                   className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
