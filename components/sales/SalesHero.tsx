@@ -116,11 +116,28 @@ const SalesHero = () => {
                       );
 
                       if (response.status === 200) {
-                        console.log(response.data);
+                        console.log(
+                          "Data successfully sent to server:",
+                          response.data
+                        );
                         setSuccess(true);
+
+                        // 2. Send notification to Slack
+                        await axios.post("/api/send-to-slack", {
+                          name: values.name,
+                          email: values.email,
+                          phone: values.phonenumber,
+                          orgName: values.orgName,
+                          dataNeeded: values.dataNeed,
+                          painPoint: values.painPoint,
+                        });
+                        console.log("Notification sent to Slack!");
                       }
-                    } catch (e) {
-                      throw new Error(e);
+                    } catch (error) {
+                      console.error("An error occurred:", error);
+                      setSuccess(false);
+                    } finally {
+                      setSuccess(true);
                     }
                   }}
                 >
