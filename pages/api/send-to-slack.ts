@@ -21,7 +21,7 @@ export default async function handler(
   try {
     await slackClient.chat.postMessage({
       channel: channelId!,
-      text: `📢 *New Form Submission*:
+      text: `📢 *New Form Submission Sales form*:
 - *Name:* ${name}
 - *Email:* ${email}
 - *Phone:* ${phone}
