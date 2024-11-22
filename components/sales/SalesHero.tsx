@@ -17,10 +17,10 @@ const initialValues = {
   phonenumber: "",
   orgName: "",
   dataNeed: "",
+  dataType: "",
   painPoint: "",
 };
-const losa = process.env.NEXT_PUBLIC_SLACK_CHANNEL_ID; 
-console.log(losa)
+ 
 const SalesHero = () => {
 
   const [success, setSuccess] = useState(false);
@@ -49,7 +49,12 @@ const SalesHero = () => {
                 <div className="w-full bg-white rounded-[20px] max-w-[536px] py-12 lg:py-16    ">
                   <div className="w-full max-w-[341px] flex flex-col mx-auto items-center">
                     <span>
-                      <Image src={check} alt="checker" width={120} height={120} />
+                      <Image
+                        src={check}
+                        alt="checker"
+                        width={120}
+                        height={120}
+                      />
                     </span>
 
                     <p className="text-[14px] font-sans lg:text-[16px] text-[#333] font-medium mt-4 text-center">
@@ -115,9 +120,9 @@ const SalesHero = () => {
                           orgName: values.orgName,
                           dataNeeded: values.dataNeed,
                           dataPainPoint: values.painPoint,
+                          dataType: values.dataType,
                         }
                       );
-
 
                       if (response.status === 200) {
                         console.log(
@@ -133,6 +138,7 @@ const SalesHero = () => {
                           phone: values.phonenumber,
                           orgName: values.orgName,
                           dataNeeded: values.dataNeed,
+                          dataType: values.dataType,
                           painPoint: values.painPoint,
                         });
                         console.log("Notification sent to Slack!");
@@ -160,10 +166,11 @@ const SalesHero = () => {
                       className="w-full flex flex-col"
                     >
                       <h1 className="text-primary font-semibold text-mainBlue lg:max-w-[500px] lg:text-[40px] 2xl:text-[48px] text-2xl lg:leading-[65px] pl-10 mt-10 lg:mt-4  font-serif">
-                        Your Data Journey Begins Here
+                        Help Us Meet Your Data Need!
                       </h1>
                       <p className="mt-4 text-ash text-[16px] lg:text-[18px]  lg:pl-10 font-sans">
-                        Help Us learn more about your data needs.
+                        Kindly provide more details on the data you are
+                        requesting
                       </p>
                       <div className="w-full  rounded-[20px]  pb-5 ">
                         <div className="w-full flex flex-col xl:w-10/12 lg:pl-10 text-[#333]">
@@ -252,10 +259,110 @@ const SalesHero = () => {
                                       value={values.dataNeed}
                                       onChange={handleChange}
                                       onBlur={handleBlur}
-                                      className="mt-2 block w-full px-3 border h-[42px]  bg-transparent  focus:outline-none  border-none sm:text-[14px]   "
+                                      className="mt-2 block w-full px-3 border h-[42px] font-sans  bg-transparent  focus:outline-none  border-none sm:text-[14px]   "
                                     >
-                                      <option value="male">Research</option>
-                                      <option value="female">Survey</option>
+                                      <option
+                                        className="font-sans"
+                                        value=" Select Data Need"
+                                      >
+                                        Select Data Need
+                                      </option>
+                                      <option
+                                        className="font-sans"
+                                        value=" Academics"
+                                      >
+                                        Academics
+                                      </option>
+                                      <option
+                                        className="font-sans"
+                                        value=" Research"
+                                      >
+                                        Research
+                                      </option>
+                                      <option
+                                        className="font-sans"
+                                        value=" Marketing"
+                                      >
+                                        Marketing
+                                      </option>
+                                      <option
+                                        className="font-sans"
+                                        value="  Media and Publishing"
+                                      >
+                                        Media and Publishing
+                                      </option>
+                                      <option
+                                        className="font-sans"
+                                        value="Business growth"
+                                      >
+                                        Business growth
+                                      </option>
+                                      <option
+                                        className="font-sans"
+                                        value="Governance"
+                                      >
+                                        Governance
+                                      </option>
+                                      <option
+                                        className="font-sans"
+                                        value=" Others"
+                                      >
+                                        Others
+                                      </option>
+                                    </select>
+                                  </div>
+                                </div>
+                                {/* end of single input */}
+                                {/* single input */}
+                                <div className="flex flex-col">
+                                  <label className="text-[#333] text-[14px] font-sans lg:text-[16px] font-semibold">
+                                    Data Type*
+                                  </label>
+                                  <div className="w-full border h-[42px] pr-4 flex items-center bg-white rounded-md shadow-sm focus:outline-none   focus:border-[#333] border-opacity-30">
+                                    <select
+                                      id="type"
+                                      name="dataType"
+                                      value={values.dataType}
+                                      onChange={handleChange}
+                                      onBlur={handleBlur}
+                                      className="mt-2 block w-full px-3 font-sans border h-[42px]  bg-transparent  focus:outline-none  border-none sm:text-[14px]   "
+                                    >
+                                      <option
+                                        className="font-sans"
+                                        value="male"
+                                      >
+                                        Select Data Type
+                                      </option>
+                                      <option
+                                        className="font-sans"
+                                        value=" Interviews & Survey"
+                                      >
+                                        Interviews & Survey
+                                      </option>
+                                      <option
+                                        className="font-sans"
+                                        value=" Asset Enumeration"
+                                      >
+                                        Asset Enumeration
+                                      </option>
+                                      <option
+                                        className="font-sans"
+                                        value=" Environmental Assessment"
+                                      >
+                                        Environmental Assessment
+                                      </option>
+                                      <option
+                                        className="font-sans"
+                                        value=" Monitoring Evaluation"
+                                      >
+                                        Monitoring Evaluation
+                                      </option>
+                                      <option
+                                        className="font-sans"
+                                        value="Incident Reporting"
+                                      >
+                                        Incident Reporting
+                                      </option>
                                     </select>
                                   </div>
                                 </div>

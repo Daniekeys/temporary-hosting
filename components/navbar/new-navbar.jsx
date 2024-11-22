@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import ContainerLayout from "../../layouts/ContainerLayout";
 import logo from "../../assets/svg/latest-logo.svg";
 import { useRouter } from "next/router";
@@ -69,6 +69,14 @@ const NewNavbar = () => {
 
       if (response.status === 200) {
         setLoading(false);
+        setRecords("");
+        setLocation("");
+        setDate("");
+        setAgents("");
+        setDescription("");
+        setPhone("");
+        setEmail("");
+        setUseCase({name:"", id:0});
         setCurrent(2);
       }
     } catch (e) {
@@ -77,6 +85,21 @@ const NewNavbar = () => {
     }
   };
 
+  useEffect(() => {
+    if (open === false || current === 0) {
+        setLoading(false);
+        setRecords("");
+        setLocation("");
+        setDate("");
+        setAgents("");
+        setDescription("");
+        setPhone("");
+        setEmail("");
+        setUseCase({ name: "", id: 0 });
+        setCurrent(0);
+   }
+  }, [open,current])
+  
   return (
     <>
       <div
