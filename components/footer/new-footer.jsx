@@ -202,7 +202,7 @@ const NewFooter = () => {
                   FAQ
                 </Link>
                 <Link
-                  href="/sales-form"
+                  href="/data-request-form"
                   className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"

@@ -170,9 +170,9 @@ const NewNavbar = () => {
             </div>
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-2 ">
-                <p className="text-mainBlue h-[50px] hover:bg-[#E3D5FF] flex items-center lg:text-[16px] font-semibold px-4 py-2 rounded-[50px] cursor-pointer ">
+                <Link href={"/coming-soon"} className="text-mainBlue h-[50px] hover:bg-[#E3D5FF] flex items-center lg:text-[16px] font-semibold px-4 py-2 rounded-[50px] cursor-pointer ">
                   Sign in
-                </p>
+                </Link>
               </div>
               <button
                 className="bg-mainBlue hover:bg-[#E3D5FF] h-[50px] font-semibold flex items-center text-white hover:text-mainBlue rounded-[50px] px-5 cursor-pointer "

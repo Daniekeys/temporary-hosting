@@ -10,7 +10,7 @@ const ComingSoon = () => {
   return (
     <div className="w-full ">
       <ContainerLayout>
-        <div className="w-full flex flex-col pb-8">
+        <div className="w-full flex flex-col pb-8 max-w-[1200px]">
           <span
             className="cursor-pointer mt-4"
             onClick={() => router.push("/")}
@@ -19,8 +19,8 @@ const ComingSoon = () => {
             <Image src={logo} alt="logo" />{" "}
           </span>
           <div className="coming-soon-bg w-full flex flex-col  mt-[26px] rounded-[30px] relative px-4">
-            <div className="absolute top-0 left-0 right-0 z-0 ">
-              <Image src={curve} alt="curve" />
+            <div className="absolute top-0 left-0 right-0 z-10 ">
+              <Image src={curve} alt="curve" className='object-cover' />
             </div>
             <div className="w-full z-10 mt-[140px] flex flex-col">
               <h1 className="text-center font-serif text-[#EDEDFB] text-3xl lg:text-[40px] font-bold 2xl:text-[64px]  ">
