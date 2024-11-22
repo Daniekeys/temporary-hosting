@@ -1,8 +1,8 @@
 import { WebClient } from "@slack/web-api";
 import { NextApiRequest, NextApiResponse } from "next";
 
-const slackClient = new WebClient(process.env.SLACK_BOT_TOKEN);
-const channelId = process.env.SLACK_CHANNEL_ID;
+const slackClient = new WebClient(process.env.NEXT_PUBLIC_SLACK_BOT_TOKEN);
+const channelId = process.env.NEXT_PUBLIC_SLACK_CHANNEL_ID;
 
 export default async function handler(
   req: NextApiRequest,
@@ -21,7 +21,7 @@ export default async function handler(
   try {
     await slackClient.chat.postMessage({
       channel: channelId!,
-      text: `📢 *New Form Submission Sales form*:
+      text: `📢 *New  Sales form*:
 - *Name:* ${name}
 - *Email:* ${email}
 - *Phone:* ${phone}
@@ -35,6 +35,7 @@ export default async function handler(
       .json({ message: "Notification sent to Slack successfully!" });
   } catch (error) {
     console.error("Error sending message to Slack:", error);
+
     res.status(500).json({ message: "Failed to send message to Slack" });
   }
 }

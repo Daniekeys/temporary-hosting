@@ -10,6 +10,7 @@ import axios from "axios";
 import { Formik } from "formik";
 import check from "../../assets/svg/check-icon.svg";
 import { useRouter } from "next/router";
+
 const initialValues = {
   name: "",
   email: "",
@@ -18,8 +19,10 @@ const initialValues = {
   dataNeed: "",
   painPoint: "",
 };
-
+const losa = process.env.NEXT_PUBLIC_SLACK_CHANNEL_ID; 
+console.log(losa)
 const SalesHero = () => {
+
   const [success, setSuccess] = useState(false);
   const [stage, setStage] = useState(1);
   const router = useRouter();
@@ -46,7 +49,7 @@ const SalesHero = () => {
                 <div className="w-full bg-white rounded-[20px] max-w-[536px] py-12 lg:py-16    ">
                   <div className="w-full max-w-[341px] flex flex-col mx-auto items-center">
                     <span>
-                      <Image src={check} alt="checker" />
+                      <Image src={check} alt="checker" width={120} height={120} />
                     </span>
 
                     <p className="text-[14px] font-sans lg:text-[16px] text-[#333] font-medium mt-4 text-center">
@@ -114,6 +117,7 @@ const SalesHero = () => {
                           dataPainPoint: values.painPoint,
                         }
                       );
+
 
                       if (response.status === 200) {
                         console.log(
