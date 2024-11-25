@@ -58,15 +58,15 @@ const SalesHero = () => {
                     </span>
 
                     <p className="text-[14px] font-sans lg:text-[16px] text-[#333] font-medium mt-4 text-center">
-                      Thank you for completing the form. It was nice meeting yu
+                      Thank you for completing the form. It was nice meeting you
                       and your business.
                     </p>
 
                     <div className="w-full max-w-[287px] mx-auto mt-14 ">
                       <button
                         type="button"
-                        className={`w-full   bg-[#4747D6] rounded-[30px] py-[10px] px-5  flex items-center justify-center text-white font-semibold`}
-                        onClick={() => router.push("/home")}
+                        className={`w-full   bg-[#4747D6] rounded-[30px] py-[10px] px-5 font-sans flex items-center justify-center text-white font-semibold`}
+                        onClick={() => router.push("/")}
                       >
                         Go Home
                       </button>
@@ -79,8 +79,9 @@ const SalesHero = () => {
                   validationSchema={Yup.object().shape({
                     name: Yup.string().required("Name is required"),
                     email: Yup.string()
+                      .matches(/@/, "Email must contain the '@' symbol")
                       .email("Must be a valid email")
-                      .max(255)
+                      .max(255, "Email must be at most 255 characters")
                       .required("Email is required"),
                     orgName: Yup.string().required(
                       "Organization Name is required"
@@ -208,7 +209,13 @@ const SalesHero = () => {
                                     value={values.email}
                                     onChange={handleChange}
                                     onBlur={handleBlur}
-                                    className="w-full h-[42px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2"
+                                    className={`w-full h-[42px] rounded-[8px] border px-3 lg:px-5 outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2 
+      ${
+        errors.email && touched.email
+          ? "border-red-500"
+          : "border-[#333] border-opacity-30"
+      }
+    `}
                                     placeholder="johndoe@wecollect.tech"
                                   />
                                 </div>
@@ -369,17 +376,16 @@ const SalesHero = () => {
                                 {/* end of single input */}
                                 {/* single input */}
                                 <div className="flex flex-col">
-                                  <label className="text-[#333] text-[14px] font-sans lg:text-[16px] font-semibold">
-                                    What Are Your Data Pain Point *
+                                  <label className="text-[#1e1e1e] text-[14px] font-sans lg:text-[16px] font-semibold">
+                                    Brief Description or Direction on Data *
                                   </label>
-                                  <input
+                                  <textarea
                                     id="phonenumber"
                                     name="painPoint"
-                                    type="text"
                                     value={values.painPoint}
                                     onChange={handleChange}
                                     onBlur={handleBlur}
-                                    className="w-full h-[42px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2"
+                                    className="w-full h-[120px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2 flex items-start pt-2"
                                     placeholder="Enter your data pain point"
                                   />
                                 </div>

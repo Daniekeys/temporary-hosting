@@ -3,24 +3,59 @@ import { useRouter } from 'next/router';
 import Image from "next/image";
 import logo from "../assets/svg/latest-logo.svg";
 import curve from "../assets/png/curve-yellow.png";
+import Link from 'next/link';
 import { BellIcon } from '../assets/svg';
 import HeroPhoto from "../assets/png/new-frame.png";
+import message from "../assets/svg/message-w.svg";
+import linkedin from "../assets/svg/linkedin-w.svg";
+import twitter from "../assets/svg/twitter-w.svg";
+import instagram from "../assets/svg/instagram-w.svg";
+import facebook from "../assets/svg/facebook-w.svg";
+import youtube from "../assets/svg/youtube-w.svg";
 const ComingSoon = () => {
     const router = useRouter();
   return (
     <div className="w-full ">
       <ContainerLayout>
         <div className="w-full flex flex-col pb-8 max-w-[1200px]">
-          <span
-            className="cursor-pointer mt-4"
-            onClick={() => router.push("/")}
-          >
-            {" "}
-            <Image src={logo} alt="logo" />{" "}
-          </span>
+          <div className="w-full items-center justify-between flex mt-6">
+            <span className="cursor-pointer " onClick={() => router.push("/")}>
+              {" "}
+              <Image src={logo} alt="logo" />{" "}
+            </span>
+            <div className="flex items-center gap-2">
+              <Link href="mailto:info@wecollect.com" target="_blank">
+                <Image src={message} alt="message" />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/wecollect-tech/posts/?feedView=all"
+                target="_blank"
+              >
+                <Image src={linkedin} alt="message" />
+              </Link>
+              <Link href="https://x.com/Wecollectdata" target="_blank">
+                <Image src={twitter} alt="message" />
+              </Link>
+              <Link
+                href="https://www.instagram.com/usewecollect?igsh=MXBycTB1MDFldGl1bw=="
+                target="_blank"
+              >
+                <Image src={instagram} alt="message" />
+              </Link>
+              <Link
+                href="https://web.facebook.com/Wecollectintel?_rdc=1&_rdr#"
+                target="_blank"
+              >
+                <Image src={facebook} alt="message" />
+              </Link>
+              <Link href="" target="_blank">
+                <Image src={youtube} alt="message" />
+              </Link>
+            </div>
+          </div>
           <div className="coming-soon-bg w-full flex flex-col  mt-[26px] rounded-[30px] relative px-4">
             <div className="absolute top-0 left-0 right-0 z-10 ">
-              <Image src={curve} alt="curve" className='object-cover' />
+              <Image src={curve} alt="curve" className="object-cover" />
             </div>
             <div className="w-full z-10 mt-[140px] flex flex-col">
               <h1 className="text-center font-serif text-[#EDEDFB] text-3xl lg:text-[40px] font-bold 2xl:text-[64px]  ">

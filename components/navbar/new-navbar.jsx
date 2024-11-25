@@ -37,6 +37,7 @@ const NewNavbar = () => {
   const [current, setCurrent] = useState(0);
   const [agentPresent, setAgentPresent] = useState(0);
   const [loading, setLoading] = useState(false);
+    const [error, setError] = useState("");
 
   const [email, setEmail] = useState("");
   const [records, setRecords] = useState();
@@ -45,7 +46,23 @@ const NewNavbar = () => {
   const [phone, setPhone] = useState("");
   const [useCase, setUseCase] = useState({ name: "", id: 0 });
   const [date, setDate] = useState("");
+ const validateEmail = (email) => {
+   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Standard email regex
+   return emailRegex.test(email);
+ };
 
+ // Handle email change
+ const handleEmailChange = (e) => {
+   const value = e.target.value;
+   setEmail(value);
+
+   // Validate the email and set error if invalid
+   if (value && !validateEmail(value)) {
+     setError("Please enter a valid email address");
+   } else {
+     setError("");
+   }
+ };
   const [description, setDescription] = useState("");
 
   const handleSubmit = async () => {
@@ -170,7 +187,10 @@ const NewNavbar = () => {
             </div>
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-2 ">
-                <Link href={"/coming-soon"} className="text-mainBlue h-[50px] hover:bg-[#E3D5FF] flex items-center lg:text-[16px] font-semibold px-4 py-2 rounded-[50px] cursor-pointer ">
+                <Link
+                  href={"/coming-soon"}
+                  className="text-mainBlue h-[50px] hover:bg-[#E3D5FF] flex items-center lg:text-[16px] font-semibold px-4 py-2 rounded-[50px] cursor-pointer "
+                >
                   Sign in
                 </Link>
               </div>
@@ -621,19 +641,25 @@ const NewNavbar = () => {
                 {/* end */}
                 {/* start */}
                 <div className="flex flex-col">
-                  <label
-                    htmlFor=""
-                    className=" text-[#555] font-sans  text-[14px] lg:text-[16px] mb-1"
-                  >
-                    Email
-                  </label>
                   <input
                     type="email"
-                    className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 font-sans  outline-none h-[50px] rounded-[50px] px-4 "
+                    id="email"
+                    className={`w-full border-[2px] font-sans outline-none h-[50px] rounded-[50px] px-4 
+          ${
+            error
+              ? "border-red-500 bg-red-100"
+              : "border-white bg-mainBlue bg-opacity-5"
+          }
+        `}
                     placeholder="Enter email"
                     value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    onChange={handleEmailChange}
                   />
+                  {error && (
+                    <span className="text-red-500 text-[12px] mt-1 font-sans">
+                      {error}
+                    </span>
+                  )}
                 </div>
                 {/* end */}
                 {/* start */}
