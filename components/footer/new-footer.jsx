@@ -208,7 +208,7 @@ const NewFooter = () => {
                   // data-aos-duration="1000"
                   // data-aos-delay="2400"
                 >
-                  Sales Form
+                  Data Request  Form
                 </Link>
               </div>
               {/* end of a pack */}

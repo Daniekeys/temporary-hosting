@@ -26,6 +26,7 @@ const SalesHero = () => {
   const [success, setSuccess] = useState(false);
   const [stage, setStage] = useState(1);
   const router = useRouter();
+  const [others, setOthers] = useState("");
   
   return (
     <div className=" w-full h-full sales-hero-bg  ">
@@ -119,7 +120,10 @@ const SalesHero = () => {
                           email: values.email,
                           phone: values.phonenumber,
                           orgName: values.orgName,
-                          dataNeeded: values.dataNeed,
+                          dataNeeded:
+                            values.dataNeed === "Others"
+                              ? others
+                              : values?.dataNeed,
                           dataPainPoint: values.painPoint,
                           dataType: values.dataType,
                         }
@@ -138,7 +142,7 @@ const SalesHero = () => {
                           email: values.email,
                           phone: values.phonenumber,
                           orgName: values.orgName,
-                          dataNeeded: values.dataNeed,
+                          dataNeeded: values.dataNeed === "Others"? others : values?.dataNeed,
                           dataType: values.dataType,
                           painPoint: values.painPoint,
                         });
@@ -167,7 +171,7 @@ const SalesHero = () => {
                       className="w-full flex flex-col"
                     >
                       <h1 className="text-primary font-semibold text-mainBlue lg:max-w-[500px] lg:text-[40px] 2xl:text-[48px] text-2xl lg:leading-[65px] pl-10 mt-10 lg:mt-4  font-serif">
-                        Help Us Meet Your Data Need!
+                        Your Data Journey Begins Here!
                       </h1>
                       <p className="mt-4 text-ash text-[16px] lg:text-[18px]  lg:pl-10 font-sans">
                         Kindly provide more details on the data you are
@@ -199,7 +203,7 @@ const SalesHero = () => {
                                 {/* single input */}
                                 <div className="flex flex-col">
                                   <label className="text-[#333] text-[14px] font-sans lg:text-[16px] font-semibold">
-                                    Email Address
+                                    Email Address*
                                   </label>
                                   <input
                                     id="email"
@@ -223,7 +227,7 @@ const SalesHero = () => {
                                 {/* single input */}
                                 <div className="flex flex-col">
                                   <label className="text-[#333] text-[14px] font-sans lg:text-[16px] font-semibold">
-                                    Phone
+                                    Phone*
                                   </label>
                                   <input
                                     id="age"
@@ -312,12 +316,29 @@ const SalesHero = () => {
                                       </option>
                                       <option
                                         className="font-sans"
-                                        value=" Others"
+                                        value="Others"
                                       >
                                         Others
                                       </option>
                                     </select>
                                   </div>
+                                    {values?.dataNeed === "Others" && (
+                                      <div className="flex flex-col mt-4">
+                                         <label className="text-[#333] text-[14px] font-sans lg:text-[16px] font-semibold">
+                                    Others*
+                                  </label>
+                                    <input
+                                      id="name"
+                                      name="others"
+                                      type="text"
+                                      value={others}
+                                      onChange={(e:any) => setOthers(e.target.value) }
+                                      
+                                      className="w-full h-[42px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2"
+                                      placeholder="Enter others"
+                                      />
+                                      </div>
+                                  )}
                                 </div>
                                 {/* end of single input */}
                                 {/* single input */}
@@ -400,6 +421,7 @@ const SalesHero = () => {
                             className={`w-full ${
                               isValid ? "bg-[#4747D6]" : "bg-slate-500"
                             } rounded-[30px] font-sans py-[10px] px-5 mt-10 flex items-center justify-center text-white font-semibold`}
+                            onClick={() => console.log(values?.dataNeed)}
                           >
                             Submit
                           </button>
