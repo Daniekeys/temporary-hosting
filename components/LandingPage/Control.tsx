@@ -46,13 +46,8 @@ function Control() {
           analyse data on the go. The dashboard is flexible, which is also handy
           when managing multiple projects or forms.
         </p>
-        <div className="w-full relative ">
-          {/* <Image
-            src={maskwoman}
-            alt="maskwoman"
-            className="w-full object-contain h-auto m-auto mt-9 lg:mt-20 lg:max-w-[850px] 2xl:max-w-[1030px]"
-           
-          /> */}
+        {/* <div className="w-full relative ">
+        
           <video
             width="600"
             ref={videoRef}
@@ -63,17 +58,8 @@ function Control() {
             <source src="/video/wecollect-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          {/* <div className="w-full absolute inset-0 flex items-center justify-center">
-            <Image
-              src={playIcon}
-              width={playIcon.width}
-              height={playIcon.height}
-              alt="icon"
-              className="w-16 h-16 rounded-full lg:w-auto lg:h-auto"
-            
-            />
-          </div> */}
-        </div>
+         
+        </div> */}
       </ContainerLayout>
     </div>
   );
