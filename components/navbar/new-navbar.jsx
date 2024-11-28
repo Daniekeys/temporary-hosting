@@ -641,6 +641,12 @@ const NewNavbar = () => {
                 {/* end */}
                 {/* start */}
                 <div className="flex flex-col">
+                  <label
+                    htmlFor=""
+                    className=" text-[#555]  font-sans text-[14px] lg:text-[16px] mb-1"
+                  >
+                    Email
+                  </label>
                   <input
                     type="email"
                     id="email"
