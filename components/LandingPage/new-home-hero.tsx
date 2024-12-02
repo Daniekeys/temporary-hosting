@@ -51,9 +51,9 @@ const NewHomeHero = () => {
             // data-aos-delay="1000"
             // data-aos-once="true"
           >
-            <div className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px]  cursor-pointer font-semibold hero-btn text-[14px] 2xl:text-[16px] font-sans">
-              Get started for free
-            </div>
+            <Link  href="/data-request-form" className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px]  cursor-pointer font-semibold hero-btn text-[14px] 2xl:text-[16px] font-sans">
+              Make A Data Request
+            </Link>
             <Link
               href="https://demo.wecollect.tech"
               target="_blank"
@@ -65,9 +65,7 @@ const NewHomeHero = () => {
           </div>
           <div
             className="w-full mt-24  lg:pb-0 lg:mt-40  hero-shado"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="1000"
+           
           >
             <Image
               src={HeroPhoto}

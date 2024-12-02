@@ -11,7 +11,8 @@ import Footer from "../components/footer/new-footer";
 import Faq from "../components/LandingPage/Faq";
 import Head from "next/head";
 import NewHomeHero from "../components/LandingPage/new-home-hero";
-
+const channelId = process.env.NEXT_PUBLIC_SLACK_CHANNEL_ID;
+console.log(channelId)
 function Home() {
   useEffect(() => {
     window?.scrollTo(0, 0);

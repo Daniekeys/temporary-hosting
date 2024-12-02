@@ -83,6 +83,19 @@ const NewNavbar = () => {
         "https://api.wecollect.tech/quote",
         data
       );
+        await axios.post("/api/get-quote-slack", {
+          records: records ?? 0,
+          email: email,
+          phone: phone,
+          location: location ?? 0,
+          usecase: useCase?.name,
+          agentPresent: agentPresent === 2 ? true : false,
+          date: date,
+          records: records ?? 0,
+          description: description,
+          agents:agents ?? 0
+        });
+        console.log("Notification sent to Slack!");
 
       if (response.status === 200) {
         setLoading(false);
@@ -581,24 +594,9 @@ const NewNavbar = () => {
                 {/* end */}
 
                 {/* start */}
-                {agentPresent === 1 && (
-                  <div className="flex flex-col">
-                    <label
-                      htmlFor=""
-                      className=" text-[#555] font-sans  text-[14px] lg:text-[16px] mb-1"
-                    >
-                      Project Description
-                    </label>
-                    <textarea
-                      type="text"
-                      className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 font-sans  outline-none  rounded-md px-4 pt-3 min-h-[100px] "
-                      placeholder="type description ... "
-                      value={description}
-                      onChange={(e) => setDescription(e.target.value)}
-                    />
-                  </div>
-                )}
-                {agentPresent === 2 && (
+               
+                
+             
                   <div className="flex flex-col">
                     <label
                       htmlFor=""
@@ -614,7 +612,7 @@ const NewNavbar = () => {
                       onChange={(e) => setDate(e.target.value)}
                     />
                   </div>
-                )}
+               
 
                 {/* end */}
                 {/* start */}
@@ -631,7 +629,7 @@ const NewNavbar = () => {
                     placeholder="Enter a use case"
                     value={useCase}
                     onChange={(e) => setUseCase(e.target.value)}
-                  /> */}
+                    /> */}
                   <SearchSelect
                     selected={useCase}
                     setSelected={setUseCase}
@@ -651,12 +649,12 @@ const NewNavbar = () => {
                     type="email"
                     id="email"
                     className={`w-full border-[2px] font-sans outline-none h-[50px] rounded-[50px] px-4 
-          ${
+                      ${
             error
               ? "border-red-500 bg-red-100"
               : "border-white bg-mainBlue bg-opacity-5"
           }
-        `}
+          `}
                     placeholder="Enter email"
                     value={email}
                     onChange={handleEmailChange}
@@ -685,6 +683,24 @@ const NewNavbar = () => {
                   />
                 </div>
                 {/* end */}
+          <div className="flex flex-col">
+            <label
+              htmlFor=""
+              className=" text-[#555] font-sans  text-[14px] lg:text-[16px] mb-1"
+            >
+              Project Description
+            </label>
+            <textarea
+              type="text"
+              className="w-full border-[2px] border-white bg-mainBlue bg-opacity-5 font-sans  outline-none  rounded-md px-4 pt-3 min-h-[100px] "
+              placeholder="type description ... "
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+            />
+          </div>
+                <div>
+
+                </div>
                 {/* start */}
                 <div className="flex flex-col">
                   <button

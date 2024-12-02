@@ -12,17 +12,16 @@ export default async function handler(
     return res.status(405).json({ message: "Method not allowed" });
   }
 
-  const { name, email, phone, orgName, dataNeeded, painPoint, dataType } =
+  const { records, email, phone, description, agents, date,location,  usecase,agentPresent } =
     req.body;
 
   if (
-    !name ||
+    
     !email ||
-    !phone ||
-    !orgName ||
-    !dataNeeded ||
-    !painPoint ||
-    !dataType
+    !phone 
+    
+    
+  
   ) {
     return res.status(400).json({ message: "Missing required fields" });
   }
@@ -35,26 +34,30 @@ export default async function handler(
   console.log("Preparing to send message to Slack with the following data:");
   console.log({
     channel: channelId,
-    text: `📢 *New Sales Form Submission*:
-- *Name:* ${name}
-- *Email:* ${email}
+    text: `📢 *New Quotation Form Submission*:
+- *Number of Location:* ${location}
+- *Number of Records:* ${records ?? 0}
 - *Phone:* ${phone}
-- *Organization:* ${orgName}
-- *Data Needed:* ${dataNeeded}
-- *Data Type:* ${dataType}
-- *Pain Point:* ${painPoint}`,
+- *Email:* ${email}
+- *Description:* ${description}
+- *Number of Agent:* ${agents ?? 0}
+- *Use Case:* ${usecase}
+- *Start Date:* ${date}
+- *I have an agent:* ${agentPresent}`,
   });
   try {
     await slackClient.chat.postMessage({
-      channel: channelId!,
-      text: `📢 *New Sales Form Submission*:
-- *Name:* ${name}
-- *Email:* ${email}
+      channel: channelId,
+      text: `📢 *New Quotation Form Submission*:
+- *Number of Location:* ${location ?? 0}
+- *Number of Records:* ${records ?? 0}
 - *Phone:* ${phone}
-- *Organization:* ${orgName}
-- *Data Needed:* ${dataNeeded}
-- *Data Type:* ${dataType}
-- *Description:* ${painPoint}`,
+- *Email:* ${email}
+- *Description:* ${description}
+- *Number of Agent:* ${agents ?? 0}
+- *Use Case:* ${usecase}
+- *Start Date:* ${date}
+- *I have an agent:* ${agentPresent}`,
     });
 
     return res
