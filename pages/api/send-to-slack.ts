@@ -19,7 +19,6 @@ export default async function handler(
     !name ||
     !email ||
     !phone ||
-    !orgName ||
     !dataNeeded ||
     !painPoint ||
     !dataType

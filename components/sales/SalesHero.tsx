@@ -27,6 +27,7 @@ const SalesHero = () => {
   const [stage, setStage] = useState(1);
   const router = useRouter();
   const [others, setOthers] = useState("");
+  const [isOrganization, setIsOrganization] = useState(false); 
   
   return (
     <div className=" w-full h-full sales-hero-bg  ">
@@ -84,9 +85,7 @@ const SalesHero = () => {
                       .email("Must be a valid email")
                       .max(255, "Email must be at most 255 characters")
                       .required("Email is required"),
-                    orgName: Yup.string().required(
-                      "Organization Name is required"
-                    ),
+                   
 
                     phonenumber: Yup.string()
                       .required("Phonenumber is required")
@@ -113,7 +112,6 @@ const SalesHero = () => {
                   })}
                   onSubmit={async (values) => {
                     try {
-                       
                       const response = await axios.post(
                         "https://api.wecollect.tech/sale-info",
                         {
@@ -143,7 +141,10 @@ const SalesHero = () => {
                           email: values.email,
                           phone: values.phonenumber,
                           orgName: values.orgName,
-                          dataNeeded: values.dataNeed === "Others"? others : values?.dataNeed,
+                          dataNeeded:
+                            values.dataNeed === "Others"
+                              ? others
+                              : values?.dataNeed,
                           dataType: values.dataType,
                           painPoint: values.painPoint,
                         });
@@ -244,20 +245,51 @@ const SalesHero = () => {
                                 {/* end of single input */}
                                 {/* single input */}
                                 <div className="flex flex-col">
-                                  <label className="text-[#333] text-[14px] font-sans lg:text-[16px] font-semibold">
-                                    Organization Name*
-                                  </label>
-                                  <input
-                                    id="name"
-                                    name="orgName"
-                                    type="text"
-                                    value={values.orgName}
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                    className="w-full h-[42px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2"
-                                    placeholder="Enter full name"
-                                  />
+                                  <div className="flex items-center gap-4">
+                                    <input
+                                      type="radio"
+                                      className="w-6 h-6 accent-mainBlue cursor-pointer"
+                                      onChange={(e) =>
+                                        setIsOrganization(e.target.checked)
+                                      }
+                                      checked={isOrganization}
+                                    />
+                                    <p className="text-[14px] font-sans lg:text-[18px] font-bold text-[#5A5A5A]">
+                                      I am an Organization
+                                    </p>
+                                  </div>
+                                  <div className="flex items-center gap-4 mt-6">
+                                    <input
+                                      type="radio"
+                                      className="w-6 h-6 accent-mainBlue cursor-pointer"
+                                      onChange={(e) =>
+                                        setIsOrganization(!e.target.checked)
+                                      }
+                                      checked={!isOrganization}
+                                    />
+                                    <p className="text-[14px] font-sans lg:text-[18px] font-bold text-[#5A5A5A]">
+                                      I am an Individual
+                                    </p>
+                                  </div>
                                 </div>
+                                {isOrganization && (
+                                  <div className="flex flex-col">
+                                    <label className="text-[#333] text-[14px] font-sans lg:text-[16px] font-semibold">
+                                      Organization Name*
+                                    </label>
+                                    <input
+                                      id="name"
+                                      name="orgName"
+                                      type="text"
+                                      value={values.orgName}
+                                      onChange={handleChange}
+                                      onBlur={handleBlur}
+                                      className="w-full h-[42px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2"
+                                      placeholder="Enter organization name"
+                                    />
+                                  </div>
+                                )}
+
                                 {/* end of single input */}
                                 {/* single input */}
                                 <div className="flex flex-col">
@@ -323,22 +355,23 @@ const SalesHero = () => {
                                       </option>
                                     </select>
                                   </div>
-                                    {values?.dataNeed === "Others" && (
-                                      <div className="flex flex-col mt-4">
-                                         <label className="text-[#333] text-[14px] font-sans lg:text-[16px] font-semibold">
-                                    Others*
-                                  </label>
-                                    <input
-                                      id="name"
-                                      name="others"
-                                      type="text"
-                                      value={others}
-                                      onChange={(e:any) => setOthers(e.target.value) }
-                                      
-                                      className="w-full h-[42px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2"
-                                      placeholder="Enter others"
+                                  {values?.dataNeed === "Others" && (
+                                    <div className="flex flex-col mt-4">
+                                      <label className="text-[#333] text-[14px] font-sans lg:text-[16px] font-semibold">
+                                        Others*
+                                      </label>
+                                      <input
+                                        id="name"
+                                        name="others"
+                                        type="text"
+                                        value={others}
+                                        onChange={(e: any) =>
+                                          setOthers(e.target.value)
+                                        }
+                                        className="w-full h-[42px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2"
+                                        placeholder="Enter others"
                                       />
-                                      </div>
+                                    </div>
                                   )}
                                 </div>
                                 {/* end of single input */}
@@ -407,7 +440,7 @@ const SalesHero = () => {
                                     value={values.painPoint}
                                     onChange={handleChange}
                                     onBlur={handleBlur}
-                                    className="w-full h-[120px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2 flex items-start pt-2"
+                                    className="w-full h-[120px] rounded-[8px] border border-[#333] border-opacity-30 px-3  lg:px-5 outline-none focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2 flex items-start pt-2 font-sans"
                                     placeholder="Enter your data pain point"
                                   />
                                 </div>
