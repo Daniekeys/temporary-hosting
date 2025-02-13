@@ -19,7 +19,7 @@ const initialValues = {
   dataNeed: "",
   dataType: "",
   painPoint: "",
-  referralName:"",
+  referral:"",
 };
  
 const SalesHero = () => {
@@ -129,7 +129,7 @@ const SalesHero = () => {
                               : values?.dataNeed,
                           dataPainPoint: values.painPoint,
                           dataType: values.dataType,
-                          referralName: values.referralName,
+                          referral: values.referral,
                         }
                       );
 
@@ -518,10 +518,10 @@ const SalesHero = () => {
                                   </label>
                                   <input
                                     id="email"
-                                    name="referralName"
+                                    name="referral"
                                     type="text"
                                     required
-                                    value={values.referralName}
+                                    value={values.referral}
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                     className={`w-full h-[42px] rounded-[8px] border font-sans px-3 lg:px-5 outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2 
