@@ -19,6 +19,7 @@ const initialValues = {
   dataNeed: "",
   dataType: "",
   painPoint: "",
+  referralName:"",
 };
  
 const SalesHero = () => {
@@ -98,7 +99,9 @@ const SalesHero = () => {
                       )
                       .test("isValid", "Invalid phonenumber", function (value) {
                         if (value === undefined) return false;
-                        return /^\d{10,}$/.test(value.trim().replace(/\s/g, ""));
+                        return /^\d{10,}$/.test(
+                          value.trim().replace(/\s/g, "")
+                        );
                       }),
 
                     dataNeed: Yup.string().required(
@@ -126,6 +129,7 @@ const SalesHero = () => {
                               : values?.dataNeed,
                           dataPainPoint: values.painPoint,
                           dataType: values.dataType,
+                          referralName: values.referralName,
                         }
                       );
 
@@ -148,6 +152,7 @@ const SalesHero = () => {
                               : values?.dataNeed,
                           dataType: values.dataType,
                           painPoint: values.painPoint,
+                         
                         });
                         console.log("Notification sent to Slack!");
                       }
@@ -204,14 +209,13 @@ const SalesHero = () => {
                                         : "border-[#333] border-opacity-30"
                                     } px-3  lg:px-5 outline-none focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2 `}
                                     placeholder="Enter full name"
-                                    />
-                                    
-                                      {errors.name && touched.name && (
-                                        <div className="text-red-500 text-xs mt-1">
-                                          {errors.name}
-                                        </div>
-                                      )}
-                                    
+                                  />
+
+                                  {errors.name && touched.name && (
+                                    <div className="text-red-500 text-xs mt-1">
+                                      {errors.name}
+                                    </div>
+                                  )}
                                 </div>
                                 {/* end of single input */}
                                 {/* single input */}
@@ -235,13 +239,13 @@ const SalesHero = () => {
       }
     `}
                                     placeholder="johndoe@wecollect.tech"
-                                    />
-                                    
-                                      {errors.email && touched.email && (
-                                        <div className="text-red-500 text-xs mt-1">
-                                          {errors.email}
-                                        </div>
-                                      )}
+                                  />
+
+                                  {errors.email && touched.email && (
+                                    <div className="text-red-500 text-xs mt-1">
+                                      {errors.email}
+                                    </div>
+                                  )}
                                 </div>
                                 {/* end of single input */}
                                 {/* single input */}
@@ -321,9 +325,15 @@ const SalesHero = () => {
                                   <label className="text-[#333] text-[14px] font-sans lg:text-[16px] font-semibold">
                                     Data Need*
                                   </label>
-                                    <div className={`w-full border h-[42px] pr-4 flex items-center bg-white rounded-md shadow-sm focus:outline-none   focus:border-[#333] border-opacity-30
-                                        ${errors.dataNeed && touched.dataNeed ? "border-red-500" : "border-[#333] border-opacity-30"} 
-                                      `}>
+                                  <div
+                                    className={`w-full border h-[42px] pr-4 flex items-center bg-white rounded-md shadow-sm focus:outline-none   focus:border-[#333] border-opacity-30
+                                        ${
+                                          errors.dataNeed && touched.dataNeed
+                                            ? "border-red-500"
+                                            : "border-[#333] border-opacity-30"
+                                        } 
+                                      `}
+                                  >
                                     <select
                                       id="gender"
                                       name="dataNeed"
@@ -381,7 +391,7 @@ const SalesHero = () => {
                                         Others
                                       </option>
                                     </select>
-                                    </div>
+                                  </div>
                                   {errors.dataNeed && touched.dataNeed && (
                                     <div className="text-red-500 text-xs mt-1 font-sans">
                                       {errors.dataNeed}
@@ -412,9 +422,15 @@ const SalesHero = () => {
                                   <label className="text-[#333] text-[14px] font-sans lg:text-[16px] font-semibold">
                                     Data Type*
                                   </label>
-                                    <div className={`w-full border h-[42px] pr-4 flex items-center bg-white rounded-md shadow-sm focus:outline-none   focus:border-[#333] border-opacity-30
-                                        ${errors.dataType && touched.dataType ? "border-red-500" : "border-[#333] border-opacity-30"}
-                                    `}>
+                                  <div
+                                    className={`w-full border h-[42px] pr-4 flex items-center bg-white rounded-md shadow-sm focus:outline-none   focus:border-[#333] border-opacity-30
+                                        ${
+                                          errors.dataType && touched.dataType
+                                            ? "border-red-500"
+                                            : "border-[#333] border-opacity-30"
+                                        }
+                                    `}
+                                  >
                                     <select
                                       id="type"
                                       name="dataType"
@@ -460,12 +476,12 @@ const SalesHero = () => {
                                         Incident Reporting
                                       </option>
                                     </select>
+                                  </div>
+                                  {errors.dataType && touched.dataType && (
+                                    <div className="text-red-500 text-xs mt-1 font-sans">
+                                      {errors.dataType}
                                     </div>
-                                    {errors.dataType && touched.dataType && (
-                                      <div className="text-red-500 text-xs mt-1 font-sans">
-                                        {errors.dataType}
-                                      </div>
-                                    )}
+                                  )}
                                 </div>
                                 {/* end of single input */}
                                 {/* single input */}
@@ -479,16 +495,40 @@ const SalesHero = () => {
                                     value={values.painPoint}
                                     onChange={handleChange}
                                     onBlur={handleBlur}
-                                      className={`w-full h-[120px] rounded-[8px] border  px-3  lg:px-5 outline-none focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2 flex items-start pt-2 font-sans 
-                                      ${errors.painPoint && touched.painPoint ? "border-red-500" : "border-[#333] border-opacity-30"}
+                                    className={`w-full h-[120px] rounded-[8px] border  px-3  lg:px-5 outline-none focus:outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2 flex items-start pt-2 font-sans 
+                                      ${
+                                        errors.painPoint && touched.painPoint
+                                          ? "border-red-500"
+                                          : "border-[#333] border-opacity-30"
+                                      }
                                         `}
                                     placeholder="Enter your data pain point"
-                                    />
-                                    {errors.painPoint && touched.painPoint && (
-                                      <div className="text-red-500 text-xs mt-1 font-sans">
-                                        {errors.painPoint}
-                                      </div>
-                                    )}
+                                  />
+                                  {errors.painPoint && touched.painPoint && (
+                                    <div className="text-red-500 text-xs mt-1 font-sans">
+                                      {errors.painPoint}
+                                    </div>
+                                  )}
+                                </div>
+                                {/* end of single input */}
+                                {/* single input */}
+                                <div className="flex flex-col">
+                                  <label className="text-[#333] text-[14px] font-sans lg:text-[16px] font-semibold">
+                                    Who Referred You?*
+                                  </label>
+                                  <input
+                                    id="email"
+                                    name="referralName"
+                                    type="text"
+                                    required
+                                    value={values.referralName}
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                    className={`w-full h-[42px] rounded-[8px] border font-sans px-3 lg:px-5 outline-none placeholder:text-[14px] lg:placeholder:text-[16px] placeholder:text-[#999] font-medium mt-2 
+                                      border-[#333] border-opacity-30
+    `}
+                                    placeholder="Referral Name"
+                                  />
                                 </div>
                                 {/* end of single input */}
                               </div>
@@ -502,9 +542,8 @@ const SalesHero = () => {
                               isValid ? "bg-[#4747D6]" : "bg-slate-500"
                             } rounded-[30px] font-sans py-[10px] px-5 mt-10 flex items-center justify-center text-white font-semibold`}
                             // onClick={() => console.log(values?.dataNeed)}
-                            >
-                              {isSubmitting ? "Loading..." : " Submit"}
-                            
+                          >
+                            {isSubmitting ? "Loading..." : " Submit"}
                           </button>
                         </div>
                       </div>

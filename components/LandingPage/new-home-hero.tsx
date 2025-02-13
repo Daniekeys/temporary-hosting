@@ -1,12 +1,12 @@
-import React from 'react'
-import MobileNav from '../navbar/mobile-nav';
-import NewNavbar from '../navbar/new-navbar';
-import ContainerLayout from '../../layouts/ContainerLayout';
-import Image from 'next/image';
-import trademark from "../../assets/svg/trade-mark.svg"
-import Link from 'next/link';
+import React from "react";
+import MobileNav from "../navbar/mobile-nav";
+import NewNavbar from "../navbar/new-navbar";
+import ContainerLayout from "../../layouts/ContainerLayout";
+import Image from "next/image";
+import trademark from "../../assets/svg/trade-mark.svg";
+import Link from "next/link";
 import blueright from "../../assets/svg/blueright.svg";
-import HeroPhoto from "../../assets/png/new-frame.png"
+import HeroPhoto from "../../assets/png/new-frame.png";
 const NewHomeHero = () => {
   return (
     <div className="new-hero-b w-full h-full flex flex-col min-h-screen flow-hide">
@@ -51,7 +51,10 @@ const NewHomeHero = () => {
             // data-aos-delay="1000"
             // data-aos-once="true"
           >
-            <Link  href="/data-request-form" className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px]  cursor-pointer font-semibold hero-btn text-[14px] 2xl:text-[16px] font-sans">
+            <Link
+              href="/request"
+              className="bg-mainBlue hover:bg-[#E3D5FF] w-[197px] h-[50px] flex justify-center items-center text-white hover:text-mainBlue rounded-[50px]  cursor-pointer font-semibold hero-btn text-[14px] 2xl:text-[16px] font-sans"
+            >
               Make A Data Request
             </Link>
             <Link
@@ -63,10 +66,7 @@ const NewHomeHero = () => {
               Book a demo
             </Link>
           </div>
-          <div
-            className="w-full mt-24  lg:pb-0 lg:mt-40  hero-shado"
-           
-          >
+          <div className="w-full mt-24  lg:pb-0 lg:mt-40  hero-shado">
             <Image
               src={HeroPhoto}
               className="w-full md:w-10/12 mx-auto "
@@ -78,16 +78,6 @@ const NewHomeHero = () => {
       {/* end of content time */}
     </div>
   );
-}
+};
 
-
-export default NewHomeHero
-
-
-
-
-
-
-
-
-
+export default NewHomeHero;

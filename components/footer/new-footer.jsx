@@ -202,13 +202,13 @@ const NewFooter = () => {
                   FAQ
                 </Link>
                 <Link
-                  href="/data-request-form"
+                  href="/request"
                   className="text-ash sat-regular  text-[16px] font-medium mt-[12px] font-sans"
                   // data-aos="fade-up"
                   // data-aos-duration="1000"
                   // data-aos-delay="2400"
                 >
-                  Data Request  Form
+                  Data Request Form
                 </Link>
               </div>
               {/* end of a pack */}
